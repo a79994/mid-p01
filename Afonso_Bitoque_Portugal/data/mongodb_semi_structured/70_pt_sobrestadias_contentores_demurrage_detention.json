@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "DEM-PT-2026-001",
+    "fatura_sobrestadia_no": "PSA-SIN-DEM-2026-0411",
+    "numero_contentor_iso": "CATU8004401",
+    "numero_bl_master": "COSU6288991104",
+    "mrn_dau": "26PT000140IM008804",
+    "terminal_portuario": "TCL - Terminal de Contentores de Leixões",
+    "dias_livres_contratados_free_time": 7,
+    "dias_efetivos_permanencia": 10,
+    "dias_sobrestadia_faturados": 3,
+    "tarifa_diaria_demurrage_eur": 110.0,
+    "tarifa_ligacao_eletrica_reefer_eur": 0.0,
+    "total_liquidado_eur": 330.0,
+    "motivo_retencao": "Canal Vermelho - Vistoria Física Conjunta ASAE, DGEG e Perito de Seguros"
+  },
+  {
+    "_id": "DEM-PT-2026-002",
+    "fatura_sobrestadia_no": "PSA-SIN-DEM-2026-0412",
+    "numero_contentor_iso": "COSU8001101",
+    "numero_bl_master": "COSU6288991101",
+    "mrn_dau": "26PT000395IM008801",
+    "terminal_portuario": "PSA Sines - Terminal XXI",
+    "dias_livres_contratados_free_time": 10,
+    "dias_efetivos_permanencia": 4,
+    "dias_sobrestadia_faturados": 0,
+    "tarifa_diaria_demurrage_eur": 85.0,
+    "tarifa_ligacao_eletrica_reefer_eur": 0.0,
+    "total_liquidado_eur": 0.0,
+    "motivo_retencao": "Saída Rápida Green Lane OEA dentro do período livre"
+  },
+  {
+    "_id": "DEM-PT-2026-003",
+    "fatura_sobrestadia_no": "MEDWAY-ENT-DEM-2026-009",
+    "numero_contentor_iso": "CRXU9988771",
+    "numero_bl_master": "CIMSMGS-YW2026-07",
+    "mrn_dau": "26PT000510IM008807",
+    "terminal_portuario": "Terminal Ferroviário Bobadela / Entroncamento",
+    "dias_livres_contratados_free_time": 5,
+    "dias_efetivos_permanencia": 12,
+    "dias_sobrestadia_faturados": 7,
+    "tarifa_diaria_demurrage_eur": 75.0,
+    "tarifa_ligacao_eletrica_reefer_eur": 0.0,
+    "total_liquidado_eur": 525.0,
+    "motivo_retencao": "Apreensão Parcial e Contagem Física pela Brigada Fiscal GNR/AT"
+  },
+  {
+    "_id": "DEM-PT-2026-004",
+    "fatura_sobrestadia_no": "PSA-SIN-DEM-2026-0488",
+    "numero_contentor_iso": "COSU8003301",
+    "numero_bl_master": "COSU6288991103",
+    "mrn_dau": "26PT000395IM008803",
+    "terminal_portuario": "PSA Sines - Terminal XXI",
+    "dias_livres_contratados_free_time": 10,
+    "dias_efetivos_permanencia": 6,
+    "dias_sobrestadia_faturados": 0,
+    "tarifa_diaria_demurrage_eur": 85.0,
+    "tarifa_ligacao_eletrica_reefer_eur": 0.0,
+    "total_liquidado_eur": 0.0,
+    "motivo_retencao": "Libertação dentro do Free Time para Entreposto Solar Alentejo"
+  }
+]

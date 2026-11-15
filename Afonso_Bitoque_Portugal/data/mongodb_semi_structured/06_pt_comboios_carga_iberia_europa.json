@@ -1,0 +1,130 @@
+[
+  {
+    "_id": "RAIL-PT-2026-007",
+    "id_comboio_uic": "MEDWAY-IB-8020-PT",
+    "operador_ferroviario": "Medway - Operador Ferroviário de Mercadorias, S.A.",
+    "terminal_origem": "Madrid Abroñigal (Conexão Yixin'ou Yiwu-Madrid)",
+    "terminal_destino": "PTENT (Terminal do Entroncamento / Bobadela)",
+    "data_partida": "13/05/2026 21:00",
+    "data_chegada": "14/05/2026 08:30",
+    "bitola_transicao": "UIC 1435mm (Irun) -> Bitola Ibérica 1668mm (Portugal)",
+    "vagoes_contentores": [
+      {
+        "id_vagao": "31-71-4567-890-1",
+        "numero_contentor_iso": "CRXU9988771",
+        "carta_porte_cim_smgs": "CIMSMGS-YW2026-07",
+        "mercadoria_taric": "6204623100",
+        "peso_toneladas": 62.0
+      },
+      {
+        "id_vagao": "31-71-4567-890-2",
+        "numero_contentor_iso": "CRXU9988772",
+        "carta_porte_cim_smgs": "CIMSMGS-YW2026-07",
+        "mercadoria_taric": "6204623100",
+        "peso_toneladas": 62.0
+      }
+    ]
+  },
+  {
+    "_id": "RAIL-PT-2026-011",
+    "id_comboio_uic": "MEDWAY-IB-8011-PT",
+    "operador_ferroviario": "Medway - Operador Ferroviário de Mercadorias, S.A.",
+    "terminal_origem": "Duisburg DIT (Conexão Chang'an Xi'an-Europa Express)",
+    "terminal_destino": "PTBOB (Terminal Intermodal da Bobadela)",
+    "data_partida": "19/05/2026 18:30",
+    "data_chegada": "21/05/2026 06:15",
+    "bitola_transicao": "UIC 1435mm (Hendaye) -> Bitola Ibérica 1668mm",
+    "vagoes_contentores": [
+      {
+        "id_vagao": "31-71-4567-891-1",
+        "numero_contentor_iso": "CRXU9988773",
+        "carta_porte_cim_smgs": "CIMSMGS-YW2026-12",
+        "mercadoria_taric": "6109100010",
+        "peso_toneladas": 49.0
+      },
+      {
+        "id_vagao": "31-71-4567-891-2",
+        "numero_contentor_iso": "CRXU9988774",
+        "carta_porte_cim_smgs": "CIMSMGS-YW2026-12",
+        "mercadoria_taric": "6109100010",
+        "peso_toneladas": 51.0
+      }
+    ]
+  },
+  {
+    "_id": "RAIL-PT-2026-015",
+    "id_comboio_uic": "MEDWAY-IB-8015-PT",
+    "operador_ferroviario": "Medway / Takargo Intermodal",
+    "terminal_origem": "Tilburg Railport (Conexão Chengdu Silk Road Express)",
+    "terminal_destino": "PTENT (Terminal do Entroncamento)",
+    "data_partida": "24/05/2026 20:00",
+    "data_chegada": "26/05/2026 11:45",
+    "bitola_transicao": "UIC 1435mm -> Bitola Ibérica 1668mm",
+    "vagoes_contentores": [
+      {
+        "id_vagao": "31-71-4567-892-1",
+        "numero_contentor_iso": "CRXU9988775",
+        "carta_porte_cim_smgs": "CIMSMGS-CD2026-15",
+        "mercadoria_taric": "8471300000",
+        "peso_toneladas": 35.0
+      }
+    ]
+  },
+  {
+    "_id": "RAIL-PT-2026-003",
+    "id_comboio_uic": "MEDWAY-IB-8003-PT",
+    "operador_ferroviario": "Medway - Operador Ferroviário de Mercadorias, S.A.",
+    "terminal_origem": "Hamburgo Billwerder (Conexão Zhengzhou-Europa Intermodal)",
+    "terminal_destino": "PTLEI (Ramal Ferroviário do Porto de Leixões)",
+    "data_partida": "28/05/2026 15:45",
+    "data_chegada": "30/05/2026 09:20",
+    "bitola_transicao": "UIC 1435mm -> Bitola Ibérica 1668mm",
+    "vagoes_contentores": [
+      {
+        "id_vagao": "31-71-4567-893-1",
+        "numero_contentor_iso": "CRXU9988776",
+        "carta_porte_cim_smgs": "CIMSMGS-ZZ2026-03",
+        "mercadoria_taric": "8504408500",
+        "peso_toneladas": 58.0
+      }
+    ]
+  },
+  {
+    "_id": "RAIL-PT-2026-022",
+    "id_comboio_uic": "MEDWAY-IB-8022-PT",
+    "operador_ferroviario": "Medway Intermodal",
+    "terminal_origem": "Lyon Saint-Exupéry Rail Hub (Conexão Wuhan Express)",
+    "terminal_destino": "PTBOB (Terminal da Bobadela)",
+    "data_partida": "03/06/2026 22:15",
+    "data_chegada": "05/06/2026 14:30",
+    "bitola_transicao": "UIC 1435mm -> Bitola Ibérica 1668mm",
+    "vagoes_contentores": [
+      {
+        "id_vagao": "31-71-4567-894-1",
+        "numero_contentor_iso": "CRXU9988777",
+        "carta_porte_cim_smgs": "CIMSMGS-WH2026-22",
+        "mercadoria_taric": "8415109000",
+        "peso_toneladas": 42.0
+      }
+    ]
+  },
+  {
+    "_id": "RAIL-PT-2026-001",
+    "id_comboio_uic": "MEDWAY-IB-8001-PT",
+    "operador_ferroviario": "Medway / Portsines Rail Service",
+    "terminal_origem": "Duisburg DIT (Conexão Chongqing Land-Sea Corridor)",
+    "terminal_destino": "PTSIN (Ramal Ferroviário do Terminal XXI de Sines)",
+    "data_partida": "08/06/2026 17:00",
+    "data_chegada": "10/06/2026 07:45",
+    "bitola_transicao": "UIC 1435mm -> Bitola Ibérica 1668mm",
+    "vagoes_contentores": [
+      {
+        "id_vagao": "31-71-4567-895-1",
+        "numero_contentor_iso": "CRXU9988778",
+        "carta_porte_cim_smgs": "CIMSMGS-CQ2026-01",
+        "mercadoria_taric": "8479899790",
+        "peso_toneladas": 78.0
+      }
+    ]
+  }
+]

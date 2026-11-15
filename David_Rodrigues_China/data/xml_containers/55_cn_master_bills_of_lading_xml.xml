@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ElectronicBillsOfLading>
+  <BillOfLading blNumber="COSU6288991101" gaccDeclarationId18="220120260000108801" invoiceNo="INV-CN-2026-8801" issueDate="2026-03-22">
+    <Parties shipperUsccOrNif="91320413MA1M9Y2C4B" consigneeEoriOrUscc="PT517890123" notifyPartyTaxId="517890123"/>
+    <Routing portOfLoading="CNSHA" portOfDischarge="PTSIN" placeOfDelivery="ZILS Sines Gigafactory Site, Portugal" vesselImo="9795610"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="COSU8001101" sizeType="40HC" customsSealNo="CN-GACC-9011" packagesCount="5000" grossWeightKg="460000.00" volumeCbm="620.0">
+        <HSCode6WCO>850760</HSCode6WCO>
+        <CargoDescription>CALB L314Ah Zero-Carbon LFP Battery Pack Modules (UN3480)</CargoDescription>
+      </Container>
+      <Container isoNumber="COSU8001102" sizeType="40HC" customsSealNo="CN-GACC-9012" packagesCount="5000" grossWeightKg="460000.00" volumeCbm="620.0">
+        <HSCode6WCO>850760</HSCode6WCO>
+        <CargoDescription>CALB L314Ah Zero-Carbon LFP Battery Pack Modules (UN3480)</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="158000.00" insuranceAmountUSD="20100.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288991102" gaccDeclarationId18="530120260000108802" invoiceNo="INV-CN-2026-8802" issueDate="2026-03-27">
+    <Parties shipperUsccOrNif="91440300192317458F" consigneeEoriOrUscc="PT500234567" notifyPartyTaxId="500234567"/>
+    <Routing portOfLoading="CNSZX" portOfDischarge="PTSIN" placeOfDelivery="Setúbal / Carregado Auto Logistics Hub, PT" vesselImo="9842105"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="BYDU9002201" sizeType="RORO-DECK" customsSealNo="CN-GACC-9021" packagesCount="400" grossWeightKg="890000.00" volumeCbm="5680.0">
+        <HSCode6WCO>870380</HSCode6WCO>
+        <CargoDescription>400x BYD Seal AWD Blade Battery Electric Sedans</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="210000.00" insuranceAmountUSD="35000.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288991103" gaccDeclarationId18="220120260000108803" invoiceNo="INV-CN-2026-8803" issueDate="2026-03-24">
+    <Parties shipperUsccOrNif="91610132724912345X" consigneeEoriOrUscc="PT502345678" notifyPartyTaxId="502345678"/>
+    <Routing portOfLoading="CNSHA" portOfDischarge="PTSIN" placeOfDelivery="Parque Solar Cerca / EDP Renováveis, Alentejo, PT" vesselImo="9795610"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="COSU8003301" sizeType="40HC" customsSealNo="CN-GACC-9031" packagesCount="18000" grossWeightKg="1700000.00" volumeCbm="2480.0">
+        <HSCode6WCO>854143</HSCode6WCO>
+        <CargoDescription>LONGi Hi-MO 7 Bifacial Solar Photovoltaic Modules</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="COLLECT" freightAmountUSD="92000.00" insuranceAmountUSD="14500.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288991104" gaccDeclarationId18="310120260000108804" invoiceNo="INV-CN-2026-8804" issueDate="2026-03-31">
+    <Parties shipperUsccOrNif="91350900587527783P" consigneeEoriOrUscc="PT502345678" notifyPartyTaxId="502345678"/>
+    <Routing portOfLoading="CNNGB" portOfDischarge="PTLEI" placeOfDelivery="REN Subestação de Palmela / Alqueva ESS, PT" vesselImo="9795634"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="CATU8004401" sizeType="40HC" customsSealNo="CN-GACC-9041" packagesCount="3200" grossWeightKg="355000.00" volumeCbm="480.0">
+        <HSCode6WCO>850760</HSCode6WCO>
+        <CargoDescription>CATL EnerOne Liquid Cooling BESS Modules (UN3480)</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="84000.00" insuranceAmountUSD="18000.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288991106" gaccDeclarationId18="310120260000108806" invoiceNo="INV-CN-2026-8806" issueDate="2026-04-03">
+    <Parties shipperUsccOrNif="91330200778899112T" consigneeEoriOrUscc="PT500889911" notifyPartyTaxId="500889911"/>
+    <Routing portOfLoading="CNNGB" portOfDischarge="PTSIN" placeOfDelivery="Martifer Metalomecânica, Oliveira de Frades, PT" vesselImo="9795634"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="NBSU8006601" sizeType="20GP" customsSealNo="CN-GACC-9061" packagesCount="1200" grossWeightKg="2100000.00" volumeCbm="820.0">
+        <HSCode6WCO>720838</HSCode6WCO>
+        <CargoDescription>Hot-Rolled Structural Alloy Steel Coils (S355JR)</CargoDescription>
+      </Container>
+      <Container isoNumber="NBSU8006602" sizeType="20GP" customsSealNo="CN-GACC-9062" packagesCount="1200" grossWeightKg="2100000.00" volumeCbm="820.0">
+        <HSCode6WCO>720838</HSCode6WCO>
+        <CargoDescription>Hot-Rolled Structural Alloy Steel Coils (S355JR)</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="72000.00" insuranceAmountUSD="9800.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288991108" gaccDeclarationId18="530120260000108808" invoiceNo="INV-CN-2026-8808" issueDate="2026-04-06">
+    <Parties shipperUsccOrNif="91440300618837699Q" consigneeEoriOrUscc="PT500456789" notifyPartyTaxId="500456789"/>
+    <Routing portOfLoading="CNSZX" portOfDischarge="PTSIN" placeOfDelivery="MEO Altice Portugal Hub Bobadela, PT" vesselImo="9795646"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="HWU8008801" sizeType="40HC" customsSealNo="CN-GACC-9081" packagesCount="450" grossWeightKg="18200.00" volumeCbm="68.0">
+        <HSCode6WCO>851762</HSCode6WCO>
+        <CargoDescription>Huawei 5G Massive MIMO Active Antenna Units (AAU)</CargoDescription>
+      </Container>
+      <Container isoNumber="HWU8008802" sizeType="40HC" customsSealNo="CN-GACC-9082" packagesCount="450" grossWeightKg="18200.00" volumeCbm="68.0">
+        <HSCode6WCO>851762</HSCode6WCO>
+        <CargoDescription>Huawei 5G Baseband Units (BBU) &amp; Optical Routers</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="38500.00" insuranceAmountUSD="12000.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288991110" gaccDeclarationId18="510120260000108810" invoiceNo="INV-CN-2026-8810" issueDate="2026-04-08">
+    <Parties shipperUsccOrNif="91440606190342599T" consigneeEoriOrUscc="PT500123456" notifyPartyTaxId="500123456"/>
+    <Routing portOfLoading="CNGZG" portOfDischarge="PTSIN" placeOfDelivery="Worten Sonae Logistics Center, Azambuja, PT" vesselImo="9795646"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="MDU8010001" sizeType="40HC" customsSealNo="CN-GACC-9101" packagesCount="2500" grossWeightKg="22400.00" volumeCbm="74.0">
+        <HSCode6WCO>841510</HSCode6WCO>
+        <CargoDescription>Midea Inverter Split Heat Pump Air Conditioners</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="26000.00" insuranceAmountUSD="4500.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288991111" gaccDeclarationId18="010120260000108811" invoiceNo="INV-CN-2026-8811" issueDate="2026-04-14">
+    <Parties shipperUsccOrNif="911100007178071858" consigneeEoriOrUscc="PT503456789" notifyPartyTaxId="503456789"/>
+    <Routing portOfLoading="CNTXG" portOfDischarge="PTSIN" placeOfDelivery="Metropolitano de Lisboa / PMO Pontinha, PT" vesselImo="9795622"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="CRCU8011101" sizeType="40OT" customsSealNo="CN-GACC-9111" packagesCount="120" grossWeightKg="29500.00" volumeCbm="65.0">
+        <HSCode6WCO>860719</HSCode6WCO>
+        <CargoDescription>CRRC Bogie Assemblies and Traction Motor Sets for Metro Trains</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="42000.00" insuranceAmountUSD="8500.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288991113" gaccDeclarationId18="530120260000108813" invoiceNo="INV-CN-2026-8813" issueDate="2026-04-11">
+    <Parties shipperUsccOrNif="91440300192317458F" consigneeEoriOrUscc="PT500234567" notifyPartyTaxId="500234567"/>
+    <Routing portOfLoading="CNSZX" portOfDischarge="PTSIN" placeOfDelivery="Salvador Caetano Hub, Vila Nova de Gaia, PT" vesselImo="9842117"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="BYDU9013301" sizeType="RORO-DECK" customsSealNo="CN-GACC-9131" packagesCount="350" grossWeightKg="755000.00" volumeCbm="4950.0">
+        <HSCode6WCO>870380</HSCode6WCO>
+        <CargoDescription>350x BYD Atto 3 Blade Battery Compact SUVs</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="185000.00" insuranceAmountUSD="29000.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288991114" gaccDeclarationId18="310120260000108814" invoiceNo="INV-CN-2026-8803" issueDate="2026-04-16">
+    <Parties shipperUsccOrNif="91320400608131370B" consigneeEoriOrUscc="PT502345678" notifyPartyTaxId="502345678"/>
+    <Routing portOfLoading="CNSHA" portOfDischarge="PTSIN" placeOfDelivery="Parque Solar Alcoutim / Neoen, Algarve, PT" vesselImo="9795622"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="TSU8014401" sizeType="40HC" customsSealNo="CN-GACC-9141" packagesCount="17500" grossWeightKg="1670000.00" volumeCbm="2420.0">
+        <HSCode6WCO>854143</HSCode6WCO>
+        <CargoDescription>Trina Solar Vertex N TOPCon Photovoltaic Modules</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="COLLECT" freightAmountUSD="89000.00" insuranceAmountUSD="13800.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288992201" gaccDeclarationId18="220120261000990001" invoiceNo="INV-PT-2026-9901" issueDate="2026-03-24">
+    <Parties shipperUsccOrNif="PT500265432" consigneeEoriOrUscc="91110000101123456N" notifyPartyTaxId="91110000101123456N"/>
+    <Routing portOfLoading="PTLEI" portOfDischarge="CNSHA" placeOfDelivery="COFCO Wine Cellars, Shanghai Waigaoqiao FTZ" vesselImo="9795610"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="COSU4455661" sizeType="40RF" customsSealNo="PT-AT-0411" packagesCount="24000" grossWeightKg="36000.00" volumeCbm="68.0">
+        <HSCode6WCO>220421</HSCode6WCO>
+        <CargoDescription>Vinho Tinto DOC Douro &amp; Porto Reserva Sogrape Vinhos S.A.</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="8500.00" insuranceAmountUSD="2100.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288992202" gaccDeclarationId18="220120261000990002" invoiceNo="INV-PT-2026-9902" issueDate="2026-03-28">
+    <Parties shipperUsccOrNif="PT500876543" consigneeEoriOrUscc="91440300755673010C" notifyPartyTaxId="91440300755673010C"/>
+    <Routing portOfLoading="PTSIN" portOfDischarge="CNSZX" placeOfDelivery="Shenzhen Qianhai Food Bonded Hub, China" vesselImo="9795634"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="COSU4455662" sizeType="40RF" customsSealNo="PT-AT-0412" packagesCount="36000" grossWeightKg="42000.00" volumeCbm="70.0">
+        <HSCode6WCO>150920</HSCode6WCO>
+        <CargoDescription>Azeite Virgem Extra Oliveira da Serra (Sovena Portugal)</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="7900.00" insuranceAmountUSD="1800.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288992203" gaccDeclarationId18="220120261000990003" invoiceNo="INV-PT-2026-9903" issueDate="2026-04-01">
+    <Parties shipperUsccOrNif="PT500345678" consigneeEoriOrUscc="91330200778899112T" notifyPartyTaxId="91330200778899112T"/>
+    <Routing portOfLoading="PTSET" portOfDischarge="CNNGB" placeOfDelivery="Zhejiang Paper Mills, Ningbo Bonded Port, China" vesselImo="9795634"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="COSU4455663" sizeType="40HC" customsSealNo="PT-AT-0413" packagesCount="120000" grossWeightKg="125000.00" volumeCbm="210.0">
+        <HSCode6WCO>470329</HSCode6WCO>
+        <CargoDescription>Pasta de Madeira Química de Eucalipto (The Navigator Company)</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="14200.00" insuranceAmountUSD="2900.00"/>
+  </BillOfLading>
+  <BillOfLading blNumber="COSU6288992207" gaccDeclarationId18="220120261000990005" invoiceNo="INV-PT-2026-9905" issueDate="2026-04-18">
+    <Parties shipperUsccOrNif="PT500123999" consigneeEoriOrUscc="91110000101123456N" notifyPartyTaxId="91110000101123456N"/>
+    <Routing portOfLoading="PTLEI" portOfDischarge="CNNGB" placeOfDelivery="Ningbo Meishan Bonded Port Wine Packaging Base" vesselImo="9795622"/>
+    <ContainerizedCargoList>
+      <Container isoNumber="COSU4455665" sizeType="40HC" customsSealNo="PT-AT-0417" packagesCount="85000" grossWeightKg="48000.00" volumeCbm="92.0">
+        <HSCode6WCO>450410</HSCode6WCO>
+        <CargoDescription>Rolhas e Aglomerados de Cortiça Natural (Corticeira Amorim)</CargoDescription>
+      </Container>
+    </ContainerizedCargoList>
+    <FreightCharges paymentTerms="PREPAID" freightAmountUSD="6800.00" insuranceAmountUSD="1400.00"/>
+  </BillOfLading>
+</ElectronicBillsOfLading>

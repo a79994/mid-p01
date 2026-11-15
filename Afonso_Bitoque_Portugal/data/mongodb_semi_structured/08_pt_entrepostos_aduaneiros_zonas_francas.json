@@ -1,0 +1,110 @@
+[
+  {
+    "_id": "ENT-AT-SINES-ZILS01",
+    "codigo_entreposto_at": "PTCW00039501",
+    "localizacao": "ZILS Sines - Parque Logístico de Baterias e Energia",
+    "titular_nif": "517890123",
+    "capacidade_m2": 65000,
+    "inventario_suspensao_fiscal": [
+      {
+        "lote_id": "LOT-CALB-2026-03A",
+        "mrn_entrada": "26PT000395IM008801",
+        "codigo_taric_10": "8507600090",
+        "origem_fabricante_cn_uscc": "91320413MA1M9Y2C4B",
+        "quantidade_disponivel": 4200,
+        "valor_suspenso_eur": 2639070.0,
+        "destino_previsto": "Integração Industrial em Packs EV para Exportação Europeia"
+      }
+    ]
+  },
+  {
+    "_id": "ENT-AT-AZAMBUJA-SONAE",
+    "codigo_entreposto_at": "PTCW00023009",
+    "localizacao": "Plataforma Logística da Azambuja (Grande Lisboa)",
+    "titular_nif": "500246810",
+    "capacidade_m2": 52000,
+    "inventario_suspensao_fiscal": [
+      {
+        "lote_id": "LOT-XM-2026-04C",
+        "mrn_entrada": "26PT000230IM008805",
+        "codigo_taric_10": "8517130000",
+        "origem_fabricante_cn_uscc": "91110108551385082Q",
+        "quantidade_disponivel": 1800,
+        "valor_suspenso_eur": 890460.0,
+        "destino_previsto": "Introdução no Consumo Lojas Worten Portugal e Espanha"
+      }
+    ]
+  },
+  {
+    "_id": "ENT-AT-LEIXOES-FREIXIEIRO",
+    "codigo_entreposto_at": "PTCW00014015",
+    "localizacao": "Pólo Logístico de Freixieiro / Aeroporto Sá Carneiro",
+    "titular_nif": "500214890",
+    "capacidade_m2": 38000,
+    "inventario_suspensao_fiscal": [
+      {
+        "lote_id": "LOT-SOG-2026-05E",
+        "mrn_entrada": "26PT000140EX009906",
+        "codigo_taric_10": "2204217910",
+        "origem_fabricante_cn_uscc": "91110000101123456N",
+        "quantidade_disponivel": 35000,
+        "valor_suspenso_eur": 471600.0,
+        "destino_previsto": "Consolidação Marítima de Exportação para a China"
+      }
+    ]
+  },
+  {
+    "_id": "ENT-AT-SETUBAL-AUTO",
+    "codigo_entreposto_at": "PTCW00051020",
+    "localizacao": "Parque de Armazenamento Aduaneiro Automóvel do Porto de Setúbal",
+    "titular_nif": "500234567",
+    "capacidade_m2": 85000,
+    "inventario_suspensao_fiscal": [
+      {
+        "lote_id": "LOT-BYD-2026-05F",
+        "mrn_entrada": "26PT000395IM008813",
+        "codigo_taric_10": "8703801000",
+        "origem_fabricante_cn_uscc": "91440300192317458F",
+        "quantidade_disponivel": 150,
+        "valor_suspenso_eur": 3835714.28,
+        "destino_previsto": "Desalfandegamento Conforme Encomendas de Concessionários BYD"
+      }
+    ]
+  },
+  {
+    "_id": "ENT-AT-ENTRONCAMENTO-RAIL",
+    "codigo_entreposto_at": "PTCW00021008",
+    "localizacao": "Armazém Aduaneiro Medway Terminals Entroncamento",
+    "titular_nif": "504998877",
+    "capacidade_m2": 25000,
+    "inventario_suspensao_fiscal": [
+      {
+        "lote_id": "LOT-YIWU-2026-04F",
+        "mrn_entrada": "26PT000210IM008807",
+        "codigo_taric_10": "6204623100",
+        "origem_fabricante_cn_uscc": "91330782098765432W",
+        "quantidade_disponivel": 850,
+        "valor_suspenso_eur": 316676.04,
+        "destino_previsto": "Distribuição Polo Grossista da Varziela"
+      }
+    ]
+  },
+  {
+    "_id": "ENT-AT-LISBOA-CTT-IOSS",
+    "codigo_entreposto_at": "PTCW00024003",
+    "localizacao": "Centro de Tratamento e Despacho Postal CTT Lisboa Aeroporto",
+    "titular_nif": "500022331",
+    "capacidade_m2": 45000,
+    "inventario_suspensao_fiscal": [
+      {
+        "lote_id": "LOT-CAINIAO-2026-05G",
+        "mrn_entrada": "26PT000230IM008805",
+        "codigo_taric_10": "8517130000",
+        "origem_fabricante_cn_uscc": "91440300755673010C",
+        "quantidade_disponivel": 12500,
+        "valor_suspenso_eur": 450000.0,
+        "destino_previsto": "Despacho H7 IOSS e Distribuição Postal ao Domicílio em Portugal"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "LOTE-PROD-PT-001",
+    "codigo_lote_industrial": "LOT-SH-SYM-2026A",
+    "eori_produtor": "PT500265432",
+    "codigo_cifer_gacc": "CPRT18000102000101",
+    "tipo_processamento": "Engarrafamento e Estágio em Cave (Vila Nova de Gaia)",
+    "selo_garantia_ivdp_intervalo": "IVDP-AA-900120001 a IVDP-AA-900240000",
+    "grau_alcoolico_vol_pct": 20.0,
+    "acidez_total_g_l": 4.35,
+    "so2_total_mg_l": 82.0,
+    "unidades_produzidas": 120000,
+    "fatura_associada": "INV-PT-2026-9901",
+    "mrn_exportacao_dau": "26PT000140EX009901"
+  },
+  {
+    "_id": "LOTE-PROD-PT-002",
+    "codigo_lote_industrial": "LOT-TAO-MAP-2026D",
+    "eori_produtor": "PT508112244",
+    "codigo_cifer_gacc": "CPRT18000101000505",
+    "tipo_processamento": "Abate Sanitário, Desmancha e Ultracongelação em Túnel (-40C)",
+    "selo_garantia_ivdp_intervalo": "MARCA-SALUBRIDADE-PT-07-041-CE",
+    "grau_alcoolico_vol_pct": 0.0,
+    "temperatura_nucleo_congelacao_c": -18.5,
+    "teste_pcr_psa_peste_suina": "NEGATIVO_100_PORCENTO",
+    "unidades_produzidas": 450000,
+    "fatura_associada": "INV-PT-2026-9905",
+    "mrn_exportacao_dau": "26PT000395EX009905"
+  },
+  {
+    "_id": "LOTE-PROD-PT-003",
+    "codigo_lote_industrial": "LOT-HQ-SOV-2026C",
+    "eori_produtor": "PT500112233",
+    "codigo_cifer_gacc": "CPRT18000401000303",
+    "tipo_processamento": "Extração a Frio e Engarrafamento de Azeite Virgem Extra",
+    "selo_garantia_ivdp_intervalo": "LOTE-SOV-BARREIRO-2026-04C",
+    "acidez_livre_oleico_pct": 0.19,
+    "indice_peroxidos_meq_kg": 6.8,
+    "unidades_produzidas": 180000,
+    "fatura_associada": "INV-PT-2026-9903",
+    "mrn_exportacao_dau": "26PT000395EX009903"
+  },
+  {
+    "_id": "LOTE-PROD-PT-004",
+    "codigo_lote_industrial": "LOT-SH-AMO-2026B",
+    "eori_produtor": "PT500077889",
+    "codigo_cifer_gacc": "CPRT18009901000202",
+    "tipo_processamento": "Brocação, Lavação sem Cloro e Triagem Individual NDTech Anti-TCA",
+    "selo_garantia_ivdp_intervalo": "SYSTECODE-PREMIUM-CELIEGE-2026",
+    "teor_tca_tricloroanisol_ng_l": 0.2,
+    "tratamento_superficie": "Parafina e Silicone Alimentar FDA/GB9685",
+    "unidades_produzidas": 15000000,
+    "fatura_associada": "INV-PT-2026-9902",
+    "mrn_exportacao_dau": "26PT000140EX009902"
+  }
+]

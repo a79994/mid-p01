@@ -1,0 +1,138 @@
+[
+  {
+    "_id": "DIST-PT-CAETANO-BYD",
+    "nif_distribuidor": "500234567",
+    "nome_comercial": "Rede de Concessionários BYD Portugal (Salvador Caetano)",
+    "polo_logistico": "Carregado / Vila Nova de Gaia",
+    "segmento": "Automóvel Elétrico (BEV)",
+    "compras_importadas_lotes": [
+      {
+        "mrn_dau": "26PT000395IM008802",
+        "codigo_taric_10": "8703801000",
+        "custo_unitario_landed_eur": 30899.1,
+        "preco_venda_grossista_eur": 35900.0,
+        "preco_venda_publico_iva_eur": 46990.0,
+        "margem_comercial_pct": 16.18
+      }
+    ]
+  },
+  {
+    "_id": "DIST-PT-WORTEN-XIAOMI",
+    "nif_distribuidor": "500246810",
+    "nome_comercial": "Lojas Worten & Worten.pt Marketplace",
+    "polo_logistico": "Entreposto da Azambuja",
+    "segmento": "Eletrónica de Consumo e Telecomunicações",
+    "compras_importadas_lotes": [
+      {
+        "mrn_dau": "26PT000230IM008805",
+        "codigo_taric_10": "8517130000",
+        "custo_unitario_landed_eur": 494.7,
+        "preco_venda_grossista_eur": 650.0,
+        "preco_venda_publico_iva_eur": 899.99,
+        "margem_comercial_pct": 31.39
+      }
+    ]
+  },
+  {
+    "_id": "DIST-PT-VARZIELA-GROSSISTA",
+    "nif_distribuidor": "504998877",
+    "nome_comercial": "Centro Grossista Chinarte Varziela",
+    "polo_logistico": "Zona Industrial da Varziela (Vila do Conde)",
+    "segmento": "Têxtil, Vestuário e Bazar Doméstico",
+    "compras_importadas_lotes": [
+      {
+        "mrn_dau": "26PT000210IM008807",
+        "codigo_taric_10": "6204623100",
+        "custo_unitario_landed_eur": 9.31,
+        "preco_venda_grossista_eur": 14.5,
+        "preco_venda_publico_iva_eur": 24.99,
+        "margem_comercial_pct": 55.74
+      }
+    ]
+  },
+  {
+    "_id": "DIST-PT-WORTEN-MIDEA",
+    "nif_distribuidor": "500246810",
+    "nome_comercial": "Worten Eletrodomésticos & Climatização",
+    "polo_logistico": "Entreposto da Azambuja",
+    "segmento": "Linha Branca e Ar Condicionado",
+    "compras_importadas_lotes": [
+      {
+        "mrn_dau": "26PT000395IM008810",
+        "codigo_taric_10": "8415109000",
+        "custo_unitario_landed_eur": 483.33,
+        "preco_venda_grossista_eur": 620.0,
+        "preco_venda_publico_iva_eur": 799.0,
+        "margem_comercial_pct": 28.27
+      }
+    ]
+  },
+  {
+    "_id": "DIST-PT-RADIO-POPULAR",
+    "nif_distribuidor": "501889922",
+    "nome_comercial": "Rádio Popular Eletrodomésticos, S.A.",
+    "polo_logistico": "Plataforma Logística da Maia",
+    "segmento": "Smart TVs e Eletrodomésticos",
+    "compras_importadas_lotes": [
+      {
+        "mrn_dau": "26PT000395IM008810",
+        "codigo_taric_10": "8528724000",
+        "custo_unitario_landed_eur": 290.0,
+        "preco_venda_grossista_eur": 380.0,
+        "preco_venda_publico_iva_eur": 499.0,
+        "margem_comercial_pct": 31.03
+      }
+    ]
+  },
+  {
+    "_id": "DIST-PT-CONTINENTE-SONAE",
+    "nif_distribuidor": "500273177",
+    "nome_comercial": "Hipermercados Continente / Sonae MC",
+    "polo_logistico": "Entreposto Central do Carregado",
+    "segmento": "Bazar Ligeiro, Brinquedos e Pequenos Aparelhos",
+    "compras_importadas_lotes": [
+      {
+        "mrn_dau": "26PT000210IM008812",
+        "codigo_taric_10": "6109100010",
+        "custo_unitario_landed_eur": 7.66,
+        "preco_venda_grossista_eur": 11.5,
+        "preco_venda_publico_iva_eur": 15.99,
+        "margem_comercial_pct": 50.13
+      }
+    ]
+  },
+  {
+    "_id": "DIST-PT-AUCHAN-PORTUGAL",
+    "nif_distribuidor": "500123999",
+    "nome_comercial": "Auchan Retail Portugal, S.A.",
+    "polo_logistico": "Plataforma Logística de Alverca",
+    "segmento": "Equipamentos Tecnológicos e Casa",
+    "compras_importadas_lotes": [
+      {
+        "mrn_dau": "26PT000230IM008809",
+        "codigo_taric_10": "8471300000",
+        "custo_unitario_landed_eur": 800.0,
+        "preco_venda_grossista_eur": 950.0,
+        "preco_venda_publico_iva_eur": 1199.0,
+        "margem_comercial_pct": 18.75
+      }
+    ]
+  },
+  {
+    "_id": "DIST-PT-EL-CORTE-INGLES",
+    "nif_distribuidor": "503998844",
+    "nome_comercial": "El Corte Inglés Grandes Armazéns, S.A.",
+    "polo_logistico": "Centro Logístico de Santa Iria de Azoia",
+    "segmento": "Moda, Eletrodomésticos e Tecnologia Premium",
+    "compras_importadas_lotes": [
+      {
+        "mrn_dau": "26PT000230IM008805",
+        "codigo_taric_10": "8517130000",
+        "custo_unitario_landed_eur": 494.7,
+        "preco_venda_grossista_eur": 680.0,
+        "preco_venda_publico_iva_eur": 949.0,
+        "margem_comercial_pct": 37.45
+      }
+    ]
+  }
+]

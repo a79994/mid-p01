@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ChineseSeaportsCatalog>
+  <PortComplex unlocode="CNSHA" customsDistrictCode="2200" provinceCodeGB="310000">
+    <PortName en="Shanghai Port" zh="上海港"/>
+    <AnnualThroughputMillionTEU>49.15</AnnualThroughputMillionTEU>
+    <DeepWaterTerminals>
+      <Terminal terminalId="SHA-YS-P4" operator="Shanghai International Port Group (SIPG)" maxDraftMeters="17.5" automatedAGVs="true">
+        <DirectLinerRoutesToPortugal>
+          <LinerService serviceCode="AEU1" alliance="Ocean Alliance (COSCO / CMA CGM / Evergreen / OOCL)" destinationPortPT="PTSIN" transitDaysSuez="25" transitDaysGoodHope="37"/>
+          <LinerService serviceCode="FAL3" alliance="Ocean Alliance" destinationPortPT="PTLEI" transitDaysSuez="27" transitDaysGoodHope="39"/>
+        </DirectLinerRoutesToPortugal>
+      </Terminal>
+      <Terminal terminalId="SHA-WGQ-P5" operator="SIPG Outer Gaoqiao Logistics" maxDraftMeters="15.0" automatedAGVs="false">
+        <DirectLinerRoutesToPortugal>
+          <LinerService serviceCode="FE2" alliance="THE Alliance / Premier" destinationPortPT="PTSIN" transitDaysSuez="28" transitDaysGoodHope="40"/>
+        </DirectLinerRoutesToPortugal>
+      </Terminal>
+    </DeepWaterTerminals>
+  </PortComplex>
+  <PortComplex unlocode="CNNGB" customsDistrictCode="3100" provinceCodeGB="330000">
+    <PortName en="Ningbo-Zhoushan Port" zh="宁波舟山港"/>
+    <AnnualThroughputMillionTEU>35.30</AnnualThroughputMillionTEU>
+    <DeepWaterTerminals>
+      <Terminal terminalId="NGB-MSH-01" operator="Ningbo Zhoushan Port Co., Ltd. (Meishan Phase 2)" maxDraftMeters="17.8" automatedAGVs="true">
+        <DirectLinerRoutesToPortugal>
+          <LinerService serviceCode="AEU3" alliance="Ocean Alliance" destinationPortPT="PTSIN" transitDaysSuez="26" transitDaysGoodHope="38"/>
+          <LinerService serviceCode="MD2" alliance="2M / Gemini Alliance" destinationPortPT="PTSIN" transitDaysSuez="27" transitDaysGoodHope="39"/>
+        </DirectLinerRoutesToPortugal>
+      </Terminal>
+      <Terminal terminalId="NGB-BL-P4" operator="Ningbo Beilun Container Terminal" maxDraftMeters="16.0" automatedAGVs="false">
+        <DirectLinerRoutesToPortugal>
+          <LinerService serviceCode="AEX1" alliance="Independent" destinationPortPT="PTSIN" transitDaysSuez="29" transitDaysGoodHope="41"/>
+        </DirectLinerRoutesToPortugal>
+      </Terminal>
+    </DeepWaterTerminals>
+  </PortComplex>
+  <PortComplex unlocode="CNSZX" customsDistrictCode="5300" provinceCodeGB="440000">
+    <PortName en="Shenzhen Port (Yantian &amp; Shekou)" zh="深圳港"/>
+    <AnnualThroughputMillionTEU>30.01</AnnualThroughputMillionTEU>
+    <DeepWaterTerminals>
+      <Terminal terminalId="SZX-YICT-P3" operator="Hutchison Ports Yantian" maxDraftMeters="17.6" automatedAGVs="true">
+        <DirectLinerRoutesToPortugal>
+          <LinerService serviceCode="AEU7" alliance="Ocean Alliance" destinationPortPT="PTSIN" transitDaysSuez="23" transitDaysGoodHope="35"/>
+          <LinerService serviceCode="BYD-RORO" alliance="BYD Shipping Special Charter" destinationPortPT="PTSIN" transitDaysSuez="24" transitDaysGoodHope="36"/>
+        </DirectLinerRoutesToPortugal>
+      </Terminal>
+      <Terminal terminalId="SZX-SCT-01" operator="China Merchants Port Group (Shekou)" maxDraftMeters="15.5" automatedAGVs="true">
+        <DirectLinerRoutesToPortugal>
+          <LinerService serviceCode="Lion-SZX" alliance="MSC Independent Service" destinationPortPT="PTSIN" transitDaysSuez="24" transitDaysGoodHope="36"/>
+        </DirectLinerRoutesToPortugal>
+      </Terminal>
+    </DeepWaterTerminals>
+  </PortComplex>
+  <PortComplex unlocode="CNQDG" customsDistrictCode="4200" provinceCodeGB="370000">
+    <PortName en="Qingdao Port" zh="青岛港"/>
+    <AnnualThroughputMillionTEU>28.70</AnnualThroughputMillionTEU>
+    <DeepWaterTerminals>
+      <Terminal terminalId="QDG-QW-AUTO" operator="Shandong Port Group Qingdao Automation Terminal" maxDraftMeters="18.0" automatedAGVs="true">
+        <DirectLinerRoutesToPortugal>
+          <LinerService serviceCode="AEU5" alliance="Ocean Alliance" destinationPortPT="PTSIN" transitDaysSuez="28" transitDaysGoodHope="40"/>
+        </DirectLinerRoutesToPortugal>
+      </Terminal>
+    </DeepWaterTerminals>
+  </PortComplex>
+  <PortComplex unlocode="CNTXG" customsDistrictCode="0200" provinceCodeGB="120000">
+    <PortName en="Tianjin Port" zh="天津港"/>
+    <AnnualThroughputMillionTEU>22.18</AnnualThroughputMillionTEU>
+    <DeepWaterTerminals>
+      <Terminal terminalId="TXG-SEC-C" operator="Tianjin Port Group Smart Zero-Carbon Terminal" maxDraftMeters="16.5" automatedAGVs="true">
+        <DirectLinerRoutesToPortugal>
+          <LinerService serviceCode="NEU4" alliance="Ocean Alliance" destinationPortPT="PTSIN" transitDaysSuez="30" transitDaysGoodHope="42"/>
+        </DirectLinerRoutesToPortugal>
+      </Terminal>
+    </DeepWaterTerminals>
+  </PortComplex>
+  <PortComplex unlocode="CNGZG" customsDistrictCode="5100" provinceCodeGB="440000">
+    <PortName en="Guangzhou Port (Nansha)" zh="广州港南沙"/>
+    <AnnualThroughputMillionTEU>25.40</AnnualThroughputMillionTEU>
+    <DeepWaterTerminals>
+      <Terminal terminalId="GZG-NS-P4" operator="Guangzhou Port Group Nansha Automated Port" maxDraftMeters="16.0" automatedAGVs="true">
+        <DirectLinerRoutesToPortugal>
+          <LinerService serviceCode="AEU2" alliance="Ocean Alliance" destinationPortPT="PTSIN" transitDaysSuez="24" transitDaysGoodHope="36"/>
+        </DirectLinerRoutesToPortugal>
+      </Terminal>
+    </DeepWaterTerminals>
+  </PortComplex>
+</ChineseSeaportsCatalog>

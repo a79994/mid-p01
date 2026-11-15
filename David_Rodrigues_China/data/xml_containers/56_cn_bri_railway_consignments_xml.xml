@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BRIRailwayConsignments>
+  <RailConsignmentCIMSMGS cimSmgsNoteNo="CIMSMGS-YW2026-07" trainBlockCode="X8020-YIWU-MAD-ENT" gaccEntryId18="292120260000108807" departureDate="2026-03-15">
+    <RouteCorridor originTerminalCN="Yiwu West Railway Port (CNYIW)" destinationTerminalPT="Terminal Ferroviário do Entroncamento (PTENT)" totalDistanceKm="13052" transitDays="21"/>
+    <BorderGaugeBreakStations>
+      <GaugeChange borderCrossing="Alashankou / Dostyk (China-Kazakhstan)" fromGaugeMm="1435" toGaugeMm="1520"/>
+      <GaugeChange borderCrossing="Brest / Malaszewicze (Belarus-Poland)" fromGaugeMm="1520" toGaugeMm="1435"/>
+      <GaugeChange borderCrossing="Irun / Hendaye (France-Spain Iberian Transshipment)" fromGaugeMm="1435" toGaugeMm="1668"/>
+    </BorderGaugeBreakStations>
+    <WagonContainers>
+      <RailContainer isoNumber="YIWU4007701" wagonUicNo="31844556012" shipperUscc="91330782098765432W" consigneeEoriPT="PT500345678" hsCode6="610910" grossWeightKg="24800.00"/>
+      <RailContainer isoNumber="YIWU4007702" wagonUicNo="31844556013" shipperUscc="91330782098765432W" consigneeEoriPT="PT500345678" hsCode6="620462" grossWeightKg="23500.00"/>
+    </WagonContainers>
+  </RailConsignmentCIMSMGS>
+  <RailConsignmentCIMSMGS cimSmgsNoteNo="CIMSMGS-YW2026-12" trainBlockCode="X8020-YIWU-MAD-LIS" gaccEntryId18="292120260000108812" departureDate="2026-04-05">
+    <RouteCorridor originTerminalCN="Yiwu West Railway Port (CNYIW)" destinationTerminalPT="Terminal Intermodal da Bobadela (PTLIS)" totalDistanceKm="13120" transitDays="21"/>
+    <BorderGaugeBreakStations>
+      <GaugeChange borderCrossing="Alashankou / Dostyk" fromGaugeMm="1435" toGaugeMm="1520"/>
+      <GaugeChange borderCrossing="Brest / Malaszewicze" fromGaugeMm="1520" toGaugeMm="1435"/>
+      <GaugeChange borderCrossing="Irun / Hendaye" fromGaugeMm="1435" toGaugeMm="1668"/>
+    </BorderGaugeBreakStations>
+    <WagonContainers>
+      <RailContainer isoNumber="YIWU4012201" wagonUicNo="31844556088" shipperUscc="91330782098765432W" consigneeEoriPT="PT500987654" hsCode6="950300" grossWeightKg="19500.00"/>
+      <RailContainer isoNumber="YIWU4012202" wagonUicNo="31844556089" shipperUscc="91330782098765432W" consigneeEoriPT="PT500987654" hsCode6="850440" grossWeightKg="22100.00"/>
+    </WagonContainers>
+  </RailConsignmentCIMSMGS>
+  <RailConsignmentCIMSMGS cimSmgsNoteNo="CIMSMGS-XA2026-03" trainBlockCode="X9011-XI'AN-DUIS-LIS" gaccEntryId18="220120260000108803" departureDate="2026-03-20">
+    <RouteCorridor originTerminalCN="Xi'an International Trade Logistics Park (CNXIY)" destinationTerminalPT="Terminal de Leixões Medway (PTLEI)" totalDistanceKm="12800" transitDays="19"/>
+    <BorderGaugeBreakStations>
+      <GaugeChange borderCrossing="Khorgos / Altynkol (China-Kazakhstan)" fromGaugeMm="1435" toGaugeMm="1520"/>
+      <GaugeChange borderCrossing="Brest / Malaszewicze" fromGaugeMm="1520" toGaugeMm="1435"/>
+      <GaugeChange borderCrossing="Irun / Hendaye" fromGaugeMm="1435" toGaugeMm="1668"/>
+    </BorderGaugeBreakStations>
+    <WagonContainers>
+      <RailContainer isoNumber="XACU4003301" wagonUicNo="31844557100" shipperUscc="91610132724912345X" consigneeEoriPT="PT502345678" hsCode6="854143" grossWeightKg="26200.00"/>
+    </WagonContainers>
+  </RailConsignmentCIMSMGS>
+  <RailConsignmentCIMSMGS cimSmgsNoteNo="CIMSMGS-CD2026-04" trainBlockCode="X8002-CD-POZ-LIS" gaccEntryId18="510120260000108810" departureDate="2026-04-02">
+    <RouteCorridor originTerminalCN="Chengdu Qingbaijiang Railway Container Center" destinationTerminalPT="Terminal da Bobadela (PTLIS)" totalDistanceKm="12650" transitDays="18"/>
+    <BorderGaugeBreakStations>
+      <GaugeChange borderCrossing="Alashankou / Dostyk" fromGaugeMm="1435" toGaugeMm="1520"/>
+      <GaugeChange borderCrossing="Brest / Malaszewicze" fromGaugeMm="1520" toGaugeMm="1435"/>
+      <GaugeChange borderCrossing="Irun / Hendaye" fromGaugeMm="1435" toGaugeMm="1668"/>
+    </BorderGaugeBreakStations>
+    <WagonContainers>
+      <RailContainer isoNumber="CDGU4004401" wagonUicNo="31844558200" shipperUscc="91440606190342599T" consigneeEoriPT="PT500123456" hsCode6="841510" grossWeightKg="21400.00"/>
+    </WagonContainers>
+  </RailConsignmentCIMSMGS>
+  <RailConsignmentCIMSMGS cimSmgsNoteNo="CIMSMGS-ZZ2026-05" trainBlockCode="X8001-ZZ-HAM-ENT" gaccEntryId18="010120260000108811" departureDate="2026-04-12">
+    <RouteCorridor originTerminalCN="Zhengzhou Putian Railway Container Terminal" destinationTerminalPT="Terminal do Entroncamento (PTENT)" totalDistanceKm="12900" transitDays="20"/>
+    <BorderGaugeBreakStations>
+      <GaugeChange borderCrossing="Erlianhot / Zamiin-Uud (China-Mongolia)" fromGaugeMm="1435" toGaugeMm="1520"/>
+      <GaugeChange borderCrossing="Brest / Malaszewicze" fromGaugeMm="1520" toGaugeMm="1435"/>
+      <GaugeChange borderCrossing="Irun / Hendaye" fromGaugeMm="1435" toGaugeMm="1668"/>
+    </BorderGaugeBreakStations>
+    <WagonContainers>
+      <RailContainer isoNumber="ZZCU4005501" wagonUicNo="31844559300" shipperUscc="911100007178071858" consigneeEoriPT="PT503456789" hsCode6="860719" grossWeightKg="28000.00"/>
+    </WagonContainers>
+  </RailConsignmentCIMSMGS>
+</BRIRailwayConsignments>

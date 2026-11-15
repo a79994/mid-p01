@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "EMCS-PT-2026-001",
+    "codigo_arc_emcs": "26PT000140EMCS0009901",
+    "tipo_documento_iec": "e-DA (Documento Administrativo Eletrónico em Suspensão de IABA)",
+    "estatuto_fiscal_expedidor": "Depositário Autorizado IEC n.º PT001409981",
+    "entreposto_fiscal_origem": "Caves Graham's & Symington - Vila Nova de Gaia",
+    "eori_exportador": "PT500265432",
+    "estancia_aduaneira_saida_ue": "PT000140 (Alfândega de Leixões)",
+    "mrn_exportacao_dau": "26PT000140EX009901",
+    "volume_hectolitros": 900.0,
+    "imposto_iaba_suspenso_eur": 0.0,
+    "taxa_promocao_ivdp_paga_eur": 5400.0,
+    "notificacao_saida_ie818": "SAIDA_CONFIRMADA_APURAMENTO_IEC_CONCLUIDO"
+  },
+  {
+    "_id": "EMCS-PT-2026-002",
+    "codigo_arc_emcs": "26PT000140EMCS0009906",
+    "tipo_documento_iec": "e-DA (Documento Administrativo Eletrónico em Suspensão de IABA)",
+    "estatuto_fiscal_expedidor": "Depositário Autorizado IEC n.º PT001402210",
+    "entreposto_fiscal_origem": "Sogrape Vinhos - Avintes (Vila Nova de Gaia)",
+    "eori_exportador": "PT500214890",
+    "estancia_aduaneira_saida_ue": "PT000140 (Alfândega de Leixões)",
+    "mrn_exportacao_dau": "26PT000140EX009906",
+    "volume_hectolitros": 712.5,
+    "imposto_iaba_suspenso_eur": 0.0,
+    "taxa_promocao_ivdp_paga_eur": 4275.0,
+    "notificacao_saida_ie818": "SAIDA_CONFIRMADA_APURAMENTO_IEC_CONCLUIDO"
+  }
+]

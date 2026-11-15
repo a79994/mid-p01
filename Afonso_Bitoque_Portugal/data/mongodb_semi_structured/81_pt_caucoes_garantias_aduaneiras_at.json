@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "CAUCAO-AT-2026-001",
+    "numero_garantia_aduaneira_grn": "26PT000395GRN0001122",
+    "titular_eori": "PT517890123",
+    "tipo_garantia_cau": "Garantia Global com Redução para 30% do Montante de Referência (Estatuto AEOC Art. 95.º CAU)",
+    "entidade_fiadora": "Millennium bcp / Fidelidade Seguros (Seguro-Caução)",
+    "montante_referencia_anual_eur": 15000000.0,
+    "caucao_efetiva_prestada_eur": 4500000.0,
+    "opcao_autoliquidacao_iva_art27_civa": true,
+    "iva_diferido_sem_desembolso_imediato_eur": 1484142.84,
+    "estado_conta_corrente_stada": "ATIVA_SALDO_DISPONIVEL"
+  },
+  {
+    "_id": "CAUCAO-AT-2026-002",
+    "numero_garantia_aduaneira_grn": "26PT000140GRN0003344",
+    "titular_eori": "PT500234567",
+    "tipo_garantia_cau": "Garantia Global para Desalfandegamento e Pagamento Diferido (30 Dias Art. 110.º CAU)",
+    "entidade_fiadora": "Banco BPI, S.A.",
+    "montante_referencia_anual_eur": 25000000.0,
+    "caucao_efetiva_prestada_eur": 12500000.0,
+    "opcao_autoliquidacao_iva_art27_civa": true,
+    "iva_diferido_sem_desembolso_imediato_eur": 2842717.2,
+    "estado_conta_corrente_stada": "ATIVA_SALDO_DISPONIVEL"
+  },
+  {
+    "_id": "CAUCAO-AT-2026-003",
+    "numero_garantia_aduaneira_grn": "26PT000140GRN0005566",
+    "titular_eori": "PT500991122",
+    "tipo_garantia_cau": "Garantia Global de Representante Aduaneiro para Trânsito NCTS e Depósito Temporário",
+    "entidade_fiadora": "Caixa Geral de Depósitos, S.A.",
+    "montante_referencia_anual_eur": 10000000.0,
+    "caucao_efetiva_prestada_eur": 3000000.0,
+    "opcao_autoliquidacao_iva_art27_civa": false,
+    "iva_diferido_sem_desembolso_imediato_eur": 0.0,
+    "estado_conta_corrente_stada": "ATIVA_SALDO_DISPONIVEL"
+  }
+]

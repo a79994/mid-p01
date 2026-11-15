@@ -1,0 +1,627 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Afonso Bitoque - Portugal Semi-Structured MongoDB Schema Specification (39 Collections)",
+  "collections_count": 39,
+  "collections": {
+    "01_pt_operadores_economicos": {
+      "document_count": 25,
+      "sample_keys": [
+        "_id",
+        "nif",
+        "eori_code",
+        "denominacao_social",
+        "natureza_juridica",
+        "cae_principal",
+        "estatuto_oea",
+        "morada_sede",
+        "contas_bancarias_iban",
+        "parceiros_chineses_frequentes_uscc"
+      ]
+    },
+    "02_pt_infraestruturas_portuarias_terminais": {
+      "document_count": 8,
+      "sample_keys": [
+        "_id",
+        "un_locode",
+        "nome_infraestrutura",
+        "entidade_gestora",
+        "tipo_modal",
+        "terminais_operacionais",
+        "tarifario_portuario_eur"
+      ]
+    },
+    "03_pt_pauta_aduaneira_taric": {
+      "document_count": 20,
+      "sample_keys": [
+        "_id",
+        "codigo_taric_10",
+        "hs6_raiz_oma",
+        "descricao_pt",
+        "direitos_terceiros_paises_pct",
+        "direitos_antidumping_especificos",
+        "medidas_politica_comercial",
+        "taxa_iva_portugal_pct",
+        "unidade_suplementar",
+        "requisitos_certificacao_ue"
+      ]
+    },
+    "04_pt_declaracoes_aduaneiras_dau": {
+      "document_count": 20,
+      "sample_keys": [
+        "_id",
+        "mrn_codigo",
+        "tipo_declaracao",
+        "codigo_estancia_aduaneira",
+        "data_aceitacao_dau",
+        "eori_importador_exportador",
+        "referencia_bl_awb_cmr",
+        "pais_origem_ou_destino_iso",
+        "incoterm",
+        "moeda_fatura",
+        "valor_fatura_original",
+        "taxa_cambio_aduaneira_eur",
+        "valor_aduaneiro_total_cif_eur",
+        "canal_selecao_risco",
+        "adicoes_artigos"
+      ]
+    },
+    "05_pt_escalas_navios_manifestos_sines": {
+      "document_count": 8,
+      "sample_keys": [
+        "_id",
+        "numero_escala_jul",
+        "imo_navio",
+        "nome_navio",
+        "bandeira_estado",
+        "armador_operador_linha",
+        "porto_escala",
+        "tipo_navio",
+        "teu_capacidade_nominal",
+        "calado_chegada_metros",
+        "data_hora_estimada_eta",
+        "data_hora_efetiva_ata",
+        "data_hora_partida_atd",
+        "rota_servico_maritimo",
+        "portos_rotacao_anterior",
+        "contentores_manifestados_descarga",
+        "contentores_manifestados_carga"
+      ]
+    },
+    "06_pt_comboios_carga_iberia_europa": {
+      "document_count": 6,
+      "sample_keys": [
+        "_id",
+        "id_comboio_uic",
+        "operador_ferroviario",
+        "terminal_origem",
+        "terminal_destino",
+        "data_partida",
+        "data_chegada",
+        "bitola_transicao",
+        "vagoes_contentores"
+      ]
+    },
+    "07_pt_carga_aerea_aeroportos": {
+      "document_count": 6,
+      "sample_keys": [
+        "_id",
+        "awb_number",
+        "companhia_aerea",
+        "numero_voo",
+        "aeroporto_origem_iata",
+        "aeroporto_destino_iata",
+        "data_hora_aterragem",
+        "lotes_uld"
+      ]
+    },
+    "08_pt_entrepostos_aduaneiros_zonas_francas": {
+      "document_count": 6,
+      "sample_keys": [
+        "_id",
+        "codigo_entreposto_at",
+        "localizacao",
+        "titular_nif",
+        "capacidade_m2",
+        "inventario_suspensao_fiscal"
+      ]
+    },
+    "09_pt_transporte_rodoviario_nacional_efatura": {
+      "document_count": 8,
+      "sample_keys": [
+        "_id",
+        "codigo_at_doc_transporte",
+        "transportadora_nif",
+        "nome_transportadora",
+        "matricula_camiao",
+        "numero_contentor_iso",
+        "local_carga",
+        "local_descarga",
+        "data_inicio_transporte",
+        "kms_percorridos",
+        "custo_frete_nacional_eur",
+        "emissoes_co2_estimadas_kg"
+      ]
+    },
+    "10_pt_certificacoes_conformidade_ce_asae": {
+      "document_count": 6,
+      "sample_keys": [
+        "_id",
+        "processo_controlo_id",
+        "mrn_declaracao_dau",
+        "entidade_fiscalizadora",
+        "codigo_taric_10",
+        "fabricante_chines_uscc",
+        "organismo_notificado_ue",
+        "diretivas_ue_avaliadas",
+        "resultado_conformidade",
+        "testes_laboratoriais"
+      ]
+    },
+    "11_pt_exportadores_agroalimentar_registados_gacc": {
+      "document_count": 10,
+      "sample_keys": [
+        "_id",
+        "nif_produtor_pt",
+        "eori_produtor_pt",
+        "nome_quinta_adega_fabrica",
+        "regiao_demarcada_dop_igp",
+        "numero_registo_dgav",
+        "codigo_cifer_gacc_18digitos",
+        "categorias_produtos_autorizados",
+        "validade_habilitacao_china",
+        "lotes_exportados_china"
+      ]
+    },
+    "12_pt_pagamentos_internacionais_banca_sepa": {
+      "document_count": 14,
+      "sample_keys": [
+        "_id",
+        "referencia_swift_uetr",
+        "data_liquidacao",
+        "nif_ordenante_ou_beneficiario_pt",
+        "sentido_fluxo",
+        "banco_nacional_bic",
+        "banco_correspondente_china_bic",
+        "instrumento_pagamento",
+        "montante_original",
+        "moeda_original",
+        "montante_convertido_eur",
+        "comissoes_bancarias_eur",
+        "faturas_comerciais_associadas"
+      ]
+    },
+    "13_pt_investimento_chines_ide_portugal": {
+      "document_count": 8,
+      "sample_keys": [
+        "_id",
+        "codigo_projeto_aicep",
+        "empresa_portuguesa_participada_nif",
+        "nome_empresa_pt",
+        "setor_estrategico",
+        "investidor_chines_uscc",
+        "grupo_economico_chines",
+        "percentagem_capital_adquirido",
+        "valor_investimento_milhoes_eur",
+        "ano_operacao",
+        "impacto_emprego_postostrab"
+      ]
+    },
+    "14_pt_incentivos_aicep_portugal2030": {
+      "document_count": 6,
+      "sample_keys": [
+        "_id",
+        "codigo_candidatura_pt2030",
+        "nif_beneficiario",
+        "tipologia_apoio",
+        "mercado_alvo",
+        "investimento_elegivel_eur",
+        "incentivo_aprovado_eur",
+        "metas_exportacao_anual_eur"
+      ]
+    },
+    "15_pt_distribuicao_retalho_bazar_portugal": {
+      "document_count": 8,
+      "sample_keys": [
+        "_id",
+        "nif_distribuidor",
+        "nome_comercial",
+        "polo_logistico",
+        "segmento",
+        "compras_importadas_lotes"
+      ]
+    },
+    "16_pt_encomendas_ecommerce_consumidores_ioss": {
+      "document_count": 12,
+      "sample_keys": [
+        "_id",
+        "declaracao_h7_id",
+        "numero_ioss_intermediario",
+        "plataforma_marketplace",
+        "codigo_rastreio_postal_s10",
+        "valor_intrinseco_eur",
+        "iva_cobrado_checkout_eur",
+        "codigo_postal_destino_pt",
+        "distrito_destino",
+        "data_despacho_lisboa",
+        "estado_entrega_ctt"
+      ]
+    },
+    "17_pt_declaracoes_cbam_carbono_fronteira": {
+      "document_count": 5,
+      "sample_keys": [
+        "_id",
+        "declaracao_cbam_id",
+        "periodo_declaracao_trimestre",
+        "nif_declarante_autorizado_cbam",
+        "nome_declarante",
+        "instalacao_produtora_china_uscc",
+        "mrn_dau_associado",
+        "mercadorias_abrangidas"
+      ]
+    },
+    "18_pt_estatisticas_macro_ine_bportugal": {
+      "document_count": 10,
+      "sample_keys": [
+        "_id",
+        "ano",
+        "fonte_oficial",
+        "exportacoes_pt_para_cn_fob_milhoes_eur",
+        "importacoes_pt_de_cn_cif_milhoes_eur",
+        "saldo_balanca_comercial_milhoes_eur",
+        "taxa_cobertura_pct",
+        "posicao_china_fornecedor_pt",
+        "principais_exportacoes_pt",
+        "principais_importacoes_cn"
+      ]
+    },
+    "65_pt_rastreabilidade_origem_agro_florestal": {
+      "document_count": 4,
+      "sample_keys": [
+        "_id",
+        "registo_eudr_ue",
+        "eori_produtor",
+        "nif_produtor",
+        "empresa_titular",
+        "tipo_materia_prima",
+        "herdade_ou_exploracao",
+        "area_hectares",
+        "certificacao_florestal",
+        "poligono_geojson_centroide",
+        "data_extracao_cortica",
+        "conformidade_desflorestacao_eudr",
+        "fatura_exportacao_associada"
+      ]
+    },
+    "66_pt_lotes_producao_engarrafamento_abate": {
+      "document_count": 4,
+      "sample_keys": [
+        "_id",
+        "codigo_lote_industrial",
+        "eori_produtor",
+        "codigo_cifer_gacc",
+        "tipo_processamento",
+        "selo_garantia_ivdp_intervalo",
+        "grau_alcoolico_vol_pct",
+        "acidez_total_g_l",
+        "so2_total_mg_l",
+        "unidades_produzidas",
+        "fatura_associada",
+        "mrn_exportacao_dau"
+      ]
+    },
+    "67_pt_creditos_documentarios_garantias_bancarias": {
+      "document_count": 4,
+      "sample_keys": [
+        "_id",
+        "referencia_lc_swift",
+        "banco_nacional",
+        "swift_bic_nacional",
+        "banco_correspondente_china",
+        "ordenador_ou_beneficiario_pt_eori",
+        "contraparte_china_uscc",
+        "contrato_comercial",
+        "tipo_instrumento_ucp600",
+        "montante_coberto_eur",
+        "cobertura_forward_cambial",
+        "comissao_abertura_confirmacao_eur",
+        "estado_dossier"
+      ]
+    },
+    "68_pt_seguros_credito_exportacao_cosec": {
+      "document_count": 4,
+      "sample_keys": [
+        "_id",
+        "numero_apolice_cosec",
+        "seguradora_nacional",
+        "exportador_segurado_eori",
+        "comprador_devedor_china_uscc",
+        "fatura_coberta",
+        "limite_credito_aprovado_eur",
+        "percentagem_cobertura_risco_pct",
+        "premio_seguro_pago_eur",
+        "garantia_estado_portugues",
+        "classificacao_risco_comprador_cn",
+        "estado_sinistralidade"
+      ]
+    },
+    "69_pt_transitarios_despachantes_oficiais_cdo": {
+      "document_count": 4,
+      "sample_keys": [
+        "_id",
+        "cedula_profissional_cdo",
+        "eori_representante",
+        "nif_representante",
+        "nome_sociedade",
+        "alvara_transitario_imt",
+        "modalidade_representacao_cau",
+        "estancias_operacao",
+        "parceiro_nvocc_china_id",
+        "declaracoes_dau_submetidas"
+      ]
+    },
+    "70_pt_sobrestadias_contentores_demurrage_detention": {
+      "document_count": 4,
+      "sample_keys": [
+        "_id",
+        "fatura_sobrestadia_no",
+        "numero_contentor_iso",
+        "numero_bl_master",
+        "mrn_dau",
+        "terminal_portuario",
+        "dias_livres_contratados_free_time",
+        "dias_efetivos_permanencia",
+        "dias_sobrestadia_faturados",
+        "tarifa_diaria_demurrage_eur",
+        "tarifa_ligacao_eletrica_reefer_eur",
+        "total_liquidado_eur",
+        "motivo_retencao"
+      ]
+    },
+    "71_pt_emissoes_maritimas_eu_ets_mrv": {
+      "document_count": 3,
+      "sample_keys": [
+        "_id",
+        "registo_thetismrv_ue",
+        "imo_navio",
+        "nome_navio",
+        "numero_escala_jul",
+        "rota_oceano",
+        "distancia_milhas_nauticas",
+        "combustivel_consumido_ton",
+        "emissoes_totais_viagem_tco2",
+        "percentagem_abrangida_eu_ets_extra_ue_pct",
+        "licencas_eua_entregues_ton",
+        "custo_ets_imputado_contentores_pt_eur",
+        " sobretaxa_ets_por_teu_eur"
+      ]
+    },
+    "72_pt_declaracoes_sumarias_entrada_ics2_ens": {
+      "document_count": 4,
+      "sample_keys": [
+        "_id",
+        "mrn_ens_ics2",
+        "versao_ics2",
+        "submetido_24h_antes_embarque_cn",
+        "data_hora_submissao_utc",
+        "referencia_bl_ou_awb",
+        "eori_transportador",
+        "eori_recetor_portugal",
+        "codigo_hs6_declarado",
+        "primeira_estancia_entrada_ue",
+        "resultado_analise_risco_seguranca",
+        "alerta_dnl_do_not_load"
+      ]
+    },
+    "73_pt_janela_unica_logistica_jul_operacoes": {
+      "document_count": 3,
+      "sample_keys": [
+        "_id",
+        "id_dossier_jul",
+        "numero_escala_jul",
+        "numero_contentor_iso",
+        "mrn_dau_associado",
+        "autorizacoes_entidades",
+        "titulo_saida_gate_out_pin",
+        "modo_evacuacao_porto",
+        "timestamp_gate_out"
+      ]
+    },
+    "74_pt_transito_aduaneiro_ncts_t1_t2": {
+      "document_count": 3,
+      "sample_keys": [
+        "_id",
+        "mrn_transito_ncts",
+        "regime_transito",
+        "estancia_partida",
+        "estancia_destino",
+        "principal_responsavel_eori",
+        "numero_contentor_iso",
+        "selo_aduaneiro_at",
+        "montante_garantia_retida_eur",
+        "data_limite_apresentacao",
+        "mensagem_apuramento_ie045"
+      ]
+    },
+    "75_pt_deposito_temporario_armazens_adt": {
+      "document_count": 3,
+      "sample_keys": [
+        "_id",
+        "autorizacao_adt_at",
+        "declaracao_adt_id",
+        "operador_armazem",
+        "numero_contentor_iso",
+        "numero_bl",
+        "data_entrada_adt",
+        "prazo_maximo_legal_90_dias_cau",
+        "data_apuramento_por_dau",
+        "mrn_dau_apuramento",
+        "estado_adt"
+      ]
+    },
+    "76_pt_controlos_fronteiricos_traces_nt_ched": {
+      "document_count": 3,
+      "sample_keys": [
+        "_id",
+        "numero_ched_traces_nt",
+        "tipo_documento_ched",
+        "posto_controlo_fronteirico_pcf",
+        "autoridade_competente",
+        "mrn_dau_associado",
+        "numero_contentor_iso",
+        "certificado_origem_china",
+        "controlo_documental",
+        "controlo_identidade",
+        "controlo_fisico_amostragem",
+        "decisao_final_traces"
+      ]
+    },
+    "77_pt_impostos_especiais_consumo_emcs_iec": {
+      "document_count": 2,
+      "sample_keys": [
+        "_id",
+        "codigo_arc_emcs",
+        "tipo_documento_iec",
+        "estatuto_fiscal_expedidor",
+        "entreposto_fiscal_origem",
+        "eori_exportador",
+        "estancia_aduaneira_saida_ue",
+        "mrn_exportacao_dau",
+        "volume_hectolitros",
+        "imposto_iaba_suspenso_eur",
+        "taxa_promocao_ivdp_paga_eur",
+        "notificacao_saida_ie818"
+      ]
+    },
+    "78_pt_conformidade_quimica_ambiental_reach_rohs_scip": {
+      "document_count": 3,
+      "sample_keys": [
+        "_id",
+        "passaporte_bateria_ue_id",
+        "notificacao_scip_echa",
+        "registo_apa_produtor_reee_pilhas",
+        "eori_importador",
+        "fabricante_china_uscc",
+        "mrn_dau",
+        "regulamento_aplicavel",
+        "pegada_carbono_ciclo_vida_kgco2_kwh",
+        "conteudo_reciclado_declarado_pct",
+        "conformidade_rohs_metais_pesados",
+        "entidade_gestora_residuos_pt"
+      ]
+    },
+    "79_pt_medidas_defesa_comercial_antidumping_ue": {
+      "document_count": 3,
+      "sample_keys": [
+        "_id",
+        "regulamento_comissao_europeia",
+        "tipo_medida_defesa",
+        "codigo_taric_10",
+        "codigo_adicional_taric_empresa",
+        "fabricante_china_uscc",
+        "eori_importador_pt",
+        "mrn_dau_liquidado",
+        "valor_aduaneiro_cif_eur",
+        "taxa_direito_convencional_pct",
+        "taxa_adicional_antisubsidio_pct",
+        "montante_antisubsidio_cobrado_at_eur",
+        "taxa_residual_nao_cooperantes_pct"
+      ]
+    },
+    "80_pt_contingentes_pautais_suspensoes_autonomas": {
+      "document_count": 2,
+      "sample_keys": [
+        "_id",
+        "numero_ordem_contingente_ue",
+        "regulamento_conselho_ue",
+        "eori_beneficiario_pt",
+        "mrn_dau",
+        "codigo_taric_10",
+        "regime_destino_especial_end_use",
+        "taxa_normal_pauta_pct",
+        "taxa_reduzida_contingente_pct",
+        "quantidade_pedida_unidades",
+        "poupanca_direitos_aduaneiros_eur",
+        "estado_atribuicao_dg_taxud"
+      ]
+    },
+    "81_pt_caucoes_garantias_aduaneiras_at": {
+      "document_count": 3,
+      "sample_keys": [
+        "_id",
+        "numero_garantia_aduaneira_grn",
+        "titular_eori",
+        "tipo_garantia_cau",
+        "entidade_fiadora",
+        "montante_referencia_anual_eur",
+        "caucao_efetiva_prestada_eur",
+        "opcao_autoliquidacao_iva_art27_civa",
+        "iva_diferido_sem_desembolso_imediato_eur",
+        "estado_conta_corrente_stada"
+      ]
+    },
+    "82_pt_informacoes_pautais_vinculativas_ipv_bti": {
+      "document_count": 2,
+      "sample_keys": [
+        "_id",
+        "referencia_decisao_ebti",
+        "tipo_decisao_vinculativa",
+        "titular_eori",
+        "autoridade_emissora",
+        "codigo_taric_10_fixado",
+        "descricao_tecnica_mercadoria",
+        "regra_geral_interpretativa_aplicada",
+        "data_inicio_validade",
+        "data_fim_validade_3_anos",
+        "invocada_no_dau_mrn"
+      ]
+    },
+    "83_pt_controlo_pos_desembaraco_auditorias_at": {
+      "document_count": 2,
+      "sample_keys": [
+        "_id",
+        "ordem_servico_inspecao_at",
+        "unidade_inspetiva",
+        "fundamento_legal_cau",
+        "operador_auditado_eori",
+        "empresa_mae_china_uscc",
+        "mrn_dau_auditado",
+        "objeto_auditoria",
+        "conclusao_relatorio",
+        "liquidacao_adicional_direitos_eur"
+      ]
+    },
+    "84_pt_declaracoes_simplificadas_ecommerce_stada_h7": {
+      "document_count": 3,
+      "sample_keys": [
+        "_id",
+        "mrn_h7_stada",
+        "conjunto_dados_cau",
+        "declarante_expresso_eori",
+        "codigo_rastreio_postal_s10",
+        "master_awb_aereo",
+        "numero_ioss_validado_vies",
+        "codigo_hs6_declarado",
+        "valor_intrinseco_remessa_eur",
+        "isencao_direitos_art23_reg1186",
+        "iva_pago_no_checkout_ioss",
+        "canal_selecao_stada_h7"
+      ]
+    },
+    "85_pt_logistica_inversa_devolucoes_reembolsos_aduaneiros": {
+      "document_count": 2,
+      "sample_keys": [
+        "_id",
+        "pedido_reembolso_at_no",
+        "fundamento_cau",
+        "requerente_eori",
+        "fornecedor_china_uscc",
+        "mrn_importacao_original",
+        "mrn_reexportacao_devolucao",
+        "descricao_ocorrencia",
+        "direitos_aduaneiros_reembolsados_eur",
+        "processo_retorno_china_id",
+        "decisao_at"
+      ]
+    }
+  }
+}

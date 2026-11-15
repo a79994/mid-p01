@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TerminalOperatingSystemEvents>
+  <ContainerTOSEvent tosEventId="TOS-SHA-2026-001" terminalId="SHA-YS-P4" containerIso="COSU8001101" blNumber="COSU6288991101">
+    <GateInCODECO gateTimestampCST="2026-03-21T14:22:10+08:00" truckPlateCN="苏D-88219新能源" yardBlockSlot="Y4-BLK-A12-04-03"/>
+    <VesselLoadCOARRI loadTimestampCST="2026-03-23T21:15:44+08:00" stsCraneId="STS-YANGSHAN-408" stowageBayRowTier="BAY-034-ROW-06-TIER-82" vesselImo="9795610"/>
+  </ContainerTOSEvent>
+  <ContainerTOSEvent tosEventId="TOS-SZX-2026-002" terminalId="SZX-YT-T3" containerIso="BYDU9002201" blNumber="COSU6288991102">
+    <GateInCODECO gateTimestampCST="2026-03-26T09:10:05+08:00" truckPlateCN="粤B-99102D" yardBlockSlot="YT-RORO-Z2-18"/>
+    <VesselLoadCOARRI loadTimestampCST="2026-03-27T18:40:12+08:00" stsCraneId="RAMP-YANTIAN-R02" stowageBayRowTier="DECK-05-LANE-12-POS-04" vesselImo="9842105"/>
+  </ContainerTOSEvent>
+  <ContainerTOSEvent tosEventId="TOS-SHA-2026-003" terminalId="SHA-WGQ-T2" containerIso="COSU8003301" blNumber="COSU6288991103">
+    <GateInCODECO gateTimestampCST="2026-04-03T11:05:30+08:00" truckPlateCN="沪A-55321挂" yardBlockSlot="WGQ-B08-11-02"/>
+    <VesselLoadCOARRI loadTimestampCST="2026-04-04T23:50:00+08:00" stsCraneId="STS-WGQ-204" stowageBayRowTier="BAY-058-ROW-02-TIER-86" vesselImo="9795610"/>
+  </ContainerTOSEvent>
+  <ContainerTOSEvent tosEventId="TOS-NGB-2026-004" terminalId="NGB-MS-T2" containerIso="CATU8004401" blNumber="COSU6288991104">
+    <GateInCODECO gateTimestampCST="2026-04-11T08:30:00+08:00" truckPlateCN="浙B-77412挂" yardBlockSlot="MS-DG-HAZ-03-01"/>
+    <VesselLoadCOARRI loadTimestampCST="2026-04-12T19:20:33+08:00" stsCraneId="STS-MEISHAN-112" stowageBayRowTier="BAY-042-ROW-08-TIER-84" vesselImo="9839131"/>
+  </ContainerTOSEvent>
+  <ContainerTOSEvent tosEventId="TOS-NGB-2026-006" terminalId="NGB-BL-T3" containerIso="COSU8006601" blNumber="COSU6288991106">
+    <GateInCODECO gateTimestampCST="2026-04-19T15:45:19+08:00" truckPlateCN="浙B-33109挂" yardBlockSlot="BL-HEAVY-C02-09"/>
+    <VesselLoadCOARRI loadTimestampCST="2026-04-20T22:10:08+08:00" stsCraneId="STS-BEILUN-305" stowageBayRowTier="BAY-018-ROW-04-TIER-12" vesselImo="9839131"/>
+  </ContainerTOSEvent>
+</TerminalOperatingSystemEvents>

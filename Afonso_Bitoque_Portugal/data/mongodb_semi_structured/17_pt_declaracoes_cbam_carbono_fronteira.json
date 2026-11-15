@@ -1,0 +1,117 @@
+[
+  {
+    "_id": "CBAM-DECL-2026-Q1-MOTA",
+    "declaracao_cbam_id": "CBAM-2026-Q1-PT-0089",
+    "periodo_declaracao_trimestre": "2026-Q1",
+    "nif_declarante_autorizado_cbam": "500191827",
+    "nome_declarante": "Mota-Engil Engenharia e Construção, S.A.",
+    "instalacao_produtora_china_uscc": "91330200778899112T",
+    "mrn_dau_associado": "26PT000395IM008806",
+    "mercadorias_abrangidas": [
+      {
+        "codigo_taric_10": "7225409000",
+        "descricao": "Chapa de Aço Liga Estrutural S355J2",
+        "toneladas_importadas": 2000.0,
+        "emissoes_incorporadas_tco2e_por_ton": 1.98,
+        "emissoes_totais_tco2e": 3960.0,
+        "preco_carbono_pago_na_china_eur_por_ton": 10.85,
+        "preco_licenca_ets_ue_eur_por_ton": 74.5,
+        "custo_cbam_liquido_a_pagar_ue_eur": 252054.0
+      },
+      {
+        "codigo_taric_10": "7606129200",
+        "descricao": "Chapa de Liga de Alumínio 6061-T6",
+        "toneladas_importadas": 485.56,
+        "emissoes_incorporadas_tco2e_por_ton": 8.45,
+        "emissoes_totais_tco2e": 4102.98,
+        "preco_carbono_pago_na_china_eur_por_ton": 10.85,
+        "preco_licenca_ets_ue_eur_por_ton": 74.5,
+        "custo_cbam_liquido_a_pagar_ue_eur": 261154.68
+      }
+    ]
+  },
+  {
+    "_id": "CBAM-DECL-2026-Q1-EFACEC",
+    "declaracao_cbam_id": "CBAM-2026-Q1-PT-0090",
+    "periodo_declaracao_trimestre": "2026-Q1",
+    "nif_declarante_autorizado_cbam": "500099112",
+    "nome_declarante": "Efacec Power Solutions, SGPS, S.A.",
+    "instalacao_produtora_china_uscc": "91330200778899112T",
+    "mrn_dau_associado": "26PT000395IM008806",
+    "mercadorias_abrangidas": [
+      {
+        "codigo_taric_10": "7225409000",
+        "descricao": "Chapas Magnéticas de Aço Silício para Transformadores",
+        "toneladas_importadas": 850.0,
+        "emissoes_incorporadas_tco2e_por_ton": 2.15,
+        "emissoes_totais_tco2e": 1827.5,
+        "preco_carbono_pago_na_china_eur_por_ton": 10.85,
+        "preco_licenca_ets_ue_eur_por_ton": 74.5,
+        "custo_cbam_liquido_a_pagar_ue_eur": 116316.38
+      }
+    ]
+  },
+  {
+    "_id": "CBAM-DECL-2026-Q1-MARTIFER",
+    "declaracao_cbam_id": "CBAM-2026-Q1-PT-0091",
+    "periodo_declaracao_trimestre": "2026-Q1",
+    "nif_declarante_autorizado_cbam": "503112233",
+    "nome_declarante": "Martifer - Construções Metalomecânicas, S.A.",
+    "instalacao_produtora_china_uscc": "91330200778899112T",
+    "mrn_dau_associado": "26PT000395IM008806",
+    "mercadorias_abrangidas": [
+      {
+        "codigo_taric_10": "7225409000",
+        "descricao": "Perfis e Chapas Pesadas de Aço Estrutural",
+        "toneladas_importadas": 1200.0,
+        "emissoes_incorporadas_tco2e_por_ton": 2.05,
+        "emissoes_totais_tco2e": 2460.0,
+        "preco_carbono_pago_na_china_eur_por_ton": 10.85,
+        "preco_licenca_ets_ue_eur_por_ton": 74.5,
+        "custo_cbam_liquido_a_pagar_ue_eur": 156579.0
+      }
+    ]
+  },
+  {
+    "_id": "CBAM-DECL-2026-Q1-MEGASA",
+    "declaracao_cbam_id": "CBAM-2026-Q1-PT-0092",
+    "periodo_declaracao_trimestre": "2026-Q1",
+    "nif_declarante_autorizado_cbam": "500191827",
+    "nome_declarante": "Megasa Siderúrgica Nacional / Mota-Engil",
+    "instalacao_produtora_china_uscc": "91330200778899112T",
+    "mrn_dau_associado": "26PT000395IM008806",
+    "mercadorias_abrangidas": [
+      {
+        "codigo_taric_10": "7225409000",
+        "descricao": "Laminados Planos de Liga Sinterizada",
+        "toneladas_importadas": 600.0,
+        "emissoes_incorporadas_tco2e_por_ton": 1.85,
+        "emissoes_totais_tco2e": 1110.0,
+        "preco_carbono_pago_na_china_eur_por_ton": 10.85,
+        "preco_licenca_ets_ue_eur_por_ton": 74.5,
+        "custo_cbam_liquido_a_pagar_ue_eur": 70651.5
+      }
+    ]
+  },
+  {
+    "_id": "CBAM-DECL-2026-Q1-EDPR",
+    "declaracao_cbam_id": "CBAM-2026-Q1-PT-0093",
+    "periodo_declaracao_trimestre": "2026-Q1",
+    "nif_declarante_autorizado_cbam": "500697256",
+    "nome_declarante": "EDP Renováveis, S.A.",
+    "instalacao_produtora_china_uscc": "91330200778899112T",
+    "mrn_dau_associado": "26PT000395IM008806",
+    "mercadorias_abrangidas": [
+      {
+        "codigo_taric_10": "7606129200",
+        "descricao": "Estruturas de Suporte em Alumínio Extrudido para Parques Solares",
+        "toneladas_importadas": 350.0,
+        "emissoes_incorporadas_tco2e_por_ton": 7.9,
+        "emissoes_totais_tco2e": 2765.0,
+        "preco_carbono_pago_na_china_eur_por_ton": 10.85,
+        "preco_licenca_ets_ue_eur_por_ton": 74.5,
+        "custo_cbam_liquido_a_pagar_ue_eur": 175992.25
+      }
+    ]
+  }
+]

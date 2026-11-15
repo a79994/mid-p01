@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "TF-PT-BCP-2026-001",
+    "referencia_lc_swift": "LC-BCP-BOC-2026-0001",
+    "banco_nacional": "Millennium bcp (Banco Comercial Português, S.A.)",
+    "swift_bic_nacional": "BCOMPTPLXXX",
+    "banco_correspondente_china": "Bank of China Jiangsu Branch (BKCHCNBJ940)",
+    "ordenador_ou_beneficiario_pt_eori": "PT517890123",
+    "contraparte_china_uscc": "91320413MA1M9Y2C4B",
+    "contrato_comercial": "CN-PT-CTR-2026-001",
+    "tipo_instrumento_ucp600": "Carta de Crédito Documentário Irrevogável Confirmada à Vista (MT700)",
+    "montante_coberto_eur": 18500000.0,
+    "cobertura_forward_cambial": "Swap Cambial EUR/CNH Taxa Fixa 7.8200",
+    "comissao_abertura_confirmacao_eur": 27750.0,
+    "estado_dossier": "ATIVO_LIQUIDACAO_PARCIAL_HONRADA"
+  },
+  {
+    "_id": "TF-PT-CGD-2026-003",
+    "referencia_lc_swift": "LC-CGD-CCB-2026-0003",
+    "banco_nacional": "Caixa Geral de Depósitos, S.A. (CGD)",
+    "swift_bic_nacional": "CGDIPTPLXXX",
+    "banco_correspondente_china": "China Construction Bank Shaanxi (PCBCCNBJSAX)",
+    "ordenador_ou_beneficiario_pt_eori": "PT500697256",
+    "contraparte_china_uscc": "91610132724912345X",
+    "contrato_comercial": "CN-PT-CTR-2026-003",
+    "tipo_instrumento_ucp600": "Crédito Documentário de Importação Green Trade Finance (MT700)",
+    "montante_coberto_eur": 6725000.0,
+    "cobertura_forward_cambial": "Forward EUR/USD 1.0825",
+    "comissao_abertura_confirmacao_eur": 10087.5,
+    "estado_dossier": "LIQUIDADO_SEM_RESERVAS"
+  },
+  {
+    "_id": "TF-PT-BPI-2026-004",
+    "referencia_lc_swift": "LC-BPI-BOC-2026-0004",
+    "banco_nacional": "Banco BPI, S.A.",
+    "swift_bic_nacional": "BBPIPTPLXXX",
+    "banco_correspondente_china": "Bank of China Fujian Branch (BKCHCNBJ720)",
+    "ordenador_ou_beneficiario_pt_eori": "PT503412890",
+    "contraparte_china_uscc": "91350900587527783P",
+    "contrato_comercial": "CN-PT-CTR-2026-004",
+    "tipo_instrumento_ucp600": "Carta de Crédito Irrevogável + Garantia de Boa Execução 10% (MT760)",
+    "montante_coberto_eur": 10260000.0,
+    "cobertura_forward_cambial": "N/A - Faturação Direta em EUR",
+    "comissao_abertura_confirmacao_eur": 15390.0,
+    "estado_dossier": "DISCREPANCIA_MENOR_LEVANTADA_E_PAGO"
+  },
+  {
+    "_id": "TF-PT-HTB-2026-017",
+    "referencia_lc_swift": "LC-HTB-ICBC-2026-0017",
+    "banco_nacional": "Haitong Bank, S.A. (Sede Lisboa)",
+    "swift_bic_nacional": "ESSIPTPLXXX",
+    "banco_correspondente_china": "ICBC Beijing Municipal Branch (ICBKCNBJBJM)",
+    "ordenador_ou_beneficiario_pt_eori": "PT503412890",
+    "contraparte_china_uscc": "911100007178071858",
+    "contrato_comercial": "CN-PT-CTR-2026-017",
+    "tipo_instrumento_ucp600": "Crédito Documentário Estruturado Luso-Chinês (MT700)",
+    "montante_coberto_eur": 8500000.0,
+    "cobertura_forward_cambial": "Conta Corrente CIPS RMB Lisboa",
+    "comissao_abertura_confirmacao_eur": 12750.0,
+    "estado_dossier": "EM_CONFERENCIA_DOCUMENTAL"
+  }
+]

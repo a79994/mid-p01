@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductTechnicalDossiers>
+  <TechnicalDossier productSkuCn="SKU-CALB-L314-LFP" manufacturerUscc="91320413MA1M9Y2C4B" cccCertNo="2025010907881201">
+    <EngineeringSpecs nominalVoltageV="3.2" ratedPowerKw="1.0048" efficiencyPct="96.5" serviceLifeYears="15"/>
+    <BillOfMaterials>
+      <MaterialComponent componentName="Lithium Iron Phosphate (LiFePO4) Cathode Powder" originProvinceCN="Sichuan (SC)" massSharePct="42.0" criticalRawMaterial="YES - Lithium"/>
+      <MaterialComponent componentName="Synthetic Graphite Anode Matrix" originProvinceCN="Inner Mongolia (NM)" massSharePct="24.5" criticalRawMaterial="YES - Natural/Synthetic Graphite"/>
+      <MaterialComponent componentName="High-Purity Aluminum Battery Shell &amp; Foil" originProvinceCN="Henan (HA)" massSharePct="18.0" criticalRawMaterial="NO"/>
+      <MaterialComponent componentName="Electrolytic Copper Foil Current Collector" originProvinceCN="Jiangxi (JX)" massSharePct="8.5" criticalRawMaterial="NO"/>
+      <MaterialComponent componentName="Non-Aqueous Electrolyte (LiPF6 in EC/DMC)" originProvinceCN="Jiangsu (JS)" massSharePct="7.0" criticalRawMaterial="YES - Fluorine/Lithium"/>
+    </BillOfMaterials>
+  </TechnicalDossier>
+  <TechnicalDossier productSkuCn="SKU-BYD-BLADE-01" manufacturerUscc="91440300192317458F" cccCertNo="2024011112345678">
+    <EngineeringSpecs nominalVoltageV="570.0" ratedPowerKw="390.00" efficiencyPct="97.2" serviceLifeYears="12"/>
+    <BillOfMaterials>
+      <MaterialComponent componentName="Blade LFP Cell Pack Integration Matrix" originProvinceCN="Guangdong (GD)" massSharePct="48.0" criticalRawMaterial="YES - Lithium"/>
+      <MaterialComponent componentName="High-Strength Aluminum Tray &amp; Upper Cover" originProvinceCN="Hubei (HB)" massSharePct="26.0" criticalRawMaterial="NO"/>
+      <MaterialComponent componentName="Silicon Carbide (SiC) Power Inverter Modules" originProvinceCN="Shaanxi (SN)" massSharePct="14.0" criticalRawMaterial="YES - Silicon Carbide"/>
+      <MaterialComponent componentName="Structural Aerogel Thermal Barrier" originProvinceCN="Jiangsu (JS)" massSharePct="12.0" criticalRawMaterial="NO"/>
+    </BillOfMaterials>
+  </TechnicalDossier>
+  <TechnicalDossier productSkuCn="SKU-LONGI-HIMO7" manufacturerUscc="91610132724912345X" cccCertNo="2023010899112233">
+    <EngineeringSpecs nominalVoltageV="43.8" ratedPowerKw="0.6100" efficiencyPct="22.8" serviceLifeYears="30"/>
+    <BillOfMaterials>
+      <MaterialComponent componentName="HPBC N-Type Monocrystalline Silicon Wafers" originProvinceCN="Shaanxi (SN)" massSharePct="28.5" criticalRawMaterial="YES - Polysilicon"/>
+      <MaterialComponent componentName="Anti-Reflective Coated Solar Tempered Glass" originProvinceCN="Zhejiang (ZJ)" massSharePct="52.0" criticalRawMaterial="NO"/>
+      <MaterialComponent componentName="Anodized Aluminum Structural Frame" originProvinceCN="Henan (HA)" massSharePct="12.5" criticalRawMaterial="NO"/>
+      <MaterialComponent componentName="Silver Metallization Paste &amp; POE Encapsulant" originProvinceCN="Jiangsu (JS)" massSharePct="7.0" criticalRawMaterial="YES - Silver"/>
+    </BillOfMaterials>
+  </TechnicalDossier>
+  <TechnicalDossier productSkuCn="SKU-CATL-ENERONE" manufacturerUscc="91350900587527783P" cccCertNo="2025010955667788">
+    <EngineeringSpecs nominalVoltageV="896.0" ratedPowerKw="372.70" efficiencyPct="96.8" serviceLifeYears="20"/>
+    <BillOfMaterials>
+      <MaterialComponent componentName="LFP Long-Life Energy Storage Cells" originProvinceCN="Fujian (FJ)" massSharePct="54.0" criticalRawMaterial="YES - Lithium"/>
+      <MaterialComponent componentName="Liquid Cooling Aluminum Plates &amp; BMS Board" originProvinceCN="Fujian (FJ)" massSharePct="21.0" criticalRawMaterial="NO"/>
+      <MaterialComponent componentName="Galvanized High-Protection Steel Enclosure" originProvinceCN="Zhejiang (ZJ)" massSharePct="25.0" criticalRawMaterial="NO"/>
+    </BillOfMaterials>
+  </TechnicalDossier>
+  <TechnicalDossier productSkuCn="SKU-HUAWEI-5G-AAU" manufacturerUscc="91440300618837699Q" cccCertNo="2024011666778899">
+    <EngineeringSpecs nominalVoltageV="48.0" ratedPowerKw="1.4500" efficiencyPct="94.2" serviceLifeYears="10"/>
+    <BillOfMaterials>
+      <MaterialComponent componentName="Gallium Nitride (GaN) RF Power Amplifiers" originProvinceCN="Guangdong (GD)" massSharePct="16.5" criticalRawMaterial="YES - Gallium"/>
+      <MaterialComponent componentName="Die-Cast Magnesium-Aluminum Heat Dissipator" originProvinceCN="Guangdong (GD)" massSharePct="58.0" criticalRawMaterial="NO"/>
+      <MaterialComponent componentName="High-Frequency Multilayer PTFE Antenna Substrate" originProvinceCN="Jiangsu (JS)" massSharePct="25.5" criticalRawMaterial="NO"/>
+    </BillOfMaterials>
+  </TechnicalDossier>
+  <TechnicalDossier productSkuCn="SKU-STEEL-S355JR" manufacturerUscc="91330200778899112T" cccCertNo="2023010211223344">
+    <EngineeringSpecs nominalVoltageV="0.0" ratedPowerKw="0.0000" efficiencyPct="100.0" serviceLifeYears="50"/>
+    <BillOfMaterials>
+      <MaterialComponent componentName="Hot-Rolled Structural Alloy Steel Melt" originProvinceCN="Zhejiang (ZJ)" massSharePct="97.5" criticalRawMaterial="NO"/>
+      <MaterialComponent componentName="Manganese, Silicon and Niobium Micro-Alloys" originProvinceCN="Hebei (HE)" massSharePct="2.5" criticalRawMaterial="YES - Niobium/Manganese"/>
+    </BillOfMaterials>
+  </TechnicalDossier>
+</ProductTechnicalDossiers>

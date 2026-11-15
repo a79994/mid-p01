@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "JUL-OP-PT-2026-001",
+    "id_dossier_jul": "JUL-APS-2026-00412-01",
+    "numero_escala_jul": "PTSIN202600412",
+    "numero_contentor_iso": "COSU8001101",
+    "mrn_dau_associado": "26PT000395IM008801",
+    "autorizacoes_entidades": {
+      "autoridade_tributaria_at": "LIBERTADO_SAIDA_AUTORIZADA",
+      "capitania_porto_am": "CONFORME_SEGURANCA_MARITIMA",
+      "policia_maritima_ucf": "TRIPULACAO_E_CARGA_CONTROLADAS",
+      "sanidade_fronteiras_dgav": "ISENTO_CONTROLO_VETERINARIO"
+    },
+    "titulo_saida_gate_out_pin": "PIN-PSA-SIN-994812",
+    "modo_evacuacao_porto": "Comboio Bloco Ferroviário Medway para ZILS Sines",
+    "timestamp_gate_out": "30/04/2026 15:20"
+  },
+  {
+    "_id": "JUL-OP-PT-2026-002",
+    "id_dossier_jul": "JUL-APS-2026-00445-02",
+    "numero_escala_jul": "PTSIN202600445",
+    "numero_contentor_iso": "BYDU9002201",
+    "mrn_dau_associado": "26PT000395IM008802",
+    "autorizacoes_entidades": {
+      "autoridade_tributaria_at": "LIBERTADO_APOS_CAUCOES_C903",
+      "capitania_porto_am": "CONFORME_OPERACAO_RORO",
+      "policia_maritima_ucf": "CONFORME",
+      "sanidade_fronteiras_dgav": "ISENTO"
+    },
+    "titulo_saida_gate_out_pin": "PIN-PSA-SIN-995104",
+    "modo_evacuacao_porto": "Camiões Porta-Automóveis Rodoviários (e-Fatura)",
+    "timestamp_gate_out": "03/05/2026 09:45"
+  },
+  {
+    "_id": "JUL-OP-PT-2026-003",
+    "id_dossier_jul": "JUL-APDL-2026-00198-04",
+    "numero_escala_jul": "PTLEI202600198",
+    "numero_contentor_iso": "CATU8004401",
+    "mrn_dau_associado": "26PT000140IM008804",
+    "autorizacoes_entidades": {
+      "autoridade_tributaria_at": "LIBERTADO_POS_VISTORIA_CANAL_VERMELHO",
+      "capitania_porto_am": "VISTORIA_AVARIA_GROSSA_CONCLUIDA",
+      "policia_maritima_ucf": "CONFORME",
+      "sanidade_fronteiras_dgav": "ISENTO"
+    },
+    "titulo_saida_gate_out_pin": "PIN-TCL-LEI-772190",
+    "modo_evacuacao_porto": "Transporte Especial Pesado para Subestação REN Riba de Ave",
+    "timestamp_gate_out": "18/05/2026 11:10"
+  }
+]

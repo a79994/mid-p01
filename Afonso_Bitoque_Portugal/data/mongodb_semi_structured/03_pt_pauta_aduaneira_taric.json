@@ -1,0 +1,298 @@
+[
+  {
+    "_id": "TARIC-8507600090",
+    "codigo_taric_10": "8507600090",
+    "hs6_raiz_oma": "850760",
+    "descricao_pt": "Acumuladores elétricos de iões de lítio (módulos e packs de baterias para VE e armazenamento estacionário)",
+    "direitos_terceiros_paises_pct": 2.7,
+    "direitos_antidumping_especificos": "0.0% (Isento)",
+    "medidas_politica_comercial": "Vigilância de Baterias UE Regulamento 2023/1542; Passaporte Digital de Bateria",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (número de peças)",
+    "requisitos_certificacao_ue": [
+      "Certificado de Teste UN 38.3 (Segurança no Transporte)",
+      "Marcação CE e Diretiva EMC 2014/30/UE"
+    ]
+  },
+  {
+    "_id": "TARIC-8703801000",
+    "codigo_taric_10": "8703801000",
+    "hs6_raiz_oma": "870380",
+    "descricao_pt": "Automóveis de passageiros novos movidos unicamente por motor elétrico (BEV)",
+    "direitos_terceiros_paises_pct": 10.0,
+    "direitos_antidumping_especificos": "Direito de Compensação Definitivo Anti-Subsídios Regulamento de Execução (UE) 2024/2754: BYD (Código Adicional C903) = 17.0%; Outros colaborantes = 19.3%; Taxa residual = 35.3%",
+    "medidas_politica_comercial": "Homologação Europeia de Tipo WVTA (Diretiva Quadro 2018/858)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (unidades de veículos)",
+    "requisitos_certificacao_ue": [
+      "Certificado de Conformidade Europeu (CoC)",
+      "Regulamento de Segurança Geral GSR II (Regulamento UE 2019/2144)"
+    ]
+  },
+  {
+    "_id": "TARIC-8541430000",
+    "codigo_taric_10": "8541430000",
+    "hs6_raiz_oma": "854143",
+    "descricao_pt": "Células fotovoltaicas montadas em módulos ou constituídas em painéis (Painéis Solares Monocristalinos)",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0% (Medidas antidumping expiradas; monitorização de origem)",
+    "medidas_politica_comercial": "Regulamento Net Zero Industry Act (NZIA)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "kW (potência máxima)",
+    "requisitos_certificacao_ue": [
+      "Normas IEC 61215 e IEC 61730",
+      "Declaração de Conformidade CE Baixa Tensão LVD"
+    ]
+  },
+  {
+    "_id": "TARIC-8517130000",
+    "codigo_taric_10": "8517130000",
+    "hs6_raiz_oma": "851713",
+    "descricao_pt": "Telefones para redes celulares (Smartphones 5G) e para outras redes sem fios",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0% (Acordo ITA da OMC)",
+    "medidas_politica_comercial": "Diretiva de Equipamentos de Rádio (RED 2014/53/UE); Carregador Comum USB-C",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (unidades)",
+    "requisitos_certificacao_ue": [
+      "Marcação CE com número de Organismo Notificado",
+      "Restrição de Substâncias Perigosas (RoHS)"
+    ]
+  },
+  {
+    "_id": "TARIC-7225409000",
+    "codigo_taric_10": "7225409000",
+    "hs6_raiz_oma": "722540",
+    "descricao_pt": "Produtos laminados planos de outras ligas de aço, laminados a quente, não enrolados (Aço Estrutural)",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "Direito Antidumping Definitivo de 18.1% (Regulamento UE 2017/649) + Salvaguarda Siderúrgica",
+    "medidas_politica_comercial": "Mecanismo de Ajustamento de Carbono na Fronteira (CBAM - Regulamento UE 2023/956)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "kg (massa líquida)",
+    "requisitos_certificacao_ue": [
+      "Declaração Trimestral de Emissões Incorporadas CBAM",
+      "Certificado de Ensaio 3.1 EN 10204"
+    ]
+  },
+  {
+    "_id": "TARIC-7606129200",
+    "codigo_taric_10": "7606129200",
+    "hs6_raiz_oma": "760612",
+    "descricao_pt": "Chapas e tiras de ligas de alumínio de forma quadrada ou retangular, espessura > 0,2 mm",
+    "direitos_terceiros_paises_pct": 7.5,
+    "direitos_antidumping_especificos": "Direito Antidumping Definitivo de 14.3% (Regulamento UE 2021/1784)",
+    "medidas_politica_comercial": "Mecanismo de Ajustamento de Carbono na Fronteira (CBAM - Regulamento UE 2023/956)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "kg (massa líquida)",
+    "requisitos_certificacao_ue": [
+      "Declaração Trimestral de Emissões Incorporadas CBAM"
+    ]
+  },
+  {
+    "_id": "TARIC-6204623100",
+    "codigo_taric_10": "6204623100",
+    "hs6_raiz_oma": "620462",
+    "descricao_pt": "Calças, jardineiras e calções de algodão tipo denim (ganga) de uso feminino ou de menina",
+    "direitos_terceiros_paises_pct": 12.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Regulamento Europeu de Rotulagem Têxtil (UE n.º 1007/2011)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (peças)",
+    "requisitos_certificacao_ue": [
+      "Conformidade REACH Anexo XVII (Corantes azóicos e níquel)"
+    ]
+  },
+  {
+    "_id": "TARIC-2204218010",
+    "codigo_taric_10": "2204218010",
+    "hs6_raiz_oma": "220421",
+    "descricao_pt": "Vinhos do Porto e do Douro com Denominação de Origem Protegida (DOP), em recipientes <= 2 litros",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Exportação para a China sujeita a Registo CIFER GACC (Decreto 248/249) e Certificado DGAV/IVDP",
+    "taxa_iva_portugal_pct": 13.0,
+    "unidade_suplementar": "l (litros)",
+    "requisitos_certificacao_ue": [
+      "Certificado de Origem IVDP",
+      "Certificado Fitossanitário DGAV para a China"
+    ]
+  },
+  {
+    "_id": "TARIC-4504908000",
+    "codigo_taric_10": "4504908000",
+    "hs6_raiz_oma": "450490",
+    "descricao_pt": "Rolhas cilíndricas de cortiça aglomerada para garrafas de vinho tranquilo ou espumante",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Registo de Exportador GACC CIFER na China (CPRT18009901000202)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (unidades)",
+    "requisitos_certificacao_ue": [
+      "Certificado de Tratamento Físico e Químico ISPM-15",
+      "Certificado Sanitário Alimentar DGAV"
+    ]
+  },
+  {
+    "_id": "TARIC-1509200010",
+    "codigo_taric_10": "1509200010",
+    "hs6_raiz_oma": "150920",
+    "descricao_pt": "Azeite virgem extra obtido diretamente de azeitonas exclusivamente por processos mecânicos (Acidez <= 0.2%)",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Habilitação Sanitária GACC China (Registo CIFER n.º CPRT18000401000303)",
+    "taxa_iva_portugal_pct": 6.0,
+    "unidade_suplementar": "kg (massa líquida)",
+    "requisitos_certificacao_ue": [
+      "Certificado Oficial de Análise Laboratorial de Painel de Prova",
+      "Certificado Sanitário de Exportação DGAV"
+    ]
+  },
+  {
+    "_id": "TARIC-0203295500",
+    "codigo_taric_10": "0203295500",
+    "hs6_raiz_oma": "020329",
+    "descricao_pt": "Carnes de animais da espécie suína congeladas (entremeada e pá desossada de porco alentejano e bísaro)",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Protocolo Veterinário Bilateral Portugal-China (GACC Decreto 248) e Habilitação DGAV",
+    "taxa_iva_portugal_pct": 6.0,
+    "unidade_suplementar": "kg (massa líquida)",
+    "requisitos_certificacao_ue": [
+      "Certificado Veterinário Internacional DGAV",
+      "Registo CIFER Matadouro Acreditado"
+    ]
+  },
+  {
+    "_id": "TARIC-4703290000",
+    "codigo_taric_10": "4703290000",
+    "hs6_raiz_oma": "470329",
+    "descricao_pt": "Pasta química de madeira de eucalipto à soda ou ao sulfato, branqueada (BHKP Eucalyptus Kraft Pulp)",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Regulamento Europeu da Desflorestação (EUDR - Regulamento UE 2023/1115)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "ton (toneladas secas ao ar)",
+    "requisitos_certificacao_ue": [
+      "Declaração de Diligência Devida EUDR",
+      "Certificação de Cadeia de Custódia FSC / PEFC"
+    ]
+  },
+  {
+    "_id": "TARIC-8504408500",
+    "codigo_taric_10": "8504408500",
+    "hs6_raiz_oma": "850440",
+    "descricao_pt": "Inversores solares fotovoltaicos inteligentes e conversores estáticos de potência",
+    "direitos_terceiros_paises_pct": 3.3,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Diretiva de Baixa Tensão (LVD 2014/35/UE) e Compatibilidade Eletromagnética (EMC)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (unidades)",
+    "requisitos_certificacao_ue": [
+      "Marcação CE",
+      "Certificado de Conformidade de Rede Portaria 73/2020"
+    ]
+  },
+  {
+    "_id": "TARIC-8471300000",
+    "codigo_taric_10": "8471300000",
+    "hs6_raiz_oma": "847130",
+    "descricao_pt": "Máquinas automáticas para processamento de dados portáteis, de peso não superior a 10 kg (Laptops)",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0% (Acordo ITA)",
+    "medidas_politica_comercial": "Diretiva RoHS e Diretiva de Ecoeficiência ErP",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (unidades)",
+    "requisitos_certificacao_ue": [
+      "Marcação CE",
+      "Etiquetagem de Eficiência Energética Energy Star"
+    ]
+  },
+  {
+    "_id": "TARIC-8415109000",
+    "codigo_taric_10": "8415109000",
+    "hs6_raiz_oma": "841510",
+    "descricao_pt": "Aparelhos de ar condicionado de parede ou de janela, tipo split-system com comando inverter",
+    "direitos_terceiros_paises_pct": 2.5,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Regulamento Europeu de Gases Fluorados com Efeito de Estufa (Regulamento UE 2024/573)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (unidades)",
+    "requisitos_certificacao_ue": [
+      "Marcação CE",
+      "Registo no Portal F-Gas da Agência Portuguesa do Ambiente"
+    ]
+  },
+  {
+    "_id": "TARIC-8528724000",
+    "codigo_taric_10": "8528724000",
+    "hs6_raiz_oma": "852872",
+    "descricao_pt": "Aparelhos recetores de televisão Smart TV com ecrã plano LCD, OLED ou LED 4K/8K",
+    "direitos_terceiros_paises_pct": 14.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Diretiva RED 2014/53/UE e Etiqueta Energética Europeia EPREL",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (unidades)",
+    "requisitos_certificacao_ue": [
+      "Marcação CE",
+      "Registo na Base de Dados Europeia EPREL"
+    ]
+  },
+  {
+    "_id": "TARIC-6109100010",
+    "codigo_taric_10": "6109100010",
+    "hs6_raiz_oma": "610910",
+    "descricao_pt": "T-shirts e camisolas interiores de malha de algodão para homem ou rapaz",
+    "direitos_terceiros_paises_pct": 12.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Regulamento REACH e Rotulagem de Composição em Português",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (peças)",
+    "requisitos_certificacao_ue": [
+      "Ensaio de Corantes Azóicos e Metais Pesados"
+    ]
+  },
+  {
+    "_id": "TARIC-9503007000",
+    "codigo_taric_10": "9503007000",
+    "hs6_raiz_oma": "950300",
+    "descricao_pt": "Outros brinquedos e modelos reduzidos apresentados em conjuntos ou com motor elétrico",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Diretiva de Segurança dos Brinquedos (2009/48/CE)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (unidades)",
+    "requisitos_certificacao_ue": [
+      "Marcação CE",
+      "Certificado de Ensaio EN 71 e Ausência de Ftalatos"
+    ]
+  },
+  {
+    "_id": "TARIC-8479899790",
+    "codigo_taric_10": "8479899790",
+    "hs6_raiz_oma": "847989",
+    "descricao_pt": "Máquinas e aparelhos mecânicos com função própria (robôs industriais de montagem e linhas de produção)",
+    "direitos_terceiros_paises_pct": 1.7,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Diretiva de Máquinas 2006/42/CE (Regulamento UE 2023/1230)",
+    "taxa_iva_portugal_pct": 23.0,
+    "unidade_suplementar": "p/st (unidades)",
+    "requisitos_certificacao_ue": [
+      "Declaração CE de Conformidade de Máquinas"
+    ]
+  },
+  {
+    "_id": "TARIC-2204217910",
+    "codigo_taric_10": "2204217910",
+    "hs6_raiz_oma": "220421",
+    "descricao_pt": "Vinhos tintos de qualidade produzidos em regiões determinadas (DOP Douro e DOC Alentejo)",
+    "direitos_terceiros_paises_pct": 0.0,
+    "direitos_antidumping_especificos": "0.0%",
+    "medidas_politica_comercial": "Exportação para a China habilitada no sistema GACC CIFER",
+    "taxa_iva_portugal_pct": 13.0,
+    "unidade_suplementar": "l (litros)",
+    "requisitos_certificacao_ue": [
+      "Certificado de Denominação de Origem",
+      "Certificado Fitossanitário DGAV"
+    ]
+  }
+]

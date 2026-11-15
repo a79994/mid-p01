@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HouseBillsOfLadingConsolidation>
+  <HouseBillOfLading hblNumber="HBL-SINOTRANS-SH2601" linkedMasterBlNo="COSU6288991101" containerIso="COSU8001101" serviceMode="CY/CY FCL-Multiple-HBL">
+    <NVOCCConsolidator nvoccId="BRK-CN-SINOTRANS-01" nvoccName="Sinotrans Limited Shanghai Branch" ptReceivingAgentEori="PT500991122"/>
+    <LCLCargoDetails shipperUscc="91320413MA1M9Y2C4B" consigneeEoriPT="PT517890123" packagesCount="5000" grossWeightKg="460000.00" volumeCbm="340.00" freightCollectEUR="0.00"/>
+  </HouseBillOfLading>
+  <HouseBillOfLading hblNumber="HBL-SINOTRANS-SH2602" linkedMasterBlNo="COSU6288991101" containerIso="COSU8001102" serviceMode="CY/CY FCL-Multiple-HBL">
+    <NVOCCConsolidator nvoccId="BRK-CN-SINOTRANS-01" nvoccName="Sinotrans Limited Shanghai Branch" ptReceivingAgentEori="PT500991122"/>
+    <LCLCargoDetails shipperUscc="91320413MA1M9Y2C4B" consigneeEoriPT="PT517890123" packagesCount="5000" grossWeightKg="460000.00" volumeCbm="340.00" freightCollectEUR="0.00"/>
+  </HouseBillOfLading>
+  <HouseBillOfLading hblNumber="HBL-KN-SZ2603" linkedMasterBlNo="COSU6288991108" containerIso="HWU8008801" serviceMode="CFS/CFS LCL Consolidation">
+    <NVOCCConsolidator nvoccId="BRK-CN-KUEHNE-SZ-03" nvoccName="Kuehne + Nagel Shenzhen NVOCC" ptReceivingAgentEori="PT501223344"/>
+    <LCLCargoDetails shipperUscc="91440300618837699Q" consigneeEoriPT="PT500697256" packagesCount="800" grossWeightKg="78000.00" volumeCbm="192.00" freightCollectEUR="14500.00"/>
+  </HouseBillOfLading>
+  <HouseBillOfLading hblNumber="HBL-TIMEX-YW2604" linkedMasterBlNo="CIMSMGS-YW2026-07" containerIso="CRXU9988771" serviceMode="RAIL-LCL Yiwu-Entroncamento">
+    <NVOCCConsolidator nvoccId="BRK-CN-YIWU-RAIL-05" nvoccName="Yiwu Timex BRI Rail NVOCC" ptReceivingAgentEori="PT504998877"/>
+    <LCLCargoDetails shipperUscc="91330782098765432W" consigneeEoriPT="PT504998877" packagesCount="2500" grossWeightKg="124000.00" volumeCbm="450.00" freightCollectEUR="18200.00"/>
+  </HouseBillOfLading>
+  <HouseBillOfLading hblNumber="HBL-COSCO-NB2605" linkedMasterBlNo="COSU6288991104" containerIso="CATU8004401" serviceMode="CY/DOOR Project Cargo">
+    <NVOCCConsolidator nvoccId="BRK-CN-COSCO-LOG-02" nvoccName="COSCO SHIPPING Logistics Ningbo" ptReceivingAgentEori="PT503412890"/>
+    <LCLCargoDetails shipperUscc="91350900587527783P" consigneeEoriPT="PT503412890" packagesCount="100" grossWeightKg="355000.00" volumeCbm="540.00" freightCollectEUR="0.00"/>
+  </HouseBillOfLading>
+</HouseBillsOfLadingConsolidation>

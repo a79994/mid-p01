@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AirCargoManifestsIATA>
+  <AirWaybillManifest masterAwb="047-88991105" gaccEntryId18="010120260000108805" shipperUscc="91110108551385082Q" consigneeEoriPT="PT500123456">
+    <FlightRouting airlineName="Beijing Capital Airlines (BCA)" flightNumber="JD431" originAirportIATA="HGH" destinationAirportIATA="LIS" departureUTC="2026-04-10T02:30:00Z"/>
+    <ULDCargoLots>
+      <ULD uldCode="PMC44111CA" chargeableWeightKg="2450.00" natureOfGoods="Xiaomi 15 Pro 5G Mobile Phones &amp; Accessories" temperatureControlC="+15C to +25C"/>
+      <ULD uldCode="PMC44112CA" chargeableWeightKg="2350.00" natureOfGoods="Xiaomi Pad 6S Tablets &amp; Smartwatches" temperatureControlC="+15C to +25C"/>
+    </ULDCargoLots>
+  </AirWaybillManifest>
+  <AirWaybillManifest masterAwb="047-88991109" gaccEntryId18="010120260000108809" shipperUscc="91110108551385082Q" consigneeEoriPT="PT500123456">
+    <FlightRouting airlineName="Air China Cargo" flightNumber="CA1091" originAirportIATA="PEK" destinationAirportIATA="LIS" departureUTC="2026-04-18T05:00:00Z"/>
+    <ULDCargoLots>
+      <ULD uldCode="PAG55201CA" chargeableWeightKg="3100.00" natureOfGoods="Consumer Electronics &amp; High-End Laptops" temperatureControlC="+18C to +22C"/>
+      <ULD uldCode="PAG55202CA" chargeableWeightKg="2900.00" natureOfGoods="IoT Smart Home Hubs and Security Sensors" temperatureControlC="+18C to +22C"/>
+    </ULDCargoLots>
+  </AirWaybillManifest>
+  <AirWaybillManifest masterAwb="871-33221100" gaccEntryId18="530120260000108815" shipperUscc="91440300755673010C" consigneeEoriPT="PT500077568">
+    <FlightRouting airlineName="Cainiao Smart Logistics / Atlas Air Charter" flightNumber="5Y8911" originAirportIATA="SZX" destinationAirportIATA="LIS" departureUTC="2026-04-20T21:15:00Z"/>
+    <ULDCargoLots>
+      <ULD uldCode="AKH33011CN" chargeableWeightKg="4200.00" natureOfGoods="Cross-Border E-Commerce Consolidation Express (AliExpress)" temperatureControlC="Ambient"/>
+      <ULD uldCode="AKH33012CN" chargeableWeightKg="3950.00" natureOfGoods="Cross-Border E-Commerce Direct-Packs (Shein/Temu)" temperatureControlC="Ambient"/>
+    </ULDCargoLots>
+  </AirWaybillManifest>
+  <AirWaybillManifest masterAwb="047-99112201" gaccEntryId18="220120261000990001" shipperUscc="91110000101123456N" consigneeEoriPT="PT500265432">
+    <FlightRouting airlineName="TAP Cargo / Beijing Capital Airlines Alliance" flightNumber="JD432" originAirportIATA="LIS" destinationAirportIATA="HGH" departureUTC="2026-04-12T11:00:00Z"/>
+    <ULDCargoLots>
+      <ULD uldCode="PMC99101TP" chargeableWeightKg="1850.00" natureOfGoods="High-End Douro Vintage Wine &amp; Gourmet Olive Oil" temperatureControlC="+12C to +16C"/>
+    </ULDCargoLots>
+  </AirWaybillManifest>
+  <AirWaybillManifest masterAwb="047-99112204" gaccEntryId18="220120261000990004" shipperUscc="91310000132234561L" consigneeEoriPT="PT500234567">
+    <FlightRouting airlineName="Cargolux Airlines" flightNumber="CV7821" originAirportIATA="LIS" destinationAirportIATA="PVG" departureUTC="2026-04-22T14:40:00Z"/>
+    <ULDCargoLots>
+      <ULD uldCode="PAG99201CL" chargeableWeightKg="2100.00" natureOfGoods="Portuguese High-Precision Auto Components &amp; Sensors" temperatureControlC="+15C to +25C"/>
+    </ULDCargoLots>
+  </AirWaybillManifest>
+</AirCargoManifestsIATA>

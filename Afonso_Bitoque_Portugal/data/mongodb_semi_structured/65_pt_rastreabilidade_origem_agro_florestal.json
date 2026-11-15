@@ -1,0 +1,74 @@
+[
+  {
+    "_id": "EUDR-PT-2026-001",
+    "registo_eudr_ue": "EUDR-DDS-PT-2026-009811",
+    "eori_produtor": "PT500077889",
+    "nif_produtor": "500077889",
+    "empresa_titular": "Corticeira Amorim, SGPS, S.A.",
+    "tipo_materia_prima": "Cortiça Natural em Prancha (Quercus suber)",
+    "herdade_ou_exploracao": "Herdade da Baliza & Montado de Coruche (Santarém/Évora)",
+    "area_hectares": 3420.5,
+    "certificacao_florestal": "FSC 100% (FSC-C012345) & PEFC",
+    "poligono_geojson_centroide": {
+      "lat": 38.9581,
+      "lon": -8.5264
+    },
+    "data_extracao_cortica": "15/07/2025",
+    "conformidade_desflorestacao_eudr": "ISENTO_DESFLORESTACAO_VERIFICADO",
+    "fatura_exportacao_associada": "INV-PT-2026-9902"
+  },
+  {
+    "_id": "EUDR-PT-2026-002",
+    "registo_eudr_ue": "EUDR-DDS-PT-2026-009812",
+    "eori_produtor": "PT500055214",
+    "nif_produtor": "500055214",
+    "empresa_titular": "The Navigator Company, S.A.",
+    "tipo_materia_prima": "Madeira de Eucalipto (Eucalyptus globulus) para Pasta BEKP",
+    "herdade_ou_exploracao": "Unidades Florestais do Baixo Vouga e Figueira da Foz",
+    "area_hectares": 12850.0,
+    "certificacao_florestal": "FSC Forest Management & PEFC Portugal",
+    "poligono_geojson_centroide": {
+      "lat": 40.1502,
+      "lon": -8.8612
+    },
+    "data_extracao_cortica": "10/02/2026",
+    "conformidade_desflorestacao_eudr": "ISENTO_DESFLORESTACAO_VERIFICADO",
+    "fatura_exportacao_associada": "INV-PT-2026-9904"
+  },
+  {
+    "_id": "EUDR-PT-2026-003",
+    "registo_eudr_ue": "IVDP-PARCELA-DOURO-2026-041",
+    "eori_produtor": "PT500265432",
+    "nif_produtor": "500265432",
+    "empresa_titular": "Symington Family Estates - Vinhos, S.A.",
+    "tipo_materia_prima": "Uvas de Vinha Letra A (Touriga Nacional & Touriga Franca)",
+    "herdade_ou_exploracao": "Quinta dos Malvedos & Quinta do Bomfim (Pinhão / Alijó)",
+    "area_hectares": 412.8,
+    "certificacao_florestal": "Sustentabilidade Vinhos de Portugal / IVDP",
+    "poligono_geojson_centroide": {
+      "lat": 41.1904,
+      "lon": -7.5451
+    },
+    "data_extracao_cortica": "22/09/2025",
+    "conformidade_desflorestacao_eudr": "ORIGEM_DOP_DOURO_CERTIFICADA",
+    "fatura_exportacao_associada": "INV-PT-2026-9901"
+  },
+  {
+    "_id": "EUDR-PT-2026-004",
+    "registo_eudr_ue": "DGAV-EXPLORACAO-ALENTEJO-2026-08",
+    "eori_produtor": "PT508112244",
+    "nif_produtor": "508112244",
+    "empresa_titular": "Maporal - Matadouro de Porco Alentejano, S.A.",
+    "tipo_materia_prima": "Suínos de Raça Alentejana e Cruzados Criados em Montanheira",
+    "herdade_ou_exploracao": "Marca de Exploração DGAV PT-07-REG-441 (Reguengos de Monsaraz)",
+    "area_hectares": 1850.0,
+    "certificacao_florestal": "Biossegurança Nível A DGAV / Peste Suína Africana Free",
+    "poligono_geojson_centroide": {
+      "lat": 38.4251,
+      "lon": -7.5349
+    },
+    "data_extracao_cortica": "05/04/2026",
+    "conformidade_desflorestacao_eudr": "BIOSSEGURANCA_GACC_VALIDADA",
+    "fatura_exportacao_associada": "INV-PT-2026-9905"
+  }
+]

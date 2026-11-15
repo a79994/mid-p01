@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  UNIVERSIDADE DO ALGARVE - MSc in Informatics Engineering (2026/2027)
+  Course: Data Modelling and Integration (DMI) - Project P1
+  Student: David Rodrigues (Subtopic: China Logistics, Belt & Road & E-Commerce)
+  Source D2: Semi-Structured XML Database (BaseX XML / W3C XSD Schema)
+  Validates all 12 XML Containers (Tables 53 to 64)
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- 53. cn_seaports_terminals_xml -->
+    <xs:element name="ChineseSeaportsCatalog">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PortComplex" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PortName">
+                                <xs:complexType>
+                                    <xs:attribute name="en" type="xs:string" use="required"/>
+                                    <xs:attribute name="zh" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="AnnualThroughputMillionTEU" type="xs:decimal"/>
+                            <xs:element name="DeepWaterTerminals">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Terminal" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="DirectLinerRoutesToPortugal">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="LinerService" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="serviceCode" type="xs:string" use="required"/>
+                                                                        <xs:attribute name="alliance" type="xs:string" use="required"/>
+                                                                        <xs:attribute name="destinationPortPT" type="xs:string" use="required"/>
+                                                                        <xs:attribute name="transitDaysSuez" type="xs:integer" use="required"/>
+                                                                        <xs:attribute name="transitDaysGoodHope" type="xs:integer" use="required"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="terminalId" type="xs:string" use="required"/>
+                                                <xs:attribute name="operator" type="xs:string" use="required"/>
+                                                <xs:attribute name="maxDraftMeters" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="automatedAGVs" type="xs:boolean" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="unlocode" type="xs:string" use="required"/>
+                        <xs:attribute name="customsDistrictCode" type="xs:string" use="required"/>
+                        <xs:attribute name="provinceCodeGB" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 54. cn_maritime_vessels_voyages_xml -->
+    <xs:element name="MaritimeVoyagesRegistry">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MaritimeVoyage" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="VesselDetails">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="VesselName" type="xs:string"/>
+                                        <xs:element name="CarrierLine" type="xs:string"/>
+                                        <xs:element name="FlagState" type="xs:string"/>
+                                        <xs:element name="NominalCapacityTEU" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ItineraryRotation">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="PortCall" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="seq" type="xs:integer" use="required"/>
+                                                <xs:attribute name="unlocode" type="xs:string" use="required"/>
+                                                <xs:attribute name="timestampCSTorUTC" type="xs:string" use="required"/>
+                                                <xs:attribute name="operation" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="BunkerFuelAndEmissions">
+                                <xs:complexType>
+                                    <xs:attribute name="fuelType" type="xs:string" use="required"/>
+                                    <xs:attribute name="consumedMetricTons" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="voyageRoute" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="voyageId" type="xs:string" use="required"/>
+                        <xs:attribute name="vesselImo" type="xs:string" use="required"/>
+                        <xs:attribute name="serviceLoop" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 55. cn_master_bills_of_lading_xml -->
+    <xs:element name="ElectronicBillsOfLading">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="BillOfLading" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Parties">
+                                <xs:complexType>
+                                    <xs:attribute name="shipperUsccOrNif" type="xs:string" use="required"/>
+                                    <xs:attribute name="consigneeEoriOrUscc" type="xs:string" use="required"/>
+                                    <xs:attribute name="notifyPartyTaxId" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Routing">
+                                <xs:complexType>
+                                    <xs:attribute name="portOfLoading" type="xs:string" use="required"/>
+                                    <xs:attribute name="portOfDischarge" type="xs:string" use="required"/>
+                                    <xs:attribute name="placeOfDelivery" type="xs:string" use="required"/>
+                                    <xs:attribute name="vesselImo" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ContainerizedCargoList">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Container" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="HSCode6WCO" type="xs:string"/>
+                                                    <xs:element name="CargoDescription" type="xs:string"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="isoNumber" type="xs:string" use="required"/>
+                                                <xs:attribute name="sizeType" type="xs:string" use="required"/>
+                                                <xs:attribute name="customsSealNo" type="xs:string" use="required"/>
+                                                <xs:attribute name="packagesCount" type="xs:integer" use="required"/>
+                                                <xs:attribute name="grossWeightKg" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="volumeCbm" type="xs:decimal" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="FreightCharges">
+                                <xs:complexType>
+                                    <xs:attribute name="paymentTerms" type="xs:string" use="required"/>
+                                    <xs:attribute name="freightAmountUSD" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="insuranceAmountUSD" type="xs:decimal" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="blNumber" type="xs:string" use="required"/>
+                        <xs:attribute name="gaccDeclarationId18" type="xs:string" use="required"/>
+                        <xs:attribute name="invoiceNo" type="xs:string" use="required"/>
+                        <xs:attribute name="issueDate" type="xs:date" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 56. cn_bri_railway_consignments_xml -->
+    <xs:element name="BRIRailwayConsignments">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="RailConsignmentCIMSMGS" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="RouteCorridor">
+                                <xs:complexType>
+                                    <xs:attribute name="originTerminalCN" type="xs:string" use="required"/>
+                                    <xs:attribute name="destinationTerminalPT" type="xs:string" use="required"/>
+                                    <xs:attribute name="totalDistanceKm" type="xs:integer" use="required"/>
+                                    <xs:attribute name="transitDays" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="BorderGaugeBreakStations">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="GaugeChange" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="borderCrossing" type="xs:string" use="required"/>
+                                                <xs:attribute name="fromGaugeMm" type="xs:integer" use="required"/>
+                                                <xs:attribute name="toGaugeMm" type="xs:integer" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="WagonContainers">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="RailContainer" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="isoNumber" type="xs:string" use="required"/>
+                                                <xs:attribute name="wagonUicNo" type="xs:string" use="required"/>
+                                                <xs:attribute name="shipperUscc" type="xs:string" use="required"/>
+                                                <xs:attribute name="consigneeEoriPT" type="xs:string" use="required"/>
+                                                <xs:attribute name="hsCode6" type="xs:string" use="required"/>
+                                                <xs:attribute name="grossWeightKg" type="xs:decimal" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="cimSmgsNoteNo" type="xs:string" use="required"/>
+                        <xs:attribute name="trainBlockCode" type="xs:string" use="required"/>
+                        <xs:attribute name="gaccEntryId18" type="xs:string" use="required"/>
+                        <xs:attribute name="departureDate" type="xs:date" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 57. cn_air_cargo_manifests_xml -->
+    <xs:element name="AirCargoManifestsIATA">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="AirWaybillManifest" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="FlightRouting">
+                                <xs:complexType>
+                                    <xs:attribute name="airlineName" type="xs:string" use="required"/>
+                                    <xs:attribute name="flightNumber" type="xs:string" use="required"/>
+                                    <xs:attribute name="originAirportIATA" type="xs:string" use="required"/>
+                                    <xs:attribute name="destinationAirportIATA" type="xs:string" use="required"/>
+                                    <xs:attribute name="departureUTC" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ULDCargoLots">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ULD" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="uldCode" type="xs:string" use="required"/>
+                                                <xs:attribute name="chargeableWeightKg" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="natureOfGoods" type="xs:string" use="required"/>
+                                                <xs:attribute name="temperatureControlC" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="masterAwb" type="xs:string" use="required"/>
+                        <xs:attribute name="gaccEntryId18" type="xs:string" use="required"/>
+                        <xs:attribute name="shipperUscc" type="xs:string" use="required"/>
+                        <xs:attribute name="consigneeEoriPT" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 58. cn_cross_border_ecommerce_parcels_xml -->
+    <xs:element name="CrossBorderECommerceDispatch">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ParcelBatch" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Parcel" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="s10TrackingNo" type="xs:string" use="required"/>
+                                    <xs:attribute name="sellerUscc" type="xs:string" use="required"/>
+                                    <xs:attribute name="recipientPostalCodePT" type="xs:string" use="required"/>
+                                    <xs:attribute name="hsCode6" type="xs:string" use="required"/>
+                                    <xs:attribute name="declaredValueCNY" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="weightGrams" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="batchId" type="xs:string" use="required"/>
+                        <xs:attribute name="platformName" type="xs:string" use="required"/>
+                        <xs:attribute name="iossNumberEU" type="xs:string" use="required"/>
+                        <xs:attribute name="gaccRegimeCode" type="xs:string" use="required"/>
+                        <xs:attribute name="consolidationHubCN" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 59. cn_smart_containers_iot_telemetry_xml -->
+    <xs:element name="SmartContainerTelemetryStreams">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ContainerTelemetry" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Waypoints">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="TelemetryPoint" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="timestampUTC" type="xs:string" use="required"/>
+                                                <xs:attribute name="latitude" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="longitude" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="internalTempC" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="humidityPct" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="shockG" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="anomalyAlert" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="containerIso" type="xs:string" use="required"/>
+                        <xs:attribute name="blNumber" type="xs:string" use="required"/>
+                        <xs:attribute name="beidouDeviceImei" type="xs:string" use="required"/>
+                        <xs:attribute name="cargoType" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 60. cn_b2b_supplier_product_specs_xml -->
+    <xs:element name="ProductTechnicalDossiers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TechnicalDossier" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="EngineeringSpecs">
+                                <xs:complexType>
+                                    <xs:attribute name="nominalVoltageV" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="ratedPowerKw" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="efficiencyPct" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="serviceLifeYears" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="BillOfMaterials">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MaterialComponent" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="componentName" type="xs:string" use="required"/>
+                                                <xs:attribute name="originProvinceCN" type="xs:string" use="required"/>
+                                                <xs:attribute name="massSharePct" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="criticalRawMaterial" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="productSkuCn" type="xs:string" use="required"/>
+                        <xs:attribute name="manufacturerUscc" type="xs:string" use="required"/>
+                        <xs:attribute name="cccCertNo" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 61. cn_trade_fairs_exhibitions_b2b_xml -->
+    <xs:element name="InternationalTradeFairsChina">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TradeFairEdition" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MatchmakingDeals">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Deal" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="ptCompanyEori" type="xs:string" use="required"/>
+                                                <xs:attribute name="cnCompanyUscc" type="xs:string" use="required"/>
+                                                <xs:attribute name="contractNoGenerated" type="xs:string" use="required"/>
+                                                <xs:attribute name="intentValueUSD" type="xs:decimal" use="required"/>
+                                                <xs:attribute name="sector" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="fairCode" type="xs:string" use="required"/>
+                        <xs:attribute name="fairName" type="xs:string" use="required"/>
+                        <xs:attribute name="hostCity" type="xs:string" use="required"/>
+                        <xs:attribute name="year" type="xs:integer" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 62. cn_macao_lusophone_platform_deals_xml -->
+    <xs:element name="MacaoLusophonePlatformRegistry">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="LusophoneOperation" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TriangularParties">
+                                <xs:complexType>
+                                    <xs:attribute name="macaoIntermediaryId" type="xs:string" use="required"/>
+                                    <xs:attribute name="mainlandEnterpriseUscc" type="xs:string" use="required"/>
+                                    <xs:attribute name="portugueseEnterpriseEori" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="FinancialFacilitation">
+                                <xs:complexType>
+                                    <xs:attribute name="serviceType" type="xs:string" use="required"/>
+                                    <xs:attribute name="clearingAmountCNY" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="equivalentEUR" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="linkedContractNo" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="operationId" type="xs:string" use="required"/>
+                        <xs:attribute name="forumMacaoProgram" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 63. cn_bonded_warehouse_inventories_xml -->
+    <xs:element name="ChineseBondedWarehouses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="BondedWarehouse" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PortugueseImportedLots">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="StoredLot" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="lotId" type="xs:string" use="required"/>
+                                                <xs:attribute name="gaccImportId18" type="xs:string" use="required"/>
+                                                <xs:attribute name="ptProducerEori" type="xs:string" use="required"/>
+                                                <xs:attribute name="ciferCode" type="xs:string" use="required"/>
+                                                <xs:attribute name="hsCode10Cn" type="xs:string" use="required"/>
+                                                <xs:attribute name="productName" type="xs:string" use="required"/>
+                                                <xs:attribute name="unitsInStock" type="xs:integer" use="required"/>
+                                                <xs:attribute name="dutySuspendedCNY" type="xs:decimal" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="warehouseCodeGacc" type="xs:string" use="required"/>
+                        <xs:attribute name="ftzZoneCode" type="xs:string" use="required"/>
+                        <xs:attribute name="city" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 64. cn_export_packaging_fumigation_certs_xml -->
+    <xs:element name="ExportPackagingAndHazmatCertificates">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CertificateRecord" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ISPM15WoodFumigation">
+                                <xs:complexType>
+                                    <xs:attribute name="ippcMarkCode" type="xs:string" use="required"/>
+                                    <xs:attribute name="treatmentMethod" type="xs:string" use="required"/>
+                                    <xs:attribute name="exposureTempC" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="HazmatIMDGDeclaration">
+                                <xs:complexType>
+                                    <xs:attribute name="isDangerousGoods" type="xs:boolean" use="required"/>
+                                    <xs:attribute name="unNumber" type="xs:string" use="required"/>
+                                    <xs:attribute name="imdgClass" type="xs:string" use="required"/>
+                                    <xs:attribute name="un383LithiumTested" type="xs:boolean" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="SOLASVerifiedGrossMass">
+                                <xs:complexType>
+                                    <xs:attribute name="vgmMethod" type="xs:string" use="required"/>
+                                    <xs:attribute name="verifiedGrossMassKg" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="weighingTerminal" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="certificateId" type="xs:string" use="required"/>
+                        <xs:attribute name="blNumber" type="xs:string" use="required"/>
+                        <xs:attribute name="containerIso" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 109. cn_container_stuffing_load_plans_clp_xml -->
+    <xs:element name="ContainerLoadPlansCLP">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ContainerLoadPlan" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="StuffingDepot">
+                                <xs:complexType>
+                                    <xs:attribute name="depotName" type="xs:string" use="required"/>
+                                    <xs:attribute name="portUnlocode" type="xs:string" use="required"/>
+                                    <xs:attribute name="eSealRfidCode" type="xs:string" use="required"/>
+                                    <xs:attribute name="containerTareKg" type="xs:decimal" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="LoadedPallets">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="PalletPosition" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="slotPosition" type="xs:string" use="required"/>
+                                                <xs:attribute name="packingListId" type="xs:string" use="required"/>
+                                                <xs:attribute name="batchLotNo" type="xs:string" use="required"/>
+                                                <xs:attribute name="grossWeightKg" type="xs:decimal" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="clpDocumentId" type="xs:string" use="required"/>
+                        <xs:attribute name="containerIso" type="xs:string" use="required"/>
+                        <xs:attribute name="masterBlNo" type="xs:string" use="required"/>
+                        <xs:attribute name="stuffingDate" type="xs:date" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 110. cn_house_bills_of_lading_hbl_consolidation_xml -->
+    <xs:element name="HouseBillsOfLadingConsolidation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="HouseBillOfLading" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NVOCCConsolidator">
+                                <xs:complexType>
+                                    <xs:attribute name="nvoccId" type="xs:string" use="required"/>
+                                    <xs:attribute name="nvoccName" type="xs:string" use="required"/>
+                                    <xs:attribute name="ptReceivingAgentEori" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="LCLCargoDetails">
+                                <xs:complexType>
+                                    <xs:attribute name="shipperUscc" type="xs:string" use="required"/>
+                                    <xs:attribute name="consigneeEoriPT" type="xs:string" use="required"/>
+                                    <xs:attribute name="packagesCount" type="xs:integer" use="required"/>
+                                    <xs:attribute name="grossWeightKg" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="volumeCbm" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="freightCollectEUR" type="xs:decimal" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="hblNumber" type="xs:string" use="required"/>
+                        <xs:attribute name="linkedMasterBlNo" type="xs:string" use="required"/>
+                        <xs:attribute name="containerIso" type="xs:string" use="required"/>
+                        <xs:attribute name="serviceMode" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 111. cn_cbec_three_stream_matching_9610_1210_xml -->
+    <xs:element name="CrossBorderThreeStreamMatching">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ThreeStreamDeclaration" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="OrderStream">
+                                <xs:complexType>
+                                    <xs:attribute name="platformOrderNo" type="xs:string" use="required"/>
+                                    <xs:attribute name="ecommercePlatform" type="xs:string" use="required"/>
+                                    <xs:attribute name="buyerNifHashPT" type="xs:string" use="required"/>
+                                    <xs:attribute name="orderAmountEUR" type="xs:decimal" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="PaymentStream">
+                                <xs:complexType>
+                                    <xs:attribute name="paymentTxId" type="xs:string" use="required"/>
+                                    <xs:attribute name="paymentInstitution" type="xs:string" use="required"/>
+                                    <xs:attribute name="iossVatCollectedEUR" type="xs:decimal" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="LogisticsStream">
+                                <xs:complexType>
+                                    <xs:attribute name="s10TrackingNo" type="xs:string" use="required"/>
+                                    <xs:attribute name="airWaybillNo" type="xs:string" use="required"/>
+                                    <xs:attribute name="lastMileCarrierPT" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="gaccCbecInventoryNo" type="xs:string" use="required"/>
+                        <xs:attribute name="supervisionRegime" type="xs:string" use="required"/>
+                        <xs:attribute name="matchingVerdict" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 112. cn_port_terminal_gate_events_tos_xml -->
+    <xs:element name="TerminalOperatingSystemEvents">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ContainerTOSEvent" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="GateInCODECO">
+                                <xs:complexType>
+                                    <xs:attribute name="gateTimestampCST" type="xs:string" use="required"/>
+                                    <xs:attribute name="truckPlateCN" type="xs:string" use="required"/>
+                                    <xs:attribute name="yardBlockSlot" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="VesselLoadCOARRI">
+                                <xs:complexType>
+                                    <xs:attribute name="loadTimestampCST" type="xs:string" use="required"/>
+                                    <xs:attribute name="stsCraneId" type="xs:string" use="required"/>
+                                    <xs:attribute name="stowageBayRowTier" type="xs:string" use="required"/>
+                                    <xs:attribute name="vesselImo" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="tosEventId" type="xs:string" use="required"/>
+                        <xs:attribute name="terminalId" type="xs:string" use="required"/>
+                        <xs:attribute name="containerIso" type="xs:string" use="required"/>
+                        <xs:attribute name="blNumber" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 113. cn_maritime_transshipment_hub_events_xml -->
+    <xs:element name="MaritimeTransshipmentHubOperations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TransshipmentOperation" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="InboundMotherVessel">
+                                <xs:complexType>
+                                    <xs:attribute name="vesselName" type="xs:string" use="required"/>
+                                    <xs:attribute name="vesselImo" type="xs:string" use="required"/>
+                                    <xs:attribute name="dischargeDateUTC" type="xs:date" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="OutboundFeederVessel">
+                                <xs:complexType>
+                                    <xs:attribute name="feederName" type="xs:string" use="required"/>
+                                    <xs:attribute name="feederImo" type="xs:string" use="required"/>
+                                    <xs:attribute name="reloadDateUTC" type="xs:date" use="required"/>
+                                    <xs:attribute name="finalDestinationPortPT" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="transshipmentId" type="xs:string" use="required"/>
+                        <xs:attribute name="hubPortUnlocode" type="xs:string" use="required"/>
+                        <xs:attribute name="hubPortName" type="xs:string" use="required"/>
+                        <xs:attribute name="containerIso" type="xs:string" use="required"/>
+                        <xs:attribute name="blNumber" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 114. cn_demurrage_detention_container_equipment_xml -->
+    <xs:element name="ContainerEquipmentDemurrageRegistry">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="EquipmentDemurrageRecord" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="FreeTimeAllowance">
+                                <xs:complexType>
+                                    <xs:attribute name="freeDemurrageDays" type="xs:integer" use="required"/>
+                                    <xs:attribute name="freeDetentionDays" type="xs:integer" use="required"/>
+                                    <xs:attribute name="actualTurnaroundDays" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="PenaltySettlement">
+                                <xs:complexType>
+                                    <xs:attribute name="chargeableOverdueDays" type="xs:integer" use="required"/>
+                                    <xs:attribute name="dailyRateUSD" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="totalBilledUSD" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="delayReason" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="eirRecordId" type="xs:string" use="required"/>
+                        <xs:attribute name="containerIso" type="xs:string" use="required"/>
+                        <xs:attribute name="blNumber" type="xs:string" use="required"/>
+                        <xs:attribute name="portUnlocode" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 115. cn_reverse_logistics_bonded_returns_xml -->
+    <xs:element name="CrossBorderReverseLogisticsReturns">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="BondedReturnCase" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ReturnOriginPT">
+                                <xs:complexType>
+                                    <xs:attribute name="originalExportOrS10Ref" type="xs:string" use="required"/>
+                                    <xs:attribute name="ptSenderEoriOrPostal" type="xs:string" use="required"/>
+                                    <xs:attribute name="returnReasonCode" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="BondedWarehouseDisposition">
+                                <xs:complexType>
+                                    <xs:attribute name="bondedZoneCode" type="xs:string" use="required"/>
+                                    <xs:attribute name="dispositionAction" type="xs:string" use="required"/>
+                                    <xs:attribute name="dutyRefundOrCreditCNY" type="xs:decimal" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="returnCaseId" type="xs:string" use="required"/>
+                        <xs:attribute name="gaccReturnRegime" type="xs:string" use="required"/>
+                        <xs:attribute name="returnDate" type="xs:date" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 116. cn_cold_chain_sanitary_traceability_codes_xml -->
+    <xs:element name="ColdChainSanitaryTraceabilityRegistry">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ColdChainTraceabilityLot" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PortSanitaryInspection">
+                                <xs:complexType>
+                                    <xs:attribute name="entryPortCN" type="xs:string" use="required"/>
+                                    <xs:attribute name="eciqCertNo" type="xs:string" use="required"/>
+                                    <xs:attribute name="coreTempMeasuredC" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="sanitaryDisinfectionPass" type="xs:boolean" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DomesticDistributionChain">
+                                <xs:complexType>
+                                    <xs:attribute name="coldStorageFacility" type="xs:string" use="required"/>
+                                    <xs:attribute name="retailTraceabilityQrPrefix" type="xs:string" use="required"/>
+                                    <xs:attribute name="destinationProvinceCN" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="traceCodeGacc" type="xs:string" use="required"/>
+                        <xs:attribute name="gaccImportId18" type="xs:string" use="required"/>
+                        <xs:attribute name="ciferProducerCodePT" type="xs:string" use="required"/>
+                        <xs:attribute name="containerIso" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "ADT-PT-2026-001",
+    "autorizacao_adt_at": "ADT-PT000395-PSA-01",
+    "declaracao_adt_id": "DSDT-2026-SIN-008801",
+    "operador_armazem": "PSA Sines - Terminal de Contentores, S.A.",
+    "numero_contentor_iso": "COSU8001101",
+    "numero_bl": "COSU6288991101",
+    "data_entrada_adt": "29/04/2026",
+    "prazo_maximo_legal_90_dias_cau": "28/07/2026",
+    "data_apuramento_por_dau": "30/04/2026",
+    "mrn_dau_apuramento": "26PT000395IM008801",
+    "estado_adt": "APURADO_DENTRO_DO_PRAZO"
+  },
+  {
+    "_id": "ADT-PT-2026-002",
+    "autorizacao_adt_at": "ADT-PT000520-GROUND-02",
+    "declaracao_adt_id": "DSDT-2026-LIS-008805",
+    "operador_armazem": "Portway / Menzies Aviation Terminal de Carga Lisboa",
+    "numero_contentor_iso": "PMC44111CA",
+    "numero_bl": "047-88991105",
+    "data_entrada_adt": "16/04/2026",
+    "prazo_maximo_legal_90_dias_cau": "15/07/2026",
+    "data_apuramento_por_dau": "17/04/2026",
+    "mrn_dau_apuramento": "26PT000520IM008805",
+    "estado_adt": "APURADO_DENTRO_DO_PRAZO"
+  },
+  {
+    "_id": "ADT-PT-2026-003",
+    "autorizacao_adt_at": "ADT-PT000140-TCL-03",
+    "declaracao_adt_id": "DSDT-2026-LEI-008804",
+    "operador_armazem": "Yilport / TCL Leixões",
+    "numero_contentor_iso": "CATU8004401",
+    "numero_bl": "COSU6288991104",
+    "data_entrada_adt": "08/05/2026",
+    "prazo_maximo_legal_90_dias_cau": "06/08/2026",
+    "data_apuramento_por_dau": "18/05/2026",
+    "mrn_dau_apuramento": "26PT000140IM008804",
+    "estado_adt": "APURADO_APOS_PERITAGEM"
+  }
+]

@@ -1,0 +1,3774 @@
+[
+  {
+    "doc_id": "UNSTRUCT-ASAE-2026-001",
+    "source_unstructured_table": "pt_unstruct_relatorios_inspecao_asae_dgav",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT503412890",
+    "primary_nif_pt": "503412890",
+    "primary_uscc_cn": "91350900587527783P",
+    "primary_mrn_dau": "26PT000140IM008804",
+    "primary_bl_or_waybill": "COSU6288991104",
+    "primary_container_iso": "CATU8004401",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": "8507600090",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTLEI",
+    "primary_vessel_imo": "9839131",
+    "primary_amount_eur": 3520000.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "catl",
+      "código",
+      "proc-asae-lei-2026-089",
+      "10h30",
+      "peritos",
+      "abertura"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT503412890"
+      ],
+      "nif_pt": [
+        "503412890"
+      ],
+      "uscc_cn": [
+        "91350900587527783P"
+      ],
+      "mrn_dau": [
+        "26PT000140IM008804"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991104"
+      ],
+      "container_iso": [
+        "CATU8004401"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8507600090"
+      ],
+      "un_locode": [
+        "PTLEI"
+      ],
+      "vessel_imo": [
+        "9839131"
+      ],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 3520000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 1195,
+    "file_prefix": "19_pt_unstruct_relatorios_inspecao_asae_dgav",
+    "pdf_file": "19_pt_unstruct_relatorios_inspecao_asae_dgav.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-ASAE-2026-002",
+    "source_unstructured_table": "pt_unstruct_relatorios_inspecao_asae_dgav",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT517890123",
+    "primary_nif_pt": "517890123",
+    "primary_uscc_cn": "91320413MA1M9Y2C4B",
+    "primary_mrn_dau": "26PT000395IM008801",
+    "primary_bl_or_waybill": "COSU6288991101",
+    "primary_container_iso": "COSU8001101",
+    "primary_invoice_no": "INV-CN-2026-8801",
+    "primary_contract_no": null,
+    "primary_taric_10": "8507600090",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 6283500.0,
+    "max_temperature_recorded_c": 21.5,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "sines",
+      "baterias",
+      "calb",
+      "proc-asae-sin-2026-041",
+      "estância",
+      "auditado"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT517890123"
+      ],
+      "nif_pt": [
+        "517890123"
+      ],
+      "uscc_cn": [
+        "91320413MA1M9Y2C4B"
+      ],
+      "mrn_dau": [
+        "26PT000395IM008801"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991101"
+      ],
+      "container_iso": [
+        "COSU8001101",
+        "COSU8001102"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8801"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8507600090"
+      ],
+      "un_locode": [
+        "PTSIN"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [
+        "+21.5"
+      ],
+      "monetary": [
+        {
+          "amount": 6283500.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 810,
+    "file_prefix": "19_pt_unstruct_relatorios_inspecao_asae_dgav",
+    "pdf_file": "19_pt_unstruct_relatorios_inspecao_asae_dgav.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-ASAE-2026-003",
+    "source_unstructured_table": "pt_unstruct_relatorios_inspecao_asae_dgav",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT508112244",
+    "primary_nif_pt": "508112244",
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": "26PT000395EX009905",
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": "COSU4455665",
+    "primary_invoice_no": "INV-PT-2026-9905",
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": "CPRT18000201000404",
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": -18.2,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "dgav",
+      "exportação",
+      "fitossanitária",
+      "sanitária",
+      "proc-dgav-sin-2026-102",
+      "abril"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT508112244"
+      ],
+      "nif_pt": [
+        "508112244"
+      ],
+      "uscc_cn": [],
+      "mrn_dau": [
+        "26PT000395EX009905"
+      ],
+      "bl_or_waybill": [],
+      "container_iso": [
+        "COSU4455665"
+      ],
+      "invoice_no": [
+        "INV-PT-2026-9905"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [
+        "CPRT18000201000404"
+      ],
+      "taric_10": [],
+      "un_locode": [
+        "PTSIN"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [
+        "-18.2"
+      ],
+      "monetary": []
+    },
+    "raw_text_length_chars": 802,
+    "file_prefix": "19_pt_unstruct_relatorios_inspecao_asae_dgav",
+    "pdf_file": "19_pt_unstruct_relatorios_inspecao_asae_dgav.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-ASAE-2026-004",
+    "source_unstructured_table": "pt_unstruct_relatorios_inspecao_asae_dgav",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500697256",
+    "primary_nif_pt": "500697256",
+    "primary_uscc_cn": "91440300618837699Q",
+    "primary_mrn_dau": "26PT000395IM008808",
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": "COSU8008801",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "dgeg",
+      "huawei",
+      "ensaio",
+      "rede",
+      "proc-dgeg-set-2026-155",
+      "geologia"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500697256"
+      ],
+      "nif_pt": [
+        "500697256"
+      ],
+      "uscc_cn": [
+        "91440300618837699Q"
+      ],
+      "mrn_dau": [
+        "26PT000395IM008808"
+      ],
+      "bl_or_waybill": [],
+      "container_iso": [
+        "COSU8008801"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 687,
+    "file_prefix": "19_pt_unstruct_relatorios_inspecao_asae_dgav",
+    "pdf_file": "19_pt_unstruct_relatorios_inspecao_asae_dgav.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-AT-AUTO-2026-007",
+    "source_unstructured_table": "pt_unstruct_autos_apreensao_contrafacao_at",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT504998877",
+    "primary_nif_pt": "504998877",
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": "26PT000210IM008807",
+    "primary_bl_or_waybill": "CIMSMGS-YW2026-07",
+    "primary_container_iso": "CRXU9988771",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTENT",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "PARTIAL_RETENTION_AND_FINE",
+    "ai_risk_level": "HIGH",
+    "ai_risk_score_0_100": 82.5,
+    "ai_confidence": 0.972,
+    "tfidf_keywords": [
+      "apreensão",
+      "aduaneira",
+      "direitos",
+      "auto",
+      "notícia",
+      "at-afl-2026-00318"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT504998877"
+      ],
+      "nif_pt": [
+        "504998877"
+      ],
+      "uscc_cn": [],
+      "mrn_dau": [
+        "26PT000210IM008807"
+      ],
+      "bl_or_waybill": [
+        "CIMSMGS-YW2026-07"
+      ],
+      "container_iso": [
+        "CRXU9988771"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [
+        "PTENT"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 1054,
+    "file_prefix": "20_pt_unstruct_autos_apreensao_contrafacao_at",
+    "pdf_file": "20_pt_unstruct_autos_apreensao_contrafacao_at.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-AT-AUTO-2026-008",
+    "source_unstructured_table": "pt_unstruct_autos_apreensao_contrafacao_at",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 10.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "postal",
+      "remessa",
+      "código",
+      "suspensão",
+      "desalfandegamento",
+      "at-lis-2026-00912"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 10.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 585,
+    "file_prefix": "20_pt_unstruct_autos_apreensao_contrafacao_at",
+    "pdf_file": "20_pt_unstruct_autos_apreensao_contrafacao_at.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-AT-AUTO-2026-009",
+    "source_unstructured_table": "pt_unstruct_autos_apreensao_contrafacao_at",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 42500.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "at-sin-2026-00145",
+      "auditou",
+      "eletrónicos",
+      "maia",
+      "discrepância",
+      "sistemática"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 42500.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 481,
+    "file_prefix": "20_pt_unstruct_autos_apreensao_contrafacao_at",
+    "pdf_file": "20_pt_unstruct_autos_apreensao_contrafacao_at.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-OCR-CERT-2026-9901",
+    "source_unstructured_table": "pt_unstruct_certificados_origem_fitossanitarios_ocr",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500265432",
+    "primary_nif_pt": "500265432",
+    "primary_uscc_cn": "91110000101123456N",
+    "primary_mrn_dau": "26PT000140EX009901",
+    "primary_bl_or_waybill": "COSU6288992201",
+    "primary_container_iso": "COSU4455661",
+    "primary_invoice_no": "INV-PT-2026-9901",
+    "primary_contract_no": null,
+    "primary_taric_10": "2204218010",
+    "primary_cifer_gacc": "CPRT18000102000101",
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": "9839131",
+    "primary_amount_eur": 1480000.0,
+    "max_temperature_recorded_c": 56.0,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "vinho",
+      "gacc",
+      "china",
+      "declaração",
+      "ivdp",
+      "denominada"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500265432"
+      ],
+      "nif_pt": [
+        "500265432"
+      ],
+      "uscc_cn": [
+        "91110000101123456N"
+      ],
+      "mrn_dau": [
+        "26PT000140EX009901"
+      ],
+      "bl_or_waybill": [
+        "COSU6288992201"
+      ],
+      "container_iso": [
+        "COSU4455661"
+      ],
+      "invoice_no": [
+        "INV-PT-2026-9901"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [
+        "CPRT18000102000101"
+      ],
+      "taric_10": [
+        "2204218010",
+        "2204210000"
+      ],
+      "un_locode": [],
+      "vessel_imo": [
+        "9839131"
+      ],
+      "temperatures_c": [
+        "+56"
+      ],
+      "monetary": [
+        {
+          "amount": 1480000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 1052,
+    "file_prefix": "21_pt_unstruct_certificados_origem_fitossanitarios_ocr",
+    "pdf_file": "21_pt_unstruct_certificados_origem_fitossanitarios_ocr.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-OCR-CERT-2026-9902",
+    "source_unstructured_table": "pt_unstruct_certificados_origem_fitossanitarios_ocr",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500077889",
+    "primary_nif_pt": "500077889",
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288992202",
+    "primary_container_iso": "COSU4455662",
+    "primary_invoice_no": "INV-PT-2026-9902",
+    "primary_contract_no": null,
+    "primary_taric_10": "4504908000",
+    "primary_cifer_gacc": "CPRT18009901000202",
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 1885800.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "certificado",
+      "dgav-flor-2026-9902",
+      "cork",
+      "cprt18009901000202",
+      "adegas",
+      "yantai"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500077889"
+      ],
+      "nif_pt": [
+        "500077889"
+      ],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288992202"
+      ],
+      "container_iso": [
+        "COSU4455662"
+      ],
+      "invoice_no": [
+        "INV-PT-2026-9902"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [
+        "CPRT18009901000202"
+      ],
+      "taric_10": [
+        "4504908000",
+        "4504900000"
+      ],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 1885800.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 564,
+    "file_prefix": "21_pt_unstruct_certificados_origem_fitossanitarios_ocr",
+    "pdf_file": "21_pt_unstruct_certificados_origem_fitossanitarios_ocr.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-OCR-CERT-2026-9903",
+    "source_unstructured_table": "pt_unstruct_certificados_origem_fitossanitarios_ocr",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500112233",
+    "primary_nif_pt": "500112233",
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": "INV-PT-2026-9903",
+    "primary_contract_no": null,
+    "primary_taric_10": "1509200010",
+    "primary_cifer_gacc": "CPRT18000401000303",
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "azeite",
+      "pureza",
+      "dgav-aze-2026-9903",
+      "consumer",
+      "pt500112233",
+      "cprt18000401000303"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500112233"
+      ],
+      "nif_pt": [
+        "500112233"
+      ],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [
+        "INV-PT-2026-9903"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [
+        "CPRT18000401000303"
+      ],
+      "taric_10": [
+        "1509200010"
+      ],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 540,
+    "file_prefix": "21_pt_unstruct_certificados_origem_fitossanitarios_ocr",
+    "pdf_file": "21_pt_unstruct_certificados_origem_fitossanitarios_ocr.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-OCR-CERT-2026-9904",
+    "source_unstructured_table": "pt_unstruct_certificados_origem_fitossanitarios_ocr",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT508112244",
+    "primary_nif_pt": "508112244",
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": "CPRT18000201000404",
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "suína",
+      "carne",
+      "matadouro",
+      "acreditado",
+      "peste",
+      "africana"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT508112244"
+      ],
+      "nif_pt": [
+        "508112244"
+      ],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [
+        "CPRT18000201000404"
+      ],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 472,
+    "file_prefix": "21_pt_unstruct_certificados_origem_fitossanitarios_ocr",
+    "pdf_file": "21_pt_unstruct_certificados_origem_fitossanitarios_ocr.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CTR-PROSA-2026-001",
+    "source_unstructured_table": "pt_unstruct_contratos_comerciais_bilaterais_prosa",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT517890123",
+    "primary_nif_pt": "517890123",
+    "primary_uscc_cn": "91320413MA1M9Y2C4B",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": "INV-CN-2026-8801",
+    "primary_contract_no": "CN-PT-CTR-2026-001",
+    "primary_taric_10": "8507600090",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 18500000.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "cláusula",
+      "contrato",
+      "fornecimento",
+      "primeira",
+      "outorgante",
+      "sede"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT517890123"
+      ],
+      "nif_pt": [
+        "517890123"
+      ],
+      "uscc_cn": [
+        "91320413MA1M9Y2C4B"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [
+        "INV-CN-2026-8801"
+      ],
+      "contract_no": [
+        "CN-PT-CTR-2026-001"
+      ],
+      "swift_uetr": [
+        "97ed4827-7b6f-4491-a06f-b548d5a75001"
+      ],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8507600090"
+      ],
+      "un_locode": [
+        "PTSIN"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 18500000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 1098,
+    "file_prefix": "22_pt_unstruct_contratos_comerciais_bilaterais_prosa",
+    "pdf_file": "22_pt_unstruct_contratos_comerciais_bilaterais_prosa.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CTR-PROSA-2026-002",
+    "source_unstructured_table": "pt_unstruct_contratos_comerciais_bilaterais_prosa",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500234567",
+    "primary_nif_pt": "500234567",
+    "primary_uscc_cn": "91440300192317458F",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": "CN-PT-CTR-2026-002",
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 28320000.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "importação",
+      "distribuição",
+      "arbitragem",
+      "auto",
+      "acordo",
+      "exclusiva"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500234567"
+      ],
+      "nif_pt": [
+        "500234567"
+      ],
+      "uscc_cn": [
+        "91440300192317458F"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [
+        "CN-PT-CTR-2026-002"
+      ],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 28320000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 629,
+    "file_prefix": "22_pt_unstruct_contratos_comerciais_bilaterais_prosa",
+    "pdf_file": "22_pt_unstruct_contratos_comerciais_bilaterais_prosa.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CTR-PROSA-2026-003",
+    "source_unstructured_table": "pt_unstruct_contratos_comerciais_bilaterais_prosa",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500697256",
+    "primary_nif_pt": "500697256",
+    "primary_uscc_cn": "91610132724912345X",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": "INV-CN-2026-8803",
+    "primary_contract_no": "CN-PT-CTR-2026-003",
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "solar",
+      "aquisição",
+      "painéis",
+      "cn-pt-ctr-2026-003",
+      "shaanxi",
+      "adquirente"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500697256"
+      ],
+      "nif_pt": [
+        "500697256"
+      ],
+      "uscc_cn": [
+        "91610132724912345X"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [
+        "INV-CN-2026-8803"
+      ],
+      "contract_no": [
+        "CN-PT-CTR-2026-003"
+      ],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 7280000.0,
+          "currency": "USD"
+        }
+      ]
+    },
+    "raw_text_length_chars": 417,
+    "file_prefix": "22_pt_unstruct_contratos_comerciais_bilaterais_prosa",
+    "pdf_file": "22_pt_unstruct_contratos_comerciais_bilaterais_prosa.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CTR-PROSA-2026-008",
+    "source_unstructured_table": "pt_unstruct_contratos_comerciais_bilaterais_prosa",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500265432",
+    "primary_nif_pt": "500265432",
+    "primary_uscc_cn": "91110000101123456N",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": "CN-PT-CTR-2026-008",
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 3450000.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "vinhos",
+      "quadro",
+      "cn-pt-ctr-2026-008",
+      "produtor",
+      "distribuidor",
+      "volume"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500265432"
+      ],
+      "nif_pt": [
+        "500265432"
+      ],
+      "uscc_cn": [
+        "91110000101123456N"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [
+        "CN-PT-CTR-2026-008"
+      ],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 3450000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 421,
+    "file_prefix": "22_pt_unstruct_contratos_comerciais_bilaterais_prosa",
+    "pdf_file": "22_pt_unstruct_contratos_comerciais_bilaterais_prosa.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-MNEG-MOU-BRI-2018-2026",
+    "source_unstructured_table": "pt_unstruct_tratados_memorandos_diplomaticos_mneg",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "governo",
+      "seda",
+      "cooperação",
+      "fitossanitário",
+      "como",
+      "rota"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [
+        "PTSIN",
+        "PTENT"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 933,
+    "file_prefix": "23_pt_unstruct_tratados_memorandos_diplomaticos_mneg",
+    "pdf_file": "23_pt_unstruct_tratados_memorandos_diplomaticos_mneg.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-MNEG-PROTOCOLO-PORCO-2019-2026",
+    "source_unstructured_table": "pt_unstruct_tratados_memorandos_diplomaticos_mneg",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "protocolo",
+      "gacc",
+      "estipula",
+      "requisitos",
+      "quarentena",
+      "animais"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 480,
+    "file_prefix": "23_pt_unstruct_tratados_memorandos_diplomaticos_mneg",
+    "pdf_file": "23_pt_unstruct_tratados_memorandos_diplomaticos_mneg.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-MNEG-DECLARACAO-CONJUNTA-INVESTIMENTO",
+    "source_unstructured_table": "pt_unstruct_tratados_memorandos_diplomaticos_mneg",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "investimentos",
+      "setor",
+      "promoção",
+      "recíproca",
+      "investment",
+      "treaty"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 478,
+    "file_prefix": "23_pt_unstruct_tratados_memorandos_diplomaticos_mneg",
+    "pdf_file": "23_pt_unstruct_tratados_memorandos_diplomaticos_mneg.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-APS-MAR-2026-0412",
+    "source_unstructured_table": "pt_unstruct_diarios_bordo_incidentes_maritimos_aps",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": "91310000132209876M",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288991101",
+    "primary_container_iso": "COSU8001101",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "CNSHA",
+    "primary_vessel_imo": "9795610",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "MARITIME_ROUTE_DIVERSION_DELAY",
+    "ai_risk_level": "MEDIUM",
+    "ai_risk_score_0_100": 52.0,
+    "ai_confidence": 0.98,
+    "tfidf_keywords": [
+      "contentores",
+      "cosco",
+      "shipping",
+      "boletim",
+      "navegação",
+      "ocorrência"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [
+        "91310000132209876M"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288991101",
+        "COSU6288991103"
+      ],
+      "container_iso": [
+        "COSU8001101",
+        "COSU8001102",
+        "COSU8003301"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [
+        "CNSHA",
+        "CNNGB"
+      ],
+      "vessel_imo": [
+        "9795610"
+      ],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 883,
+    "file_prefix": "24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps",
+    "pdf_file": "24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-APS-MAR-2026-0426",
+    "source_unstructured_table": "pt_unstruct_diarios_bordo_incidentes_maritimos_aps",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": "9842105",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "pilotagem",
+      "14h00",
+      "automóveis",
+      "libéria",
+      "sucesso",
+      "cais"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [
+        "PTSIN"
+      ],
+      "vessel_imo": [
+        "9842105"
+      ],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 419,
+    "file_prefix": "24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps",
+    "pdf_file": "24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-APS-MAR-2026-0514",
+    "source_unstructured_table": "pt_unstruct_diarios_bordo_incidentes_maritimos_aps",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": "CATU8004401",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTLEI",
+    "primary_vessel_imo": "9839131",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "escala",
+      "contentores",
+      "apdl",
+      "ptlei202600514",
+      "08h00",
+      "descarregados"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [
+        "CATU8004401",
+        "COSU8006601",
+        "COSU4455661",
+        "COSU4455662"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [
+        "PTLEI"
+      ],
+      "vessel_imo": [
+        "9839131"
+      ],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 399,
+    "file_prefix": "24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps",
+    "pdf_file": "24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-APS-MAR-2026-0520",
+    "source_unstructured_table": "pt_unstruct_diarios_bordo_incidentes_maritimos_aps",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": "9795646",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "manobra",
+      "ptsin202600520",
+      "procedente",
+      "descarregou",
+      "midea",
+      "carregou"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [
+        "PTSIN"
+      ],
+      "vessel_imo": [
+        "9795646"
+      ],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 283,
+    "file_prefix": "24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps",
+    "pdf_file": "24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-IOT-LOG-COSU4455661",
+    "source_unstructured_table": "pt_unstruct_logs_telemetria_iot_cadeia_frio",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288992201",
+    "primary_container_iso": "COSU4455661",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": "9839131",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": 28.4,
+    "ai_compliance_verdict": "COLD_CHAIN_THERMAL_ANOMALY_DETECTED",
+    "ai_risk_level": "MEDIUM_HIGH",
+    "ai_risk_score_0_100": 74.0,
+    "ai_confidence": 0.991,
+    "tfidf_keywords": [
+      "imei",
+      "vessel_imo",
+      "temp",
+      "shock",
+      "status",
+      "cosu6288992201"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288992201"
+      ],
+      "container_iso": [
+        "COSU4455661"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [
+        "9839131"
+      ],
+      "temperatures_c": [
+        "+14.2",
+        "+28.4",
+        "+14.5"
+      ],
+      "monetary": []
+    },
+    "raw_text_length_chars": 616,
+    "file_prefix": "25_pt_unstruct_logs_telemetria_iot_cadeia_frio",
+    "pdf_file": "25_pt_unstruct_logs_telemetria_iot_cadeia_frio.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-IOT-LOG-COSU4455663",
+    "source_unstructured_table": "pt_unstruct_logs_telemetria_iot_cadeia_frio",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288992203",
+    "primary_container_iso": "COSU4455663",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": "9795610",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": 16.2,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "cosu4455663",
+      "cosu6288992203",
+      "info",
+      "imei",
+      "vessel_imo",
+      "temp"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288992203"
+      ],
+      "container_iso": [
+        "COSU4455663"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [
+        "9795610"
+      ],
+      "temperatures_c": [
+        "+16.0",
+        "+15.8",
+        "+16.2"
+      ],
+      "monetary": []
+    },
+    "raw_text_length_chars": 601,
+    "file_prefix": "25_pt_unstruct_logs_telemetria_iot_cadeia_frio",
+    "pdf_file": "25_pt_unstruct_logs_telemetria_iot_cadeia_frio.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-IOT-LOG-COSU4455665",
+    "source_unstructured_table": "pt_unstruct_logs_telemetria_iot_cadeia_frio",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288992205",
+    "primary_container_iso": "COSU4455665",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": "9795646",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": -18.0,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "cosu6288992205",
+      "cosu4455665",
+      "info",
+      "imei",
+      "vessel_imo",
+      "temp"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288992205"
+      ],
+      "container_iso": [
+        "COSU4455665"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [
+        "9795646"
+      ],
+      "temperatures_c": [
+        "-18.5",
+        "-18.2",
+        "-18.0"
+      ],
+      "monetary": []
+    },
+    "raw_text_length_chars": 620,
+    "file_prefix": "25_pt_unstruct_logs_telemetria_iot_cadeia_frio",
+    "pdf_file": "25_pt_unstruct_logs_telemetria_iot_cadeia_frio.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-IOT-LOG-COSU8001101",
+    "source_unstructured_table": "pt_unstruct_logs_telemetria_iot_cadeia_frio",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288991101",
+    "primary_container_iso": "COSU8001101",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": "9795610",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": 21.5,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "info",
+      "imei",
+      "vessel_imo",
+      "temp",
+      "shock",
+      "status"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288991101"
+      ],
+      "container_iso": [
+        "COSU8001101"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [
+        "9795610"
+      ],
+      "temperatures_c": [
+        "+20.5",
+        "+21.0",
+        "+21.5"
+      ],
+      "monetary": []
+    },
+    "raw_text_length_chars": 613,
+    "file_prefix": "25_pt_unstruct_logs_telemetria_iot_cadeia_frio",
+    "pdf_file": "25_pt_unstruct_logs_telemetria_iot_cadeia_frio.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CAAD-ARB-2026-002",
+    "source_unstructured_table": "pt_unstruct_pareceres_juridicos_tribunal_arbitral",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500234567",
+    "primary_nif_pt": "500234567",
+    "primary_uscc_cn": "91440300192317458F",
+    "primary_mrn_dau": "26PT000395IM008802",
+    "primary_bl_or_waybill": "COSU6288991102",
+    "primary_container_iso": null,
+    "primary_invoice_no": "INV-CN-2026-8802",
+    "primary_contract_no": null,
+    "primary_taric_10": "8703801000",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 1654440.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "taxa",
+      "compensação",
+      "direito",
+      "aduaneiro",
+      "aduaneira",
+      "auto"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500234567"
+      ],
+      "nif_pt": [
+        "500234567"
+      ],
+      "uscc_cn": [
+        "91440300192317458F"
+      ],
+      "mrn_dau": [
+        "26PT000395IM008802"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991102"
+      ],
+      "container_iso": [],
+      "invoice_no": [
+        "INV-CN-2026-8802"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8703801000"
+      ],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 1654440.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 973200.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 9732000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 914,
+    "file_prefix": "26_pt_unstruct_pareceres_juridicos_tribunal_arbitral",
+    "pdf_file": "26_pt_unstruct_pareceres_juridicos_tribunal_arbitral.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CAAD-ARB-2026-006",
+    "source_unstructured_table": "pt_unstruct_pareceres_juridicos_tribunal_arbitral",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": "500191827",
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": "7225409000",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 10.85,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "CBAM_CARBON_LIABILITY_VERIFIED",
+    "ai_risk_level": "LOW_MONITORED",
+    "ai_risk_score_0_100": 28.0,
+    "ai_confidence": 0.985,
+    "tfidf_keywords": [
+      "pago",
+      "cbam",
+      "administrativa",
+      "caad",
+      "proc-caad-2026-cbam-001",
+      "agência"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [
+        "500191827"
+      ],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "7225409000"
+      ],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 85.0,
+          "currency": "CNY"
+        },
+        {
+          "amount": 10.85,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 587,
+    "file_prefix": "26_pt_unstruct_pareceres_juridicos_tribunal_arbitral",
+    "pdf_file": "26_pt_unstruct_pareceres_juridicos_tribunal_arbitral.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CAAD-ARB-2026-012",
+    "source_unstructured_table": "pt_unstruct_pareceres_juridicos_tribunal_arbitral",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 150.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "ioss",
+      "sentença",
+      "tributário",
+      "proc-ttl-2026-ioss-881",
+      "autora",
+      "fazenda"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 150.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 384,
+    "file_prefix": "26_pt_unstruct_pareceres_juridicos_tribunal_arbitral",
+    "pdf_file": "26_pt_unstruct_pareceres_juridicos_tribunal_arbitral.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-RAW-INV-8806",
+    "source_unstructured_table": "pt_unstruct_faturas_packing_lists_desformatados",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500191827",
+    "primary_nif_pt": "500191827",
+    "primary_uscc_cn": "91330200778899112T",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288991106",
+    "primary_container_iso": "COSU8006601",
+    "primary_invoice_no": "INV-CN-2026-8806",
+    "primary_contract_no": "CN-PT-CTR-2026-006",
+    "primary_taric_10": "7225409900",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "CNNGB",
+    "primary_vessel_imo": "9839131",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "item",
+      "metric",
+      "tons",
+      "steel",
+      "invoice",
+      "ningbo"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500191827"
+      ],
+      "nif_pt": [
+        "500191827"
+      ],
+      "uscc_cn": [
+        "91330200778899112T"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288991106"
+      ],
+      "container_iso": [
+        "COSU8006601"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8806"
+      ],
+      "contract_no": [
+        "CN-PT-CTR-2026-006"
+      ],
+      "swift_uetr": [
+        "97ed4827-7b6f-4491-a06f-b548d5a75006"
+      ],
+      "cifer_gacc": [],
+      "taric_10": [
+        "7225409900",
+        "7225409000",
+        "7606125900",
+        "7606129200"
+      ],
+      "un_locode": [
+        "CNNGB",
+        "PTSIN"
+      ],
+      "vessel_imo": [
+        "9839131"
+      ],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 939,
+    "file_prefix": "27_pt_unstruct_faturas_packing_lists_desformatados",
+    "pdf_file": "27_pt_unstruct_faturas_packing_lists_desformatados.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-RAW-INV-8801",
+    "source_unstructured_table": "pt_unstruct_faturas_packing_lists_desformatados",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT517890123",
+    "primary_nif_pt": "517890123",
+    "primary_uscc_cn": "91320413MA1M9Y2C4B",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288991101",
+    "primary_container_iso": "COSU8001101",
+    "primary_invoice_no": "INV-CN-2026-8801",
+    "primary_contract_no": "CN-PT-CTR-2026-001",
+    "primary_taric_10": "8507600090",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": "9795610",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "calb",
+      "weight",
+      "invoice",
+      "group",
+      "2026-03-20",
+      "packs"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT517890123"
+      ],
+      "nif_pt": [
+        "517890123"
+      ],
+      "uscc_cn": [
+        "91320413MA1M9Y2C4B"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288991101"
+      ],
+      "container_iso": [
+        "COSU8001101",
+        "COSU8001102"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8801"
+      ],
+      "contract_no": [
+        "CN-PT-CTR-2026-001"
+      ],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8507600090"
+      ],
+      "un_locode": [],
+      "vessel_imo": [
+        "9795610"
+      ],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 682,
+    "file_prefix": "27_pt_unstruct_faturas_packing_lists_desformatados",
+    "pdf_file": "27_pt_unstruct_faturas_packing_lists_desformatados.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-RAW-INV-8802",
+    "source_unstructured_table": "pt_unstruct_faturas_packing_lists_desformatados",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500234567",
+    "primary_nif_pt": "500234567",
+    "primary_uscc_cn": "91440300192317458F",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288991102",
+    "primary_container_iso": null,
+    "primary_invoice_no": "INV-CN-2026-8802",
+    "primary_contract_no": "CN-PT-CTR-2026-002",
+    "primary_taric_10": "8703801000",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "CNSZX",
+    "primary_vessel_imo": "9842105",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "invoice",
+      "auto",
+      "port",
+      "industry",
+      "2026-03-25",
+      "400x"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500234567"
+      ],
+      "nif_pt": [
+        "500234567"
+      ],
+      "uscc_cn": [
+        "91440300192317458F"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288991102"
+      ],
+      "container_iso": [],
+      "invoice_no": [
+        "INV-CN-2026-8802"
+      ],
+      "contract_no": [
+        "CN-PT-CTR-2026-002"
+      ],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8703801000"
+      ],
+      "un_locode": [
+        "CNSZX",
+        "PTSIN"
+      ],
+      "vessel_imo": [
+        "9842105"
+      ],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 7.82,
+          "currency": "CNY"
+        }
+      ]
+    },
+    "raw_text_length_chars": 550,
+    "file_prefix": "27_pt_unstruct_faturas_packing_lists_desformatados",
+    "pdf_file": "27_pt_unstruct_faturas_packing_lists_desformatados.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-RAW-INV-9901",
+    "source_unstructured_table": "pt_unstruct_faturas_packing_lists_desformatados",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500265432",
+    "primary_nif_pt": "500265432",
+    "primary_uscc_cn": "91110000101123456N",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288992201",
+    "primary_container_iso": "COSU4455661",
+    "primary_invoice_no": "INV-PT-2026-9901",
+    "primary_contract_no": null,
+    "primary_taric_10": "2204218010",
+    "primary_cifer_gacc": "CPRT18000102000101",
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": "9839131",
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": 14.0,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "export",
+      "shanghai",
+      "invoice",
+      "family",
+      "estates",
+      "symington"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500265432"
+      ],
+      "nif_pt": [
+        "500265432"
+      ],
+      "uscc_cn": [
+        "91110000101123456N"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288992201"
+      ],
+      "container_iso": [
+        "COSU4455661"
+      ],
+      "invoice_no": [
+        "INV-PT-2026-9901"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [
+        "CPRT18000102000101"
+      ],
+      "taric_10": [
+        "2204218010",
+        "2204210000"
+      ],
+      "un_locode": [],
+      "vessel_imo": [
+        "9839131"
+      ],
+      "temperatures_c": [
+        "+14"
+      ],
+      "monetary": []
+    },
+    "raw_text_length_chars": 666,
+    "file_prefix": "27_pt_unstruct_faturas_packing_lists_desformatados",
+    "pdf_file": "27_pt_unstruct_faturas_packing_lists_desformatados.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CLAIM-PICC-2026-004",
+    "source_unstructured_table": "pt_unstruct_participacoes_sinistros_seguradoras",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT503412890",
+    "primary_nif_pt": "500918273",
+    "primary_uscc_cn": "91350900587527783P",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288991104",
+    "primary_container_iso": "CATU8004401",
+    "primary_invoice_no": "INV-CN-2026-8804",
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": "9839131",
+    "primary_amount_eur": 23650.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "INSURANCE_CLAIM_APPROVED",
+    "ai_risk_level": "MEDIUM",
+    "ai_risk_score_0_100": 58.0,
+    "ai_confidence": 0.965,
+    "tfidf_keywords": [
+      "sinistro",
+      "perito",
+      "seguradora",
+      "contentor",
+      "catl",
+      "baterias"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT503412890"
+      ],
+      "nif_pt": [
+        "500918273",
+        "503412890"
+      ],
+      "uscc_cn": [
+        "91350900587527783P"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288991104"
+      ],
+      "container_iso": [
+        "CATU8004401"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8804"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [
+        "9839131"
+      ],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 185000.0,
+          "currency": "CNY"
+        },
+        {
+          "amount": 23650.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 1235,
+    "file_prefix": "28_pt_unstruct_participacoes_sinistros_seguradoras",
+    "pdf_file": "28_pt_unstruct_participacoes_sinistros_seguradoras.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CLAIM-PICC-2026-007",
+    "source_unstructured_table": "pt_unstruct_participacoes_sinistros_seguradoras",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "CIMSMGS-YW2026-07",
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 4500.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "picc-rail-2026-007",
+      "picc-rail-2026-yw-1007",
+      "transportado",
+      "yixin",
+      "x8020",
+      "danos"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "CIMSMGS-YW2026-07"
+      ],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 4500.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 388,
+    "file_prefix": "28_pt_unstruct_participacoes_sinistros_seguradoras",
+    "pdf_file": "28_pt_unstruct_participacoes_sinistros_seguradoras.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CLAIM-SINOSURE-2026-001",
+    "source_unstructured_table": "pt_unstruct_participacoes_sinistros_seguradoras",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "risco",
+      "sinosure",
+      "crédito",
+      "exportação",
+      "sinosure-pt-2026-01",
+      "cobertura"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 308,
+    "file_prefix": "28_pt_unstruct_participacoes_sinistros_seguradoras",
+    "pdf_file": "28_pt_unstruct_participacoes_sinistros_seguradoras.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-AICEP-REPORT-2026-BATT",
+    "source_unstructured_table": "pt_unstruct_relatorios_inteligencia_mercado_aicep",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500234567",
+    "primary_nif_pt": "517890123",
+    "primary_uscc_cn": "91320413MA1M9Y2C4B",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 2000000000.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "euros",
+      "económica",
+      "milhões",
+      "uscc",
+      "setorial",
+      "inteligência"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500234567",
+        "PT500697256"
+      ],
+      "nif_pt": [
+        "517890123",
+        "500234567",
+        "500697256"
+      ],
+      "uscc_cn": [
+        "91320413MA1M9Y2C4B",
+        "91440300192317458F",
+        "91610132724912345X"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 2000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 350000000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 988,
+    "file_prefix": "29_pt_unstruct_relatorios_inteligencia_mercado_aicep",
+    "pdf_file": "29_pt_unstruct_relatorios_inteligencia_mercado_aicep.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-AICEP-REPORT-2026-AGRO",
+    "source_unstructured_table": "pt_unstruct_relatorios_inteligencia_mercado_aicep",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "mercados",
+      "nota",
+      "oportunidades",
+      "cantão-hong",
+      "kong-macau",
+      "procura"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 432,
+    "file_prefix": "29_pt_unstruct_relatorios_inteligencia_mercado_aicep",
+    "pdf_file": "29_pt_unstruct_relatorios_inteligencia_mercado_aicep.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-AICEP-REPORT-2026-CBAM",
+    "source_unstructured_table": "pt_unstruct_relatorios_inteligencia_mercado_aicep",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "carbono",
+      "guia",
+      "mecanismo",
+      "ajustamento",
+      "fronteira",
+      "orientações"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 364,
+    "file_prefix": "29_pt_unstruct_relatorios_inteligencia_mercado_aicep",
+    "pdf_file": "29_pt_unstruct_relatorios_inteligencia_mercado_aicep.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CCILC-MINUTES-2026-03",
+    "source_unstructured_table": "pt_unstruct_atas_reunioes_camara_comercio_ccilc",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500697256",
+    "primary_nif_pt": "500697256",
+    "primary_uscc_cn": "91110000100001146K",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288992202",
+    "primary_container_iso": null,
+    "primary_invoice_no": "INV-PT-2026-9902",
+    "primary_contract_no": "CN-PT-CTR-2026-009",
+    "primary_taric_10": "4504908000",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 1885800.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "amorim",
+      "xangai",
+      "eori",
+      "assembleia",
+      "ordinária",
+      "câmara"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500697256",
+        "PT500077889",
+        "PT500246810"
+      ],
+      "nif_pt": [
+        "500697256",
+        "500077889",
+        "500246810"
+      ],
+      "uscc_cn": [
+        "91110000100001146K",
+        "91110000101123456N"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288992202"
+      ],
+      "container_iso": [],
+      "invoice_no": [
+        "INV-PT-2026-9902"
+      ],
+      "contract_no": [
+        "CN-PT-CTR-2026-009"
+      ],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "4504908000"
+      ],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 1885800.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 702,
+    "file_prefix": "30_pt_unstruct_atas_reunioes_camara_comercio_ccilc",
+    "pdf_file": "30_pt_unstruct_atas_reunioes_camara_comercio_ccilc.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CCILC-MINUTES-2026-05",
+    "source_unstructured_table": "pt_unstruct_atas_reunioes_camara_comercio_ccilc",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "reunião",
+      "ferroviário",
+      "logística",
+      "transportes",
+      "tempos",
+      "debate"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 403,
+    "file_prefix": "30_pt_unstruct_atas_reunioes_camara_comercio_ccilc",
+    "pdf_file": "30_pt_unstruct_atas_reunioes_camara_comercio_ccilc.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-CCILC-MINUTES-2026-06",
+    "source_unstructured_table": "pt_unstruct_atas_reunioes_camara_comercio_ccilc",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "arbitragem",
+      "fórum",
+      "resolução",
+      "litígios",
+      "luso-chineses",
+      "realizado"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 314,
+    "file_prefix": "30_pt_unstruct_atas_reunioes_camara_comercio_ccilc",
+    "pdf_file": "30_pt_unstruct_atas_reunioes_camara_comercio_ccilc.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-NEWS-SINES-CALB-2026",
+    "source_unstructured_table": "pt_unstruct_noticias_imprensa_economica_lusochinesa",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT517890123",
+    "primary_nif_pt": "517890123",
+    "primary_uscc_cn": "91320413MA1M9Y2C4B",
+    "primary_mrn_dau": "26PT000395IM008801",
+    "primary_bl_or_waybill": "COSU6288991101",
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 2000000000.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "calb",
+      "mota-engil",
+      "chinesa",
+      "jornal",
+      "negócios",
+      "acelera"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT517890123"
+      ],
+      "nif_pt": [
+        "517890123",
+        "500191827"
+      ],
+      "uscc_cn": [
+        "91320413MA1M9Y2C4B"
+      ],
+      "mrn_dau": [
+        "26PT000395IM008801"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991101"
+      ],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [
+        "PTSIN"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 2000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 350000000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 721,
+    "file_prefix": "31_pt_unstruct_noticias_imprensa_economica_lusochinesa",
+    "pdf_file": "31_pt_unstruct_noticias_imprensa_economica_lusochinesa.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-NEWS-BYD-CAETANO-2026",
+    "source_unstructured_table": "pt_unstruct_noticias_imprensa_economica_lusochinesa",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "permitiu",
+      "salvador",
+      "caetano",
+      "expanção",
+      "batem",
+      "recorde"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 364,
+    "file_prefix": "31_pt_unstruct_noticias_imprensa_economica_lusochinesa",
+    "pdf_file": "31_pt_unstruct_noticias_imprensa_economica_lusochinesa.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-NEWS-AGRO-EXPORT-2026",
+    "source_unstructured_table": "pt_unstruct_noticias_imprensa_economica_lusochinesa",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": null,
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "exportações",
+      "portuguesas",
+      "vinho",
+      "notícias",
+      "lideram",
+      "alta"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 340,
+    "file_prefix": "31_pt_unstruct_noticias_imprensa_economica_lusochinesa",
+    "pdf_file": "31_pt_unstruct_noticias_imprensa_economica_lusochinesa.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-ESG-CBAM-2026-006",
+    "source_unstructured_table": "pt_unstruct_auditorias_sustentabilidade_esg_fornecedores",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500191827",
+    "primary_nif_pt": "500191827",
+    "primary_uscc_cn": "91330200778899112T",
+    "primary_mrn_dau": "26PT000395IM008806",
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": "7225409000",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 10.85,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "CBAM_CARBON_LIABILITY_VERIFIED",
+    "ai_risk_level": "LOW_MONITORED",
+    "ai_risk_score_0_100": 28.0,
+    "ai_confidence": 0.985,
+    "tfidf_keywords": [
+      "cbam",
+      "unidade",
+      "tco2e",
+      "fabril",
+      "relativo",
+      "ningbo"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500191827",
+        "PT500697256"
+      ],
+      "nif_pt": [
+        "500191827",
+        "500697256"
+      ],
+      "uscc_cn": [
+        "91330200778899112T",
+        "91610132724912345X"
+      ],
+      "mrn_dau": [
+        "26PT000395IM008806",
+        "26PT000395IM008803"
+      ],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "7225409000",
+        "7606129200",
+        "8541430000"
+      ],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 85.0,
+          "currency": "CNY"
+        },
+        {
+          "amount": 10.85,
+          "currency": "EUR"
+        },
+        {
+          "amount": 252054.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 261154.68,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 996,
+    "file_prefix": "32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores",
+    "pdf_file": "32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-ESG-CATL-BATT-2026",
+    "source_unstructured_table": "pt_unstruct_auditorias_sustentabilidade_esg_fornecedores",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": null,
+    "primary_uscc_cn": "91350900587527783P",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "auditoria",
+      "diligência",
+      "auditada",
+      "farol",
+      "independente",
+      "rheinland"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [],
+      "uscc_cn": [
+        "91350900587527783P"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 523,
+    "file_prefix": "32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores",
+    "pdf_file": "32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-ESG-CALB-SINES-2026",
+    "source_unstructured_table": "pt_unstruct_auditorias_sustentabilidade_esg_fornecedores",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": null,
+    "primary_nif_pt": "517890123",
+    "primary_uscc_cn": "91320413MA1M9Y2C4B",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": null,
+    "primary_container_iso": null,
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 0.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "ambiental",
+      "calb",
+      "impacto",
+      "estudo",
+      "plano",
+      "promotora"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [],
+      "nif_pt": [
+        "517890123"
+      ],
+      "uscc_cn": [
+        "91320413MA1M9Y2C4B"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [],
+      "container_iso": [],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": []
+    },
+    "raw_text_length_chars": 450,
+    "file_prefix": "32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores",
+    "pdf_file": "32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-MSDS-CALB-LFP314",
+    "source_unstructured_table": "pt_unstruct_fichas_dados_seguranca_msds_quimicos",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT517890123",
+    "primary_nif_pt": "517890123",
+    "primary_uscc_cn": "91320413MA1M9Y2C4B",
+    "primary_mrn_dau": "26PT000395IM008801",
+    "primary_bl_or_waybill": "COSU6288991101",
+    "primary_container_iso": "COSU8001101",
+    "primary_invoice_no": "INV-CN-2026-8801",
+    "primary_contract_no": null,
+    "primary_taric_10": "8507600090",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 6283500.0,
+    "max_temperature_recorded_c": 195.0,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "secção",
+      "calb",
+      "química",
+      "térmica",
+      "transporte",
+      "lítio"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT517890123"
+      ],
+      "nif_pt": [
+        "517890123"
+      ],
+      "uscc_cn": [
+        "91320413MA1M9Y2C4B"
+      ],
+      "mrn_dau": [
+        "26PT000395IM008801"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991101"
+      ],
+      "container_iso": [
+        "COSU8001101"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8801"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8507600090"
+      ],
+      "un_locode": [
+        "PTSIN"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [
+        "+21.5",
+        "+195.0"
+      ],
+      "monetary": [
+        {
+          "amount": 6283500.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 1076,
+    "file_prefix": "86_pt_unstruct_fichas_dados_seguranca_msds_quimicos",
+    "pdf_file": "86_pt_unstruct_fichas_dados_seguranca_msds_quimicos.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-MSDS-CATL-ENERC",
+    "source_unstructured_table": "pt_unstruct_fichas_dados_seguranca_msds_quimicos",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT503412890",
+    "primary_nif_pt": "503412890",
+    "primary_uscc_cn": "91350900587527783P",
+    "primary_mrn_dau": "26PT000140IM008804",
+    "primary_bl_or_waybill": "COSU6288991104",
+    "primary_container_iso": "CATU8004401",
+    "primary_invoice_no": "INV-CN-2026-8804",
+    "primary_contract_no": null,
+    "primary_taric_10": "8507600090",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTLEI",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 3520000.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "emergências",
+      "msds-catl-2026-04",
+      "estacionários",
+      "arrefecidos",
+      "líquido",
+      "glicol-água"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT503412890"
+      ],
+      "nif_pt": [
+        "503412890"
+      ],
+      "uscc_cn": [
+        "91350900587527783P"
+      ],
+      "mrn_dau": [
+        "26PT000140IM008804"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991104"
+      ],
+      "container_iso": [
+        "CATU8004401"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8804"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8507600090"
+      ],
+      "un_locode": [
+        "PTLEI"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 3520000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 597,
+    "file_prefix": "86_pt_unstruct_fichas_dados_seguranca_msds_quimicos",
+    "pdf_file": "86_pt_unstruct_fichas_dados_seguranca_msds_quimicos.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-SEAPROTEST-LEIXOES-2026",
+    "source_unstructured_table": "pt_unstruct_cartas_protesto_maritimo_sea_protest",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT503412890",
+    "primary_nif_pt": "503412890",
+    "primary_uscc_cn": "91350900587527783P",
+    "primary_mrn_dau": "26PT000140IM008804",
+    "primary_bl_or_waybill": "COSU6288991104",
+    "primary_container_iso": "CATU8004401",
+    "primary_invoice_no": "INV-CN-2026-8804",
+    "primary_contract_no": null,
+    "primary_taric_10": "8507600090",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTLEI",
+    "primary_vessel_imo": "9839131",
+    "primary_amount_eur": 23650.0,
+    "max_temperature_recorded_c": 20.8,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "leixões",
+      "comandante",
+      "protesto",
+      "peritagem",
+      "contentor",
+      "catu8004401"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT503412890"
+      ],
+      "nif_pt": [
+        "503412890"
+      ],
+      "uscc_cn": [
+        "91350900587527783P"
+      ],
+      "mrn_dau": [
+        "26PT000140IM008804"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991104"
+      ],
+      "container_iso": [
+        "CATU8004401"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8804"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8507600090"
+      ],
+      "un_locode": [
+        "PTLEI"
+      ],
+      "vessel_imo": [
+        "9839131"
+      ],
+      "temperatures_c": [
+        "+20.8"
+      ],
+      "monetary": [
+        {
+          "amount": 23650.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 968,
+    "file_prefix": "87_pt_unstruct_cartas_protesto_maritimo_sea_protest",
+    "pdf_file": "87_pt_unstruct_cartas_protesto_maritimo_sea_protest.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-SEAPROTEST-SHANGHAI-WINE",
+    "source_unstructured_table": "pt_unstruct_cartas_protesto_maritimo_sea_protest",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500265432",
+    "primary_nif_pt": "500265432",
+    "primary_uscc_cn": "91110000101123456N",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288992201",
+    "primary_container_iso": "COSU4455661",
+    "primary_invoice_no": "INV-PT-2026-9901",
+    "primary_contract_no": null,
+    "primary_taric_10": "2204218010",
+    "primary_cifer_gacc": "CPRT18000102000101",
+    "primary_port_unlocode": "CNSHA",
+    "primary_vessel_imo": "9839131",
+    "primary_amount_eur": 1522500.0,
+    "max_temperature_recorded_c": 28.4,
+    "ai_compliance_verdict": "COLD_CHAIN_THERMAL_ANOMALY_DETECTED",
+    "ai_risk_level": "MEDIUM_HIGH",
+    "ai_risk_score_0_100": 74.0,
+    "ai_confidence": 0.991,
+    "tfidf_keywords": [
+      "reefer",
+      "durante",
+      "frio",
+      "survey-sh-2026-9901",
+      "registou-se",
+      "excursão"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500265432"
+      ],
+      "nif_pt": [
+        "500265432"
+      ],
+      "uscc_cn": [
+        "91110000101123456N"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288992201"
+      ],
+      "container_iso": [
+        "COSU4455661"
+      ],
+      "invoice_no": [
+        "INV-PT-2026-9901"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [
+        "CPRT18000102000101"
+      ],
+      "taric_10": [
+        "2204218010"
+      ],
+      "un_locode": [
+        "CNSHA"
+      ],
+      "vessel_imo": [
+        "9839131"
+      ],
+      "temperatures_c": [
+        "+28.4"
+      ],
+      "monetary": [
+        {
+          "amount": 1522500.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 647,
+    "file_prefix": "87_pt_unstruct_cartas_protesto_maritimo_sea_protest",
+    "pdf_file": "87_pt_unstruct_cartas_protesto_maritimo_sea_protest.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-AT-AUDIENCIA-2026-001",
+    "source_unstructured_table": "pt_unstruct_oficios_notificacoes_audiencia_previa_at",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500234567",
+    "primary_nif_pt": "500234567",
+    "primary_uscc_cn": "91440300192317458F",
+    "primary_mrn_dau": "26PT000395IM008802",
+    "primary_bl_or_waybill": "COSU6288991102",
+    "primary_container_iso": "BYDU9002201",
+    "primary_invoice_no": "INV-CN-2026-8802",
+    "primary_contract_no": null,
+    "primary_taric_10": "8703801000",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 9732000.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "taxa",
+      "adicional",
+      "código",
+      "auto",
+      "ofício",
+      "audiência"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500234567"
+      ],
+      "nif_pt": [
+        "500234567"
+      ],
+      "uscc_cn": [
+        "91440300192317458F"
+      ],
+      "mrn_dau": [
+        "26PT000395IM008802"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991102"
+      ],
+      "container_iso": [
+        "BYDU9002201"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8802"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8703801000"
+      ],
+      "un_locode": [
+        "PTSIN"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 9732000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 852,
+    "file_prefix": "88_pt_unstruct_oficios_notificacoes_audiencia_previa_at",
+    "pdf_file": "88_pt_unstruct_oficios_notificacoes_audiencia_previa_at.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-AT-AUDIENCIA-2026-002",
+    "source_unstructured_table": "pt_unstruct_oficios_notificacoes_audiencia_previa_at",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT504998877",
+    "primary_nif_pt": "504998877",
+    "primary_uscc_cn": "91330782098765432W",
+    "primary_mrn_dau": "26PT000510IM008807",
+    "primary_bl_or_waybill": "CIMSMGS-YW2026-07",
+    "primary_container_iso": "CRXU9988771",
+    "primary_invoice_no": null,
+    "primary_contract_no": null,
+    "primary_taric_10": "6204623100",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTENT",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 18500.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "PARTIAL_RETENTION_AND_FINE",
+    "ai_risk_level": "HIGH",
+    "ai_risk_score_0_100": 82.5,
+    "ai_confidence": 0.972,
+    "tfidf_keywords": [
+      "coima",
+      "pós-desembaraço",
+      "at-ent-2026-008807",
+      "jardim",
+      "tabaco",
+      "cccg"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT504998877"
+      ],
+      "nif_pt": [
+        "504998877"
+      ],
+      "uscc_cn": [
+        "91330782098765432W"
+      ],
+      "mrn_dau": [
+        "26PT000510IM008807"
+      ],
+      "bl_or_waybill": [
+        "CIMSMGS-YW2026-07"
+      ],
+      "container_iso": [
+        "CRXU9988771"
+      ],
+      "invoice_no": [],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "6204623100"
+      ],
+      "un_locode": [
+        "PTENT"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 18500.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 552,
+    "file_prefix": "88_pt_unstruct_oficios_notificacoes_audiencia_previa_at",
+    "pdf_file": "88_pt_unstruct_oficios_notificacoes_audiencia_previa_at.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-GACC-LABEL-WINE-9901",
+    "source_unstructured_table": "pt_unstruct_traducoes_rotulagem_mandarim_gacc",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT500265432",
+    "primary_nif_pt": "500265432",
+    "primary_uscc_cn": "91110000101123456N",
+    "primary_mrn_dau": "26PT000140EX009901",
+    "primary_bl_or_waybill": "COSU6288992201",
+    "primary_container_iso": "COSU4455661",
+    "primary_invoice_no": "INV-PT-2026-9901",
+    "primary_contract_no": null,
+    "primary_taric_10": "2204218010",
+    "primary_cifer_gacc": "CPRT18000102000101",
+    "primary_port_unlocode": "CNSHA",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 1522500.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "obrigatório",
+      "saúde",
+      "aprovado",
+      "dossier",
+      "homologação",
+      "contra-rótulo"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT500265432"
+      ],
+      "nif_pt": [
+        "500265432"
+      ],
+      "uscc_cn": [
+        "91110000101123456N"
+      ],
+      "mrn_dau": [
+        "26PT000140EX009901"
+      ],
+      "bl_or_waybill": [
+        "COSU6288992201"
+      ],
+      "container_iso": [
+        "COSU4455661"
+      ],
+      "invoice_no": [
+        "INV-PT-2026-9901"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [
+        "CPRT18000102000101"
+      ],
+      "taric_10": [
+        "2204218010"
+      ],
+      "un_locode": [
+        "CNSHA"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 1522500.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 851,
+    "file_prefix": "89_pt_unstruct_traducoes_rotulagem_mandarim_gacc",
+    "pdf_file": "89_pt_unstruct_traducoes_rotulagem_mandarim_gacc.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-GACC-LABEL-PORK-9905",
+    "source_unstructured_table": "pt_unstruct_traducoes_rotulagem_mandarim_gacc",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT508112244",
+    "primary_nif_pt": "508112244",
+    "primary_uscc_cn": "91110000101123456N",
+    "primary_mrn_dau": null,
+    "primary_bl_or_waybill": "COSU6288992205",
+    "primary_container_iso": "COSU4455665",
+    "primary_invoice_no": "INV-PT-2026-9905",
+    "primary_contract_no": null,
+    "primary_taric_10": null,
+    "primary_cifer_gacc": "CPRT18000101000505",
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 1650000.0,
+    "max_temperature_recorded_c": -18.0,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "retificação",
+      "rotulagem",
+      "registo",
+      "cifer",
+      "bilingue",
+      "frigorífico"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT508112244"
+      ],
+      "nif_pt": [
+        "508112244"
+      ],
+      "uscc_cn": [
+        "91110000101123456N"
+      ],
+      "mrn_dau": [],
+      "bl_or_waybill": [
+        "COSU6288992205"
+      ],
+      "container_iso": [
+        "COSU4455665"
+      ],
+      "invoice_no": [
+        "INV-PT-2026-9905"
+      ],
+      "contract_no": [],
+      "swift_uetr": [],
+      "cifer_gacc": [
+        "CPRT18000101000505"
+      ],
+      "taric_10": [],
+      "un_locode": [
+        "PTSIN",
+        "CNSHA"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [
+        "-18.0"
+      ],
+      "monetary": [
+        {
+          "amount": 1650000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 676,
+    "file_prefix": "89_pt_unstruct_traducoes_rotulagem_mandarim_gacc",
+    "pdf_file": "89_pt_unstruct_traducoes_rotulagem_mandarim_gacc.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-KYC-BCP-CALB-2026",
+    "source_unstructured_table": "pt_unstruct_relatorios_due_diligence_sancoes_kyc",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT517890123",
+    "primary_nif_pt": "517890123",
+    "primary_uscc_cn": "91320413MA1M9Y2C4B",
+    "primary_mrn_dau": "26PT000395IM008801",
+    "primary_bl_or_waybill": "COSU6288991101",
+    "primary_container_iso": "COSU8001101",
+    "primary_invoice_no": "INV-CN-2026-8801",
+    "primary_contract_no": "CN-PT-CTR-2026-001",
+    "primary_taric_10": "8507600090",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": "PTSIN",
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 6283500.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "compliance",
+      "triagem",
+      "sanções",
+      "operação",
+      "calb",
+      "bancário"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT517890123"
+      ],
+      "nif_pt": [
+        "517890123"
+      ],
+      "uscc_cn": [
+        "91320413MA1M9Y2C4B"
+      ],
+      "mrn_dau": [
+        "26PT000395IM008801"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991101"
+      ],
+      "container_iso": [
+        "COSU8001101"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8801"
+      ],
+      "contract_no": [
+        "CN-PT-CTR-2026-001"
+      ],
+      "swift_uetr": [],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8507600090"
+      ],
+      "un_locode": [
+        "PTSIN"
+      ],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 6283500.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 903,
+    "file_prefix": "90_pt_unstruct_relatorios_due_diligence_sancoes_kyc",
+    "pdf_file": "90_pt_unstruct_relatorios_due_diligence_sancoes_kyc.pdf"
+  },
+  {
+    "doc_id": "UNSTRUCT-KYC-BPI-CATL-2026",
+    "source_unstructured_table": "pt_unstruct_relatorios_due_diligence_sancoes_kyc",
+    "ai_engine_mode": "HYBRID_NLP_NER_ENGINE",
+    "primary_eori_pt": "PT503412890",
+    "primary_nif_pt": "503412890",
+    "primary_uscc_cn": "91350900587527783P",
+    "primary_mrn_dau": "26PT000140IM008804",
+    "primary_bl_or_waybill": "COSU6288991104",
+    "primary_container_iso": "CATU8004401",
+    "primary_invoice_no": "INV-CN-2026-8804",
+    "primary_contract_no": "CN-PT-CTR-2026-004",
+    "primary_taric_10": "8507600090",
+    "primary_cifer_gacc": null,
+    "primary_port_unlocode": null,
+    "primary_vessel_imo": null,
+    "primary_amount_eur": 3520000.0,
+    "max_temperature_recorded_c": null,
+    "ai_compliance_verdict": "COMPLIANT_AND_VALIDATED",
+    "ai_risk_level": "LOW",
+    "ai_risk_score_0_100": 12.0,
+    "ai_confidence": 0.988,
+    "tfidf_keywords": [
+      "diligence",
+      "bancária",
+      "efetivo",
+      "rcbe",
+      "kyc-bpi-2026-0004",
+      "cliente"
+    ],
+    "all_extracted_entities": {
+      "eori_pt": [
+        "PT503412890"
+      ],
+      "nif_pt": [
+        "503412890"
+      ],
+      "uscc_cn": [
+        "91350900587527783P"
+      ],
+      "mrn_dau": [
+        "26PT000140IM008804"
+      ],
+      "bl_or_waybill": [
+        "COSU6288991104"
+      ],
+      "container_iso": [
+        "CATU8004401"
+      ],
+      "invoice_no": [
+        "INV-CN-2026-8804"
+      ],
+      "contract_no": [
+        "CN-PT-CTR-2026-004"
+      ],
+      "swift_uetr": [
+        "97ed4827-7b6f-4491-a06f-b548d5a75004"
+      ],
+      "cifer_gacc": [],
+      "taric_10": [
+        "8507600090"
+      ],
+      "un_locode": [],
+      "vessel_imo": [],
+      "temperatures_c": [],
+      "monetary": [
+        {
+          "amount": 3520000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    "raw_text_length_chars": 627,
+    "file_prefix": "90_pt_unstruct_relatorios_due_diligence_sancoes_kyc",
+    "pdf_file": "90_pt_unstruct_relatorios_due_diligence_sancoes_kyc.pdf"
+  }
+]

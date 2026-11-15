@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "REV-LOG-PT-2026-001",
+    "pedido_reembolso_at_no": "REM-AT-2026-LIS-00412",
+    "fundamento_cau": "Art. 116.º e Art. 118.º do CAU (Mercadorias Defeituosas ou Não Conformes com o Contrato)",
+    "requerente_eori": "PT500697256",
+    "fornecedor_china_uscc": "91440300618837699Q",
+    "mrn_importacao_original": "26PT000395IM008808",
+    "mrn_reexportacao_devolucao": "26PT000395EX009988",
+    "descricao_ocorrencia": "Devolução à fábrica da Huawei em Dongguan de 4 inversores solares SUN2000 para recalibração de firmware sob garantia",
+    "direitos_aduaneiros_reembolsados_eur": 1120.0,
+    "processo_retorno_china_id": "RET-B2B-2026-003",
+    "decisao_at": "DEFERIDO_REEMBOLSO_CREDITADO"
+  },
+  {
+    "_id": "REV-LOG-PT-2026-002",
+    "pedido_reembolso_at_no": "REM-AT-2026-CTT-00891",
+    "fundamento_cau": "Art. 116.º do CAU & Anulação de Declaração H7 por Devolução de Consumidor no Prazo de 14 Dias",
+    "requerente_eori": "PT500077568",
+    "fornecedor_china_uscc": "91440300755673010C",
+    "mrn_importacao_original": "26PT000520H70012901",
+    "mrn_reexportacao_devolucao": "26PT000520EX009991",
+    "descricao_ocorrencia": "Consolidação de devoluções de e-commerce no Hub CTT Cabo Ruivo e reexpedição aérea para o entreposto de Shenzhen Qianhai",
+    "direitos_aduaneiros_reembolsados_eur": 0.0,
+    "processo_retorno_china_id": "RET-CBEC-2026-001",
+    "decisao_at": "CREDITO_IVA_IOSS_REGULARIZADO"
+  }
+]

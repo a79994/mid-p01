@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "AD-CVD-UE-2026-001",
+    "regulamento_comissao_europeia": "Regulamento de Execução (UE) 2024/2754 da Comissão",
+    "tipo_medida_defesa": "Direito de Compensação Definitivo (Anti-Subsídios sobre BEV da China)",
+    "codigo_taric_10": "8703801000",
+    "codigo_adicional_taric_empresa": "C903 (Grupo BYD - Produtor Exportador Cooperante)",
+    "fabricante_china_uscc": "91440300192317458F",
+    "eori_importador_pt": "PT500234567",
+    "mrn_dau_liquidado": "26PT000395IM008802",
+    "valor_aduaneiro_cif_eur": 9732000.0,
+    "taxa_direito_convencional_pct": 10.0,
+    "taxa_adicional_antisubsidio_pct": 17.0,
+    "montante_antisubsidio_cobrado_at_eur": 1654440.0,
+    "taxa_residual_nao_cooperantes_pct": 35.3
+  },
+  {
+    "_id": "AD-CVD-UE-2026-002",
+    "regulamento_comissao_europeia": "Regulamento de Execução (UE) 2024/2754 da Comissão",
+    "tipo_medida_defesa": "Direito de Compensação Definitivo (2.º Lote BYD Atto 3)",
+    "codigo_taric_10": "8703801000",
+    "codigo_adicional_taric_empresa": "C903 (Grupo BYD)",
+    "fabricante_china_uscc": "91440300192317458F",
+    "eori_importador_pt": "PT500234567",
+    "mrn_dau_liquidado": "26PT000395IM008813",
+    "valor_aduaneiro_cif_eur": 8950000.0,
+    "taxa_direito_convencional_pct": 10.0,
+    "taxa_adicional_antisubsidio_pct": 17.0,
+    "montante_antisubsidio_cobrado_at_eur": 1521500.0,
+    "taxa_residual_nao_cooperantes_pct": 35.3
+  },
+  {
+    "_id": "AD-CVD-UE-2026-003",
+    "regulamento_comissao_europeia": "Regulamento de Execução (UE) 2021/1784 (Alumínio Laminado Plano)",
+    "tipo_medida_defesa": "Direito Anti-Dumping Definitivo sobre Produtos Planos de Alumínio da China",
+    "codigo_taric_10": "7606129200",
+    "codigo_adicional_taric_empresa": "C684",
+    "fabricante_china_uscc": "91330200778899112T",
+    "eori_importador_pt": "PT500191827",
+    "mrn_dau_liquidado": "26PT000395IM008806",
+    "valor_aduaneiro_cif_eur": 1242000.0,
+    "taxa_direito_convencional_pct": 7.5,
+    "taxa_adicional_antisubsidio_pct": 14.3,
+    "montante_antisubsidio_cobrado_at_eur": 177606.0,
+    "taxa_residual_nao_cooperantes_pct": 24.6
+  }
+]

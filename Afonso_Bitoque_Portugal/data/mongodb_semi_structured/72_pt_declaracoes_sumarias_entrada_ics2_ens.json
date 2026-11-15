@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "ICS2-ENS-PT-2026-001",
+    "mrn_ens_ics2": "26PTICS2000395ENS8801",
+    "versao_ics2": "ICS2 Release 3 (Maritime & Rail)",
+    "submetido_24h_antes_embarque_cn": true,
+    "data_hora_submissao_utc": "2026-03-22T06:00:00Z",
+    "referencia_bl_ou_awb": "COSU6288991101",
+    "eori_transportador": "PT500991122",
+    "eori_recetor_portugal": "PT517890123",
+    "codigo_hs6_declarado": "850760",
+    "primeira_estancia_entrada_ue": "PT000395 (Alfândega Marítima de Sines)",
+    "resultado_analise_risco_seguranca": "ASSESSMENT_COMPLETE_PERMIT_TO_LOAD",
+    "alerta_dnl_do_not_load": false
+  },
+  {
+    "_id": "ICS2-ENS-PT-2026-002",
+    "mrn_ens_ics2": "26PTICS2000395ENS8802",
+    "versao_ics2": "ICS2 Release 3 (Maritime Ro-Ro)",
+    "submetido_24h_antes_embarque_cn": true,
+    "data_hora_submissao_utc": "2026-03-26T04:30:00Z",
+    "referencia_bl_ou_awb": "COSU6288991102",
+    "eori_transportador": "PT500991122",
+    "eori_recetor_portugal": "PT500234567",
+    "codigo_hs6_declarado": "870380",
+    "primeira_estancia_entrada_ue": "PT000395 (Alfândega Marítima de Sines)",
+    "resultado_analise_risco_seguranca": "ASSESSMENT_COMPLETE_PERMIT_TO_LOAD",
+    "alerta_dnl_do_not_load": false
+  },
+  {
+    "_id": "ICS2-ENS-PT-2026-003",
+    "mrn_ens_ics2": "26PTICS2000520ENS8805",
+    "versao_ics2": "ICS2 Release 2 (Air Cargo PLACI)",
+    "submetido_24h_antes_embarque_cn": true,
+    "data_hora_submissao_utc": "2026-04-15T18:00:00Z",
+    "referencia_bl_ou_awb": "047-88991105",
+    "eori_transportador": "PT500077568",
+    "eori_recetor_portugal": "PT500246810",
+    "codigo_hs6_declarado": "851713",
+    "primeira_estancia_entrada_ue": "PT000520 (Alfândega Aeroporto de Lisboa)",
+    "resultado_analise_risco_seguranca": "PLACI_SECURITY_SCREENED_OK",
+    "alerta_dnl_do_not_load": false
+  },
+  {
+    "_id": "ICS2-ENS-PT-2026-004",
+    "mrn_ens_ics2": "26PTICS2000140ENS8804",
+    "versao_ics2": "ICS2 Release 3 (Maritime Hazmat)",
+    "submetido_24h_antes_embarque_cn": true,
+    "data_hora_submissao_utc": "2026-04-10T12:00:00Z",
+    "referencia_bl_ou_awb": "COSU6288991104",
+    "eori_transportador": "PT501223344",
+    "eori_recetor_portugal": "PT503412890",
+    "codigo_hs6_declarado": "850760",
+    "primeira_estancia_entrada_ue": "PT000140 (Alfândega de Leixões)",
+    "resultado_analise_risco_seguranca": "RFI_HAZMAT_UN3480_REQUIRED_ON_ARRIVAL",
+    "alerta_dnl_do_not_load": false
+  }
+]

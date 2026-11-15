@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MaritimeTransshipmentHubOperations>
+  <TransshipmentOperation transshipmentId="TSH-SINES-LEIXOES-001" hubPortUnlocode="PTSIN" hubPortName="Port of Sines PSA Terminal XXI (Feeder Relay)" containerIso="CATU8004401" blNumber="COSU6288991104">
+    <InboundMotherVessel vesselName="COSCO SHIPPING SOLAR" vesselImo="9839131" dischargeDateUTC="2026-05-14"/>
+    <OutboundFeederVessel feederName="PORTUGAL FEEDER EXPRESS" feederImo="9451123" reloadDateUTC="2026-05-16" finalDestinationPortPT="PTLEI"/>
+  </TransshipmentOperation>
+  <TransshipmentOperation transshipmentId="TSH-TANGER-LEIXOES-002" hubPortUnlocode="MAPTM" hubPortName="Tanger-Med Port Complex APM Terminals" containerIso="COSU4455661" blNumber="COSU6288992201">
+    <InboundMotherVessel vesselName="IBERIA ATLANTIC FEEDER" vesselImo="9388210" dischargeDateUTC="2026-04-09"/>
+    <OutboundFeederVessel feederName="COSCO SHIPPING SOLAR" feederImo="9839131" reloadDateUTC="2026-04-11" finalDestinationPortPT="CNSHA"/>
+  </TransshipmentOperation>
+  <TransshipmentOperation transshipmentId="TSH-SINGAPORE-SINES-003" hubPortUnlocode="SGSIN" hubPortName="PSA Singapore Tuas Mega Port Hub" containerIso="COSU8001101" blNumber="COSU6288991101">
+    <InboundMotherVessel vesselName="COSCO SHIPPING UNIVERSE" vesselImo="9795610" dischargeDateUTC="2026-03-30"/>
+    <OutboundFeederVessel feederName="COSCO SHIPPING UNIVERSE" feederImo="9795610" reloadDateUTC="2026-03-31" finalDestinationPortPT="PTSIN"/>
+  </TransshipmentOperation>
+  <TransshipmentOperation transshipmentId="TSH-ALGECIRAS-LEIXOES-004" hubPortUnlocode="ESALG" hubPortName="Port of Algeciras TTIA Hub" containerIso="COSU4455662" blNumber="COSU6288992202">
+    <InboundMotherVessel vesselName="LUSITANIA COASTAL FEEDER" vesselImo="9412234" dischargeDateUTC="2026-04-15"/>
+    <OutboundFeederVessel feederName="COSCO SHIPPING PISCES" feederImo="9795634" reloadDateUTC="2026-04-17" finalDestinationPortPT="CNSHA"/>
+  </TransshipmentOperation>
+  <TransshipmentOperation transshipmentId="TSH-SINES-SETUBAL-005" hubPortUnlocode="PTSIN" hubPortName="Port of Sines Terminal XXI" containerIso="HWU8008801" blNumber="COSU6288991108">
+    <InboundMotherVessel vesselName="COSCO SHIPPING TAURUS" vesselImo="9795646" dischargeDateUTC="2026-05-28"/>
+    <OutboundFeederVessel feederName="SADO CONTAINER SHUTTLE" feederImo="9521108" reloadDateUTC="2026-05-29" finalDestinationPortPT="PTSIN"/>
+  </TransshipmentOperation>
+</MaritimeTransshipmentHubOperations>

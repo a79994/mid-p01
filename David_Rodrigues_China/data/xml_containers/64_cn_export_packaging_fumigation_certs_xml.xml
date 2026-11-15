@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExportPackagingAndHazmatCertificates>
+  <CertificateRecord certificateId="CERT-HZ-2026-001" blNumber="COSU6288991101" containerIso="COSU8001101">
+    <ISPM15WoodFumigation ippcMarkCode="CN-32004-HT" treatmentMethod="Heat Treatment 56C 30min (ISPM-15)" exposureTempC="58"/>
+    <HazmatIMDGDeclaration isDangerousGoods="true" unNumber="UN3480" imdgClass="Class 9 - Lithium Ion Batteries" un383LithiumTested="true"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 1 - Full Container Weighbridge" verifiedGrossMassKg="463800.00" weighingTerminal="Shanghai Yangshan Phase 4 Automated Scale"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-HZ-2026-002" blNumber="COSU6288991102" containerIso="BYDU9002201">
+    <ISPM15WoodFumigation ippcMarkCode="CN-44003-HT" treatmentMethod="Heat Treatment 56C 30min (ISPM-15)" exposureTempC="56"/>
+    <HazmatIMDGDeclaration isDangerousGoods="true" unNumber="UN3171" imdgClass="Class 9 - Battery-Powered Vehicle" un383LithiumTested="true"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 2 - Certified Vehicle Axle Weight" verifiedGrossMassKg="895400.00" weighingTerminal="Shenzhen Yantian Ro-Ro Ramp Scale"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-PK-2026-003" blNumber="COSU6288991103" containerIso="COSU8003301">
+    <ISPM15WoodFumigation ippcMarkCode="CN-61001-HT" treatmentMethod="Kiln Dried &amp; Heat Treated (ISPM-15)" exposureTempC="60"/>
+    <HazmatIMDGDeclaration isDangerousGoods="false" unNumber="NON-HAZMAT" imdgClass="Not Applicable" un383LithiumTested="false"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 2 - Certified Cargo + Tare" verifiedGrossMassKg="1714200.00" weighingTerminal="Xi'an Inland Port Consolidation Weighbridge"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-HZ-2026-004" blNumber="COSU6288991104" containerIso="CATU8004401">
+    <ISPM15WoodFumigation ippcMarkCode="CN-35009-HT" treatmentMethod="Heat Treatment 56C 30min (ISPM-15)" exposureTempC="57"/>
+    <HazmatIMDGDeclaration isDangerousGoods="true" unNumber="UN3480" imdgClass="Class 9 - Lithium Ion Batteries" un383LithiumTested="true"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 1 - Full Container Weighbridge" verifiedGrossMassKg="358900.00" weighingTerminal="Ningbo Meishan Terminal Scale 02"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-PK-2026-005" blNumber="047-88991105" containerIso="PMC44111CA">
+    <ISPM15WoodFumigation ippcMarkCode="CN-11005-HT" treatmentMethod="Kiln Dried ISPM-15 Wooden Pallet" exposureTempC="59"/>
+    <HazmatIMDGDeclaration isDangerousGoods="false" unNumber="NON-HAZMAT" imdgClass="Class 9 - Consumer Lithium Under 100Wh Section II" un383LithiumTested="true"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 1 - Air Cargo Scale" verifiedGrossMassKg="2450.00" weighingTerminal="Hangzhou Xiaoshan Airport Cargo Terminal Scale 1"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-PK-2026-006" blNumber="COSU6288991106" containerIso="NBSU8006601">
+    <ISPM15WoodFumigation ippcMarkCode="CN-33002-HT" treatmentMethod="Heat Treatment 56C 30min (ISPM-15)" exposureTempC="58"/>
+    <HazmatIMDGDeclaration isDangerousGoods="false" unNumber="NON-HAZMAT" imdgClass="Not Applicable" un383LithiumTested="false"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 1 - Heavy Industrial Weighbridge" verifiedGrossMassKg="2110500.00" weighingTerminal="Ningbo Beilun Steel Logistics Scale"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-PK-2026-007" blNumber="CIMSMGS-YW2026-07" containerIso="YIWU4007701">
+    <ISPM15WoodFumigation ippcMarkCode="CN-33015-HT" treatmentMethod="Heat Treatment ISPM-15" exposureTempC="58"/>
+    <HazmatIMDGDeclaration isDangerousGoods="false" unNumber="NON-HAZMAT" imdgClass="Not Applicable" un383LithiumTested="false"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 2 - Rail Container Scale" verifiedGrossMassKg="27300.00" weighingTerminal="Yiwu Railway West Port Scale"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-PK-2026-008" blNumber="COSU6288991108" containerIso="HWU8008801">
+    <ISPM15WoodFumigation ippcMarkCode="CN-44012-HT" treatmentMethod="Heat Treatment 56C 30min (ISPM-15)" exposureTempC="57"/>
+    <HazmatIMDGDeclaration isDangerousGoods="false" unNumber="NON-HAZMAT" imdgClass="Not Applicable" un383LithiumTested="false"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 1 - Container Weighbridge" verifiedGrossMassKg="18450.00" weighingTerminal="Shenzhen Yantian Terminal 2 Scale"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-PK-2026-010" blNumber="COSU6288991110" containerIso="MDU8010001">
+    <ISPM15WoodFumigation ippcMarkCode="CN-44020-HT" treatmentMethod="Heat Treatment 56C 30min (ISPM-15)" exposureTempC="56"/>
+    <HazmatIMDGDeclaration isDangerousGoods="false" unNumber="NON-HAZMAT" imdgClass="Class 2.2 - Non-flammable Gas Charge R32" un383LithiumTested="false"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 1 - Full Container Weighbridge" verifiedGrossMassKg="22600.00" weighingTerminal="Guangzhou Nansha Phase 4 Scale"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-PK-2026-011" blNumber="COSU6288991111" containerIso="CRCU8011101">
+    <ISPM15WoodFumigation ippcMarkCode="CN-11008-HT" treatmentMethod="Kiln Dried Timber Crating ISPM-15" exposureTempC="60"/>
+    <HazmatIMDGDeclaration isDangerousGoods="false" unNumber="NON-HAZMAT" imdgClass="Not Applicable" un383LithiumTested="false"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 1 - Heavy Heavyweight Scale" verifiedGrossMassKg="29800.00" weighingTerminal="Tianjin Port Smart Terminal Scale"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-PK-2026-012" blNumber="CIMSMGS-YW2026-12" containerIso="YIWU4012201">
+    <ISPM15WoodFumigation ippcMarkCode="CN-33015-HT" treatmentMethod="Heat Treatment ISPM-15" exposureTempC="58"/>
+    <HazmatIMDGDeclaration isDangerousGoods="false" unNumber="NON-HAZMAT" imdgClass="Not Applicable" un383LithiumTested="false"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 2 - Rail Container Scale" verifiedGrossMassKg="21800.00" weighingTerminal="Yiwu Railway West Port Scale"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-HZ-2026-013" blNumber="COSU6288991113" containerIso="BYDU9013301">
+    <ISPM15WoodFumigation ippcMarkCode="CN-44003-HT" treatmentMethod="Heat Treatment 56C 30min (ISPM-15)" exposureTempC="56"/>
+    <HazmatIMDGDeclaration isDangerousGoods="true" unNumber="UN3171" imdgClass="Class 9 - Battery-Powered Vehicle" un383LithiumTested="true"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 2 - Certified Vehicle Axle Weight" verifiedGrossMassKg="762000.00" weighingTerminal="Shenzhen Yantian Ro-Ro Ramp Scale"/>
+  </CertificateRecord>
+  <CertificateRecord certificateId="CERT-PK-2026-014" blNumber="COSU6288991114" containerIso="TSU8014401">
+    <ISPM15WoodFumigation ippcMarkCode="CN-32011-HT" treatmentMethod="Heat Treatment 56C 30min (ISPM-15)" exposureTempC="58"/>
+    <HazmatIMDGDeclaration isDangerousGoods="false" unNumber="NON-HAZMAT" imdgClass="Not Applicable" un383LithiumTested="false"/>
+    <SOLASVerifiedGrossMass vgmMethod="Method 1 - Container Weighbridge" verifiedGrossMassKg="1689000.00" weighingTerminal="Shanghai Yangshan Terminal Scale"/>
+  </CertificateRecord>
+</ExportPackagingAndHazmatCertificates>

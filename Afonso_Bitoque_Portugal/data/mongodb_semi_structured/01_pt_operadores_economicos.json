@@ -1,0 +1,916 @@
+[
+  {
+    "_id": "OP-PT-001",
+    "nif": "517890123",
+    "eori_code": "PT517890123",
+    "denominacao_social": "CALB Portugal - Fábrica de Baterias de Sines, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "27200",
+      "designacao": "Fabricação de acumuladores e pilhas elétricas (Gigafábrica Lítio)"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC/AEOS Combinado",
+      "data_concessao": "10/01/2026",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Setúbal",
+      "concelho": "Sines",
+      "zona_industrial": "ZILS - Zona Industrial e Logística de Sines",
+      "codigo_postal": "7520-089",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.8312,
+          37.9654
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300004567890123405",
+      "PT50003500009988776655432"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91320413MA1M9Y2C4B",
+      "91440400MA56LUS01P"
+    ]
+  },
+  {
+    "_id": "OP-PT-002",
+    "nif": "500234567",
+    "eori_code": "PT500234567",
+    "denominacao_social": "Salvador Caetano Auto - Importação e Distribuição Automóvel, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "45110",
+      "designacao": "Comércio de veículos automóveis ligeiros (Representante Oficial BYD Portugal)"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC Simplificações Aduaneiras",
+      "data_concessao": "15/05/2019",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Porto",
+      "concelho": "Vila Nova de Gaia",
+      "zona_industrial": "Av. Vasco da Gama, Oliveira do Douro",
+      "codigo_postal": "4430-247",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.5912,
+          41.1245
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300001122334455678"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91440300192317458F"
+    ]
+  },
+  {
+    "_id": "OP-PT-003",
+    "nif": "500697256",
+    "eori_code": "PT500697256",
+    "denominacao_social": "EDP - Energias de Portugal & EDP Renováveis, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "35113",
+      "designacao": "Produção de eletricidade de origem eólica, solar e hídrica"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC/AEOS Combinado",
+      "data_concessao": "20/03/2018",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Lisboa",
+      "concelho": "Lisboa",
+      "zona_industrial": "Av. 24 de Julho 12",
+      "codigo_postal": "1249-300",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -9.1489,
+          38.7069
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300008877665544332"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000100001146K",
+      "91610132724912345X",
+      "91440300618837699Q"
+    ]
+  },
+  {
+    "_id": "OP-PT-004",
+    "nif": "503412890",
+    "eori_code": "PT503412890",
+    "denominacao_social": "REN - Redes Energéticas Nacionais, SGPS, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "35120",
+      "designacao": "Transporte de eletricidade e gestão da Rede Nacional"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "11/09/2020",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Lisboa",
+      "concelho": "Lisboa",
+      "zona_industrial": "Av. dos Estados Unidos da América 55",
+      "codigo_postal": "1749-061",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -9.1398,
+          38.7492
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003500001234987654321"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000710931234R",
+      "91350900587527783P"
+    ]
+  },
+  {
+    "_id": "OP-PT-005",
+    "nif": "500246810",
+    "eori_code": "PT500246810",
+    "denominacao_social": "Worten - Equipamentos para o Lar, S.A. (Grupo Sonae)",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "47430",
+      "designacao": "Comércio a retalho de aparelhos eletrónicos e telecomunicações"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "04/06/2021",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Lisboa",
+      "concelho": "Oeiras",
+      "zona_industrial": "Rua João Mendonça 505, Carnaxide / Entreposto Azambuja",
+      "codigo_postal": "2794-069",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -9.2391,
+          38.7241
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50001800005544332211009"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110108551385082Q",
+      "91440300618837699Q"
+    ]
+  },
+  {
+    "_id": "OP-PT-006",
+    "nif": "500191827",
+    "eori_code": "PT500191827",
+    "denominacao_social": "Mota-Engil Engenharia e Construção, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "42990",
+      "designacao": "Construção de obras de engenharia civil e instalações industriais"
+    },
+    "estatuto_oea": {
+      "certificado": false,
+      "tipo": "Operador Geral",
+      "data_concessao": null,
+      "nivel_risco_at": "Médio-Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Porto",
+      "concelho": "Porto",
+      "zona_industrial": "Rua do Rego Lameiro 38",
+      "codigo_postal": "4300-454",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.5721,
+          41.1532
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300007766554433221"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91330200778899112T",
+      "91320413MA1M9Y2C4B"
+    ]
+  },
+  {
+    "_id": "OP-PT-007",
+    "nif": "504998877",
+    "eori_code": "PT504998877",
+    "denominacao_social": "Varziela Chinarte - Centro Grossista de Importação Luso-Chinês, Lda.",
+    "natureza_juridica": "Lda",
+    "cae_principal": {
+      "codigo_cae_rev3": "46421",
+      "designacao": "Comércio por grosso de vestuário, calçado e artigos de bazar"
+    },
+    "estatuto_oea": {
+      "certificado": false,
+      "tipo": "Operador Geral",
+      "data_concessao": null,
+      "nivel_risco_at": "Elevado (Controlo Aduaneiro Frequente)"
+    },
+    "morada_sede": {
+      "distrito": "Porto",
+      "concelho": "Vila do Conde",
+      "zona_industrial": "Zona Industrial da Varziela, Rua 5",
+      "codigo_postal": "4485-001",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.7182,
+          41.3412
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300006655443322119"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91330782098765432W"
+    ]
+  },
+  {
+    "_id": "OP-PT-008",
+    "nif": "500265432",
+    "eori_code": "PT500265432",
+    "denominacao_social": "Symington Family Estates - Vinhos do Douro e Porto, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "11021",
+      "designacao": "Produção de vinhos comuns e licorosos (Vinho do Porto e Douro DOC)"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC Exportador Autorizado",
+      "data_concessao": "12/10/2017",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Porto",
+      "concelho": "Vila Nova de Gaia",
+      "zona_industrial": "Travessa Barão de Forrester 86",
+      "codigo_postal": "4400-034",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.6154,
+          41.1356
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50001000003344556677889"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000101123456N"
+    ]
+  },
+  {
+    "_id": "OP-PT-009",
+    "nif": "500077889",
+    "eori_code": "PT500077889",
+    "denominacao_social": "Corticeira Amorim, SGPS, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "16293",
+      "designacao": "Indústria de preparação e fabricação de rolhas de cortiça"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC/AEOS Combinado",
+      "data_concessao": "05/02/2016",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Aveiro",
+      "concelho": "Santa Maria da Feira",
+      "zona_industrial": "Rua Comendador Américo Ferreira Amorim 380, Mozelos",
+      "codigo_postal": "4536-902",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.5623,
+          40.9981
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300009900112233445"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000101123456N"
+    ]
+  },
+  {
+    "_id": "OP-PT-010",
+    "nif": "500112233",
+    "eori_code": "PT500112233",
+    "denominacao_social": "Sovena Consumer Goods - Azeites de Portugal, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "10412",
+      "designacao": "Produção e refinação de azeite virgem extra (Oliveira da Serra)"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "19/07/2019",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Lisboa",
+      "concelho": "Oeiras",
+      "zona_industrial": "Quinta da Fonte, Algés / Lagar de Ferreira do Alentejo",
+      "codigo_postal": "1495-190",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -9.2281,
+          38.7012
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003500004455667788990"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91440400MA56LUS01P"
+    ]
+  },
+  {
+    "_id": "OP-PT-011",
+    "nif": "508112244",
+    "eori_code": "PT508112244",
+    "denominacao_social": "Maporal - Matadouro de Porco de Raça Alentejana, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "10110",
+      "designacao": "Abate e desmancha de carne suína e preparação de carnes congeladas"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "22/04/2021",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Évora",
+      "concelho": "Reguengos de Monsaraz",
+      "zona_industrial": "Parque Industrial do Monte do Trigo",
+      "codigo_postal": "7200-112",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -7.5312,
+          38.4231
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300009988112233445"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000101123456N",
+      "91440400MA56LUS01P"
+    ]
+  },
+  {
+    "_id": "OP-PT-012",
+    "nif": "502889900",
+    "eori_code": "PT502889900",
+    "denominacao_social": "ICM Pork - Indústrias de Carnes do Minho, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "10110",
+      "designacao": "Abate e processamento de suínos para exportação internacional"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "18/11/2020",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Braga",
+      "concelho": "Vila Nova de Famalicão",
+      "zona_industrial": "Zona Industrial de Calendário",
+      "codigo_postal": "4760-012",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.5211,
+          41.4112
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300005544998811223"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000101123456N"
+    ]
+  },
+  {
+    "_id": "OP-PT-013",
+    "nif": "500214890",
+    "eori_code": "PT500214890",
+    "denominacao_social": "Sogrape Vinhos, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "11021",
+      "designacao": "Produção e exportação de vinhos (Casa Ferreirinha, Mateus, Sandeman)"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC/AEOS",
+      "data_concessao": "14/03/2017",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Porto",
+      "concelho": "Vila Nova de Gaia",
+      "zona_industrial": "Rua 5 de Outubro 4527, Avintes",
+      "codigo_postal": "4430-809",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.5541,
+          41.1089
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50001000001122334455667"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000101123456N",
+      "91310000132209876M"
+    ]
+  },
+  {
+    "_id": "OP-PT-014",
+    "nif": "500055214",
+    "eori_code": "PT500055214",
+    "denominacao_social": "The Navigator Company, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "17110",
+      "designacao": "Fabricação de pasta química de madeira kraft branqueada e papel"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC/AEOS Combinado",
+      "data_concessao": "08/09/2015",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Setúbal",
+      "concelho": "Setúbal",
+      "zona_industrial": "Complexo Industrial da Mitrena",
+      "codigo_postal": "2901-861",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.8145,
+          38.5112
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300007788990011223"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91310000132209876M",
+      "91330200778899112T"
+    ]
+  },
+  {
+    "_id": "OP-PT-015",
+    "nif": "505299443",
+    "eori_code": "PT505299443",
+    "denominacao_social": "Altri, SGPS, S.A. (Celbi & Caima Celulose)",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "17110",
+      "designacao": "Produção de pasta solúvel e pasta kraft de eucalipto para exportação"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "16/06/2018",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Porto",
+      "concelho": "Porto",
+      "zona_industrial": "Rua Manuel Pinto de Azevedo 818",
+      "codigo_postal": "4100-320",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.6412,
+          41.1712
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50001800009988771122334"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91370200163562681G"
+    ]
+  },
+  {
+    "_id": "OP-PT-016",
+    "nif": "500918273",
+    "eori_code": "PT500918273",
+    "denominacao_social": "Fidelidade - Companhia de Seguros, S.A. (Grupo Fosun)",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "65120",
+      "designacao": "Seguros não vida e seguros de transporte internacional de mercadorias"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "01/10/2019",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Lisboa",
+      "concelho": "Lisboa",
+      "zona_industrial": "Largo do Calhariz 30",
+      "codigo_postal": "1249-001",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -9.1445,
+          38.7112
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003500001122998877665"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91310000132234561L"
+    ]
+  },
+  {
+    "_id": "OP-PT-017",
+    "nif": "500998811",
+    "eori_code": "PT500998811",
+    "denominacao_social": "Millennium bcp - Banco Comercial Português, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "64190",
+      "designacao": "Outra intermediação monetária e serviços de pagamentos e crédito comercial internacional"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "15/01/2015",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Porto",
+      "concelho": "Porto",
+      "zona_industrial": "Praça D. João I 28",
+      "codigo_postal": "4000-295",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.6089,
+          41.1478
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300000000000000001"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91310000132234561L",
+      "91440400MA56LUS01P"
+    ]
+  },
+  {
+    "_id": "OP-PT-018",
+    "nif": "501998877",
+    "eori_code": "PT501998877",
+    "denominacao_social": "Laso Transportes Especiais & Logística, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "49410",
+      "designacao": "Transporte rodoviário de mercadorias pesadas e cargas especiais industriais"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOS Segurança",
+      "data_concessao": "20/09/2021",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Lisboa",
+      "concelho": "Loures",
+      "zona_industrial": "Parque Industrial de Santa Iria de Azoia",
+      "codigo_postal": "2690-364",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -9.0812,
+          38.8312
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300006677889900112"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91320413MA1M9Y2C4B"
+    ]
+  },
+  {
+    "_id": "OP-PT-019",
+    "nif": "501234890",
+    "eori_code": "PT501234890",
+    "denominacao_social": "Medway - Operador Ferroviário de Mercadorias, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "49200",
+      "designacao": "Transporte ferroviário intermodal de mercadorias"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC/AEOS",
+      "data_concessao": "10/05/2018",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Lisboa",
+      "concelho": "Lisboa",
+      "zona_industrial": "Avenida da Índia 168",
+      "codigo_postal": "1300-300",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -9.1845,
+          38.6991
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50001800003344556677889"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91330782098765432W"
+    ]
+  },
+  {
+    "_id": "OP-PT-020",
+    "nif": "500099112",
+    "eori_code": "PT500099112",
+    "denominacao_social": "Efacec Power Solutions, SGPS, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "27110",
+      "designacao": "Fabricação de transformadores e aparelhagem de distribuição elétrica"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "12/12/2016",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Porto",
+      "concelho": "Matosinhos",
+      "zona_industrial": "Parque Tecnológico da Maia / Arroteia",
+      "codigo_postal": "4465-587",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.6012,
+          41.2012
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300002233445566778"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91330200778899112T",
+      "911100007178071858"
+    ]
+  },
+  {
+    "_id": "OP-PT-021",
+    "nif": "502112334",
+    "eori_code": "PT502112334",
+    "denominacao_social": "Quinta do Crasto, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "11021",
+      "designacao": "Produção de vinhos do Douro de alta gama e azeite virgem extra"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "05/04/2022",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Vila Real",
+      "concelho": "Sabrosa",
+      "zona_industrial": "Gouvinhas, Douro",
+      "codigo_postal": "5060-061",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -7.6123,
+          41.1789
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50001000008899001122334"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000101123456N"
+    ]
+  },
+  {
+    "_id": "OP-PT-022",
+    "nif": "500145678",
+    "eori_code": "PT500145678",
+    "denominacao_social": "Esporão Vendas e Logística, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "11021",
+      "designacao": "Produção e engarrafamento de vinhos DOC Alentejo e azeites biológicos"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "14/09/2019",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Évora",
+      "concelho": "Reguengos de Monsaraz",
+      "zona_industrial": "Herdade do Esporão",
+      "codigo_postal": "7200-999",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -7.5612,
+          38.3845
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003500007788112233445"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000101123456N",
+      "91440400MA56LUS01P"
+    ]
+  },
+  {
+    "_id": "OP-PT-023",
+    "nif": "500022331",
+    "eori_code": "PT500022331",
+    "denominacao_social": "CTT - Correios de Portugal, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "53100",
+      "designacao": "Atividades postais e correio expresso transfronteiriço IOSS"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC/AEOS Combinado",
+      "data_concessao": "01/06/2014",
+      "nivel_risco_at": "Muito Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Lisboa",
+      "concelho": "Lisboa",
+      "zona_industrial": "Avenida D. João II 13, Parque das Nações",
+      "codigo_postal": "1999-001",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -9.0989,
+          38.7654
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300004411223344556"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91440300755673010C",
+      "91330782098765432W"
+    ]
+  },
+  {
+    "_id": "OP-PT-024",
+    "nif": "503112233",
+    "eori_code": "PT503112233",
+    "denominacao_social": "Martifer - Construções Metalomecânicas, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "25110",
+      "designacao": "Fabricação de estruturas de construções metálicas e parques solares"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "19/02/2021",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Viseu",
+      "concelho": "Oliveira de Frades",
+      "zona_industrial": "Zona Industrial de Oliveira de Frades",
+      "codigo_postal": "3684-001",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.1745,
+          40.7312
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50001800005566778899001"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91330200778899112T"
+    ]
+  },
+  {
+    "_id": "OP-PT-025",
+    "nif": "500178921",
+    "eori_code": "PT500178921",
+    "denominacao_social": "Primor - Charcutaria Primor, S.A.",
+    "natureza_juridica": "SA",
+    "cae_principal": {
+      "codigo_cae_rev3": "10130",
+      "designacao": "Fabricação de produtos à base de carne e charcutaria tradicional"
+    },
+    "estatuto_oea": {
+      "certificado": true,
+      "tipo": "AEOC",
+      "data_concessao": "12/03/2020",
+      "nivel_risco_at": "Baixo"
+    },
+    "morada_sede": {
+      "distrito": "Braga",
+      "concelho": "Vila Nova de Famalicão",
+      "zona_industrial": "Gavião, Famalicão",
+      "codigo_postal": "4760-999",
+      "coordenadas_geojson": {
+        "type": "Point",
+        "coordinates": [
+          -8.5145,
+          41.4212
+        ]
+      }
+    },
+    "contas_bancarias_iban": [
+      "PT50003300007711223344556"
+    ],
+    "parceiros_chineses_frequentes_uscc": [
+      "91110000101123456N"
+    ]
+  }
+]

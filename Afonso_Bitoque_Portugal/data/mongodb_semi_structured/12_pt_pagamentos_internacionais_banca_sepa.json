@@ -1,0 +1,240 @@
+[
+  {
+    "_id": "SWIFT-PT-90001",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75001",
+    "data_liquidacao": "28/03/2026",
+    "nif_ordenante_ou_beneficiario_pt": "517890123",
+    "sentido_fluxo": "SAIDA_IMPORTACAO_PT_PARA_CN",
+    "banco_nacional_bic": "BCOMPTPL (Millennium BCP Corporate)",
+    "banco_correspondente_china_bic": "BKCHCNBJ940 (Bank of China Jiangsu)",
+    "instrumento_pagamento": "Carta de Crédito Irrevogável L/C at Sight",
+    "montante_original": 6283500.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 6283500.0,
+    "comissoes_bancarias_eur": 4250.0,
+    "faturas_comerciais_associadas": [
+      "INV-CN-2026-8801"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90002",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75002",
+    "data_liquidacao": "02/04/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500234567",
+    "sentido_fluxo": "SAIDA_IMPORTACAO_PT_PARA_CN",
+    "banco_nacional_bic": "CGDIPTPL (Caixa Geral de Depósitos)",
+    "banco_correspondente_china_bic": "ICBKCNBJSZN (ICBC Shenzhen)",
+    "instrumento_pagamento": "Transferência Telegráfica T/T (30% Advance + 70% B/L)",
+    "montante_original": 9732000.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 9732000.0,
+    "comissoes_bancarias_eur": 3100.0,
+    "faturas_comerciais_associadas": [
+      "INV-CN-2026-8802"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90003",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75003",
+    "data_liquidacao": "09/04/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500697256",
+    "sentido_fluxo": "SAIDA_IMPORTACAO_PT_PARA_CN",
+    "banco_nacional_bic": "BCOMPTPL (Millennium BCP)",
+    "banco_correspondente_china_bic": "PCBCCNBJSAX (China Construction Bank Shaanxi)",
+    "instrumento_pagamento": "Carta de Crédito Irrevogável L/C",
+    "montante_original": 3640000.0,
+    "moeda_original": "USD",
+    "montante_convertido_eur": 3361034.16,
+    "comissoes_bancarias_eur": 2800.0,
+    "faturas_comerciais_associadas": [
+      "INV-CN-2026-8803"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90004",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75004",
+    "data_liquidacao": "16/04/2026",
+    "nif_ordenante_ou_beneficiario_pt": "503412890",
+    "sentido_fluxo": "SAIDA_IMPORTACAO_PT_PARA_CN",
+    "banco_nacional_bic": "CGDIPTPL (Caixa Geral de Depósitos)",
+    "banco_correspondente_china_bic": "BKCHCNBJFOC (Bank of China Fujian)",
+    "instrumento_pagamento": "Carta de Crédito Irrevogável L/C at Sight",
+    "montante_original": 3520000.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 3520000.0,
+    "comissoes_bancarias_eur": 2950.0,
+    "faturas_comerciais_associadas": [
+      "INV-CN-2026-8804"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90005",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75005",
+    "data_liquidacao": "22/04/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500246810",
+    "sentido_fluxo": "SAIDA_IMPORTACAO_PT_PARA_CN",
+    "banco_nacional_bic": "BSANPTPL (Banco Santander Totta)",
+    "banco_correspondente_china_bic": "ICBKCNBJHOX (ICBC Head Office Beijing)",
+    "instrumento_pagamento": "Remessa Documentária a 60 Dias (Open Account)",
+    "montante_original": 2473500.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 2473500.0,
+    "comissoes_bancarias_eur": 1850.0,
+    "faturas_comerciais_associadas": [
+      "INV-CN-2026-8805"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90006",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75006",
+    "data_liquidacao": "25/04/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500191827",
+    "sentido_fluxo": "SAIDA_IMPORTACAO_PT_PARA_CN",
+    "banco_nacional_bic": "BCOMPTPL (Millennium BCP)",
+    "banco_correspondente_china_bic": "COMMCN33NGB (Bank of Communications Ningbo)",
+    "instrumento_pagamento": "Transferência T/T Comercial",
+    "montante_original": 2761000.0,
+    "moeda_original": "USD",
+    "montante_convertido_eur": 2547047.97,
+    "comissoes_bancarias_eur": 2100.0,
+    "faturas_comerciais_associadas": [
+      "INV-CN-2026-8806"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90007-CIPS",
+    "referencia_swift_uetr": "CIPS-RMB-20260428-YIWU-PT007",
+    "data_liquidacao": "28/04/2026",
+    "nif_ordenante_ou_beneficiario_pt": "504998877",
+    "sentido_fluxo": "SAIDA_IMPORTACAO_PT_PARA_CN",
+    "banco_nacional_bic": "BKCHPTPL (Bank of China Sucursal em Portugal - Lisboa)",
+    "banco_correspondente_china_bic": "BKCHMOMX / CIPS Direct RMB",
+    "instrumento_pagamento": "Liquidação Direta em Renminbi (Cross-Border RMB CIPS)",
+    "montante_original": 7125000.0,
+    "moeda_original": "CNY",
+    "montante_convertido_eur": 909380.98,
+    "comissoes_bancarias_eur": 650.0,
+    "faturas_comerciais_associadas": [
+      "INV-CN-2026-8807"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90008-EXP",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75008",
+    "data_liquidacao": "06/05/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500265432",
+    "sentido_fluxo": "ENTRADA_EXPORTACAO_CN_PARA_PT",
+    "banco_nacional_bic": "BBPIPTPL (Banco BPI)",
+    "banco_correspondente_china_bic": "BKCHCNBJ300 (Bank of China Shanghai FTZ)",
+    "instrumento_pagamento": "Carta de Crédito de Exportação Confirmada",
+    "montante_original": 1522500.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 1522500.0,
+    "comissoes_bancarias_eur": 1450.0,
+    "faturas_comerciais_associadas": [
+      "INV-PT-2026-9901"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90009-EXP",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75009",
+    "data_liquidacao": "12/05/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500077889",
+    "sentido_fluxo": "ENTRADA_EXPORTACAO_CN_PARA_PT",
+    "banco_nacional_bic": "BCOMPTPL (Millennium BCP)",
+    "banco_correspondente_china_bic": "BKCHCNBJ300 (Bank of China Shanghai)",
+    "instrumento_pagamento": "Crédito Documentário com Cobertura Sinosure",
+    "montante_original": 1885800.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 1885800.0,
+    "comissoes_bancarias_eur": 1600.0,
+    "faturas_comerciais_associadas": [
+      "INV-PT-2026-9902"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90010-EXP",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75010",
+    "data_liquidacao": "18/05/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500112233",
+    "sentido_fluxo": "ENTRADA_EXPORTACAO_CN_PARA_PT",
+    "banco_nacional_bic": "CGDIPTPL (Caixa Geral de Depósitos)",
+    "banco_correspondente_china_bic": "BKCHCNBJCAN (Bank of China Guangdong)",
+    "instrumento_pagamento": "Carta de Crédito Irrevogável à Vista",
+    "montante_original": 1152200.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 1152200.0,
+    "comissoes_bancarias_eur": 1200.0,
+    "faturas_comerciais_associadas": [
+      "INV-PT-2026-9903"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90011-EXP",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75011",
+    "data_liquidacao": "22/05/2026",
+    "nif_ordenante_ou_beneficiario_pt": "508112244",
+    "sentido_fluxo": "ENTRADA_EXPORTACAO_CN_PARA_PT",
+    "banco_nacional_bic": "CGDIPTPL (Caixa Geral de Depósitos)",
+    "banco_correspondente_china_bic": "BKCHCNBJQTA (Bank of China Qingdao)",
+    "instrumento_pagamento": "Carta de Crédito Confirmada à Vista",
+    "montante_original": 1650000.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 1650000.0,
+    "comissoes_bancarias_eur": 1500.0,
+    "faturas_comerciais_associadas": [
+      "INV-PT-2026-9905"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90012-EXP",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75012",
+    "data_liquidacao": "26/05/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500055214",
+    "sentido_fluxo": "ENTRADA_EXPORTACAO_CN_PARA_PT",
+    "banco_nacional_bic": "BCOMPTPL (Millennium BCP)",
+    "banco_correspondente_china_bic": "BKCHCNBJSHA (Bank of China Shanghai)",
+    "instrumento_pagamento": "Remessa Documentária a 30 dias",
+    "montante_original": 2100000.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 2100000.0,
+    "comissoes_bancarias_eur": 1800.0,
+    "faturas_comerciais_associadas": [
+      "INV-PT-2026-9904"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90013-IMP",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75013",
+    "data_liquidacao": "29/05/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500697256",
+    "sentido_fluxo": "SAIDA_IMPORTACAO_PT_PARA_CN",
+    "banco_nacional_bic": "BCOMPTPL (Millennium BCP)",
+    "banco_correspondente_china_bic": "ICBKCNBJSZN (ICBC Shenzhen)",
+    "instrumento_pagamento": "Carta de Crédito Irrevogável L/C",
+    "montante_original": 1840000.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 1840000.0,
+    "comissoes_bancarias_eur": 1650.0,
+    "faturas_comerciais_associadas": [
+      "INV-CN-2026-8808"
+    ]
+  },
+  {
+    "_id": "SWIFT-PT-90014-IMP",
+    "referencia_swift_uetr": "97ed4827-7b6f-4491-a06f-b548d5a75014",
+    "data_liquidacao": "02/06/2026",
+    "nif_ordenante_ou_beneficiario_pt": "500234567",
+    "sentido_fluxo": "SAIDA_IMPORTACAO_PT_PARA_CN",
+    "banco_nacional_bic": "CGDIPTPL (Caixa Geral de Depósitos)",
+    "banco_correspondente_china_bic": "ICBKCNBJSZN (ICBC Shenzhen)",
+    "instrumento_pagamento": "Transferência Telegráfica T/T",
+    "montante_original": 8950000.0,
+    "moeda_original": "EUR",
+    "montante_convertido_eur": 8950000.0,
+    "comissoes_bancarias_eur": 3200.0,
+    "faturas_comerciais_associadas": [
+      "INV-CN-2026-8813"
+    ]
+  }
+]

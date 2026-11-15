@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ChineseBondedWarehouses>
+  <BondedWarehouse warehouseCodeGacc="WH-SHA-WGQ-01" ftzZoneCode="ZN-SH-PUDONG" city="Shanghai">
+    <PortugueseImportedLots>
+      <StoredLot lotId="LOT-SHA-2026-001" gaccImportId18="220120261000990001" ptProducerEori="PT500265432" ciferCode="CPRT18000102000101" hsCode10Cn="2204210000" productName="Sogrape Casa Ferreirinha Douro Tinto Reserva" unitsInStock="24000" dutySuspendedCNY="425000.00"/>
+      <StoredLot lotId="LOT-SHA-2026-002" gaccImportId18="220120261000990004" ptProducerEori="PT500198765" ciferCode="CPRT02000103000202" hsCode10Cn="0203290000" productName="Maporal Frozen Pork Cuts (Costela Suína)" unitsInStock="50000" dutySuspendedCNY="280000.00"/>
+    </PortugueseImportedLots>
+  </BondedWarehouse>
+  <BondedWarehouse warehouseCodeGacc="WH-NGB-MSH-02" ftzZoneCode="ZN-ZJ-NINGBO" city="Ningbo">
+    <PortugueseImportedLots>
+      <StoredLot lotId="LOT-NGB-2026-003" gaccImportId18="220120261000990003" ptProducerEori="PT500345678" ciferCode="CPRT47000105000303" hsCode10Cn="4703290000" productName="The Navigator Company Bleached Eucalyptus Kraft Pulp (BEKP)" unitsInStock="120000" dutySuspendedCNY="610000.00"/>
+      <StoredLot lotId="LOT-NGB-2026-004" gaccImportId18="220120261000990005" ptProducerEori="PT500123999" ciferCode="CPRT45000106000404" hsCode10Cn="4504100000" productName="Corticeira Amorim Technical Wine Corks" unitsInStock="85000" dutySuspendedCNY="195000.00"/>
+    </PortugueseImportedLots>
+  </BondedWarehouse>
+  <BondedWarehouse warehouseCodeGacc="WH-SZX-QT-03" ftzZoneCode="ZN-GD-QIANHAI" city="Shenzhen">
+    <PortugueseImportedLots>
+      <StoredLot lotId="LOT-SZX-2026-005" gaccImportId18="220120261000990002" ptProducerEori="PT500876543" ciferCode="CPRT15000104000505" hsCode10Cn="1509200000" productName="Sovena Oliveira da Serra Extra Virgin Olive Oil" unitsInStock="36000" dutySuspendedCNY="310000.00"/>
+    </PortugueseImportedLots>
+  </BondedWarehouse>
+  <BondedWarehouse warehouseCodeGacc="WH-ZH-HQ-04" ftzZoneCode="ZN-GD-HENGQIN" city="Zhuhai">
+    <PortugueseImportedLots>
+      <StoredLot lotId="LOT-ZH-2026-006" gaccImportId18="220120261000990006" ptProducerEori="PT500987654" ciferCode="CPRT19000108000606" hsCode10Cn="1905310000" productName="Dan Cake Butter Cookies &amp; Traditional Biscuits" unitsInStock="18000" dutySuspendedCNY="92000.00"/>
+    </PortugueseImportedLots>
+  </BondedWarehouse>
+  <BondedWarehouse warehouseCodeGacc="WH-CAN-NS-05" ftzZoneCode="ZN-GD-NANSHA" city="Guangzhou">
+    <PortugueseImportedLots>
+      <StoredLot lotId="LOT-CAN-2026-007" gaccImportId18="220120261000990007" ptProducerEori="PT500265432" ciferCode="CPRT18000102000101" hsCode10Cn="2204210000" productName="Sogrape Sandeman Porto Tawny 20 Anos" unitsInStock="12000" dutySuspendedCNY="340000.00"/>
+    </PortugueseImportedLots>
+  </BondedWarehouse>
+</ChineseBondedWarehouses>

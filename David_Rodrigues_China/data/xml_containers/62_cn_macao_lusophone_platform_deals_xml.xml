@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MacaoLusophonePlatformRegistry>
+  <LusophoneOperation operationId="OP-MACAO-LUSO-2026-01" forumMacaoProgram="MIF Bilateral Agribusiness Corridor">
+    <TriangularParties macaoIntermediaryId="MO-BNU-LUSO-01" mainlandEnterpriseUscc="91110000101123456N" portugueseEnterpriseEori="PT500265432"/>
+    <FinancialFacilitation serviceType="RMB Cross-Border Trade Settlement &amp; Escrow" clearingAmountCNY="28500000.00" equivalentEUR="3950000.00" linkedContractNo="CNT-PTCN-2026-AGRO-01"/>
+  </LusophoneOperation>
+  <LusophoneOperation operationId="OP-MACAO-LUSO-2026-02" forumMacaoProgram="Greater Bay Area Lusophone Energy Transition Fund">
+    <TriangularParties macaoIntermediaryId="MO-BCP-MACAU-02" mainlandEnterpriseUscc="91320413MA1M9Y2C4B" portugueseEnterpriseEori="PT517890123"/>
+    <FinancialFacilitation serviceType="Syndicated Green Loan Guarantee" clearingAmountCNY="120000000.00" equivalentEUR="16630000.00" linkedContractNo="CNT-PTCN-2026-EV-01"/>
+  </LusophoneOperation>
+  <LusophoneOperation operationId="OP-MACAO-LUSO-2026-03" forumMacaoProgram="Macao Traditional Chinese Medicine &amp; Health Park Hengqin">
+    <TriangularParties macaoIntermediaryId="MO-CCAM-03" mainlandEnterpriseUscc="91440400MA56LUS01P" portugueseEnterpriseEori="PT500456789"/>
+    <FinancialFacilitation serviceType="Pharmaceutical Certification Clearing" clearingAmountCNY="14800000.00" equivalentEUR="2050000.00" linkedContractNo="CNT-PTCN-2026-PHARMA-03"/>
+  </LusophoneOperation>
+  <LusophoneOperation operationId="OP-MACAO-LUSO-2026-04" forumMacaoProgram="Hengqin-Macao Cross-Border E-Commerce Zone">
+    <TriangularParties macaoIntermediaryId="MO-BOC-MACAU-04" mainlandEnterpriseUscc="91330782098765432W" portugueseEnterpriseEori="PT500345678"/>
+    <FinancialFacilitation serviceType="Cross-Border CIPS Fast Remittance" clearingAmountCNY="8200000.00" equivalentEUR="1136000.00" linkedContractNo="CNT-PTCN-2026-ECOM-04"/>
+  </LusophoneOperation>
+  <LusophoneOperation operationId="OP-MACAO-LUSO-2026-05" forumMacaoProgram="Forum Macao Infrastructure Cooperation Framework">
+    <TriangularParties macaoIntermediaryId="MO-ICBC-MACAU-05" mainlandEnterpriseUscc="91110000100001146K" portugueseEnterpriseEori="PT502345678"/>
+    <FinancialFacilitation serviceType="Project Finance Debt Structuring" clearingAmountCNY="95000000.00" equivalentEUR="13166000.00" linkedContractNo="CNT-PTCN-2026-GRID-05"/>
+  </LusophoneOperation>
+</MacaoLusophonePlatformRegistry>

@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "REACH-BATT-2026-001",
+    "passaporte_bateria_ue_id": "EU-BPASS-2026-CALB-L314-SINES01",
+    "notificacao_scip_echa": "SCIP-UUID-8812-4490-991A-CALB314",
+    "registo_apa_produtor_reee_pilhas": "PT001928-APA-BATERIAS-INDUSTRIAIS",
+    "eori_importador": "PT517890123",
+    "fabricante_china_uscc": "91320413MA1M9Y2C4B",
+    "mrn_dau": "26PT000395IM008801",
+    "regulamento_aplicavel": "Regulamento (UE) 2023/1542 (Baterias) & Regulamento REACH 1907/2006",
+    "pegada_carbono_ciclo_vida_kgco2_kwh": 45.2,
+    "conteudo_reciclado_declarado_pct": {
+      "cobalto": 0.0,
+      "litio": 6.5,
+      "niquel": 0.0,
+      "chumbo": 0.0
+    },
+    "conformidade_rohs_metais_pesados": true,
+    "entidade_gestora_residuos_pt": "Ecopilhas / Amb3E"
+  },
+  {
+    "_id": "REACH-BATT-2026-002",
+    "passaporte_bateria_ue_id": "EU-BPASS-2026-BYD-BLADE-82KWH",
+    "notificacao_scip_echa": "SCIP-UUID-7721-3310-882B-BYDSEAL",
+    "registo_apa_produtor_reee_pilhas": "PT000412-APA-VEICULOS-ELETRICOS",
+    "eori_importador": "PT500234567",
+    "fabricante_china_uscc": "91440300192317458F",
+    "mrn_dau": "26PT000395IM008802",
+    "regulamento_aplicavel": "Regulamento (UE) 2023/1542 & Homologação Europeia WVTA",
+    "pegada_carbono_ciclo_vida_kgco2_kwh": 52.8,
+    "conteudo_reciclado_declarado_pct": {
+      "cobalto": 0.0,
+      "litio": 5.2,
+      "niquel": 0.0,
+      "chumbo": 0.0
+    },
+    "conformidade_rohs_metais_pesados": true,
+    "entidade_gestora_residuos_pt": "Valorcar Portugal"
+  },
+  {
+    "_id": "REACH-ELEC-2026-003",
+    "passaporte_bateria_ue_id": "ROHS-CE-2026-XIAOMI-15PRO",
+    "notificacao_scip_echa": "SCIP-UUID-5519-2201-119C-XM15PRO",
+    "registo_apa_produtor_reee_pilhas": "PT000288-APA-EEE-WORTEN",
+    "eori_importador": "PT500246810",
+    "fabricante_china_uscc": "91110108551385082Q",
+    "mrn_dau": "26PT000520IM008805",
+    "regulamento_aplicavel": "Diretiva RoHS 2011/65/UE & Diretiva REEE 2012/19/UE",
+    "pegada_carbono_ciclo_vida_kgco2_kwh": 48.2,
+    "conteudo_reciclado_declarado_pct": {
+      "aluminio_reciclado": 80.0,
+      "ouro_reciclado_placa": 25.0
+    },
+    "conformidade_rohs_metais_pesados": true,
+    "entidade_gestora_residuos_pt": "ERP Portugal / Electrão"
+  }
+]

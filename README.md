@@ -53,3 +53,18 @@ Responsável pela infraestrutura de *compliance* legal europeia e consumo de dad
 
 - **Fonte 3 - Semi-estruturada (JSON / APIs):** Armazenamento em JSON para simular o consumo de dados abertos (*datasets*) de entidades europeias, focando-se na pauta integrada TARIC e no histórico de taxas de câmbio do Banco Central Europeu.
 - **Fonte 4 - Não Estruturada (Armazenamento Bruto):** Repositório local base (sistema de ficheiros) para o arquivo de texto não estruturado, contendo o texto legal dos Tratados Bilaterais e das diretivas comunitárias da União Europeia.
+
+---
+
+## Portal Web Interativo e Entregáveis Finais (P1)
+
+- **Portal Web Interativo (GitHub Pages):** [https://a79994.github.io/mid-p01/](https://a79994.github.io/mid-p01/)
+- **Entregáveis Unificados (30 páginas):**
+  - `ENTREGA_UNICA_AFONSO_BITOQUE_P1.pdf`
+  - `ENTREGA_UNICA_DAVID_RODRIGUES_P1.pdf`
+- **Entregáveis Compactos e Individuais (15 páginas):**
+  - `ENTREGA_UNICA_15PAG_AFONSO_BITOQUE_P1.pdf`
+  - `ENTREGA_UNICA_15PAG_DAVID_RODRIGUES_P1.pdf`
+  - `report/P1_RELATORIO_TECNICO_MID_2026_2027.pdf`
+  - `Afonso_Bitoque_Portugal/report/P1_RELATORIO_INDIVIDUAL_AFONSO_PORTUGAL.pdf`
+  - `David_Rodrigues_China/report/P1_RELATORIO_INDIVIDUAL_DAVID_CHINA.pdf`

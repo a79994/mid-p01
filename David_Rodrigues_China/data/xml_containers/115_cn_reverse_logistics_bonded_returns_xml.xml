@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CrossBorderReverseLogisticsReturns>
+  <BondedReturnCase returnCaseId="RET-CBEC-2026-001" gaccReturnRegime="9610R - Cross-Border E-Commerce Export Return" returnDate="2026-05-18">
+    <ReturnOriginPT originalExportOrS10Ref="LP00667788903CN" ptSenderEoriOrPostal="4000-120" returnReasonCode="CONSUMER_SIZE_EXCHANGE_14DAYS"/>
+    <BondedWarehouseDisposition bondedZoneCode="CN-GD-QIANHAI" dispositionAction="Restocked in Cainiao Shenzhen Bonded Return Hub" dutyRefundOrCreditCNY="0.00"/>
+  </BondedReturnCase>
+  <BondedReturnCase returnCaseId="RET-CBEC-2026-002" gaccReturnRegime="9610R - Cross-Border E-Commerce Export Return" returnDate="2026-05-22">
+    <ReturnOriginPT originalExportOrS10Ref="LP00667788907CN" ptSenderEoriOrPostal="1100-050" returnReasonCode="DEFECTIVE_DISPLAY_WARRANTY"/>
+    <BondedWarehouseDisposition bondedZoneCode="CN-ZJ-HANGZHOU-CROSS" dispositionAction="Returned to Manufacturer Repair Center Under Bond" dutyRefundOrCreditCNY="420.00"/>
+  </BondedReturnCase>
+  <BondedReturnCase returnCaseId="RET-B2B-2026-003" gaccReturnRegime="4561 - Return of Exported Goods for Repair" returnDate="2026-05-29">
+    <ReturnOriginPT originalExportOrS10Ref="COSU6288991108" ptSenderEoriOrPostal="PT500697256" returnReasonCode="FIRMWARE_CALIBRATION_REPLACEMENT"/>
+    <BondedWarehouseDisposition bondedZoneCode="CN-GD-QIANHAI" dispositionAction="Huawei Songshan Lake Bonded RMA Replacement" dutyRefundOrCreditCNY="18500.00"/>
+  </BondedReturnCase>
+  <BondedReturnCase returnCaseId="RET-CBEC-2026-004" gaccReturnRegime="1210R - Bonded E-Commerce Return" returnDate="2026-06-03">
+    <ReturnOriginPT originalExportOrS10Ref="LP00667788911CN" ptSenderEoriOrPostal="3000-210" returnReasonCode="UNCLAIMED_PARCEL_AT_CTT_LOCKER"/>
+    <BondedWarehouseDisposition bondedZoneCode="CN-ZJ-YIWU-CBEC" dispositionAction="Consolidated Air Return via Cainiao Charter" dutyRefundOrCreditCNY="0.00"/>
+  </BondedReturnCase>
+  <BondedReturnCase returnCaseId="RET-B2B-2026-005" gaccReturnRegime="4561 - Return of Reusable Battery Skids" returnDate="2026-06-08">
+    <ReturnOriginPT originalExportOrS10Ref="COSU6288991101" ptSenderEoriOrPostal="PT517890123" returnReasonCode="REUSABLE_STEEL_BATTERY_RACK_RETURN"/>
+    <BondedWarehouseDisposition bondedZoneCode="CN-JS-CHANGZHOU-HI" dispositionAction="Cleaned and Re-entered into CALB Changzhou Loop" dutyRefundOrCreditCNY="64000.00"/>
+  </BondedReturnCase>
+</CrossBorderReverseLogisticsReturns>

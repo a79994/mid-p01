@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContainerLoadPlansCLP>
+  <ContainerLoadPlan clpDocumentId="CLP-SH-2026-8001101" containerIso="COSU8001101" masterBlNo="COSU6288991101" stuffingDate="2026-03-21">
+    <StuffingDepot depotName="CALB Changzhou Bonded CFS &amp; Shanghai Yangshan Depot" portUnlocode="CNSHA" eSealRfidCode="ESEAL-GACC-SH8801A" containerTareKg="3800.00"/>
+    <LoadedPallets>
+      <PalletPosition slotPosition="TIER1-ROW01-LEFT" packingListId="PKL-CN-2026-8801" batchLotNo="LOT-CALB-2026-03A" grossWeightKg="230000.00"/>
+      <PalletPosition slotPosition="TIER1-ROW02-RIGHT" packingListId="PKL-CN-2026-8801" batchLotNo="LOT-CALB-2026-03K" grossWeightKg="230000.00"/>
+    </LoadedPallets>
+  </ContainerLoadPlan>
+  <ContainerLoadPlan clpDocumentId="CLP-SZ-2026-9002201" containerIso="BYDU9002201" masterBlNo="COSU6288991102" stuffingDate="2026-03-26">
+    <StuffingDepot depotName="Shenzhen Yantian Ro-Ro &amp; Auto Container Yard" portUnlocode="CNSZX" eSealRfidCode="ESEAL-GACC-SZ8802B" containerTareKg="4200.00"/>
+    <LoadedPallets>
+      <PalletPosition slotPosition="DECK3-LANE04-RACK1" packingListId="PKL-CN-2026-8802" batchLotNo="LOT-BYD-2026-03B" grossWeightKg="890000.00"/>
+    </LoadedPallets>
+  </ContainerLoadPlan>
+  <ContainerLoadPlan clpDocumentId="CLP-SH-2026-8003301" containerIso="COSU8003301" masterBlNo="COSU6288991103" stuffingDate="2026-04-03">
+    <StuffingDepot depotName="Xi'an Inland Port &amp; Shanghai Waigaoqiao CFS" portUnlocode="CNSHA" eSealRfidCode="ESEAL-GACC-SH8803C" containerTareKg="3900.00"/>
+    <LoadedPallets>
+      <PalletPosition slotPosition="TIER1-FULL-BAY" packingListId="PKL-CN-2026-8803" batchLotNo="LOT-LONGI-2026-04A" grossWeightKg="1710000.00"/>
+    </LoadedPallets>
+  </ContainerLoadPlan>
+  <ContainerLoadPlan clpDocumentId="CLP-NB-2026-8004401" containerIso="CATU8004401" masterBlNo="COSU6288991104" stuffingDate="2026-04-11">
+    <StuffingDepot depotName="Ningbo Meishan Hazardous Cargo CFS Depot" portUnlocode="CNNGB" eSealRfidCode="ESEAL-GACC-NB8804D" containerTareKg="4100.00"/>
+    <LoadedPallets>
+      <PalletPosition slotPosition="RACK-CENTER-LOCKED" packingListId="PKL-CN-2026-8804" batchLotNo="LOT-CATL-2026-04B" grossWeightKg="355000.00"/>
+    </LoadedPallets>
+  </ContainerLoadPlan>
+  <ContainerLoadPlan clpDocumentId="CLP-NB-2026-8006601" containerIso="COSU8006601" masterBlNo="COSU6288991106" stuffingDate="2026-04-19">
+    <StuffingDepot depotName="Ningbo Beilun Heavy Metals Coil Terminal" portUnlocode="CNNGB" eSealRfidCode="ESEAL-GACC-NB8806F" containerTareKg="4000.00"/>
+    <LoadedPallets>
+      <PalletPosition slotPosition="FLATBED-CRADLE-01" packingListId="PKL-CN-2026-8806" batchLotNo="LOT-NBST-2026-04D" grossWeightKg="2010000.00"/>
+    </LoadedPallets>
+  </ContainerLoadPlan>
+</ContainerLoadPlansCLP>

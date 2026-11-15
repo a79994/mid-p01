@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CrossBorderECommerceDispatch>
+  <ParcelBatch batchId="CBEC-CAINIAO-2026-05A" platformName="AliExpress / Cainiao Smart Logistics" iossNumberEU="IM5280001234" gaccRegimeCode="9610" consolidationHubCN="Dongguan Cainiao Global MegaHub">
+    <Parcel s10TrackingNo="LP00667788901CN" sellerUscc="91330782098765432W" recipientPostalCodePT="1000-205" hsCode6="620462" declaredValueCNY="280.00" weightGrams="640"/>
+    <Parcel s10TrackingNo="LP00667788902CN" sellerUscc="91110108551385082Q" recipientPostalCodePT="4000-120" hsCode6="851713" declaredValueCNY="960.00" weightGrams="490"/>
+    <Parcel s10TrackingNo="LP00667788903CN" sellerUscc="91330782098765432W" recipientPostalCodePT="8005-139" hsCode6="620462" declaredValueCNY="195.00" weightGrams="510"/>
+    <Parcel s10TrackingNo="LP00667788904CN" sellerUscc="91440300618837699Q" recipientPostalCodePT="3000-075" hsCode6="851762" declaredValueCNY="420.00" weightGrams="380"/>
+    <Parcel s10TrackingNo="LP00667788905CN" sellerUscc="91110108551385082Q" recipientPostalCodePT="2900-340" hsCode6="847130" declaredValueCNY="1250.00" weightGrams="1100"/>
+  </ParcelBatch>
+  <ParcelBatch batchId="CBEC-SHEIN-2026-08B" platformName="Shein Fast-Fashion Logistics Hub" iossNumberEU="IM5280005678" gaccRegimeCode="9610" consolidationHubCN="Foshan Nanhai Automated Logistics Hub">
+    <Parcel s10TrackingNo="LP00667788906CN" sellerUscc="91440606190342599T" recipientPostalCodePT="4700-312" hsCode6="610910" declaredValueCNY="145.00" weightGrams="320"/>
+    <Parcel s10TrackingNo="LP00667788907CN" sellerUscc="91440606190342599T" recipientPostalCodePT="7000-501" hsCode6="620462" declaredValueCNY="210.00" weightGrams="450"/>
+    <Parcel s10TrackingNo="LP00667788908CN" sellerUscc="91330782098765432W" recipientPostalCodePT="2500-111" hsCode6="950300" declaredValueCNY="180.00" weightGrams="580"/>
+    <Parcel s10TrackingNo="LP00667788909CN" sellerUscc="91440300755673010C" recipientPostalCodePT="9000-025" hsCode6="610910" declaredValueCNY="310.00" weightGrams="720"/>
+  </ParcelBatch>
+  <ParcelBatch batchId="CBEC-TEMU-2026-11C" platformName="Temu / Pinduoduo Global Logistics" iossNumberEU="IM5280009012" gaccRegimeCode="9610" consolidationHubCN="Guangzhou Baiyun E-Commerce MegaCenter">
+    <Parcel s10TrackingNo="LP00667788910CN" sellerUscc="91330782098765432W" recipientPostalCodePT="9500-101" hsCode6="950300" declaredValueCNY="95.00" weightGrams="260"/>
+    <Parcel s10TrackingNo="LP00667788911CN" sellerUscc="91110108551385082Q" recipientPostalCodePT="3810-193" hsCode6="850440" declaredValueCNY="160.00" weightGrams="310"/>
+    <Parcel s10TrackingNo="LP00667788912CN" sellerUscc="91440300618837699Q" recipientPostalCodePT="2000-045" hsCode6="851762" declaredValueCNY="240.00" weightGrams="390"/>
+  </ParcelBatch>
+</CrossBorderECommerceDispatch>

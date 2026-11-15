@@ -1,0 +1,76 @@
+[
+  {
+    "_id": "CDO-PT-001",
+    "cedula_profissional_cdo": "CDO-PT-1482",
+    "eori_representante": "PT500991122",
+    "nif_representante": "500991122",
+    "nome_sociedade": "Rangel Aduaneira & Logística Global, S.A.",
+    "alvara_transitario_imt": "IMT-TRANS-200145",
+    "modalidade_representacao_cau": "Representação Direta (Art. 18.º n.º 1 do CAU)",
+    "estancias_operacao": [
+      "PTSIN - Sines",
+      "PTLEI - Leixões",
+      "PTLIS - Aeroporto Lisboa"
+    ],
+    "parceiro_nvocc_china_id": "BRK-CN-SINOTRANS-01",
+    "declaracoes_dau_submetidas": [
+      "26PT000395IM008801",
+      "26PT000395IM008802",
+      "26PT000140EX009901"
+    ]
+  },
+  {
+    "_id": "CDO-PT-002",
+    "cedula_profissional_cdo": "CDO-PT-2109",
+    "eori_representante": "PT501223344",
+    "nif_representante": "501223344",
+    "nome_sociedade": "Garland Transitários & Despachos Aduaneiros, S.A.",
+    "alvara_transitario_imt": "IMT-TRANS-199812",
+    "modalidade_representacao_cau": "Representação Direta com Garantia Global",
+    "estancias_operacao": [
+      "PTLEI - Leixões",
+      "PTSIN - Sines",
+      "PTENT - Entroncamento"
+    ],
+    "parceiro_nvocc_china_id": "BRK-CN-COSCO-LOG-02",
+    "declaracoes_dau_submetidas": [
+      "26PT000140IM008804",
+      "26PT000395IM008806",
+      "26PT000140EX009902"
+    ]
+  },
+  {
+    "_id": "CDO-PT-003",
+    "cedula_profissional_cdo": "CDO-PT-3390",
+    "eori_representante": "PT502334455",
+    "nif_representante": "502334455",
+    "nome_sociedade": "Orey Shipping & Kuehne+Nagel Portugal, Lda.",
+    "alvara_transitario_imt": "IMT-TRANS-200890",
+    "modalidade_representacao_cau": "Representação Indireta (Art. 18.º CAU - Solidariamente Responsável)",
+    "estancias_operacao": [
+      "PTSIN - Sines",
+      "PTLIS - Lisboa"
+    ],
+    "parceiro_nvocc_china_id": "BRK-CN-KUEHNE-SZ-03",
+    "declaracoes_dau_submetidas": [
+      "26PT000395IM008803",
+      "26PT000510IM008807"
+    ]
+  },
+  {
+    "_id": "CDO-PT-004",
+    "cedula_profissional_cdo": "CDO-PT-4012",
+    "eori_representante": "PT500077568",
+    "nif_representante": "500077568",
+    "nome_sociedade": "CTT Expresso - Representação Aduaneira E-Commerce IOSS, S.A.",
+    "alvara_transitario_imt": "IMT-TRANS-199501",
+    "modalidade_representacao_cau": "Representação Indireta Lotes Expresso STADA-H7",
+    "estancias_operacao": [
+      "PTLIS - Terminal Carga Aérea Lisboa"
+    ],
+    "parceiro_nvocc_china_id": "BRK-CN-CAINIAO-CB-06",
+    "declaracoes_dau_submetidas": [
+      "26PT000520IM008805"
+    ]
+  }
+]

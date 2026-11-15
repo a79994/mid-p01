@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "TRACES-CHED-2026-001",
+    "numero_ched_traces_nt": "CHEDPP.PT.2026.0004412",
+    "tipo_documento_ched": "CHED-PP (Fitossanitário - Embalagens de Madeira ISPM-15)",
+    "posto_controlo_fronteirico_pcf": "PCF Porto de Sines (PTSIN1)",
+    "autoridade_competente": "DGAV / ICNF - Inspeção Fitossanitária",
+    "mrn_dau_associado": "26PT000395IM008801",
+    "numero_contentor_iso": "COSU8001101",
+    "certificado_origem_china": "CERT-HZ-2026-001 (IPPC CN-32004-HT)",
+    "controlo_documental": "SATISFATORIO",
+    "controlo_identidade": "SATISFATORIO",
+    "controlo_fisico_amostragem": "DISPENSADO_TAXA_REDUZIDA",
+    "decisao_final_traces": "VALIDADO_ADMISSIVEL_NO_TERRITORIO_UE"
+  },
+  {
+    "_id": "TRACES-CHED-2026-002",
+    "numero_ched_traces_nt": "CHEDPP.PT.2026.0004489",
+    "tipo_documento_ched": "CHED-PP (Fitossanitário - Paletes de Painéis Solares)",
+    "posto_controlo_fronteirico_pcf": "PCF Porto de Sines (PTSIN1)",
+    "autoridade_competente": "DGAV / ICNF",
+    "mrn_dau_associado": "26PT000395IM008803",
+    "numero_contentor_iso": "COSU8003301",
+    "certificado_origem_china": "CERT-PK-2026-003 (IPPC CN-61001-HT)",
+    "controlo_documental": "SATISFATORIO",
+    "controlo_identidade": "SATISFATORIO",
+    "controlo_fisico_amostragem": "SATISFATORIO_SEM_NEMATODO",
+    "decisao_final_traces": "VALIDADO_ADMISSIVEL_NO_TERRITORIO_UE"
+  },
+  {
+    "_id": "TRACES-CHED-2026-003",
+    "numero_ched_traces_nt": "TRACES.EX.PT.2026.0009905",
+    "tipo_documento_ched": "Certificado Sanitário Oficial de Exportação DGAV/TRACES para GACC China",
+    "posto_controlo_fronteirico_pcf": "Direção de Serviços de Alimentação e Veterinária do Alentejo / Sines",
+    "autoridade_competente": "DGAV Portugal",
+    "mrn_dau_associado": "26PT000395EX009905",
+    "numero_contentor_iso": "COSU4455665",
+    "certificado_origem_china": "CIFER CPRT18000101000505",
+    "controlo_documental": "SATISFATORIO",
+    "controlo_identidade": "SELO_VETERINARIO_VERIFICADO",
+    "controlo_fisico_amostragem": "TESTE_LABORATORIAL_NEGATIVO",
+    "decisao_final_traces": "APROVADO_PARA_EXPORTACAO_CHINA"
+  }
+]

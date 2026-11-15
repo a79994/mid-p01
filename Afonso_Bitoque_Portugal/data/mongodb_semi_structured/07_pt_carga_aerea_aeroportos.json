@@ -1,0 +1,116 @@
+[
+  {
+    "_id": "AIR-LIS-2026-005",
+    "awb_number": "047-88991105",
+    "companhia_aerea": "Beijing Capital Airlines Cargo",
+    "numero_voo": "JD431",
+    "aeroporto_origem_iata": "HGH",
+    "aeroporto_destino_iata": "LIS",
+    "data_hora_aterragem": "16/04/2026 12:15",
+    "lotes_uld": [
+      {
+        "uld_code": "PMC-44210-JD",
+        "peso_kg": 1550.0,
+        "volume_m3": 9.8,
+        "controlo_temperatura_c": "+15C a +25C",
+        "nif_destinatario": "500246810",
+        "descricao_carga": "5000x Smartphones Xiaomi 15 Pro 5G (Baterias UN3481)"
+      }
+    ]
+  },
+  {
+    "_id": "AIR-LIS-2026-008",
+    "awb_number": "999-12345678",
+    "companhia_aerea": "Air China Cargo",
+    "numero_voo": "CA1045",
+    "aeroporto_origem_iata": "PVG",
+    "aeroporto_destino_iata": "LIS",
+    "data_hora_aterragem": "22/04/2026 16:40",
+    "lotes_uld": [
+      {
+        "uld_code": "PAG-77123-CA",
+        "peso_kg": 4200.0,
+        "volume_m3": 18.5,
+        "controlo_temperatura_c": "Ambiente",
+        "nif_destinatario": "500246810",
+        "descricao_carga": "Componentes de Telecomunicações e Servidores 5G Huawei"
+      }
+    ]
+  },
+  {
+    "_id": "AIR-LIS-2026-012",
+    "awb_number": "047-88991109",
+    "companhia_aerea": "Beijing Capital Airlines Cargo",
+    "numero_voo": "JD431",
+    "aeroporto_origem_iata": "HGH",
+    "aeroporto_destino_iata": "LIS",
+    "data_hora_aterragem": "08/05/2026 11:50",
+    "lotes_uld": [
+      {
+        "uld_code": "PMC-44220-JD",
+        "peso_kg": 9500.0,
+        "volume_m3": 24.0,
+        "controlo_temperatura_c": "+15C a +25C",
+        "nif_destinatario": "500246810",
+        "descricao_carga": "4000x Laptops Xiaomi Book Pro 16 para Lojas Worten"
+      }
+    ]
+  },
+  {
+    "_id": "AIR-LIS-2026-015",
+    "awb_number": "047-55667788",
+    "companhia_aerea": "TAP Air Portugal Cargo (Interline)",
+    "numero_voo": "TP088",
+    "aeroporto_origem_iata": "MFM",
+    "aeroporto_destino_iata": "LIS",
+    "data_hora_aterragem": "14/05/2026 18:20",
+    "lotes_uld": [
+      {
+        "uld_code": "AKE-11223-TP",
+        "peso_kg": 2100.0,
+        "volume_m3": 7.2,
+        "controlo_temperatura_c": "+2C a +8C",
+        "nif_destinatario": "500918273",
+        "descricao_carga": "Equipamentos de Diagnóstico Médico e Reagentes Luz Saúde"
+      }
+    ]
+  },
+  {
+    "_id": "AIR-OPO-2026-021",
+    "awb_number": "172-99887711",
+    "companhia_aerea": "Cargolux Boeing 747-8F",
+    "numero_voo": "CV7321",
+    "aeroporto_origem_iata": "CGO",
+    "aeroporto_destino_iata": "OPO",
+    "data_hora_aterragem": "20/05/2026 14:10",
+    "lotes_uld": [
+      {
+        "uld_code": "PGA-33445-CV",
+        "peso_kg": 8400.0,
+        "volume_m3": 28.0,
+        "controlo_temperatura_c": "Ambiente",
+        "nif_destinatario": "500099112",
+        "descricao_carga": "Chapas e Componentes Eletromagnéticos de Precisão para Efacec"
+      }
+    ]
+  },
+  {
+    "_id": "AIR-LIS-2026-025",
+    "awb_number": "871-33221100",
+    "companhia_aerea": "SF Airlines Cargo",
+    "numero_voo": "O36981",
+    "aeroporto_origem_iata": "SZX",
+    "aeroporto_destino_iata": "LIS",
+    "data_hora_aterragem": "26/05/2026 09:30",
+    "lotes_uld": [
+      {
+        "uld_code": "PMC-88990-SF",
+        "peso_kg": 6800.0,
+        "volume_m3": 21.5,
+        "controlo_temperatura_c": "Ambiente",
+        "nif_destinatario": "500022331",
+        "descricao_carga": "Paletes de Encomendas Expresso Cross-Border Cainiao / CTT Hub"
+      }
+    ]
+  }
+]

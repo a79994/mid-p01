@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "QUOTA-UE-2026-001",
+    "numero_ordem_contingente_ue": "09.2681 (Suspensão Pautal Autónoma Industrial para Fabrico de Baterias EV)",
+    "regulamento_conselho_ue": "Regulamento (UE) 2025/2605 do Conselho",
+    "eori_beneficiario_pt": "PT517890123",
+    "mrn_dau": "26PT000395IM008801",
+    "codigo_taric_10": "8507600090",
+    "regime_destino_especial_end_use": "Autorização de Destino Especial (End-Use Art. 254.º CAU) - Gigafábrica Sines",
+    "taxa_normal_pauta_pct": 2.7,
+    "taxa_reduzida_contingente_pct": 0.0,
+    "quantidade_pedida_unidades": 10000,
+    "poupanca_direitos_aduaneiros_eur": 169654.5,
+    "estado_atribuicao_dg_taxud": "CONCEDIDO_INTEGRALMENTE_100_PCT"
+  },
+  {
+    "_id": "QUOTA-UE-2026-002",
+    "numero_ordem_contingente_ue": "09.0142 (Contingente OMC Aço Laminado de Construção)",
+    "regulamento_conselho_ue": "Regulamento de Salvaguarda do Aço (UE) 2024/1782",
+    "eori_beneficiario_pt": "PT500191827",
+    "mrn_dau": "26PT000395IM008806",
+    "codigo_taric_10": "7225409000",
+    "regime_destino_especial_end_use": "Contingente Trimestral First-Come First-Served",
+    "taxa_normal_pauta_pct": 25.0,
+    "taxa_reduzida_contingente_pct": 0.0,
+    "quantidade_pedida_unidades": 2000,
+    "poupanca_direitos_aduaneiros_eur": 327500.0,
+    "estado_atribuicao_dg_taxud": "CONCEDIDO_DENTRO_QUOTA_LIVRE_SALVAGUARDA"
+  }
+]

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CrossBorderThreeStreamMatching>
+  <ThreeStreamDeclaration gaccCbecInventoryNo="CBEC-9610-2026-SZ001" supervisionRegime="9610 - B2C Direct Export" matchingVerdict="THREE_STREAMS_MATCHED_CLEARED">
+    <OrderStream platformOrderNo="AE-ORD-2026-998801" ecommercePlatform="AliExpress (Alibaba)" buyerNifHashPT="NIF-HASH-PT-2458891" orderAmountEUR="68.50"/>
+    <PaymentStream paymentTxId="ALIPAY-EU-20260418-01" paymentInstitution="Alipay Europe / SIBS MBWay" iossVatCollectedEUR="15.76"/>
+    <LogisticsStream s10TrackingNo="LP00667788901CN" airWaybillNo="871-33221100" lastMileCarrierPT="CTT Expresso Portugal"/>
+  </ThreeStreamDeclaration>
+  <ThreeStreamDeclaration gaccCbecInventoryNo="CBEC-9610-2026-SZ002" supervisionRegime="9610 - B2C Direct Export" matchingVerdict="THREE_STREAMS_MATCHED_CLEARED">
+    <OrderStream platformOrderNo="AE-ORD-2026-998802" ecommercePlatform="AliExpress (Alibaba)" buyerNifHashPT="NIF-HASH-PT-2114450" orderAmountEUR="112.00"/>
+    <PaymentStream paymentTxId="ALIPAY-EU-20260418-02" paymentInstitution="Alipay Europe / Visa" iossVatCollectedEUR="25.76"/>
+    <LogisticsStream s10TrackingNo="LP00667788902CN" airWaybillNo="871-33221100" lastMileCarrierPT="CTT Expresso Portugal"/>
+  </ThreeStreamDeclaration>
+  <ThreeStreamDeclaration gaccCbecInventoryNo="CBEC-9610-2026-GZ005" supervisionRegime="9610 - B2C Direct Export" matchingVerdict="THREE_STREAMS_MATCHED_CLEARED">
+    <OrderStream platformOrderNo="SHN-ORD-2026-774105" ecommercePlatform="SHEIN Distribution Hub" buyerNifHashPT="NIF-HASH-PT-2689912" orderAmountEUR="84.90"/>
+    <PaymentStream paymentTxId="ADYEN-SHN-20260420-05" paymentInstitution="Adyen NV / Multibanco" iossVatCollectedEUR="19.53"/>
+    <LogisticsStream s10TrackingNo="LP00667788905CN" airWaybillNo="871-33221100" lastMileCarrierPT="CTT Expresso Portugal"/>
+  </ThreeStreamDeclaration>
+  <ThreeStreamDeclaration gaccCbecInventoryNo="CBEC-9710-2026-YW009" supervisionRegime="9710 - Cross-Border E-Commerce B2B Direct" matchingVerdict="THREE_STREAMS_MATCHED_CLEARED">
+    <OrderStream platformOrderNo="TEMU-ORD-2026-551209" ecommercePlatform="Temu Whaleco EU" buyerNifHashPT="NIF-HASH-PT-2901134" orderAmountEUR="49.20"/>
+    <PaymentStream paymentTxId="STRIPE-TMU-20260422-09" paymentInstitution="Stripe Payments Europe" iossVatCollectedEUR="11.32"/>
+    <LogisticsStream s10TrackingNo="LP00667788909CN" airWaybillNo="871-33221100" lastMileCarrierPT="CTT Expresso Portugal"/>
+  </ThreeStreamDeclaration>
+  <ThreeStreamDeclaration gaccCbecInventoryNo="CBEC-1210-2026-SH012" supervisionRegime="1210 - Bonded Cross-Border E-Commerce" matchingVerdict="THREE_STREAMS_MATCHED_CLEARED">
+    <OrderStream platformOrderNo="TMALL-GLOBAL-2026-12" ecommercePlatform="Tmall Global / JD Worldwide" buyerNifHashPT="PT500265432" orderAmountEUR="142.00"/>
+    <PaymentStream paymentTxId="WECHAT-PAY-20260425-12" paymentInstitution="Tenpay / WeChat Pay CN" iossVatCollectedEUR="32.66"/>
+    <LogisticsStream s10TrackingNo="LP00667788912CN" airWaybillNo="871-33221100" lastMileCarrierPT="CTT Expresso Portugal"/>
+  </ThreeStreamDeclaration>
+</CrossBorderThreeStreamMatching>

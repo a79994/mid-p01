@@ -1,0 +1,348 @@
+[
+  {
+    "_id": "CALL-PTSIN-2026-0412",
+    "numero_escala_jul": "PTSIN202600412",
+    "imo_navio": "9795610",
+    "nome_navio": "COSCO SHIPPING UNIVERSE",
+    "bandeira_estado": "Hong Kong (HKG)",
+    "armador_operador_linha": "COSCO SHIPPING Lines (Ocean Alliance - AEU3 Loop)",
+    "porto_escala": "Porto de Sines (Terminal XXI)",
+    "tipo_navio": "Porta-Contentores Ultra-Large (ULCV)",
+    "teu_capacidade_nominal": 21237,
+    "calado_chegada_metros": 16.2,
+    "data_hora_estimada_eta": "18/04/2026 06:00",
+    "data_hora_efetiva_ata": "28/04/2026 07:30",
+    "data_hora_partida_atd": "30/04/2026 23:45",
+    "rota_servico_maritimo": "Shanghai (CNSHA) -> Ningbo (CNNGB) -> Cabo da Boa Esperança -> Sines (PTSIN) -> Roterdão",
+    "portos_rotacao_anterior": [
+      "CNSHA",
+      "CNNGB",
+      "SGPPU"
+    ],
+    "contentores_manifestados_descarga": [
+      {
+        "numero_contentor": "COSU8001101",
+        "tipo_iso": "40HC",
+        "porto_origem": "CNSHA",
+        "peso_bruto_kg": 460000.0,
+        "mercadoria": "Módulos Baterias LFP CALB",
+        "regime_aduaneiro": "Importação Definitiva Sines"
+      },
+      {
+        "numero_contentor": "COSU8001102",
+        "tipo_iso": "40HC",
+        "porto_origem": "CNSHA",
+        "peso_bruto_kg": 460000.0,
+        "mercadoria": "Módulos Baterias LFP CALB",
+        "regime_aduaneiro": "Importação Definitiva Sines"
+      },
+      {
+        "numero_contentor": "COSU8003301",
+        "tipo_iso": "40HC",
+        "porto_origem": "CNSHA",
+        "peso_bruto_kg": 1710000.0,
+        "mercadoria": "Painéis Solares LONGi Hi-MO 7",
+        "regime_aduaneiro": "Importação Definitiva Alentejo"
+      }
+    ],
+    "contentores_manifestados_carga": [
+      {
+        "numero_contentor": "COSU4455663",
+        "tipo_iso": "40RF",
+        "porto_destino": "CNSHA",
+        "peso_bruto_kg": 148000.0,
+        "mercadoria": "Azeite Virgem Extra Oliveira da Serra",
+        "regime_aduaneiro": "Exportação Definitiva"
+      }
+    ]
+  },
+  {
+    "_id": "CALL-PTSIN-2026-0426",
+    "numero_escala_jul": "PTSIN202600426",
+    "imo_navio": "9842105",
+    "nome_navio": "BYD EXPLORER NO.1",
+    "bandeira_estado": "Libéria (LBR)",
+    "armador_operador_linha": "BYD Auto / Zodiac Maritime Specialized Ro-Ro Carrier",
+    "porto_escala": "Porto de Sines (Cais Multiusos / Ro-Ro)",
+    "tipo_navio": "Pure Car and Truck Carrier (PCTC Dual Fuel LNG)",
+    "teu_capacidade_nominal": 7000,
+    "calado_chegada_metros": 10.4,
+    "data_hora_estimada_eta": "26/04/2026 12:00",
+    "data_hora_efetiva_ata": "26/04/2026 14:00",
+    "data_hora_partida_atd": "28/04/2026 18:00",
+    "rota_servico_maritimo": "Shenzhen Yantian (CNSZX) -> Canal do Suez -> Sines (PTSIN) -> Setúbal -> Bremerhaven",
+    "portos_rotacao_anterior": [
+      "CNSZX",
+      "SGSIN"
+    ],
+    "contentores_manifestados_descarga": [
+      {
+        "numero_contentor": "BYDU9002201",
+        "tipo_iso": "RORO-VEHICLES",
+        "porto_origem": "CNSZX",
+        "peso_bruto_kg": 890000.0,
+        "mercadoria": "400x Veículos BYD Seal AWD Elétricos",
+        "regime_aduaneiro": "Importação Definitiva Salvador Caetano"
+      }
+    ],
+    "contentores_manifestados_carga": []
+  },
+  {
+    "_id": "CALL-PTLEI-2026-0514",
+    "numero_escala_jul": "PTLEI202600514",
+    "imo_navio": "9839131",
+    "nome_navio": "COSCO SHIPPING SOLAR",
+    "bandeira_estado": "Hong Kong (HKG)",
+    "armador_operador_linha": "COSCO SHIPPING Lines (Ocean Alliance - AEU1)",
+    "porto_escala": "Porto de Leixões (Terminal de Contentores de Leixões - TCL)",
+    "tipo_navio": "Porta-Contentores Ultra-Large (ULCV)",
+    "teu_capacidade_nominal": 21237,
+    "calado_chegada_metros": 13.8,
+    "data_hora_estimada_eta": "16/05/2026 06:00",
+    "data_hora_efetiva_ata": "16/05/2026 08:00",
+    "data_hora_partida_atd": "18/05/2026 22:00",
+    "rota_servico_maritimo": "Ningbo (CNNGB) -> Sines (PTSIN) -> Leixões (PTLEI) -> Hamburgo",
+    "portos_rotacao_anterior": [
+      "CNNGB",
+      "PTSIN"
+    ],
+    "contentores_manifestados_descarga": [
+      {
+        "numero_contentor": "CATU8004401",
+        "tipo_iso": "40HC",
+        "porto_origem": "CNNGB",
+        "peso_bruto_kg": 355000.0,
+        "mercadoria": "Racks de Baterias CATL EnerC Plus",
+        "regime_aduaneiro": "Importação Definitiva REN"
+      },
+      {
+        "numero_contentor": "COSU8006601",
+        "tipo_iso": "20OT",
+        "porto_origem": "CNNGB",
+        "peso_bruto_kg": 2502500.0,
+        "mercadoria": "Chapa de Aço Liga S355 e Alumínio 6061",
+        "regime_aduaneiro": "Importação Mota-Engil"
+      }
+    ],
+    "contentores_manifestados_carga": [
+      {
+        "numero_contentor": "COSU4455661",
+        "tipo_iso": "40RF",
+        "porto_destino": "CNSHA",
+        "peso_bruto_kg": 168000.0,
+        "mercadoria": "Vinho do Porto Graham's e Douro Reserva Symington",
+        "regime_aduaneiro": "Exportação Definitiva"
+      },
+      {
+        "numero_contentor": "COSU4455662",
+        "tipo_iso": "40HC",
+        "porto_destino": "CNSHA",
+        "peso_bruto_kg": 72000.0,
+        "mercadoria": "Rolhas de Cortiça Amorim",
+        "regime_aduaneiro": "Exportação Definitiva"
+      }
+    ]
+  },
+  {
+    "_id": "CALL-PTSIN-2026-0520",
+    "numero_escala_jul": "PTSIN202600520",
+    "imo_navio": "9795646",
+    "nome_navio": "COSCO SHIPPING PISCES",
+    "bandeira_estado": "Hong Kong (HKG)",
+    "armador_operador_linha": "COSCO SHIPPING Lines (Ocean Alliance)",
+    "porto_escala": "Porto de Sines (Terminal XXI)",
+    "tipo_navio": "Porta-Contentores Ultra-Large (ULCV)",
+    "teu_capacidade_nominal": 21237,
+    "calado_chegada_metros": 16.0,
+    "data_hora_estimada_eta": "20/05/2026 05:00",
+    "data_hora_efetiva_ata": "20/05/2026 06:45",
+    "data_hora_partida_atd": "22/05/2026 19:30",
+    "rota_servico_maritimo": "Qingdao (CNTAO) -> Ningbo (CNNGB) -> Sines (PTSIN) -> Antuérpia",
+    "portos_rotacao_anterior": [
+      "CNTAO",
+      "CNNGB",
+      "SGSIN"
+    ],
+    "contentores_manifestados_descarga": [
+      {
+        "numero_contentor": "COSU8008801",
+        "tipo_iso": "40HC",
+        "porto_origem": "CNNGB",
+        "peso_bruto_kg": 102000.0,
+        "mercadoria": "Inversores Solares Huawei SUN2000",
+        "regime_aduaneiro": "Importação Definitiva EDP"
+      },
+      {
+        "numero_contentor": "COSU8010101",
+        "tipo_iso": "40HC",
+        "porto_origem": "CNNGB",
+        "peso_bruto_kg": 118000.0,
+        "mercadoria": "Ar Condicionado Midea Inverter",
+        "regime_aduaneiro": "Importação Worten"
+      }
+    ],
+    "contentores_manifestados_carga": [
+      {
+        "numero_contentor": "COSU4455665",
+        "tipo_iso": "40RF",
+        "porto_destino": "CNTAO",
+        "peso_bruto_kg": 472000.0,
+        "mercadoria": "Carne de Porco Alentejano Maporal",
+        "regime_aduaneiro": "Exportação Definitiva"
+      }
+    ]
+  },
+  {
+    "_id": "CALL-PTSIN-2026-0602",
+    "numero_escala_jul": "PTSIN202600602",
+    "imo_navio": "9795634",
+    "nome_navio": "COSCO SHIPPING TAURUS",
+    "bandeira_estado": "Hong Kong (HKG)",
+    "armador_operador_linha": "COSCO SHIPPING Lines (Ocean Alliance)",
+    "porto_escala": "Porto de Sines (Terminal XXI)",
+    "tipo_navio": "Porta-Contentores Ultra-Large (ULCV)",
+    "teu_capacidade_nominal": 21237,
+    "calado_chegada_metros": 16.4,
+    "data_hora_estimada_eta": "02/06/2026 07:00",
+    "data_hora_efetiva_ata": "02/06/2026 08:30",
+    "data_hora_partida_atd": "04/06/2026 21:00",
+    "rota_servico_maritimo": "Tianjin (CNTNJ) -> Shanghai (CNSHA) -> Sines (PTSIN) -> Felixstowe",
+    "portos_rotacao_anterior": [
+      "CNTNJ",
+      "CNSHA",
+      "SGSIN"
+    ],
+    "contentores_manifestados_descarga": [
+      {
+        "numero_contentor": "COSU8011101",
+        "tipo_iso": "40OT",
+        "porto_origem": "CNTNJ",
+        "peso_bruto_kg": 298000.0,
+        "mercadoria": "Equipamentos Rede Elétrica State Grid / CRRC",
+        "regime_aduaneiro": "Importação REN"
+      }
+    ],
+    "contentores_manifestados_carga": [
+      {
+        "numero_contentor": "COSU4455664",
+        "tipo_iso": "40HC",
+        "porto_destino": "CNSHA",
+        "peso_bruto_kg": 3512000.0,
+        "mercadoria": "Pasta de Eucalipto Navigator BHKP",
+        "regime_aduaneiro": "Exportação Definitiva"
+      }
+    ]
+  },
+  {
+    "_id": "CALL-PTSET-2026-0610",
+    "numero_escala_jul": "PTSET202600610",
+    "imo_navio": "9842117",
+    "nome_navio": "BYD CHANGZHOU",
+    "bandeira_estado": "Libéria (LBR)",
+    "armador_operador_linha": "BYD Auto Specialized Carrier",
+    "porto_escala": "Porto de Setúbal (Sadoport Ro-Ro)",
+    "tipo_navio": "Pure Car and Truck Carrier (PCTC 7000 CEU)",
+    "teu_capacidade_nominal": 7000,
+    "calado_chegada_metros": 10.2,
+    "data_hora_estimada_eta": "10/06/2026 10:00",
+    "data_hora_efetiva_ata": "10/06/2026 11:15",
+    "data_hora_partida_atd": "12/06/2026 16:00",
+    "rota_servico_maritimo": "Shenzhen (CNSZX) -> Setúbal (PTSET) -> Zeebrugge",
+    "portos_rotacao_anterior": [
+      "CNSZX",
+      "SGSIN"
+    ],
+    "contentores_manifestados_descarga": [
+      {
+        "numero_contentor": "BYDU9002202",
+        "tipo_iso": "RORO-VEHICLES",
+        "porto_origem": "CNSZX",
+        "peso_bruto_kg": 710000.0,
+        "mercadoria": "350x Veículos BYD Atto 3 e Dolphin",
+        "regime_aduaneiro": "Importação Definitiva"
+      }
+    ],
+    "contentores_manifestados_carga": []
+  },
+  {
+    "_id": "CALL-PTSIN-2026-0618",
+    "numero_escala_jul": "PTSIN202600618",
+    "imo_navio": "9839179",
+    "nome_navio": "CMA CGM JACQUES SAADE",
+    "bandeira_estado": "França (FRA)",
+    "armador_operador_linha": "CMA CGM (Ocean Alliance - FAL1 Loop)",
+    "porto_escala": "Porto de Sines (Terminal XXI)",
+    "tipo_navio": "Porta-Contentores Ultra-Large LNG",
+    "teu_capacidade_nominal": 23000,
+    "calado_chegada_metros": 16.5,
+    "data_hora_estimada_eta": "18/06/2026 04:00",
+    "data_hora_efetiva_ata": "18/06/2026 05:30",
+    "data_hora_partida_atd": "20/06/2026 18:00",
+    "rota_servico_maritimo": "Ningbo (CNNGB) -> Shanghai (CNSHA) -> Sines (PTSIN) -> Le Havre",
+    "portos_rotacao_anterior": [
+      "CNNGB",
+      "CNSHA",
+      "MYPKG"
+    ],
+    "contentores_manifestados_descarga": [
+      {
+        "numero_contentor": "CMAU9001101",
+        "tipo_iso": "40HC",
+        "porto_origem": "CNNGB",
+        "peso_bruto_kg": 520000.0,
+        "mercadoria": "Módulos Fotovoltaicos Trina Solar",
+        "regime_aduaneiro": "Importação"
+      }
+    ],
+    "contentores_manifestados_carga": [
+      {
+        "numero_contentor": "COSU4455666",
+        "tipo_iso": "40RF",
+        "porto_destino": "CNSHA",
+        "peso_bruto_kg": 133000.0,
+        "mercadoria": "Vinhos Douro e Dão Sogrape",
+        "regime_aduaneiro": "Exportação"
+      }
+    ]
+  },
+  {
+    "_id": "CALL-PTSIN-2026-0625",
+    "numero_escala_jul": "PTSIN202600625",
+    "imo_navio": "9619907",
+    "nome_navio": "MAERSK MC-KINNEY MOLLER",
+    "bandeira_estado": "Dinamarca (DNK)",
+    "armador_operador_linha": "Maersk Line (AE2 / 2M Alliance)",
+    "porto_escala": "Porto de Sines (Terminal XXI)",
+    "tipo_navio": "Porta-Contentores Triple-E",
+    "teu_capacidade_nominal": 18270,
+    "calado_chegada_metros": 15.8,
+    "data_hora_estimada_eta": "25/06/2026 08:00",
+    "data_hora_efetiva_ata": "25/06/2026 09:10",
+    "data_hora_partida_atd": "27/06/2026 14:00",
+    "rota_servico_maritimo": "Yantian (CNSZX) -> Sines (PTSIN) -> Roterdão",
+    "portos_rotacao_anterior": [
+      "CNSZX",
+      "SGSIN"
+    ],
+    "contentores_manifestados_descarga": [
+      {
+        "numero_contentor": "MSKU8001101",
+        "tipo_iso": "40HC",
+        "porto_origem": "CNSZX",
+        "peso_bruto_kg": 410000.0,
+        "mercadoria": "Equipamentos Eletrónicos e Eletrodomésticos",
+        "regime_aduaneiro": "Importação"
+      }
+    ],
+    "contentores_manifestados_carga": [
+      {
+        "numero_contentor": "COSU4455667",
+        "tipo_iso": "40HC",
+        "porto_destino": "CNSZX",
+        "peso_bruto_kg": 3110000.0,
+        "mercadoria": "Pasta Celbi Altri",
+        "regime_aduaneiro": "Exportação"
+      }
+    ]
+  }
+]

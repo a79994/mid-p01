@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "NCTS-PT-2026-001",
+    "mrn_transito_ncts": "26PT000395TR000101",
+    "regime_transito": "T1 - Trânsito Externo da União (Mercadoria Não-UE em Suspensão)",
+    "estancia_partida": "PT000395 (Alfândega de Sines)",
+    "estancia_destino": "PT000140 (Alfândega de Leixões / Entreposto Gaia)",
+    "principal_responsavel_eori": "PT500991122",
+    "numero_contentor_iso": "COSU8001101",
+    "selo_aduaneiro_at": "AT-SELO-SIN-88412",
+    "montante_garantia_retida_eur": 450000.0,
+    "data_limite_apresentacao": "05/05/2026",
+    "mensagem_apuramento_ie045": "APURADO_SEM_DISCREPANCIAS_IE045"
+  },
+  {
+    "_id": "NCTS-PT-2026-002",
+    "mrn_transito_ncts": "26PT000395TR000102",
+    "regime_transito": "T1 - Trânsito Externo da União",
+    "estancia_partida": "PT000395 (Alfândega de Sines)",
+    "estancia_destino": "PT000510 (Alfândega do Jardim do Tabaco / Entreposto Azambuja)",
+    "principal_responsavel_eori": "PT502334455",
+    "numero_contentor_iso": "COSU8003301",
+    "selo_aduaneiro_at": "AT-SELO-SIN-88499",
+    "montante_garantia_retida_eur": 320000.0,
+    "data_limite_apresentacao": "12/05/2026",
+    "mensagem_apuramento_ie045": "APURADO_SEM_DISCREPANCIAS_IE045"
+  },
+  {
+    "_id": "NCTS-PT-2026-003",
+    "mrn_transito_ncts": "26ES002801TR009912",
+    "regime_transito": "T1 - Trânsito Ferroviário Internacional Yiwu-Madrid-Entroncamento",
+    "estancia_partida": "ES002801 (Aduana de Madrid Abroñigal)",
+    "estancia_destino": "PT000510 (Delegação Aduaneira do Entroncamento)",
+    "principal_responsavel_eori": "PT501223344",
+    "numero_contentor_iso": "CRXU9988771",
+    "selo_aduaneiro_at": "CIMSMGS-SEAL-YW07",
+    "montante_garantia_retida_eur": 295000.0,
+    "data_limite_apresentacao": "14/05/2026",
+    "mensagem_apuramento_ie045": "APURADO_COM_AUTO_INSPECAO_AT"
+  }
+]

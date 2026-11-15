@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "ETS-MAR-PT-2026-001",
+    "registo_thetismrv_ue": "THETIS-MRV-2026-PTSIN-9795610",
+    "imo_navio": "9795610",
+    "nome_navio": "COSCO SHIPPING UNIVERSE",
+    "numero_escala_jul": "PTSIN202600412",
+    "rota_oceano": "Shanghai (CNSHA) -> Cabo da Boa Esperança -> Sines (PTSIN)",
+    "distancia_milhas_nauticas": 13840,
+    "combustivel_consumido_ton": 4120.0,
+    "emissoes_totais_viagem_tco2": 12830.0,
+    "percentagem_abrangida_eu_ets_extra_ue_pct": 50.0,
+    "licencas_eua_entregues_ton": 6415.0,
+    "custo_ets_imputado_contentores_pt_eur": 477917.5,
+    " sobretaxa_ets_por_teu_eur": 42.0
+  },
+  {
+    "_id": "ETS-MAR-PT-2026-002",
+    "registo_thetismrv_ue": "THETIS-MRV-2026-PTSIN-9842105",
+    "imo_navio": "9842105",
+    "nome_navio": "BYD EXPLORER NO.1 (LNG Dual-Fuel PCTC)",
+    "numero_escala_jul": "PTSIN202600445",
+    "rota_oceano": "Shenzhen Yantian (CNSZX) -> Cabo da Boa Esperança -> Sines (PTSIN)",
+    "distancia_milhas_nauticas": 13120,
+    "combustivel_consumido_ton": 2480.0,
+    "emissoes_totais_viagem_tco2": 6820.0,
+    "percentagem_abrangida_eu_ets_extra_ue_pct": 50.0,
+    "licencas_eua_entregues_ton": 3410.0,
+    "custo_ets_imputado_contentores_pt_eur": 254045.0,
+    "sobretaxa_ets_por_teu_eur": 28.5
+  },
+  {
+    "_id": "ETS-MAR-PT-2026-003",
+    "registo_thetismrv_ue": "THETIS-MRV-2026-PTLEI-9839131",
+    "imo_navio": "9839131",
+    "nome_navio": "COSCO SHIPPING SOLAR",
+    "numero_escala_jul": "PTLEI202600198",
+    "rota_oceano": "Ningbo (CNNGB) -> Sines (PTSIN) -> Leixões (PTLEI)",
+    "distancia_milhas_nauticas": 13980,
+    "combustivel_consumido_ton": 3950.0,
+    "emissoes_totais_viagem_tco2": 12290.0,
+    "percentagem_abrangida_eu_ets_extra_ue_pct": 50.0,
+    "licencas_eua_entregues_ton": 6145.0,
+    "custo_ets_imputado_contentores_pt_eur": 457802.5,
+    "sobretaxa_ets_por_teu_eur": 44.0
+  }
+]

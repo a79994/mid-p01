@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ColdChainSanitaryTraceabilityRegistry>
+  <ColdChainTraceabilityLot traceCodeGacc="GACC-TRACE-SH-2026-9901" gaccImportId18="220120261000990001" ciferProducerCodePT="CPRT18000102000101" containerIso="COSU4455661">
+    <PortSanitaryInspection entryPortCN="CNSHA" eciqCertNo="ECIQ-IM20260505101" coreTempMeasuredC="14.5" sanitaryDisinfectionPass="true"/>
+    <DomesticDistributionChain coldStorageFacility="COFCO Shanghai Waigaoqiao Constant-Temp Wine Cellar" retailTraceabilityQrPrefix="QR-SHFDA-SYM-2026" destinationProvinceCN="Shanghai / Jiangsu"/>
+  </ColdChainTraceabilityLot>
+  <ColdChainTraceabilityLot traceCodeGacc="GACC-TRACE-SH-2026-9905" gaccImportId18="220120261000990005" ciferProducerCodePT="CPRT18000101000505" containerIso="COSU4455665">
+    <PortSanitaryInspection entryPortCN="CNSHA" eciqCertNo="ECIQ-IM20260527105" coreTempMeasuredC="-18.1" sanitaryDisinfectionPass="true"/>
+    <DomesticDistributionChain coldStorageFacility="Shanghai Pudong Cold-Chain Meat Logistics Hub" retailTraceabilityQrPrefix="QR-SHFDA-MAP-2026" destinationProvinceCN="Shanghai / Zhejiang"/>
+  </ColdChainTraceabilityLot>
+  <ColdChainTraceabilityLot traceCodeGacc="GACC-TRACE-HQ-2026-9903" gaccImportId18="530420261000990003" ciferProducerCodePT="CPRT18000401000303" containerIso="COSU4455663">
+    <PortSanitaryInspection entryPortCN="CNZUH" eciqCertNo="ECIQ-IM20260519103" coreTempMeasuredC="16.2" sanitaryDisinfectionPass="true"/>
+    <DomesticDistributionChain coldStorageFacility="Hengqin Lusophone Foodstuff Bonded Distribution Center" retailTraceabilityQrPrefix="QR-GDFDA-SOV-2026" destinationProvinceCN="Guangdong / Macao SAR"/>
+  </ColdChainTraceabilityLot>
+  <ColdChainTraceabilityLot traceCodeGacc="GACC-TRACE-SH-2026-9906" gaccImportId18="220120261000990006" ciferProducerCodePT="CPRT18000102000606" containerIso="COSU4455666">
+    <PortSanitaryInspection entryPortCN="CNSHA" eciqCertNo="ECIQ-IM20260529106" coreTempMeasuredC="14.0" sanitaryDisinfectionPass="true"/>
+    <DomesticDistributionChain coldStorageFacility="COFCO Shanghai Waigaoqiao Constant-Temp Wine Cellar" retailTraceabilityQrPrefix="QR-SHFDA-SOG-2026" destinationProvinceCN="Beijing / Shanghai"/>
+  </ColdChainTraceabilityLot>
+  <ColdChainTraceabilityLot traceCodeGacc="GACC-TRACE-QD-2026-9910" gaccImportId18="370220261000990010" ciferProducerCodePT="CPRT18000201000505" containerIso="COSU4455665">
+    <PortSanitaryInspection entryPortCN="CNTAO" eciqCertNo="ECIQ-IM20260527105" coreTempMeasuredC="-18.3" sanitaryDisinfectionPass="true"/>
+    <DomesticDistributionChain coldStorageFacility="Qingdao Qianwan Cold-Chain Port Hub" retailTraceabilityQrPrefix="QR-SDFDA-PORK-2026" destinationProvinceCN="Shandong / Hebei"/>
+  </ColdChainTraceabilityLot>
+</ColdChainSanitaryTraceabilityRegistry>

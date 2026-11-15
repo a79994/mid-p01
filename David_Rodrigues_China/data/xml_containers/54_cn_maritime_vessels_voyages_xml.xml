@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MaritimeVoyagesRegistry>
+  <MaritimeVoyage voyageId="VOY-COSCO-UNIV-2026-01" vesselImo="9795610" serviceLoop="AEU1-Loop">
+    <VesselDetails>
+      <VesselName>COSCO SHIPPING UNIVERSE</VesselName>
+      <CarrierLine>COSCO SHIPPING Lines Co., Ltd.</CarrierLine>
+      <FlagState>Hong Kong (HKG)</FlagState>
+      <NominalCapacityTEU>21237</NominalCapacityTEU>
+    </VesselDetails>
+    <ItineraryRotation>
+      <PortCall seq="1" unlocode="CNSHA" timestampCSTorUTC="2026-03-24T08:00:00+08:00" operation="Departure"/>
+      <PortCall seq="2" unlocode="CNNGB" timestampCSTorUTC="2026-03-26T14:30:00+08:00" operation="Departure"/>
+      <PortCall seq="3" unlocode="SGSIN" timestampCSTorUTC="2026-04-02T10:00:00+08:00" operation="Bunkering"/>
+      <PortCall seq="4" unlocode="ZACPT" timestampCSTorUTC="2026-04-16T18:00:00+02:00" operation="Transit Cape of Good Hope"/>
+      <PortCall seq="5" unlocode="PTSIN" timestampCSTorUTC="2026-04-29T06:00:00+01:00" operation="Discharge"/>
+    </ItineraryRotation>
+    <BunkerFuelAndEmissions fuelType="VLSFO 0.5% S + Biofuel B24" consumedMetricTons="4850.50" voyageRoute="Cape of Good Hope Diversion (Red Sea Security Bypass)"/>
+  </MaritimeVoyage>
+  <MaritimeVoyage voyageId="VOY-BYD-EXP-2026-01" vesselImo="9842105" serviceLoop="BYD-Direct-Loop">
+    <VesselDetails>
+      <VesselName>BYD EXPLORER NO.1</VesselName>
+      <CarrierLine>BYD Auto Shipping / Zodiac Maritime</CarrierLine>
+      <FlagState>Liberia (LBR)</FlagState>
+      <NominalCapacityTEU>7000</NominalCapacityTEU>
+    </VesselDetails>
+    <ItineraryRotation>
+      <PortCall seq="1" unlocode="CNSZX" timestampCSTorUTC="2026-03-28T12:00:00+08:00" operation="Departure"/>
+      <PortCall seq="2" unlocode="SGSIN" timestampCSTorUTC="2026-04-02T04:00:00+08:00" operation="Bunkering LNG"/>
+      <PortCall seq="3" unlocode="EGPSD" timestampCSTorUTC="2026-04-14T20:00:00+02:00" operation="Suez Canal Convoy"/>
+      <PortCall seq="4" unlocode="PTSIN" timestampCSTorUTC="2026-04-21T07:30:00+01:00" operation="Discharge"/>
+    </ItineraryRotation>
+    <BunkerFuelAndEmissions fuelType="Dual-Fuel LNG (Clean Energy)" consumedMetricTons="1680.00" voyageRoute="Suez Canal Maritime Highway"/>
+  </MaritimeVoyage>
+  <MaritimeVoyage voyageId="VOY-COSCO-SOLAR-2026-02" vesselImo="9795634" serviceLoop="AEU3-Loop">
+    <VesselDetails>
+      <VesselName>COSCO SHIPPING SOLAR</VesselName>
+      <CarrierLine>COSCO SHIPPING Lines Co., Ltd.</CarrierLine>
+      <FlagState>Hong Kong (HKG)</FlagState>
+      <NominalCapacityTEU>21237</NominalCapacityTEU>
+    </VesselDetails>
+    <ItineraryRotation>
+      <PortCall seq="1" unlocode="CNSHA" timestampCSTorUTC="2026-04-02T09:00:00+08:00" operation="Departure"/>
+      <PortCall seq="2" unlocode="CNNGB" timestampCSTorUTC="2026-04-04T16:00:00+08:00" operation="Departure"/>
+      <PortCall seq="3" unlocode="ZACPT" timestampCSTorUTC="2026-04-24T12:00:00+02:00" operation="Transit Cape of Good Hope"/>
+      <PortCall seq="4" unlocode="PTSIN" timestampCSTorUTC="2026-05-08T14:00:00+01:00" operation="Discharge"/>
+    </ItineraryRotation>
+    <BunkerFuelAndEmissions fuelType="VLSFO 0.5% S" consumedMetricTons="4920.00" voyageRoute="Cape of Good Hope Bypass"/>
+  </MaritimeVoyage>
+  <MaritimeVoyage voyageId="VOY-COSCO-PISCES-2026-01" vesselImo="9795646" serviceLoop="AEU7-Loop">
+    <VesselDetails>
+      <VesselName>COSCO SHIPPING PISCES</VesselName>
+      <CarrierLine>COSCO SHIPPING Lines Co., Ltd.</CarrierLine>
+      <FlagState>Hong Kong (HKG)</FlagState>
+      <NominalCapacityTEU>20119</NominalCapacityTEU>
+    </VesselDetails>
+    <ItineraryRotation>
+      <PortCall seq="1" unlocode="CNSZX" timestampCSTorUTC="2026-03-10T11:00:00+08:00" operation="Departure"/>
+      <PortCall seq="2" unlocode="ZACPT" timestampCSTorUTC="2026-04-01T08:00:00+02:00" operation="Transit Cape of Good Hope"/>
+      <PortCall seq="3" unlocode="PTSIN" timestampCSTorUTC="2026-04-18T16:00:00+01:00" operation="Discharge"/>
+    </ItineraryRotation>
+    <BunkerFuelAndEmissions fuelType="VLSFO 0.5% S" consumedMetricTons="4710.00" voyageRoute="Cape of Good Hope Diversion"/>
+  </MaritimeVoyage>
+  <MaritimeVoyage voyageId="VOY-BYD-CHGZ-2026-01" vesselImo="9842117" serviceLoop="BYD-Direct-Loop">
+    <VesselDetails>
+      <VesselName>BYD CHANGZHOU</VesselName>
+      <CarrierLine>BYD Auto Shipping</CarrierLine>
+      <FlagState>Liberia (LBR)</FlagState>
+      <NominalCapacityTEU>7000</NominalCapacityTEU>
+    </VesselDetails>
+    <ItineraryRotation>
+      <PortCall seq="1" unlocode="CNSZX" timestampCSTorUTC="2026-04-10T10:00:00+08:00" operation="Departure"/>
+      <PortCall seq="2" unlocode="EGPSD" timestampCSTorUTC="2026-04-26T22:00:00+02:00" operation="Suez Canal Convoy"/>
+      <PortCall seq="3" unlocode="PTSIN" timestampCSTorUTC="2026-05-03T09:00:00+01:00" operation="Discharge"/>
+    </ItineraryRotation>
+    <BunkerFuelAndEmissions fuelType="Dual-Fuel LNG" consumedMetricTons="1650.00" voyageRoute="Suez Canal Route"/>
+  </MaritimeVoyage>
+  <MaritimeVoyage voyageId="VOY-COSCO-TAURUS-2026-02" vesselImo="9795622" serviceLoop="AEU1-Loop">
+    <VesselDetails>
+      <VesselName>COSCO SHIPPING TAURUS</VesselName>
+      <CarrierLine>COSCO SHIPPING Lines Co., Ltd.</CarrierLine>
+      <FlagState>Hong Kong (HKG)</FlagState>
+      <NominalCapacityTEU>20119</NominalCapacityTEU>
+    </VesselDetails>
+    <ItineraryRotation>
+      <PortCall seq="1" unlocode="CNNGB" timestampCSTorUTC="2026-04-15T08:00:00+08:00" operation="Departure"/>
+      <PortCall seq="2" unlocode="ZACPT" timestampCSTorUTC="2026-05-06T15:00:00+02:00" operation="Transit Cape of Good Hope"/>
+      <PortCall seq="3" unlocode="PTSIN" timestampCSTorUTC="2026-05-20T11:00:00+01:00" operation="Discharge"/>
+    </ItineraryRotation>
+    <BunkerFuelAndEmissions fuelType="VLSFO 0.5% S" consumedMetricTons="4890.00" voyageRoute="Cape of Good Hope Route"/>
+  </MaritimeVoyage>
+</MaritimeVoyagesRegistry>

@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "PCA-AT-2026-001",
+    "ordem_servico_inspecao_at": "OI202600412-DSAFA",
+    "unidade_inspetiva": "AT - Direção de Serviços de Antifraude Aduaneira (DSAFA)",
+    "fundamento_legal_cau": "Controlo Pós-Desembaraço (Art. 48.º do Código Aduaneiro da União)",
+    "operador_auditado_eori": "PT517890123",
+    "empresa_mae_china_uscc": "91320413MA1M9Y2C4B",
+    "mrn_dau_auditado": "26PT000395IM008801",
+    "objeto_auditoria": "Verificação de Preços de Transferência (Art. 70.º n.º 3 al. d) CAU) e inclusão de Royalties de Patente LFP no Valor Aduaneiro",
+    "conclusao_relatorio": "REGULAR - Dossier de Preços de Transferência OCDE comprova que a relação especial não influenciou o preço CIF faturado",
+    "liquidacao_adicional_direitos_eur": 0.0
+  },
+  {
+    "_id": "PCA-AT-2026-002",
+    "ordem_servico_inspecao_at": "OI202600589-DSAFA",
+    "unidade_inspetiva": "AT - Divisão Operacional do Norte (Porto)",
+    "fundamento_legal_cau": "Controlo Pós-Desembaraço (Art. 48.º e Art. 71.º CAU)",
+    "operador_auditado_eori": "PT504998877",
+    "empresa_mae_china_uscc": "91330782098765432W",
+    "mrn_dau_auditado": "26PT000510IM008807",
+    "objeto_auditoria": "Reavaliação do Valor Aduaneiro por subfaturação em 200 caixas de vestuário e omissão de comissões de compra",
+    "conclusao_relatorio": "LIQUIDACAO_ADICIONAL_EMITIDA",
+    "liquidacao_adicional_direitos_eur": 14820.5
+  }
+]

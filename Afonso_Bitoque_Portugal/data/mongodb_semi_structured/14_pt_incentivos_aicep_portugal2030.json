@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "PT2030-CALB-SINES",
+    "codigo_candidatura_pt2030": "COMPETE2030-RCI-2025-0001",
+    "nif_beneficiario": "517890123",
+    "tipologia_apoio": "Regime Contratual de Investimento (RCI) - Reindustrialização Verde Europeia",
+    "mercado_alvo": "Produção em Sines de 15 GWh para Exportação Automóvel Europeia",
+    "investimento_elegivel_eur": 2000000000.0,
+    "incentivo_aprovado_eur": 350000000.0,
+    "metas_exportacao_anual_eur": 1450000000.0
+  },
+  {
+    "_id": "PT2030-SYMINGTON-CHINA",
+    "codigo_candidatura_pt2030": "NORTE2030-INT-2025-0412",
+    "nif_beneficiario": "500265432",
+    "tipologia_apoio": "SI Internacionalização PME / Grandes Marcas - Promoção CIIE Xangai e Tmall Global",
+    "mercado_alvo": "China Continental e Macau",
+    "investimento_elegivel_eur": 850000.0,
+    "incentivo_aprovado_eur": 382500.0,
+    "metas_exportacao_anual_eur": 6500000.0
+  },
+  {
+    "_id": "PT2030-MAPORAL-CHINA",
+    "codigo_candidatura_pt2030": "ALENTEJO2030-AGRO-2025-0109",
+    "nif_beneficiario": "508112244",
+    "tipologia_apoio": "Inovação Produtiva Agroindustrial e Certificação Sanitária CIFER China",
+    "mercado_alvo": "China Continental (Pequim, Xangai e Cantão)",
+    "investimento_elegivel_eur": 4200000.0,
+    "incentivo_aprovado_eur": 1890000.0,
+    "metas_exportacao_anual_eur": 12000000.0
+  },
+  {
+    "_id": "PT2030-NAVIGATOR-SUSTAIN",
+    "codigo_candidatura_pt2030": "COMPETE2030-DECARB-2025-0044",
+    "nif_beneficiario": "500055214",
+    "tipologia_apoio": "Descarbonização da Indústria e Eficiência Energética na Produção de Pasta",
+    "mercado_alvo": "Mercados Asiáticos e Europeus",
+    "investimento_elegivel_eur": 45000000.0,
+    "incentivo_aprovado_eur": 12500000.0,
+    "metas_exportacao_anual_eur": 180000000.0
+  },
+  {
+    "_id": "PT2030-AMORIM-CORK-RND",
+    "codigo_candidatura_pt2030": "CENTRO2030-IDT-2025-0321",
+    "nif_beneficiario": "500077889",
+    "tipologia_apoio": "I&D Empresarial em Rolhas Neutrocork de Zero Emissões para a Ásia",
+    "mercado_alvo": "China, Japão e Coreia do Sul",
+    "investimento_elegivel_eur": 3500000.0,
+    "incentivo_aprovado_eur": 1750000.0,
+    "metas_exportacao_anual_eur": 25000000.0
+  },
+  {
+    "_id": "PT2030-EDP-STORAGE",
+    "codigo_candidatura_pt2030": "COMPETE2030-BATT-2025-0089",
+    "nif_beneficiario": "500697256",
+    "tipologia_apoio": "Armazenamento em Baterias de Grande Escala para Centrais Fotovoltaicas",
+    "mercado_alvo": "Rede Elétrica Nacional e Mercado Ibérico de Eletricidade",
+    "investimento_elegivel_eur": 28000000.0,
+    "incentivo_aprovado_eur": 8400000.0,
+    "metas_exportacao_anual_eur": 40000000.0
+  }
+]

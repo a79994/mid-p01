@@ -1,0 +1,191 @@
+[
+  {
+    "_id": "INFRA-PTSIN",
+    "un_locode": "PTSIN",
+    "nome_infraestrutura": "Porto de Sines (Hub Atlântico Deep-Water & Terminal XXI)",
+    "entidade_gestora": "APS - Administração dos Portos de Sines e do Algarve, S.A.",
+    "tipo_modal": "Marítimo",
+    "terminais_operacionais": [
+      {
+        "codigo_terminal": "PTSIN-TXXI",
+        "operador_concessionario": "PSA Sines (Port of Singapore Authority)",
+        "calado_maximo_metros": 17.5,
+        "capacidade_anual_teu": 2700000,
+        "gruas_super_post_panamax": 12,
+        "tomadas_reefer": 1400,
+        "ligacao_ferroviaria_direta": true
+      }
+    ],
+    "tarifario_portuario_eur": {
+      "taxa_uso_porto_tup_por_gt": 0.42,
+      "movimentacao_thc_teu_eur": 165.0,
+      "armazenagem_livre_dias": 5,
+      "sobreestadia_diaria_eur": 38.0
+    }
+  },
+  {
+    "_id": "INFRA-PTSIN-MULTI",
+    "un_locode": "PTSIN",
+    "nome_infraestrutura": "Terminal Multiusos de Sines (Granéis e Carga de Projeto)",
+    "entidade_gestora": "APS - Administração dos Portos de Sines e do Algarve, S.A.",
+    "tipo_modal": "Marítimo",
+    "terminais_operacionais": [
+      {
+        "codigo_terminal": "PTSIN-TMS",
+        "operador_concessionario": "Portsines - Terminal Multiusos, S.A.",
+        "calado_maximo_metros": 16.0,
+        "capacidade_anual_teu": 250000,
+        "gruas_super_post_panamax": 4,
+        "tomadas_reefer": 250,
+        "ligacao_ferroviaria_direta": true
+      }
+    ],
+    "tarifario_portuario_eur": {
+      "taxa_uso_porto_tup_por_gt": 0.4,
+      "movimentacao_thc_teu_eur": 150.0,
+      "armazenagem_livre_dias": 7,
+      "sobreestadia_diaria_eur": 32.0
+    }
+  },
+  {
+    "_id": "INFRA-PTLEI",
+    "un_locode": "PTLEI",
+    "nome_infraestrutura": "Porto de Leixões (Matosinhos / Grande Porto)",
+    "entidade_gestora": "APDL - Administração dos Portos do Douro, Leixões e Viana do Castelo, S.A.",
+    "tipo_modal": "Marítimo",
+    "terminais_operacionais": [
+      {
+        "codigo_terminal": "PTLEI-TCL",
+        "operador_concessionario": "Yilport Leixões",
+        "calado_maximo_metros": 14.0,
+        "capacidade_anual_teu": 950000,
+        "gruas_super_post_panamax": 6,
+        "tomadas_reefer": 650,
+        "ligacao_ferroviaria_direta": true
+      }
+    ],
+    "tarifario_portuario_eur": {
+      "taxa_uso_porto_tup_por_gt": 0.39,
+      "movimentacao_thc_teu_eur": 158.0,
+      "armazenagem_livre_dias": 5,
+      "sobreestadia_diaria_eur": 35.0
+    }
+  },
+  {
+    "_id": "INFRA-PTLIS",
+    "un_locode": "PTLIS",
+    "nome_infraestrutura": "Porto de Lisboa (Terminal de Contentores de Alcântara)",
+    "entidade_gestora": "APL - Administração do Porto de Lisboa, S.A.",
+    "tipo_modal": "Marítimo",
+    "terminais_operacionais": [
+      {
+        "codigo_terminal": "PTLIS-LISCONT",
+        "operador_concessionario": "Liscont - Operadores de Contentores, S.A. (Yilport)",
+        "calado_maximo_metros": 13.5,
+        "capacidade_anual_teu": 600000,
+        "gruas_super_post_panamax": 4,
+        "tomadas_reefer": 420,
+        "ligacao_ferroviaria_direta": true
+      }
+    ],
+    "tarifario_portuario_eur": {
+      "taxa_uso_porto_tup_por_gt": 0.41,
+      "movimentacao_thc_teu_eur": 162.0,
+      "armazenagem_livre_dias": 5,
+      "sobreestadia_diaria_eur": 36.0
+    }
+  },
+  {
+    "_id": "INFRA-PTSET",
+    "un_locode": "PTSET",
+    "nome_infraestrutura": "Porto de Setúbal (Terminal Ro-Ro e Sadoport)",
+    "entidade_gestora": "APSS - Administração dos Portos de Setúbal e Sesimbra, S.A.",
+    "tipo_modal": "Marítimo",
+    "terminais_operacionais": [
+      {
+        "codigo_terminal": "PTSET-SADOPORT",
+        "operador_concessionario": "Sadoport - Terminal Marítimo do Sado, S.A. (Yilport)",
+        "calado_maximo_metros": 12.5,
+        "capacidade_anual_teu": 380000,
+        "gruas_super_post_panamax": 3,
+        "tomadas_reefer": 300,
+        "ligacao_ferroviaria_direta": true
+      }
+    ],
+    "tarifario_portuario_eur": {
+      "taxa_uso_porto_tup_por_gt": 0.35,
+      "movimentacao_thc_teu_eur": 145.0,
+      "armazenagem_livre_dias": 6,
+      "sobreestadia_diaria_eur": 30.0
+    }
+  },
+  {
+    "_id": "INFRA-PTAVE",
+    "un_locode": "PTAVE",
+    "nome_infraestrutura": "Porto de Aveiro (Terminal Norte de Granéis e Carga Geral)",
+    "entidade_gestora": "APA - Administração do Porto de Aveiro, S.A.",
+    "tipo_modal": "Marítimo",
+    "terminais_operacionais": [
+      {
+        "codigo_terminal": "PTAVE-TNORTE",
+        "operador_concessionario": "Socarpor / PTM Ibérica",
+        "calado_maximo_metros": 9.5,
+        "capacidade_anual_teu": 150000,
+        "gruas_super_post_panamax": 2,
+        "tomadas_reefer": 100,
+        "ligacao_ferroviaria_direta": true
+      }
+    ],
+    "tarifario_portuario_eur": {
+      "taxa_uso_porto_tup_por_gt": 0.32,
+      "movimentacao_thc_teu_eur": 138.0,
+      "armazenagem_livre_dias": 7,
+      "sobreestadia_diaria_eur": 26.0
+    }
+  },
+  {
+    "_id": "INFRA-PTENT",
+    "un_locode": "PTENT",
+    "nome_infraestrutura": "Terminal Multimodal Ferroviário do Entroncamento",
+    "entidade_gestora": "IP - Infraestruturas de Portugal / Medway Terminals",
+    "tipo_modal": "Ferroviário",
+    "terminais_operacionais": [
+      {
+        "codigo_terminal": "PTENT-RAIL01",
+        "operador_concessionario": "Medway / Takargo Intermodal",
+        "calado_maximo_metros": 0.0,
+        "capacidade_anual_teu": 220000,
+        "gruas_super_post_panamax": 4,
+        "tomadas_reefer": 80,
+        "ligacao_ferroviaria_direta": true
+      }
+    ],
+    "tarifario_portuario_eur": {
+      "taxa_manuseamento_ut_eur": 62.0,
+      "armazenagem_livre_dias": 3,
+      "sobreestadia_diaria_eur": 22.0
+    }
+  },
+  {
+    "_id": "INFRA-PTLIS-AIR",
+    "un_locode": "PTLIS",
+    "nome_infraestrutura": "Terminal de Carga Aérea de Lisboa (Aeroporto Humberto Delgado - LIS)",
+    "entidade_gestora": "ANA Aeroportos de Portugal / Menzies & Groundforce Cargo",
+    "tipo_modal": "Aéreo",
+    "terminais_operacionais": [
+      {
+        "codigo_terminal": "LIS-CARGO-T1",
+        "operador_concessionario": "Portway / Menzies Aviation Cargo",
+        "calado_maximo_metros": 0.0,
+        "capacidade_anual_teu": 180000,
+        "gruas_super_post_panamax": 0,
+        "tomadas_reefer": 120,
+        "ligacao_ferroviaria_direta": false
+      }
+    ],
+    "tarifario_portuario_eur": {
+      "taxa_handling_por_kg_eur": 0.18,
+      "armazenagem_frio_diaria_eur": 45.0
+    }
+  }
+]

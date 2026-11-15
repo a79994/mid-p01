@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InternationalTradeFairsChina>
+  <TradeFairEdition fairCode="CIIE-2025" fairName="China International Import Expo (CIIE)" hostCity="Shanghai" year="2025">
+    <MatchmakingDeals>
+      <Deal ptCompanyEori="PT500265432" cnCompanyUscc="91110000101123456N" contractNoGenerated="CNT-2025-CIIE-01" intentValueUSD="1450000.00" sector="Agroalimentar (Vinhos do Douro e Porto Sogrape)"/>
+      <Deal ptCompanyEori="PT502345678" cnCompanyUscc="91610132724912345X" contractNoGenerated="CNT-2025-CIIE-02" intentValueUSD="8200000.00" sector="Energias Renováveis (Painéis Solares LONGi EDP)"/>
+    </MatchmakingDeals>
+  </TradeFairEdition>
+  <TradeFairEdition fairCode="CANTON-138" fairName="Canton Fair / China Import and Export Fair" hostCity="Guangzhou" year="2025">
+    <MatchmakingDeals>
+      <Deal ptCompanyEori="PT500123456" cnCompanyUscc="91110108551385082Q" contractNoGenerated="CNT-2025-CANTON-03" intentValueUSD="3500000.00" sector="Eletrónica de Consumo (Xiaomi Sonae/Worten)"/>
+      <Deal ptCompanyEori="PT500345678" cnCompanyUscc="91330782098765432W" contractNoGenerated="CNT-2025-CANTON-04" intentValueUSD="1200000.00" sector="Têxteis e Vestuário Polo Varziela"/>
+    </MatchmakingDeals>
+  </TradeFairEdition>
+  <TradeFairEdition fairCode="MIF-2025" fairName="Macao International Trade and Investment Fair (MIF)" hostCity="Macao SAR" year="2025">
+    <MatchmakingDeals>
+      <Deal ptCompanyEori="PT500198765" cnCompanyUscc="91110000101123456N" contractNoGenerated="CNT-2025-MIF-05" intentValueUSD="980000.00" sector="Agroalimentar (Carne de Porco Congelada Maporal)"/>
+      <Deal ptCompanyEori="PT500234567" cnCompanyUscc="91440400MA56LUS01P" contractNoGenerated="CNT-2025-MIF-06" intentValueUSD="4500000.00" sector="Plataforma de Financiamento Lusófono BCP Macau"/>
+    </MatchmakingDeals>
+  </TradeFairEdition>
+  <TradeFairEdition fairCode="GDTE-2025" fairName="Global Digital Trade Expo (GDTE)" hostCity="Hangzhou" year="2025">
+    <MatchmakingDeals>
+      <Deal ptCompanyEori="PT500077568" cnCompanyUscc="91440300755673010C" contractNoGenerated="CNT-2025-GDTE-07" intentValueUSD="2800000.00" sector="Logística Digital Transfronteiriça CTT Cainiao"/>
+    </MatchmakingDeals>
+  </TradeFairEdition>
+  <TradeFairEdition fairCode="WCIF-2025" fairName="Western China International Fair (WCIF)" hostCity="Chengdu" year="2025">
+    <MatchmakingDeals>
+      <Deal ptCompanyEori="PT517890123" cnCompanyUscc="91320413MA1M9Y2C4B" contractNoGenerated="CNT-2025-WCIF-08" intentValueUSD="6800000.00" sector="Componentes e Maquinaria Fabril Sines"/>
+    </MatchmakingDeals>
+  </TradeFairEdition>
+</InternationalTradeFairsChina>

@@ -1,0 +1,170 @@
+[
+  {
+    "_id": "ASAE-CTRL-2026-004",
+    "processo_controlo_id": "PROC-ASAE-LEI-2026-089",
+    "mrn_declaracao_dau": "26PT000140IM008804",
+    "entidade_fiscalizadora": "ASAE / DGEG / AT Alfândega de Leixões",
+    "codigo_taric_10": "8507600090",
+    "fabricante_chines_uscc": "91350900587527783P",
+    "organismo_notificado_ue": "0197 (TÜV Rheinland LGA Products GmbH)",
+    "diretivas_ue_avaliadas": [
+      "Regulamento UE 2023/1542 (Baterias e Passaporte Digital)",
+      "Diretiva EMC 2014/30/UE"
+    ],
+    "resultado_conformidade": "Conforme após Aditamento Documental de Manual Técnico em Português",
+    "testes_laboratoriais": [
+      {
+        "parametro": "Isolamento Dielétrico Alta Tensão",
+        "valor_medido": "1250 MOhm",
+        "limite_legal": ">= 500 MOhm",
+        "conforme": true
+      },
+      {
+        "parametro": "Passaporte de Pegada Carbónica QR Code",
+        "valor_medido": "Presente e Validado",
+        "limite_legal": "Obrigatório",
+        "conforme": true
+      }
+    ]
+  },
+  {
+    "_id": "ASAE-CTRL-2026-007",
+    "processo_controlo_id": "PROC-ASAE-ENT-2026-112",
+    "mrn_declaracao_dau": "26PT000210IM008807",
+    "entidade_fiscalizadora": "ASAE - Unidade Nacional de Informações e Investigação Criminal",
+    "codigo_taric_10": "6204623100",
+    "fabricante_chines_uscc": "91330782098765432W",
+    "organismo_notificado_ue": "CITEVE - Centro Tecnológico das Indústrias Têxtil e do Vestuário de Portugal",
+    "diretivas_ue_avaliadas": [
+      "Regulamento REACH Anexo XVII (Corantes Azóicos)",
+      "Regulamento Rotulagem Têxtil UE 1007/2011"
+    ],
+    "resultado_conformidade": "Retenção Parcial (1200 peças retidas por falta de etiqueta de composição em língua portuguesa; restante lote libertado)",
+    "testes_laboratoriais": [
+      {
+        "parametro": "Aminas Aromáticas Cancerígenas (REACH)",
+        "valor_medido": "< 5 mg/kg",
+        "limite_legal": "<= 30 mg/kg",
+        "conforme": true
+      },
+      {
+        "parametro": "Etiquetagem em Português",
+        "valor_medido": "Ausente em 4.8% da amostragem",
+        "limite_legal": "100% Obrigatório",
+        "conforme": false
+      }
+    ]
+  },
+  {
+    "_id": "ASAE-CTRL-2026-001",
+    "processo_controlo_id": "PROC-ASAE-SIN-2026-041",
+    "mrn_declaracao_dau": "26PT000395IM008801",
+    "entidade_fiscalizadora": "ASAE / DGEG Alfândega de Sines",
+    "codigo_taric_10": "8507600090",
+    "fabricante_chines_uscc": "91320413MA1M9Y2C4B",
+    "organismo_notificado_ue": "0035 (TÜV Rheinland)",
+    "diretivas_ue_avaliadas": [
+      "Regulamento UE 2023/1542 (Baterias)",
+      "Norma UN 38.3 (Segurança de Transporte de Lítio)"
+    ],
+    "resultado_conformidade": "Conforme e Validado para Integração na Fábrica CALB",
+    "testes_laboratoriais": [
+      {
+        "parametro": "Ensaio de Altitude e Choque Térmico T1-T4",
+        "valor_medido": "Sem fugas ou perda de massa",
+        "limite_legal": "Conforme UN38.3",
+        "conforme": true
+      },
+      {
+        "parametro": "Ensaio de Curto-Circuito Externo a +55C",
+        "valor_medido": "Estabilidade térmica mantida",
+        "limite_legal": "Temp < 170C",
+        "conforme": true
+      }
+    ]
+  },
+  {
+    "_id": "ASAE-CTRL-2026-008",
+    "processo_controlo_id": "PROC-ASAE-SET-2026-155",
+    "mrn_declaracao_dau": "26PT000395IM008808",
+    "entidade_fiscalizadora": "ASAE / DGEG Delegação de Setúbal",
+    "codigo_taric_10": "8504408500",
+    "fabricante_chines_uscc": "91440300618837699Q",
+    "organismo_notificado_ue": "0123 (TÜV SÜD Product Service GmbH)",
+    "diretivas_ue_avaliadas": [
+      "Diretiva Baixa Tensão LVD 2014/35/UE",
+      "Diretiva Compatibilidade Eletromagnética 2014/30/UE"
+    ],
+    "resultado_conformidade": "Conforme - Certificação de Proteção de Rede Anti-Ilhamento Validada",
+    "testes_laboratoriais": [
+      {
+        "parametro": "Tempo de Desconexão Anti-Ilhamento",
+        "valor_medido": "0.18 s",
+        "limite_legal": "<= 0.5 s",
+        "conforme": true
+      },
+      {
+        "parametro": "Distorção Harmónica Total THD",
+        "valor_medido": "1.4%",
+        "limite_legal": "<= 3.0%",
+        "conforme": true
+      }
+    ]
+  },
+  {
+    "_id": "ASAE-CTRL-2026-010",
+    "processo_controlo_id": "PROC-ASAE-SIN-2026-210",
+    "mrn_declaracao_dau": "26PT000395IM008810",
+    "entidade_fiscalizadora": "ASAE / Agência Portuguesa do Ambiente (APA)",
+    "codigo_taric_10": "8415109000",
+    "fabricante_chines_uscc": "91440606190342599T",
+    "organismo_notificado_ue": "0036 (TÜV SÜD Industrie Service)",
+    "diretivas_ue_avaliadas": [
+      "Regulamento F-Gas UE 2024/573",
+      "Regulamento Ecoeficiência ErP 2009/125/CE"
+    ],
+    "resultado_conformidade": "Conforme - Carga R32 com GWP 675 em Conformidade com Quota Europeia",
+    "testes_laboratoriais": [
+      {
+        "parametro": "Estanquicidade do Circuito Frigorífico",
+        "valor_medido": "Perda < 0.1 g/ano",
+        "limite_legal": "<= 2.0 g/ano",
+        "conforme": true
+      },
+      {
+        "parametro": "Rácio de Eficiência Sazonal SEER",
+        "valor_medido": "8.5 (Classe A+++)",
+        "limite_legal": ">= 6.1 (Classe A++)",
+        "conforme": true
+      }
+    ]
+  },
+  {
+    "_id": "ASAE-CTRL-2026-013",
+    "processo_controlo_id": "PROC-ASAE-SET-2026-302",
+    "mrn_declaracao_dau": "26PT000395IM008813",
+    "entidade_fiscalizadora": "ASAE / IMT - Instituto da Mobilidade e dos Transportes",
+    "codigo_taric_10": "8703801000",
+    "fabricante_chines_uscc": "91440300192317458F",
+    "organismo_notificado_ue": "0080 (SNCH - Société Nationale de Certification et d'Homologation)",
+    "diretivas_ue_avaliadas": [
+      "Regulamento Geral de Segurança GSR II (UE 2019/2144)",
+      "Regulamento Baterias UNECE R100"
+    ],
+    "resultado_conformidade": "Conforme - Homologação Europeia de Tipo WVTA e Sistema ISA Verificados",
+    "testes_laboratoriais": [
+      {
+        "parametro": "Assistente Inteligente de Velocidade (ISA)",
+        "valor_medido": "Ativo e Conforme",
+        "limite_legal": "Obrigatório",
+        "conforme": true
+      },
+      {
+        "parametro": "Segurança de Impacto Bateria Blade LFP",
+        "valor_medido": "Sem ignição em Crush Test",
+        "limite_legal": "UNECE R100 Rev3",
+        "conforme": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContainerEquipmentDemurrageRegistry>
+  <EquipmentDemurrageRecord eirRecordId="EIR-SH-2026-990005" containerIso="COSU4455665" blNumber="COSU6288992205" portUnlocode="CNSHA">
+    <FreeTimeAllowance freeDemurrageDays="7" freeDetentionDays="7" actualTurnaroundDays="11"/>
+    <PenaltySettlement chargeableOverdueDays="4" dailyRateUSD="145.00" totalBilledUSD="580.00" delayReason="CIQ Mandarin Back-Label Font Rectification in Bonded Cold Storage"/>
+  </EquipmentDemurrageRecord>
+  <EquipmentDemurrageRecord eirRecordId="EIR-SIN-2026-880101" containerIso="COSU8001101" blNumber="COSU6288991101" portUnlocode="PTSIN">
+    <FreeTimeAllowance freeDemurrageDays="10" freeDetentionDays="14" actualTurnaroundDays="4"/>
+    <PenaltySettlement chargeableOverdueDays="0" dailyRateUSD="95.00" totalBilledUSD="0.00" delayReason="Cleared Within Free Time - AEO Green Lane Release"/>
+  </EquipmentDemurrageRecord>
+  <EquipmentDemurrageRecord eirRecordId="EIR-LEI-2026-880401" containerIso="CATU8004401" blNumber="COSU6288991104" portUnlocode="PTLEI">
+    <FreeTimeAllowance freeDemurrageDays="7" freeDetentionDays="10" actualTurnaroundDays="10"/>
+    <PenaltySettlement chargeableOverdueDays="3" dailyRateUSD="120.00" totalBilledUSD="360.00" delayReason="Joint Insurance &amp; Port Authority Physical Survey After Bay of Biscay Storm"/>
+  </EquipmentDemurrageRecord>
+  <EquipmentDemurrageRecord eirRecordId="EIR-SH-2026-990001" containerIso="COSU4455661" blNumber="COSU6288992201" portUnlocode="CNSHA">
+    <FreeTimeAllowance freeDemurrageDays="7" freeDetentionDays="7" actualTurnaroundDays="9"/>
+    <PenaltySettlement chargeableOverdueDays="2" dailyRateUSD="145.00" totalBilledUSD="290.00" delayReason="CIQ Organoleptic Wine Sampling Due to Cape of Good Hope Thermal Excursion"/>
+  </EquipmentDemurrageRecord>
+  <EquipmentDemurrageRecord eirRecordId="EIR-SIN-2026-880601" containerIso="COSU8006601" blNumber="COSU6288991106" portUnlocode="PTSIN">
+    <FreeTimeAllowance freeDemurrageDays="10" freeDetentionDays="10" actualTurnaroundDays="6"/>
+    <PenaltySettlement chargeableOverdueDays="0" dailyRateUSD="85.00" totalBilledUSD="0.00" delayReason="Direct Rail Evacuation to Sines ZILS Construction Site"/>
+  </EquipmentDemurrageRecord>
+</ContainerEquipmentDemurrageRegistry>

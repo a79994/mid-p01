@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "IPV-BTI-PT-2026-001",
+    "referencia_decisao_ebti": "PTBTI2025-000891-SINES",
+    "tipo_decisao_vinculativa": "IPV / BTI (Informação Pautal Vinculativa - Art. 33.º do CAU)",
+    "titular_eori": "PT517890123",
+    "autoridade_emissora": "AT - Direção de Serviços de Regulação Aduaneira (Lisboa)",
+    "codigo_taric_10_fixado": "8507600090",
+    "descricao_tecnica_mercadoria": "Módulo de acumuladores de iões de lítio-ferro-fosfato (LFP) 314Ah com placa de monitorização térmica passiva, sem inversor integrado",
+    "regra_geral_interpretativa_aplicada": "RGI 1 e RGI 6 da Nomenclatura Combinada",
+    "data_inicio_validade": "15/06/2025",
+    "data_fim_validade_3_anos": "14/06/2028",
+    "invocada_no_dau_mrn": "26PT000395IM008801"
+  },
+  {
+    "_id": "IPV-BTI-PT-2026-002",
+    "referencia_decisao_ebti": "PTBTI2025-001104-REN",
+    "tipo_decisao_vinculativa": "IPV / BTI (Informação Pautal Vinculativa)",
+    "titular_eori": "PT503412890",
+    "autoridade_emissora": "AT - Direção de Serviços de Regulação Aduaneira",
+    "codigo_taric_10_fixado": "8507600090",
+    "descricao_tecnica_mercadoria": "Contentor marítimo de 20 pés equipado com racks de baterias LFP CATL EnerC Plus e sistema de arrefecimento líquido para armazenamento em rede elétrica",
+    "regra_geral_interpretativa_aplicada": "RGI 1, Nota 3 da Secção XVI e RGI 6",
+    "data_inicio_validade": "10/09/2025",
+    "data_fim_validade_3_anos": "09/09/2028",
+    "invocada_no_dau_mrn": "26PT000140IM008804"
+  }
+]

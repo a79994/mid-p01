@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "STADA-H7-2026-001",
+    "mrn_h7_stada": "26PT000520H70012901",
+    "conjunto_dados_cau": "Coluna H7 do Anexo B do Regulamento Delegado (UE) 2015/2446 (Super-Reduzido <= 150 EUR)",
+    "declarante_expresso_eori": "PT500077568",
+    "codigo_rastreio_postal_s10": "LP00667788901CN",
+    "master_awb_aereo": "871-33221100",
+    "numero_ioss_validado_vies": "IM5280001234",
+    "codigo_hs6_declarado": "851830",
+    "valor_intrinseco_remessa_eur": 68.5,
+    "isencao_direitos_art23_reg1186": true,
+    "iva_pago_no_checkout_ioss": true,
+    "canal_selecao_stada_h7": "CANAL_VERDE_DESEMBARACO_AUTOMATICO_EM_VOO"
+  },
+  {
+    "_id": "STADA-H7-2026-002",
+    "mrn_h7_stada": "26PT000520H70012902",
+    "conjunto_dados_cau": "Coluna H7 do Anexo B do Regulamento Delegado (UE) 2015/2446",
+    "declarante_expresso_eori": "PT500077568",
+    "codigo_rastreio_postal_s10": "LP00667788902CN",
+    "master_awb_aereo": "871-33221100",
+    "numero_ioss_validado_vies": "IM5280001234",
+    "codigo_hs6_declarado": "910212",
+    "valor_intrinseco_remessa_eur": 112.0,
+    "isencao_direitos_art23_reg1186": true,
+    "iva_pago_no_checkout_ioss": true,
+    "canal_selecao_stada_h7": "CANAL_VERDE_DESEMBARACO_AUTOMATICO_EM_VOO"
+  },
+  {
+    "_id": "STADA-H7-2026-003",
+    "mrn_h7_stada": "26PT000520H70012905",
+    "conjunto_dados_cau": "Coluna H7 do Anexo B do Regulamento Delegado (UE) 2015/2446",
+    "declarante_expresso_eori": "PT500077568",
+    "codigo_rastreio_postal_s10": "LP00667788905CN",
+    "master_awb_aereo": "871-33221100",
+    "numero_ioss_validado_vies": "IM5280009988",
+    "codigo_hs6_declarado": "620462",
+    "valor_intrinseco_remessa_eur": 84.9,
+    "isencao_direitos_art23_reg1186": true,
+    "iva_pago_no_checkout_ioss": true,
+    "canal_selecao_stada_h7": "CANAL_VERDE_DESEMBARACO_AUTOMATICO_EM_VOO"
+  }
+]

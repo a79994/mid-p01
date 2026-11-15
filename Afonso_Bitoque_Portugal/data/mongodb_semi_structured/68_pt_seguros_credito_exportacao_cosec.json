@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "COSEC-PT-2026-001",
+    "numero_apolice_cosec": "COSEC-ALLIANZ-EXP-2026-8801",
+    "seguradora_nacional": "COSEC - Companhia de Seguro de Créditos, S.A. (Allianz Trade)",
+    "exportador_segurado_eori": "PT500265432",
+    "comprador_devedor_china_uscc": "91110000101123456N",
+    "fatura_coberta": "INV-PT-2026-9901",
+    "limite_credito_aprovado_eur": 5000000.0,
+    "percentagem_cobertura_risco_pct": 90.0,
+    "premio_seguro_pago_eur": 9135.0,
+    "garantia_estado_portugues": true,
+    "classificacao_risco_comprador_cn": "Grau 1 - SOE Estatal Chinesa (COFCO)",
+    "estado_sinistralidade": "REGULAR_SEM_MORA"
+  },
+  {
+    "_id": "COSEC-PT-2026-002",
+    "numero_apolice_cosec": "COSEC-ALLIANZ-EXP-2026-8802",
+    "seguradora_nacional": "COSEC - Companhia de Seguro de Créditos, S.A.",
+    "exportador_segurado_eori": "PT500077889",
+    "comprador_devedor_china_uscc": "91110000101123456N",
+    "fatura_coberta": "INV-PT-2026-9902",
+    "limite_credito_aprovado_eur": 6000000.0,
+    "percentagem_cobertura_risco_pct": 90.0,
+    "premio_seguro_pago_eur": 11314.8,
+    "garantia_estado_portugues": false,
+    "classificacao_risco_comprador_cn": "Grau 1 - Excelente",
+    "estado_sinistralidade": "REGULAR_SEM_MORA"
+  },
+  {
+    "_id": "COSEC-PT-2026-003",
+    "numero_apolice_cosec": "COSEC-AGRO-EXP-2026-8805",
+    "seguradora_nacional": "COSEC / Linha de Apoio Seguro Crédito AICEP",
+    "exportador_segurado_eori": "PT508112244",
+    "comprador_devedor_china_uscc": "91110000101123456N",
+    "fatura_coberta": "INV-PT-2026-9905",
+    "limite_credito_aprovado_eur": 4500000.0,
+    "percentagem_cobertura_risco_pct": 95.0,
+    "premio_seguro_pago_eur": 12375.0,
+    "garantia_estado_portugues": true,
+    "classificacao_risco_comprador_cn": "Grau 1 - Cobertura Risco Político e Fitossanitário",
+    "estado_sinistralidade": "REGULAR_SEM_MORA"
+  },
+  {
+    "_id": "COSEC-PT-2026-004",
+    "numero_apolice_cosec": "COSEC-IND-EXP-2026-8804",
+    "seguradora_nacional": "COSEC - Companhia de Seguro de Créditos, S.A.",
+    "exportador_segurado_eori": "PT500055214",
+    "comprador_devedor_china_uscc": "91370200163562681G",
+    "fatura_coberta": "INV-PT-2026-9904",
+    "limite_credito_aprovado_eur": 10000000.0,
+    "percentagem_cobertura_risco_pct": 90.0,
+    "premio_seguro_pago_eur": 14700.0,
+    "garantia_estado_portugues": false,
+    "classificacao_risco_comprador_cn": "Grau 1 - Multinacional Cotada Qingdao",
+    "estado_sinistralidade": "REGULAR_SEM_MORA"
+  }
+]

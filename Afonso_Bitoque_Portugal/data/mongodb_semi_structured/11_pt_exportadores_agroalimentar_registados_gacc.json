@@ -1,0 +1,247 @@
+[
+  {
+    "_id": "GACC-PT-SYMINGTON",
+    "nif_produtor_pt": "500265432",
+    "eori_produtor_pt": "PT500265432",
+    "nome_quinta_adega_fabrica": "Symington Family Estates - Adega da Quinta do Sol & Caves Graham's",
+    "regiao_demarcada_dop_igp": "Douro DOP / Vinho do Porto DOP",
+    "numero_registo_dgav": "DGAV-VIN-PT-0042",
+    "codigo_cifer_gacc_18digitos": "CPRT18000102000101",
+    "categorias_produtos_autorizados": [
+      "Vinhos Tranquilos DOP",
+      "Vinhos Licorosos (Vinho do Porto)"
+    ],
+    "validade_habilitacao_china": "31/12/2029",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-SH-SYM-2026A",
+        "certificado_fitossanitario_pt": "DGAV-CERT-2026-9901",
+        "fatura_exportacao": "INV-PT-2026-9901",
+        "bl_associado": "COSU6288992201",
+        "grau_alcoolico_pct": 19.5,
+        "garrafas_unidades": 120000,
+        "valor_fob_leixoes_eur": 1480000.0
+      }
+    ]
+  },
+  {
+    "_id": "GACC-PT-AMORIM",
+    "nif_produtor_pt": "500077889",
+    "eori_produtor_pt": "PT500077889",
+    "nome_quinta_adega_fabrica": "Amorim Cork, S.A. - Unidade Industrial de Santa Maria de Lamas",
+    "regiao_demarcada_dop_igp": "Montado de Sobro Alentejo & Ribatejo (FSC Certified)",
+    "numero_registo_dgav": "DGAV-FLOR-PT-0001",
+    "codigo_cifer_gacc_18digitos": "CPRT18009901000202",
+    "categorias_produtos_autorizados": [
+      "Rolhas de Cortiça Natural",
+      "Rolhas Técnicas Neutrocork/TwinTop"
+    ],
+    "validade_habilitacao_china": "31/12/2030",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-SH-AMO-2026B",
+        "certificado_fitossanitario_pt": "DGAV-CERT-2026-9902",
+        "fatura_exportacao": "INV-PT-2026-9902",
+        "bl_associado": "COSU6288992202",
+        "grau_alcoolico_pct": 0.0,
+        "garrafas_unidades": 15000000,
+        "valor_fob_leixoes_eur": 1850000.0
+      }
+    ]
+  },
+  {
+    "_id": "GACC-PT-SOVENA",
+    "nif_produtor_pt": "500112233",
+    "eori_produtor_pt": "PT500112233",
+    "nome_quinta_adega_fabrica": "Sovena Lagar do Marmelo (Ferreira do Alentejo)",
+    "regiao_demarcada_dop_igp": "Azeites do Alentejo Interior",
+    "numero_registo_dgav": "DGAV-AZE-PT-0018",
+    "codigo_cifer_gacc_18digitos": "CPRT18000401000303",
+    "categorias_produtos_autorizados": [
+      "Azeite Virgem Extra (Acidez <= 0.2%)"
+    ],
+    "validade_habilitacao_china": "30/06/2029",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-HQ-SOV-2026C",
+        "certificado_fitossanitario_pt": "DGAV-CERT-2026-9903",
+        "fatura_exportacao": "INV-PT-2026-9903",
+        "bl_associado": "COSU6288992203",
+        "grau_alcoolico_pct": 0.18,
+        "garrafas_unidades": 180000,
+        "valor_fob_sines_eur": 1120000.0
+      }
+    ]
+  },
+  {
+    "_id": "GACC-PT-MAPORAL",
+    "nif_produtor_pt": "508112244",
+    "eori_produtor_pt": "PT508112244",
+    "nome_quinta_adega_fabrica": "Maporal - Matadouro de Porco de Raça Alentejana, S.A.",
+    "regiao_demarcada_dop_igp": "Alentejo (Montado & Bolota)",
+    "numero_registo_dgav": "DGAV-CAR-PT-0008",
+    "codigo_cifer_gacc_18digitos": "CPRT18000201000404",
+    "categorias_produtos_autorizados": [
+      "Carne Suína Congelada Desossada",
+      "Entremeada e Toucinho de Porco Alentejano"
+    ],
+    "validade_habilitacao_china": "31/12/2028",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-TAO-MAP-2026D",
+        "certificado_fitossanitario_pt": "DGAV-VET-2026-9905",
+        "fatura_exportacao": "INV-PT-2026-9905",
+        "bl_associado": "COSU6288992205",
+        "grau_alcoolico_pct": 0.0,
+        "garrafas_unidades": 450000,
+        "valor_fob_sines_eur": 1650000.0
+      }
+    ]
+  },
+  {
+    "_id": "GACC-PT-SOGRAPE",
+    "nif_produtor_pt": "500214890",
+    "eori_produtor_pt": "PT500214890",
+    "nome_quinta_adega_fabrica": "Sogrape Vinhos - Quinta da Leda & Centro de Vinificação de Avintes",
+    "regiao_demarcada_dop_igp": "Douro DOP / Dão DOP",
+    "numero_registo_dgav": "DGAV-VIN-PT-0012",
+    "codigo_cifer_gacc_18digitos": "CPRT18000102000505",
+    "categorias_produtos_autorizados": [
+      "Vinhos Tintos e Brancos DOP Douro",
+      "Vinhos DOP Dão"
+    ],
+    "validade_habilitacao_china": "31/10/2029",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-SH-SOG-2026E",
+        "certificado_fitossanitario_pt": "DGAV-CERT-2026-9906",
+        "fatura_exportacao": "INV-PT-2026-9906",
+        "bl_associado": "COSU6288992206",
+        "grau_alcoolico_pct": 14.0,
+        "garrafas_unidades": 95000,
+        "valor_fob_leixoes_eur": 1280000.0
+      }
+    ]
+  },
+  {
+    "_id": "GACC-PT-NAVIGATOR",
+    "nif_produtor_pt": "500055214",
+    "eori_produtor_pt": "PT500055214",
+    "nome_quinta_adega_fabrica": "The Navigator Company - Complexo Industrial da Mitrena Setúbal",
+    "regiao_demarcada_dop_igp": "Floresta de Eucalipto Certificada FSC / PEFC",
+    "numero_registo_dgav": "DGAV-FLOR-PT-0005",
+    "codigo_cifer_gacc_18digitos": "CPRT18009901000808",
+    "categorias_produtos_autorizados": [
+      "Pasta Química Kraft Branqueada de Eucalipto (BHKP)"
+    ],
+    "validade_habilitacao_china": "31/12/2030",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-SH-NAV-2026F",
+        "certificado_fitossanitario_pt": "DGAV-FLOR-2026-9904",
+        "fatura_exportacao": "INV-PT-2026-9904",
+        "bl_associado": "COSU6288992204",
+        "grau_alcoolico_pct": 0.0,
+        "garrafas_unidades": 3500,
+        "valor_fob_leixoes_eur": 2100000.0
+      }
+    ]
+  },
+  {
+    "_id": "GACC-PT-ALTRI",
+    "nif_produtor_pt": "505299443",
+    "eori_produtor_pt": "PT505299443",
+    "nome_quinta_adega_fabrica": "Altri / Celbi - Celulose Beira Industrial, Figueira da Foz",
+    "regiao_demarcada_dop_igp": "Floresta Certificada Centro Litoral",
+    "numero_registo_dgav": "DGAV-FLOR-PT-0009",
+    "codigo_cifer_gacc_18digitos": "CPRT18009901000909",
+    "categorias_produtos_autorizados": [
+      "Pasta Celulósica Solúvel e Fibras Sustentáveis"
+    ],
+    "validade_habilitacao_china": "30/09/2029",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-TAO-ALT-2026G",
+        "certificado_fitossanitario_pt": "DGAV-FLOR-2026-9907",
+        "fatura_exportacao": "INV-PT-2026-9907",
+        "bl_associado": "COSU6288992207",
+        "grau_alcoolico_pct": 0.0,
+        "garrafas_unidades": 3100,
+        "valor_fob_leixoes_eur": 1940000.0
+      }
+    ]
+  },
+  {
+    "_id": "GACC-PT-CRASTO",
+    "nif_produtor_pt": "502112334",
+    "eori_produtor_pt": "PT502112334",
+    "nome_quinta_adega_fabrica": "Quinta do Crasto - Adega Tradicional de Gouvinhas",
+    "regiao_demarcada_dop_igp": "Douro DOP",
+    "numero_registo_dgav": "DGAV-VIN-PT-0078",
+    "codigo_cifer_gacc_18digitos": "CPRT18000102000606",
+    "categorias_produtos_autorizados": [
+      "Vinhos Tintos Douro Reserva e Vinhas Velhas"
+    ],
+    "validade_habilitacao_china": "31/12/2028",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-SH-CRA-2026H",
+        "certificado_fitossanitario_pt": "DGAV-CERT-2026-9911",
+        "fatura_exportacao": "INV-PT-2026-9911",
+        "bl_associado": "COSU6288992201",
+        "grau_alcoolico_pct": 14.5,
+        "garrafas_unidades": 45000,
+        "valor_fob_leixoes_eur": 680000.0
+      }
+    ]
+  },
+  {
+    "_id": "GACC-PT-ESPORAO",
+    "nif_produtor_pt": "500145678",
+    "eori_produtor_pt": "PT500145678",
+    "nome_quinta_adega_fabrica": "Herdade do Esporão - Centro Enológico e Lagar Olival",
+    "regiao_demarcada_dop_igp": "DOC Alentejo / Azeites Alentejo",
+    "numero_registo_dgav": "DGAV-AZE-PT-0033",
+    "codigo_cifer_gacc_18digitos": "CPRT18000102000707",
+    "categorias_produtos_autorizados": [
+      "Vinhos DOC Alentejo",
+      "Azeite Virgem Extra Biológico"
+    ],
+    "validade_habilitacao_china": "31/12/2029",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-HQ-ESP-2026I",
+        "certificado_fitossanitario_pt": "DGAV-CERT-2026-9912",
+        "fatura_exportacao": "INV-PT-2026-9912",
+        "bl_associado": "COSU6288992203",
+        "grau_alcoolico_pct": 14.0,
+        "garrafas_unidades": 60000,
+        "valor_fob_sines_eur": 720000.0
+      }
+    ]
+  },
+  {
+    "_id": "GACC-PT-ICM-PORK",
+    "nif_produtor_pt": "502889900",
+    "eori_produtor_pt": "PT502889900",
+    "nome_quinta_adega_fabrica": "ICM Pork - Indústrias de Carnes do Minho, Famalicão",
+    "regiao_demarcada_dop_igp": "Minho e Trás-os-Montes",
+    "numero_registo_dgav": "DGAV-CAR-PT-0015",
+    "codigo_cifer_gacc_18digitos": "CPRT18000201000505",
+    "categorias_produtos_autorizados": [
+      "Carne Suína Desossada Congelada e Subprodutos Acreditados"
+    ],
+    "validade_habilitacao_china": "31/12/2028",
+    "lotes_exportados_china": [
+      {
+        "codigo_lote": "LOT-TAO-ICM-2026J",
+        "certificado_fitossanitario_pt": "DGAV-VET-2026-9915",
+        "fatura_exportacao": "INV-PT-2026-9915",
+        "bl_associado": "COSU6288992205",
+        "grau_alcoolico_pct": 0.0,
+        "garrafas_unidades": 380000,
+        "valor_fob_sines_eur": 1420000.0
+      }
+    ]
+  }
+]

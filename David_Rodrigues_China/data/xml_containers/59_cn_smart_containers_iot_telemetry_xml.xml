@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SmartContainerTelemetryStreams>
+  <ContainerTelemetry containerIso="COSU4455661" blNumber="COSU6288992201" beidouDeviceImei="860455041234561" cargoType="Reefer Container - Douro Vintage Wine">
+    <Waypoints>
+      <TelemetryPoint timestampUTC="2026-03-25T12:00:00Z" latitude="41.1822" longitude="-8.7011" internalTempC="13.5" humidityPct="65.0" shockG="0.12" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-04-05T08:00:00Z" latitude="14.8540" longitude="-17.5020" internalTempC="14.2" humidityPct="66.5" shockG="0.22" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-04-15T16:00:00Z" latitude="-34.3568" longitude="18.4892" internalTempC="22.8" humidityPct="78.0" shockG="1.45" anomalyAlert="REEFER_COMPRESSOR_TRIP_TEMP_EXCEEDED"/>
+      <TelemetryPoint timestampUTC="2026-04-20T10:00:00Z" latitude="-10.2014" longitude="65.4021" internalTempC="14.0" humidityPct="67.0" shockG="0.18" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-05-04T06:00:00Z" latitude="31.3520" longitude="121.6540" internalTempC="13.8" humidityPct="65.5" shockG="0.10" anomalyAlert="NONE"/>
+    </Waypoints>
+  </ContainerTelemetry>
+  <ContainerTelemetry containerIso="COSU4455662" blNumber="COSU6288992202" beidouDeviceImei="860455041234562" cargoType="Reefer Deep-Freeze - Frozen Pork Sides">
+    <Waypoints>
+      <TelemetryPoint timestampUTC="2026-03-29T10:00:00Z" latitude="37.9540" longitude="-8.8680" internalTempC="-18.5" humidityPct="85.0" shockG="0.15" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-04-12T14:00:00Z" latitude="-34.2010" longitude="18.3500" internalTempC="-18.2" humidityPct="84.5" shockG="0.45" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-04-28T09:00:00Z" latitude="22.5431" longitude="114.0579" internalTempC="-18.0" humidityPct="86.0" shockG="0.12" anomalyAlert="NONE"/>
+    </Waypoints>
+  </ContainerTelemetry>
+  <ContainerTelemetry containerIso="COSU4455663" blNumber="COSU6288992203" beidouDeviceImei="860455041234563" cargoType="Dry Freight 40HC - Chemical Wood Pulp">
+    <Waypoints>
+      <TelemetryPoint timestampUTC="2026-04-02T11:00:00Z" latitude="38.5244" longitude="-8.8882" internalTempC="18.0" humidityPct="55.0" shockG="0.18" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-04-18T16:00:00Z" latitude="-34.1200" longitude="18.6000" internalTempC="24.5" humidityPct="62.0" shockG="0.55" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-05-02T08:00:00Z" latitude="29.8683" longitude="121.5440" internalTempC="21.0" humidityPct="58.0" shockG="0.15" anomalyAlert="NONE"/>
+    </Waypoints>
+  </ContainerTelemetry>
+  <ContainerTelemetry containerIso="COSU4455665" blNumber="COSU6288992207" beidouDeviceImei="860455041234565" cargoType="Dry Ventilated 40HC - Natural Cork Stoppers">
+    <Waypoints>
+      <TelemetryPoint timestampUTC="2026-04-19T14:00:00Z" latitude="41.1822" longitude="-8.7011" internalTempC="16.0" humidityPct="58.0" shockG="0.11" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-05-08T11:00:00Z" latitude="-34.0500" longitude="18.5200" internalTempC="21.0" humidityPct="64.0" shockG="0.32" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-05-22T07:30:00Z" latitude="29.8683" longitude="121.5440" internalTempC="19.5" humidityPct="60.0" shockG="0.10" anomalyAlert="NONE"/>
+    </Waypoints>
+  </ContainerTelemetry>
+  <ContainerTelemetry containerIso="COSU8001101" blNumber="COSU6288991101" beidouDeviceImei="860455041234501" cargoType="Hazmat Class 9 - LFP Battery Cells">
+    <Waypoints>
+      <TelemetryPoint timestampUTC="2026-03-24T10:00:00Z" latitude="31.2304" longitude="121.4737" internalTempC="20.5" humidityPct="45.0" shockG="0.14" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-04-14T15:00:00Z" latitude="-34.3500" longitude="18.5000" internalTempC="22.4" humidityPct="48.0" shockG="0.45" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-04-29T08:00:00Z" latitude="37.9540" longitude="-8.8680" internalTempC="21.5" humidityPct="46.0" shockG="0.12" anomalyAlert="NONE"/>
+    </Waypoints>
+  </ContainerTelemetry>
+  <ContainerTelemetry containerIso="CATU8004401" blNumber="COSU6288991104" beidouDeviceImei="860455041234504" cargoType="Hazmat Class 9 - ESS Battery Enclosure">
+    <Waypoints>
+      <TelemetryPoint timestampUTC="2026-04-01T12:00:00Z" latitude="29.8683" longitude="121.5440" internalTempC="19.8" humidityPct="42.0" shockG="0.11" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-04-22T16:00:00Z" latitude="-34.2200" longitude="18.4200" internalTempC="21.9" humidityPct="45.0" shockG="0.38" anomalyAlert="NONE"/>
+      <TelemetryPoint timestampUTC="2026-05-08T10:00:00Z" latitude="41.1822" longitude="-8.7011" internalTempC="20.8" humidityPct="43.0" shockG="0.10" anomalyAlert="NONE"/>
+    </Waypoints>
+  </ContainerTelemetry>
+</SmartContainerTelemetryStreams>
