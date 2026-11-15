@@ -1,0 +1,65 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/pilares",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/portugal-mongodb",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/portugal-ia",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/china-sql",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/china-xml",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/vistas",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/views",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/queries",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pdfs",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/codigo",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/code",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/fluxo",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pontes",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/catalogo",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/estudio-ia",
+      "destination": "/index.html"
+    }
+  ]
+}
