@@ -58,11 +58,13 @@ Responsável pela infraestrutura de *compliance* legal europeia e consumo de dad
 
 ## Portal Web Interativo e Entregáveis Finais (P1)
 
-- **Portal Web Interativo (GitHub Pages):** [https://a79994.github.io/mid-p01/](https://a79994.github.io/mid-p01/)
-- **Entregáveis Unificados (30 páginas):**
+- **Portal Web Interativo em Produção:** [https://mid-p01.vercel.app/](https://mid-p01.vercel.app/)
+- **Entregável Principal (Entrega Conjunta Oficial - 35 páginas):**
+  - `ENTREGA_CONJUNTA_P1_MID.pdf` (5 páginas iniciais de Introdução e Enquadramento Geral + 15 páginas de Trabalho Individual de Afonso Bitoque + 15 páginas de Trabalho Individual de David Rodrigues)
+- **Entregáveis Individuais Anteriores (30 páginas):**
   - `ENTREGA_UNICA_AFONSO_BITOQUE_P1.pdf`
   - `ENTREGA_UNICA_DAVID_RODRIGUES_P1.pdf`
-- **Entregáveis Compactos e Individuais (15 páginas):**
+- **Entregáveis Compactos e Parciais (15 páginas):**
   - `ENTREGA_UNICA_15PAG_AFONSO_BITOQUE_P1.pdf`
   - `ENTREGA_UNICA_15PAG_DAVID_RODRIGUES_P1.pdf`
   - `report/P1_RELATORIO_TECNICO_MID_2026_2027.pdf`
