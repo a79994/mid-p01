@@ -583,10 +583,10 @@
         <div class="surface-card p-5">
           <div class="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <span class="tag-pill tag-teal font-mono">Animação em Árvore Multi-Ramo · 4 Etapas · Propagação Simultânea de Chaves</span>
-              <h2 class="text-base font-semibold text-[#1c1c1e] mt-1">Árvore Animada de Propagação de Variáveis entre as 4 Bases de Dados</h2>
+              <span class="tag-pill tag-teal font-mono">Diagrama Completo por Fase · Todas as Ligações · Ordem dos Atributos</span>
+              <h2 class="text-base font-semibold text-[#1c1c1e] mt-1">Diagrama Animado das Tabelas e Ligações em cada Fase</h2>
               <p class="text-xs text-[#636366] mt-0.5">
-                Clica em <strong>Reproduzir Árvore</strong> para ver como cada tabela raiz distribui em simultâneo as suas chaves primárias e atributos por múltiplos ramos diretos (Nível 1) e sub-ramos seguintes (Nível 2) através das quatro fontes de dados.
+                Cada fase mostra todas as suas tabelas e todas as ligações reais entre elas, por ordem de passagem dos atributos, com uma explicação em linguagem corrente. Clica em <strong>Reproduzir Diagrama</strong> para ver os atributos a passar de umas tabelas para as outras.
               </p>
             </div>
             <div class="flex items-center gap-2">
@@ -599,7 +599,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-4">
             <button class="step-btn text-left p-3.5 rounded-lg border border-[#007aff] bg-[#e5f1ff] cursor-pointer transition-all" data-step="1" onclick="renderFlowStage('1', true)">
               <div class="flex items-center justify-between">
-                <span class="text-[10.5px] font-semibold text-[#007aff] uppercase">Etapa 1 · 5 Árvores</span>
+                <span class="text-[10.5px] font-semibold text-[#007aff] uppercase">Etapa 1 · Diagrama</span>
                 <span class="text-[10px] font-mono text-[#636366]">29 entidades</span>
               </div>
               <strong class="text-xs font-semibold text-[#1c1c1e] block mt-0.5">1. Origem, Fabrico e Contratos</strong>
@@ -607,7 +607,7 @@
             </button>
             <button class="step-btn text-left p-3.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer transition-all" data-step="2" onclick="renderFlowStage('2', true)">
               <div class="flex items-center justify-between">
-                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 2 · 5 Árvores</span>
+                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 2 · Diagrama</span>
                 <span class="text-[10px] font-mono text-[#636366]">31 entidades</span>
               </div>
               <strong class="text-xs font-semibold text-[#1c1c1e] block mt-0.5">2. Trade Finance, GACC e Embarque</strong>
@@ -615,7 +615,7 @@
             </button>
             <button class="step-btn text-left p-3.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer transition-all" data-step="3" onclick="renderFlowStage('3', true)">
               <div class="flex items-center justify-between">
-                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 3 · 4 Árvores</span>
+                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 3 · Diagrama</span>
                 <span class="text-[10px] font-mono text-[#636366]">31 entidades</span>
               </div>
               <strong class="text-xs font-semibold text-[#1c1c1e] block mt-0.5">3. Fronteira ICS2, JUL e DAU</strong>
@@ -623,7 +623,7 @@
             </button>
             <button class="step-btn text-left p-3.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer transition-all" data-step="4" onclick="renderFlowStage('4', true)">
               <div class="flex items-center justify-between">
-                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 4 · 4 Árvores</span>
+                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 4 · Diagrama</span>
                 <span class="text-[10px] font-mono text-[#636366]">25 entidades</span>
               </div>
               <strong class="text-xs font-semibold text-[#1c1c1e] block mt-0.5">4. Pós-Desembaraço, RMA e IA</strong>
@@ -2508,17 +2508,128 @@
     let flowIsPlaying = false;
     let flowFullMovieMode = false;
     let flowSpeedMultiplier = 1;
-    let flowStepProgress = 0; // 0 to 100
+    let flowStepProgress = 52;
     let flowAnimFrameId = null;
     let flowLastTickTime = 0;
-    const FLOW_BASE_STEP_DURATION_MS = 5600; // 5.6s per tree step at 1x speed
+    const FLOW_BASE_STEP_DURATION_MS = 5600;
+    const FLOW_MODEL_CACHE = {};
+
+    const STAGE_NARRATIVE = {
+      "1": [
+        "A primeira fase conta como nasce um produto e como duas empresas decidem fazer negócio. Na China, o território (província e cidade) dá origem às zonas francas e às empresas fabricantes. Cada empresa é identificada por um código fiscal único chamado USCC, e é esse código que liga o fabricante às suas fábricas, aos subsídios que recebe, às licenças de exportação e ao catálogo de produtos.",
+        "O catálogo de produtos usa um código aduaneiro (HS), o mesmo que mais tarde serve para calcular impostos em Portugal. Os fornecedores de matérias-primas alimentam a lista de componentes e os lotes de produção, e cada lote fica com uma identificação própria que acompanha a mercadoria até ao fim.",
+        "Em Portugal, o operador económico é identificado pelo número EORI. Esse número liga-o ao registo sanitário exigido pela China, às parcelas agrícolas, aos lotes, aos incentivos e ao banco. Quando o USCC do fabricante chinês e o EORI do operador português se encontram no contrato comercial, nasce o número de contrato que vai ser usado em todas as fases seguintes."
+      ],
+      "2": [
+        "A segunda fase trata do dinheiro e do transporte. Com o contrato assinado, o banco do comprador abre uma carta de crédito que garante o pagamento ao vendedor, e o seguro cobre os riscos da viagem. O vendedor emite a fatura, dividida em cabeçalho e linhas, e a lista de embalagem diz que paletes seguem em cada contentor.",
+        "A fatura serve depois para preencher a declaração de exportação na alfândega chinesa. Essa declaração aciona a inspeção sanitária, o certificado de origem e o pedido de devolução de IVA, e dá também origem aos documentos de transporte, que podem ser marítimos, ferroviários ou aéreos.",
+        "O porto chinês regista a entrada do contentor, o navio recebe a carga e o armador emite o conhecimento de embarque. Esse documento carrega o número do contentor, que passa a ser a chave usada pelos sensores de temperatura, pelo controlo de sobrestadias e pelas ligações que vão chegar a Portugal."
+      ],
+      "3": [
+        "A terceira fase passa a fronteira. Antes de o navio chegar, os dados do conhecimento de embarque seguem para a declaração sumária de segurança da União Europeia. Quando o navio atraca em Sines, a Janela Única Logística coordena a descarga e o contentor fica em depósito temporário até ser desalfandegado.",
+        "Para calcular os impostos, a pauta chinesa e a pauta europeia são ligadas pelos seis primeiros dígitos do código aduaneiro, que são iguais em todo o mundo. A partir daí aplicam-se direitos, contingentes e medidas anti-dumping, e o operador pode ter garantias e decisões prévias de classificação.",
+        "Com tudo isto reunido, é submetida a declaração aduaneira, que recebe o número MRN. Esse número abre os controlos sanitários, os impostos especiais, o trânsito, os entrepostos e o transporte rodoviário até ao cliente final. Liga também o pagamento bancário, a declaração de carbono e a importação na China."
+      ],
+      "4": [
+        "A quarta fase acontece depois de a mercadoria ser libertada. As autoridades voltam a olhar para os documentos para confirmar que tudo estava correto. O número MRN da declaração liga à conformidade química, à marcação CE, às auditorias tributárias e à logística inversa, usada quando há devoluções para a China.",
+        "Entram também os documentos em PDF criados por nós, que são lidos por um programa que extrai o MRN, o contentor, o EORI e o USCC e os guarda numa base SQLite. Assim, relatórios de inspeção, autos de apreensão, certificados, fichas químicas e cartas de protesto ficam ligados às mesmas chaves das restantes bases de dados.",
+        "Por fim, o investimento chinês em Portugal, as estatísticas oficiais e as atas e notícias da relação bilateral fecham o ciclo e mostram o contexto económico em que toda a operação aconteceu."
+      ]
+    };
+
+    function flowTableById(id) { return TABLES.find(t => t.id === id); }
+    function flowShortName(id) {
+      const t = flowTableById(id);
+      if (!t) return id;
+      return `#${String(t.num).padStart(2, '0')} ${t.name.replace(/^\d+_/, '')}`;
+    }
+
+    function buildStageModel(stageKey) {
+      if (FLOW_MODEL_CACHE[stageKey]) return FLOW_MODEL_CACHE[stageKey];
+      const seqs = FLOW_SEQUENCES[stageKey];
+      const st = STAGES[stageKey];
+      const nodeIds = [];
+      const addNode = id => { if (id && !nodeIds.includes(id) && flowTableById(id)) nodeIds.push(id); };
+      seqs.forEach(s => {
+        addNode(s.fromTable);
+        s.branches.forEach(b => {
+          addNode(b.targetId);
+          (b.subBranches || []).forEach(sb => addNode(sb.targetId));
+        });
+      });
+      st.tableIds.forEach(addNode);
+
+      const edgeIndex = new Map();
+      const ordered = [];
+      const getEdge = (s, t, label) => {
+        const k = s + '|' + t, rk = t + '|' + s;
+        if (edgeIndex.has(k)) return edgeIndex.get(k);
+        if (edgeIndex.has(rk)) return edgeIndex.get(rk);
+        const e = { s, t, label, n: ordered.length + 1, chapter: null };
+        edgeIndex.set(k, e);
+        ordered.push(e);
+        return e;
+      };
+
+      const chapters = seqs.map((sq, ci) => {
+        const items = [];
+        const seen = new Set();
+        const push = (e, w0, w1, color) => {
+          if (seen.has(e)) return;
+          seen.add(e);
+          if (e.chapter === null) e.chapter = ci;
+          items.push({ e, w0, w1, color });
+        };
+        sq.branches.forEach(b => {
+          if (b.targetId === sq.fromTable) return;
+          push(getEdge(sq.fromTable, b.targetId, b.shortVar), 0, 0.55, '#007aff');
+          (b.subBranches || []).forEach(sb => {
+            if (sb.targetId === b.targetId) return;
+            push(getEdge(b.targetId, sb.targetId, sb.shortVar), 0.42, 0.95, '#c96e00');
+          });
+        });
+        return { title: sq.title, reality: sq.reality, queryCode: sq.queryCode, root: sq.fromTable, emitted: sq.emittedVars || [], items, kind: 'tree' };
+      });
+
+      const ids = new Set(nodeIds);
+      const extras = [];
+      LINKS.forEach(l => {
+        if (!ids.has(l.source) || !ids.has(l.target) || l.source === l.target) return;
+        const k = l.source + '|' + l.target, rk = l.target + '|' + l.source;
+        if (edgeIndex.has(k) || edgeIndex.has(rk)) return;
+        extras.push(l);
+      });
+      extras.sort((a, b) => (nodeIds.indexOf(a.source) + nodeIds.indexOf(a.target)) - (nodeIds.indexOf(b.source) + nodeIds.indexOf(b.target)));
+      const extraItems = [];
+      const extraSeen = new Set();
+      extras.forEach((l, i) => {
+        const e = getEdge(l.source, l.target, String(l.key));
+        if (extraSeen.has(e)) return;
+        extraSeen.add(e);
+        e.chapter = chapters.length;
+        const w0 = 0.02 + 0.55 * i / Math.max(1, extras.length);
+        extraItems.push({ e, w0, w1: Math.min(0.98, w0 + 0.4), color: '#007aff' });
+      });
+      if (extraItems.length) {
+        chapters.push({
+          title: `Restantes ligações documentadas entre as tabelas da fase ${stageKey}`,
+          reality: `Para além das cadeias principais já percorridas, as restantes tabelas desta fase trocam chaves entre si. Cada linha representa uma relação real do modelo de dados, com o atributo que passa de uma tabela para a outra, e aparecem pela ordem em que as tabelas entraram na fase.`,
+          queryCode: extraItems.map(it => `-- ${flowShortName(it.e.s)}  ->  ${flowShortName(it.e.t)}\n--    atributo de ligação: ${it.e.label}`).join('\n'),
+          root: null, emitted: [], items: extraItems, kind: 'extra'
+        });
+      }
+
+      const colCodes = ['Fonte D1', 'Fonte D2', 'Fonte A1', 'Fonte A2'];
+      const colOf = {};
+      nodeIds.forEach(id => { colOf[id] = colCodes.indexOf(flowTableById(id).source); });
+      const model = { nodeIds, ordered, chapters, colOf, colCodes };
+      FLOW_MODEL_CACHE[stageKey] = model;
+      return model;
+    }
 
     function stopFlowPlayback() {
       flowIsPlaying = false;
-      if (flowAnimFrameId) {
-        cancelAnimationFrame(flowAnimFrameId);
-        flowAnimFrameId = null;
-      }
+      if (flowAnimFrameId) { cancelAnimationFrame(flowAnimFrameId); flowAnimFrameId = null; }
       updateFlowPlayButtonUI();
     }
 
@@ -2527,32 +2638,28 @@
       const statusBadge = document.getElementById('flowLiveStatusBadge');
       if (btn) {
         btn.innerHTML = flowIsPlaying
-          ? '<span>&#10074;&#10074; Pausar Árvore</span>'
-          : '<span>&#9654; Reproduzir Árvore</span>';
+          ? '<span>&#10074;&#10074; Pausar Diagrama</span>'
+          : '<span>&#9654; Reproduzir Diagrama</span>';
       }
       if (statusBadge) {
         statusBadge.textContent = flowIsPlaying
-          ? (flowFullMovieMode ? 'EM REPRODUÇÃO · FILME COMPLETO (4 ETAPAS)' : `EM REPRODUÇÃO · ETAPA ${currentStage}`)
-          : `EM PAUSA · ETAPA ${currentStage}`;
+          ? (flowFullMovieMode ? 'EM REPRODUÇÃO · 4 FASES SEGUIDAS' : `EM REPRODUÇÃO · FASE ${currentStage}`)
+          : `EM PAUSA · FASE ${currentStage}`;
         statusBadge.className = flowIsPlaying ? 'tag-pill tag-teal font-mono' : 'tag-pill tag-stone font-mono';
       }
     }
 
     function toggleFlowPlayback() {
-      if (flowIsPlaying) {
-        stopFlowPlayback();
-      } else {
-        const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
-        if (flowCurrentStepIdx >= steps.length - 1 && flowStepProgress >= 99) {
-          flowCurrentStepIdx = 0;
-          flowStepProgress = 0;
-          renderFlowStepContent();
-        }
-        flowIsPlaying = true;
-        flowLastTickTime = performance.now();
-        updateFlowPlayButtonUI();
-        flowAnimFrameId = requestAnimationFrame(tickFlowAnimation);
+      if (flowIsPlaying) { stopFlowPlayback(); return; }
+      const model = buildStageModel(currentStage);
+      if (flowCurrentStepIdx >= model.chapters.length - 1 && flowStepProgress >= 99) {
+        flowCurrentStepIdx = 0; flowStepProgress = 0;
+        renderFlowStepContent();
       }
+      flowIsPlaying = true;
+      flowLastTickTime = performance.now();
+      updateFlowPlayButtonUI();
+      flowAnimFrameId = requestAnimationFrame(tickFlowAnimation);
     }
 
     function startFullMovieFlow() {
@@ -2588,18 +2695,15 @@
 
     function stepFlowDelta(delta) {
       stopFlowPlayback();
-      const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
-      let nextIdx = flowCurrentStepIdx + delta;
-      if (nextIdx < 0) nextIdx = 0;
-      if (nextIdx >= steps.length) nextIdx = steps.length - 1;
-      flowCurrentStepIdx = nextIdx;
+      const model = buildStageModel(currentStage);
+      flowCurrentStepIdx = Math.max(0, Math.min(model.chapters.length - 1, flowCurrentStepIdx + delta));
       flowStepProgress = 52;
       renderFlowStepContent();
     }
 
     function jumpToFlowStep(idx) {
-      const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
-      if (idx < 0 || idx >= steps.length) return;
+      const model = buildStageModel(currentStage);
+      if (idx < 0 || idx >= model.chapters.length) return;
       flowCurrentStepIdx = idx;
       flowStepProgress = flowIsPlaying ? 0 : 52;
       flowLastTickTime = performance.now();
@@ -2610,22 +2714,21 @@
       if (!flowIsPlaying) return;
       const dt = Math.max(0, now - flowLastTickTime);
       flowLastTickTime = now;
-
-      const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
-      const duration = FLOW_BASE_STEP_DURATION_MS / flowSpeedMultiplier;
-      flowStepProgress += (dt / duration) * 100;
+      const model = buildStageModel(currentStage);
+      const cur = model.chapters[flowCurrentStepIdx];
+      const durationBase = cur && cur.kind === 'extra' ? FLOW_BASE_STEP_DURATION_MS * 2 : FLOW_BASE_STEP_DURATION_MS;
+      flowStepProgress += (dt / (durationBase / flowSpeedMultiplier)) * 100;
 
       if (flowStepProgress >= 100) {
-        if (flowCurrentStepIdx < steps.length - 1) {
+        if (flowCurrentStepIdx < model.chapters.length - 1) {
           flowCurrentStepIdx += 1;
           flowStepProgress = 0;
           renderFlowStepContent();
         } else if (flowFullMovieMode && Number(currentStage) < 4) {
-          const nextStage = String(Number(currentStage) + 1);
-          currentStage = nextStage;
+          currentStage = String(Number(currentStage) + 1);
           flowCurrentStepIdx = 0;
           flowStepProgress = 0;
-          renderFlowStage(nextStage, false);
+          renderFlowStage(currentStage, false);
         } else {
           flowStepProgress = 100;
           updateFlowProgressBarsOnly();
@@ -2636,164 +2739,119 @@
       } else {
         updateFlowProgressBarsOnly();
       }
-
       flowAnimFrameId = requestAnimationFrame(tickFlowAnimation);
     }
 
-    // Build exact curved SVG Bézier branches between Root (Col 1) -> Branches (Col 2) -> Sub-Branches (Col 3)
-    function buildTreeSvgPaths() {
+    function flowEdgePath(model, e, pos) {
+      const cs = model.colOf[e.s], ct = model.colOf[e.t];
+      let sSide, tSide;
+      if (cs < ct) { sSide = 'r'; tSide = 'l'; }
+      else if (cs > ct) { sSide = 'l'; tSide = 'r'; }
+      else { sSide = 'r'; tSide = 'r'; }
+      const a = pos(e.s, sSide), b = pos(e.t, tSide);
+      if (!a || !b) return null;
+      let d;
+      if (cs === ct) {
+        const off = 46 + (Math.abs(a.y - b.y) * 0.08);
+        d = `M ${a.x.toFixed(1)},${a.y.toFixed(1)} C ${(a.x + off).toFixed(1)},${a.y.toFixed(1)} ${(b.x + off).toFixed(1)},${b.y.toFixed(1)} ${b.x.toFixed(1)},${b.y.toFixed(1)}`;
+      } else {
+        const dx = Math.max(40, Math.abs(b.x - a.x) * 0.45) * (b.x > a.x ? 1 : -1);
+        d = `M ${a.x.toFixed(1)},${a.y.toFixed(1)} C ${(a.x + dx).toFixed(1)},${a.y.toFixed(1)} ${(b.x - dx).toFixed(1)},${b.y.toFixed(1)} ${b.x.toFixed(1)},${b.y.toFixed(1)}`;
+      }
+      return { d, a, b };
+    }
+
+    function drawFlowSvg() {
       const container = document.getElementById('flowTreeStageContainer');
       const svg = document.getElementById('flowTreeSvgOverlay');
       if (!container || !svg) return;
+      const W = container.scrollWidth, H = container.scrollHeight;
+      if (!W || !H) return;
+      svg.setAttribute('width', W);
+      svg.setAttribute('height', H);
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.style.width = W + 'px';
+      svg.style.height = H + 'px';
 
-      const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
-      const cur = steps[flowCurrentStepIdx] || steps[0];
+      const model = buildStageModel(currentStage);
+      const cur = model.chapters[flowCurrentStepIdx] || model.chapters[0];
+      const activeMap = new Map(cur.items.map(it => [it.e, it]));
       const cRect = container.getBoundingClientRect();
-      if (cRect.width === 0 || cRect.height === 0) return;
+      const pos = (id, side) => {
+        const el = document.getElementById('fn_' + id);
+        if (!el) return null;
+        const r = el.getBoundingClientRect();
+        return {
+          x: r.left - cRect.left + container.scrollLeft + (side === 'r' ? r.width : 0),
+          y: r.top - cRect.top + container.scrollTop + r.height / 2
+        };
+      };
 
-      svg.setAttribute('viewBox', `0 0 ${cRect.width} ${cRect.height}`);
-      const rootPort = document.getElementById('port_out_root');
-      if (!rootPort) return;
-      const rRect = rootPort.getBoundingClientRect();
-      const rx = rRect.left - cRect.left + (rRect.width / 2);
-      const ry = rRect.top - cRect.top + (rRect.height / 2);
-
-      let svgMarkup = '';
-
-      (cur.branches || []).forEach((b, bIdx) => {
-        const inPort = document.getElementById(`port_in_b_${bIdx}`);
-        if (inPort) {
-          const bRect = inPort.getBoundingClientRect();
-          const bx = bRect.left - cRect.left + (bRect.width / 2);
-          const by = bRect.top - cRect.top + (bRect.height / 2);
-          const cx1 = rx + (bx - rx) * 0.45;
-          const cx2 = rx + (bx - rx) * 0.55;
-          const d = `M ${rx.toFixed(1)},${ry.toFixed(1)} C ${cx1.toFixed(1)},${ry.toFixed(1)} ${cx2.toFixed(1)},${by.toFixed(1)} ${bx.toFixed(1)},${by.toFixed(1)}`;
-          const labelText = (b.shortVar || 'PK → FK').slice(0, 18);
-          const pillW = Math.max(60, labelText.length * 5.6 + 14);
-
-          svgMarkup += `
-            <path d="${d}" fill="none" stroke="#d1d1d6" stroke-width="2.5" />
-            <path id="svgPath_b_${bIdx}" d="${d}" fill="none" stroke="#007aff" stroke-width="2.5" class="flow-animated-line" />
-            <circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="4" fill="#007aff" />
-            <g id="svgPkt_b_${bIdx}" transform="translate(${rx.toFixed(1)}, ${ry.toFixed(1)})">
-              <rect x="${(-pillW / 2).toFixed(1)}" y="-9.5" width="${pillW.toFixed(1)}" height="19" rx="9.5" fill="#007aff" stroke="#ffffff" stroke-width="1.5" />
-              <text x="0" y="3.2" text-anchor="middle" fill="#ffffff" font-size="9" font-family="monospace" font-weight="600">${escHtml(labelText)}</text>
-            </g>
-          `;
-        }
-
-        const outPort = document.getElementById(`port_out_b_${bIdx}`);
-        if (outPort && b.subBranches && b.subBranches.length > 0) {
-          const oRect = outPort.getBoundingClientRect();
-          const ox = oRect.left - cRect.left + (oRect.width / 2);
-          const oy = oRect.top - cRect.top + (oRect.height / 2);
-
-          b.subBranches.forEach((sb, sIdx) => {
-            const subIn = document.getElementById(`port_in_sub_${bIdx}_${sIdx}`);
-            if (!subIn) return;
-            const sRect = subIn.getBoundingClientRect();
-            const sx = sRect.left - cRect.left + (sRect.width / 2);
-            const sy = sRect.top - cRect.top + (sRect.height / 2);
-            const scx1 = ox + (sx - ox) * 0.45;
-            const scx2 = ox + (sx - ox) * 0.55;
-            const sd = `M ${ox.toFixed(1)},${oy.toFixed(1)} C ${scx1.toFixed(1)},${oy.toFixed(1)} ${scx2.toFixed(1)},${sy.toFixed(1)} ${sx.toFixed(1)},${sy.toFixed(1)}`;
-            const sLabel = (sb.shortVar || 'FK → PK').slice(0, 17);
-            const sPillW = Math.max(58, sLabel.length * 5.5 + 14);
-
-            svgMarkup += `
-              <path d="${sd}" fill="none" stroke="#d1d1d6" stroke-width="2.2" />
-              <path id="svgPath_sub_${bIdx}_${sIdx}" d="${sd}" fill="none" stroke="#c96e00" stroke-width="2.2" class="flow-animated-line" />
-              <circle cx="${sx.toFixed(1)}" cy="${sy.toFixed(1)}" r="4" fill="#c96e00" />
-              <g id="svgPkt_sub_${bIdx}_${sIdx}" transform="translate(${ox.toFixed(1)}, ${oy.toFixed(1)})">
-                <rect x="${(-sPillW / 2).toFixed(1)}" y="-9" width="${sPillW.toFixed(1)}" height="18" rx="9" fill="#c96e00" stroke="#ffffff" stroke-width="1.5" />
-                <text x="0" y="3" text-anchor="middle" fill="#ffffff" font-size="8.8" font-family="monospace" font-weight="600">${escHtml(sLabel)}</text>
-              </g>
-            `;
-          });
+      let markup = `<defs>
+        <marker id="mkGray" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#b8b8c0"/></marker>
+        <marker id="mkGreen" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#34c759"/></marker>
+        <marker id="mkBlue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#007aff"/></marker>
+        <marker id="mkOrange" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c96e00"/></marker>
+      </defs>`;
+      let activeMarkup = '';
+      model.ordered.forEach(e => {
+        const p = flowEdgePath(model, e, pos);
+        if (!p) return;
+        const act = activeMap.get(e);
+        if (act) {
+          const mk = act.color === '#c96e00' ? 'mkOrange' : 'mkBlue';
+          const label = `${e.n} · ${String(e.label)}`.slice(0, 24);
+          const pw = Math.max(50, label.length * 5.4 + 14);
+          activeMarkup += `
+            <path d="${p.d}" fill="none" stroke="${act.color}" stroke-opacity="0.25" stroke-width="3"/>
+            <path id="fp_${e.n}" d="${p.d}" fill="none" stroke="${act.color}" stroke-width="2.4" class="flow-animated-line" marker-end="url(#${mk})"/>
+            <g id="fk_${e.n}" transform="translate(${p.a.x.toFixed(1)},${p.a.y.toFixed(1)})">
+              <rect x="${(-pw / 2).toFixed(1)}" y="-9" width="${pw.toFixed(1)}" height="18" rx="9" fill="${act.color}" stroke="#fff" stroke-width="1.5"/>
+              <text x="0" y="3.2" text-anchor="middle" fill="#fff" font-size="8.8" font-family="monospace" font-weight="600">${escHtml(label)}</text>
+            </g>`;
+        } else if (e.chapter !== null && e.chapter < flowCurrentStepIdx) {
+          markup += `<path d="${p.d}" fill="none" stroke="#34c759" stroke-width="1.8" stroke-opacity="0.85" marker-end="url(#mkGreen)"/>`;
+        } else {
+          markup += `<path d="${p.d}" fill="none" stroke="#c7c7cc" stroke-width="1.1" stroke-opacity="0.75" marker-end="url(#mkGray)"/>`;
         }
       });
-
-      svg.innerHTML = svgMarkup;
+      svg.innerHTML = markup + activeMarkup;
     }
 
     function updateFlowProgressBarsOnly() {
-      const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
-      const cur = steps[flowCurrentStepIdx] || steps[0];
-      const totalPct = ((flowCurrentStepIdx + (flowStepProgress / 100)) / steps.length) * 100;
+      const model = buildStageModel(currentStage);
+      const cur = model.chapters[flowCurrentStepIdx] || model.chapters[0];
+      const totalPct = ((flowCurrentStepIdx + (flowStepProgress / 100)) / model.chapters.length) * 100;
       const overallFill = document.getElementById('flowVideoScrubberFill');
       if (overallFill) overallFill.style.width = `${Math.min(100, totalPct).toFixed(1)}%`;
-
       const stepFill = document.getElementById('flowStepProgressFill');
       if (stepFill) stepFill.style.width = `${Math.min(100, flowStepProgress).toFixed(1)}%`;
 
-      // When paused at 52%, place both Level-1 and Level-2 pills at 0.50 (center of their corridors)
-      const rawT1 = flowIsPlaying ? Math.min(1, Math.max(0, flowStepProgress / 55)) : 0.50;
-      const rawT2 = flowIsPlaying ? Math.min(1, Math.max(0, (flowStepProgress - 42) / 53)) : 0.50;
-      const t1 = 0.16 + rawT1 * 0.68;
-      const t2 = 0.16 + rawT2 * 0.68;
-
-      (cur.branches || []).forEach((b, bIdx) => {
-        const pathEl = document.getElementById(`svgPath_b_${bIdx}`);
-        const pktEl = document.getElementById(`svgPkt_b_${bIdx}`);
-        if (pathEl && pktEl && typeof pathEl.getTotalLength === 'function') {
-          const len = pathEl.getTotalLength();
-          if (len > 0) {
-            const pt = pathEl.getPointAtLength(t1 * len);
-            pktEl.setAttribute('transform', `translate(${pt.x.toFixed(1)}, ${pt.y.toFixed(1)})`);
-          }
-        }
-
-        const branchCard = document.getElementById(`treeBranchCard_${bIdx}`);
-        if (branchCard) {
-          branchCard.classList.toggle('flow-node-target', flowStepProgress >= 32);
-        }
-
-        (b.subBranches || []).forEach((sb, sIdx) => {
-          const sPathEl = document.getElementById(`svgPath_sub_${bIdx}_${sIdx}`);
-          const sPktEl = document.getElementById(`svgPkt_sub_${bIdx}_${sIdx}`);
-          if (sPathEl && sPktEl && typeof sPathEl.getTotalLength === 'function') {
-            const sLen = sPathEl.getTotalLength();
-            if (sLen > 0) {
-              const sPt = sPathEl.getPointAtLength(t2 * sLen);
-              sPktEl.setAttribute('transform', `translate(${sPt.x.toFixed(1)}, ${sPt.y.toFixed(1)})`);
-              sPktEl.setAttribute('opacity', (!flowIsPlaying || flowStepProgress >= 38) ? '1' : '0.35');
-            }
-          }
-          const subCard = document.getElementById(`treeSubCard_${bIdx}_${sIdx}`);
-          if (subCard) {
-            subCard.classList.toggle('flow-node-visited', !flowIsPlaying || flowStepProgress >= 75);
-          }
-        });
+      cur.items.forEach(it => {
+        const pathEl = document.getElementById('fp_' + it.e.n);
+        const pktEl = document.getElementById('fk_' + it.e.n);
+        if (!pathEl || !pktEl || typeof pathEl.getTotalLength !== 'function') return;
+        const len = pathEl.getTotalLength();
+        if (!len) return;
+        const raw = flowIsPlaying
+          ? Math.min(1, Math.max(0, (flowStepProgress / 100 - it.w0) / (it.w1 - it.w0)))
+          : 0.5;
+        const pt = pathEl.getPointAtLength((0.12 + raw * 0.76) * len);
+        pktEl.setAttribute('transform', `translate(${pt.x.toFixed(1)},${pt.y.toFixed(1)})`);
       });
 
       const phaseBadge = document.getElementById('flowPacketPhaseText');
       if (phaseBadge) {
-        if (!flowIsPlaying) {
-          phaseBadge.textContent = `Vista em Árvore Pronta · 1 Raiz → ${(cur.branches || []).length} Ramos Diretos (Clica em Reproduzir Árvore)`;
-        } else if (flowStepProgress < 20) {
-          phaseBadge.textContent = "1/3 · Nó Raiz (Nível 0) a preparar variáveis de saída...";
-        } else if (flowStepProgress < 56) {
-          phaseBadge.textContent = `2/3 · Ramificação simultânea (1 → ${(cur.branches || []).length} tabelas do Nível 1)...`;
-        } else {
-          phaseBadge.textContent = "3/3 · Propagação em sub-árvore (Nível 1 → Sub-Ramos Nível 2)...";
-        }
+        phaseBadge.textContent = flowIsPlaying
+          ? `A passar ${cur.items.length} atributo(s) entre tabelas nesta cadeia...`
+          : `Diagrama pronto · ${model.ordered.length} ligações nesta fase (clica em Reproduzir Diagrama)`;
       }
-    }
-
-    function getSourceBadgeClass(src) {
-      if (!src) return 'tag-stone';
-      if (src.includes('D1')) return 'tag-navy';
-      if (src.includes('D2')) return 'tag-ochre';
-      if (src.includes('A1')) return 'tag-teal';
-      if (src.includes('A2')) return 'tag-plum';
-      return 'tag-stone';
     }
 
     function renderFlowStage(stageKey, resetPlayer = true) {
       currentStage = String(stageKey);
       const st = STAGES[currentStage] || STAGES["1"];
-      const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
+      const model = buildStageModel(currentStage);
 
       if (resetPlayer) {
         stopFlowPlayback();
@@ -2801,6 +2859,7 @@
         flowCurrentStepIdx = 0;
         flowStepProgress = 52;
       }
+      if (flowCurrentStepIdx >= model.chapters.length) flowCurrentStepIdx = 0;
 
       document.querySelectorAll('.step-btn').forEach(btn => {
         const isAct = btn.getAttribute('data-step') === currentStage;
@@ -2809,31 +2868,59 @@
           : "step-btn text-left p-3.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer transition-all";
       });
 
-      const stepIndicatorsHtml = steps.map((s, idx) => `
-        <button id="flowStepBtn_${idx}" onclick="jumpToFlowStep(${idx})" class="flex-1 text-left p-2.5 rounded-lg border transition-all cursor-pointer">
+      const chapterButtons = model.chapters.map((c, idx) => `
+        <button id="flowStepBtn_${idx}" onclick="jumpToFlowStep(${idx})" class="text-left p-2.5 rounded-lg border transition-all cursor-pointer">
           <div class="flex items-center justify-between text-[10px] font-mono">
-            <span class="font-semibold">ÁRVORE ${currentStage}.${s.step} · ${(s.branches || []).length} RAMOS</span>
+            <span class="font-semibold">${c.kind === 'extra' ? 'OUTRAS LIGAÇÕES' : `CADEIA ${currentStage}.${idx + 1}`} · ${c.items.length}</span>
             <span id="flowStepCheck_${idx}"></span>
           </div>
-          <div class="text-[11px] font-medium text-[#1c1c1e] truncate mt-0.5">${escHtml(s.title.replace(/^Árvore \d+\.\d+\s*·\s*/, ''))}</div>
-        </button>
-      `).join('');
+          <div class="text-[11px] font-medium text-[#1c1c1e] truncate mt-0.5">${escHtml(c.title.replace(/^Árvore \d+\.\d+\s*·\s*/, ''))}</div>
+        </button>`).join('');
+
+      const narrative = (STAGE_NARRATIVE[currentStage] || []).map(p => `<p class="text-xs text-[#1c1c1e] leading-relaxed">${escHtml(p)}</p>`).join('');
+
+      const usedCols = model.colCodes.map((code, ci) => ({ code, ci, ids: model.nodeIds.filter(id => model.colOf[id] === ci) })).filter(c => c.ids.length);
+      const colMeta = {
+        'Fonte D1': { title: 'Fonte D1 · SQL 3FN (China)', badge: 'tag-navy' },
+        'Fonte D2': { title: 'Fonte D2 · BaseX XML (China)', badge: 'tag-ochre' },
+        'Fonte A1': { title: 'Fonte A1 · MongoDB (Portugal)', badge: 'tag-teal' },
+        'Fonte A2': { title: 'Fonte A2 · PDFs e SQLite (Portugal)', badge: 'tag-plum' }
+      };
+      const columnsHtml = usedCols.map(c => `
+        <div class="space-y-2">
+          <div class="flex items-center justify-between pb-1.5 border-b border-[#d1d1d6]">
+            <span class="text-[11px] font-semibold text-[#1c1c1e]">${colMeta[c.code].title}</span>
+            <span class="tag-pill ${colMeta[c.code].badge} font-mono">${c.ids.length}</span>
+          </div>
+          ${c.ids.map(id => {
+            const t = flowTableById(id);
+            return `<div id="fn_${id}" onclick="switchTab('pillars'); selectTable('${id}');" class="entity-card" style="padding:6px 9px;">
+              <div class="flex items-center justify-between gap-1">
+                <span class="text-[10.5px] font-semibold text-[#007aff] font-mono">#${String(t.num).padStart(2, '0')}</span>
+                <span class="text-[9.5px] font-mono text-[#8e8e93] truncate">PK ${escHtml(t.pk.split(' ')[0])}</span>
+              </div>
+              <div class="text-[11.5px] font-semibold text-[#1c1c1e] truncate">${escHtml(stripEmoji(t.label))}</div>
+            </div>`;
+          }).join('')}
+        </div>`).join('');
 
       document.getElementById('flowStageDetails').innerHTML = `
         <div class="surface-card p-5 space-y-4">
-          <!-- Top Player Controls Bar -->
+          <div class="bg-[#f8f8fc] border border-[#e5e5ea] rounded-xl p-4 space-y-2">
+            <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#007aff] block">Fase ${currentStage} explicada em linguagem corrente</span>
+            <h3 class="text-sm font-semibold text-[#1c1c1e]">${escHtml(st.title)}</h3>
+            ${narrative}
+          </div>
+
           <div class="flex flex-wrap items-center justify-between gap-3 pb-3.5 border-b border-[#e5e5ea]">
             <div class="flex items-center gap-2">
-              <button id="btnFlowPlayPause" onclick="toggleFlowPlayback()" class="btn-primary px-4 py-1.5 text-xs">
-                <span>&#9654; Reproduzir Árvore</span>
-              </button>
-              <button onclick="stepFlowDelta(-1)" class="btn-subtle px-2.5 py-1.5 text-xs" title="Árvore Anterior">&#9198; Anterior</button>
-              <button onclick="stepFlowDelta(1)" class="btn-subtle px-2.5 py-1.5 text-xs" title="Árvore Seguinte">Seguinte &#9197;</button>
-              <button onclick="restartFlowStage()" class="btn-subtle px-2.5 py-1.5 text-xs" title="Reiniciar Etapa">&#8634; Reiniciar</button>
+              <button id="btnFlowPlayPause" onclick="toggleFlowPlayback()" class="btn-primary px-4 py-1.5 text-xs"><span>&#9654; Reproduzir Diagrama</span></button>
+              <button onclick="stepFlowDelta(-1)" class="btn-subtle px-2.5 py-1.5 text-xs">&#9198; Anterior</button>
+              <button onclick="stepFlowDelta(1)" class="btn-subtle px-2.5 py-1.5 text-xs">Seguinte &#9197;</button>
+              <button onclick="restartFlowStage()" class="btn-subtle px-2.5 py-1.5 text-xs">&#8634; Reiniciar</button>
             </div>
-
             <div class="flex flex-wrap items-center gap-3">
-              <span id="flowLiveStatusBadge" class="tag-pill tag-stone font-mono">EM PAUSA · ETAPA ${currentStage}</span>
+              <span id="flowLiveStatusBadge" class="tag-pill tag-stone font-mono">EM PAUSA · FASE ${currentStage}</span>
               <div class="seg-control">
                 <button onclick="setFlowSpeed(0.75)" data-speed="0.75" class="flow-speed-btn seg-btn">0.75x</button>
                 <button onclick="setFlowSpeed(1)" data-speed="1" class="flow-speed-btn seg-btn active">1x</button>
@@ -2843,293 +2930,125 @@
             </div>
           </div>
 
-          <!-- Video Scrubber & Tree Chapters -->
           <div class="space-y-2">
             <div class="flex items-center justify-between text-[11px] font-mono text-[#636366]">
-              <span id="flowHeaderStepCounter">ETAPA ${currentStage} · ÁRVORE 1 DE ${steps.length}</span>
-              <span id="flowPacketPhaseText" class="text-[#007aff] font-medium">Clica em Reproduzir Árvore para animar a propagação simultânea de variáveis</span>
+              <span id="flowHeaderStepCounter"></span>
+              <span id="flowPacketPhaseText" class="text-[#007aff] font-medium"></span>
             </div>
-            <div class="w-full h-2 bg-[#e5e5ea] rounded-full overflow-hidden">
-              <div id="flowVideoScrubberFill" class="h-full bg-[#007aff] transition-all duration-75" style="width: 20%"></div>
+            <div class="w-full h-2 bg-[#e5e5ea] rounded-full overflow-hidden"><div id="flowVideoScrubberFill" class="h-full bg-[#007aff]" style="width: 10%"></div></div>
+            <div class="grid grid-cols-2 lg:grid-cols-${Math.min(6, model.chapters.length)} gap-2 pt-1">${chapterButtons}</div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h4 class="text-xs font-semibold text-[#1c1c1e] uppercase tracking-wider">Diagrama completo da fase ${currentStage} · ${model.nodeIds.length} tabelas · ${model.ordered.length} ligações</h4>
+              <p class="text-[11px] text-[#636366]">Cinzento são ligações ainda por percorrer, verde as já percorridas, azul e laranja as que estão a passar atributos neste momento (azul sai da raiz, laranja continua a partir do ramo).</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${steps.length} gap-2 pt-1">
-              ${stepIndicatorsHtml}
+            <div class="w-44 h-1.5 bg-[#d1d1d6] rounded-full overflow-hidden"><div id="flowStepProgressFill" class="h-full bg-[#007aff]" style="width: 52%"></div></div>
+          </div>
+
+          <div id="flowTreeStageContainer" class="relative bg-white p-4 rounded-xl border border-[#e5e5ea] overflow-auto" style="max-height:78vh;">
+            <svg id="flowTreeSvgOverlay" class="pointer-events-none absolute left-0 top-0 z-30"></svg>
+            <div class="relative z-20 grid gap-x-24" style="grid-template-columns: repeat(${usedCols.length}, minmax(190px, 1fr)); min-width:${usedCols.length * 230 + 120}px; padding-right:110px;">
+              ${columnsHtml}
             </div>
           </div>
 
-          <!-- Active Multi-Branch Tree Video Canvas -->
-          <div id="flowActiveVideoScreen" class="bg-[#f2f2f7] rounded-xl p-4 border border-[#d1d1d6] space-y-4"></div>
-
-          <!-- 4 Database Swimlanes for the Current Stage -->
-          <div class="pt-2">
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-2.5">
-              <div>
-                <h4 class="text-xs font-semibold text-[#1c1c1e] uppercase tracking-wider">Estado Acumulado das 4 Bases de Dados nesta Etapa (${escHtml(st.badge)})</h4>
-                <p class="text-[11px] text-[#636366]">Mostra simultaneamente a Tabela Raiz (azul), todos os Ramos Diretos Nível 1 e Sub-Ramos Nível 2 (laranja) e as tabelas já percorridas nas árvores anteriores (verde).</p>
-              </div>
-              <div class="flex items-center gap-3 text-[11px] font-medium">
-                <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#007aff] inline-block"></span> Raiz Emissora (Nível 0)</span>
-                <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#c96e00] inline-block"></span> Ramos e Sub-Ramos Ativos (Níveis 1 e 2)</span>
-                <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#34c759] inline-block"></span> Já Ligado na Etapa</span>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-3">
+            <div class="lg:col-span-5 space-y-3">
+              <div id="flowChapterInfo" class="bg-white p-3.5 rounded-lg border border-[#e5e5ea]"></div>
+              <div class="bg-white p-3.5 rounded-lg border border-[#e5e5ea]">
+                <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#636366] block mb-1.5">Instrução de ligação desta cadeia</span>
+                <pre id="flowChapterQuery" class="code-surface text-[11px] max-h-44 overflow-auto clean-scroll"></pre>
               </div>
             </div>
-            <div id="flowSwimlanesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3"></div>
+            <div class="lg:col-span-7 bg-white p-3.5 rounded-lg border border-[#e5e5ea]">
+              <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#636366] block mb-1.5">Ordem de passagem dos atributos nesta fase (${model.ordered.length} ligações)</span>
+              <div id="flowOrderedList" class="max-h-96 overflow-y-auto clean-scroll space-y-1">
+                ${model.ordered.map(e => `
+                  <div id="fl_row_${e.n}" class="flex items-start gap-2 px-2 py-1.5 rounded border border-[#efeff4] text-[11px]">
+                    <span class="font-mono font-semibold text-[#007aff] w-6 text-right flex-shrink-0">${e.n}</span>
+                    <div class="min-w-0">
+                      <div class="font-mono text-[#1c1c1e] break-all">${escHtml(flowShortName(e.s))} &#8594; ${escHtml(flowShortName(e.t))}</div>
+                      <div class="font-mono text-[#995200] break-all">atributo: ${escHtml(String(e.label))}</div>
+                    </div>
+                  </div>`).join('')}
+              </div>
+            </div>
           </div>
-        </div>
-      `;
+        </div>`;
 
       renderFlowStepContent();
     }
 
     function renderFlowStepContent() {
-      const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
-      const cur = steps[flowCurrentStepIdx] || steps[0];
-      const st = STAGES[currentStage] || STAGES["1"];
+      const model = buildStageModel(currentStage);
+      const cur = model.chapters[flowCurrentStepIdx] || model.chapters[0];
 
       const counterEl = document.getElementById('flowHeaderStepCounter');
-      if (counterEl) {
-        counterEl.textContent = `ETAPA ${currentStage} · ${cur.title.toUpperCase()}`;
-      }
+      if (counterEl) counterEl.textContent = `FASE ${currentStage} · CADEIA ${flowCurrentStepIdx + 1} DE ${model.chapters.length} · ${cur.title.toUpperCase().slice(0, 90)}`;
 
-      steps.forEach((s, idx) => {
+      model.chapters.forEach((c, idx) => {
         const btn = document.getElementById(`flowStepBtn_${idx}`);
         const chk = document.getElementById(`flowStepCheck_${idx}`);
         if (!btn) return;
         if (idx === flowCurrentStepIdx) {
-          btn.className = "flex-1 text-left p-2.5 rounded-lg border-2 border-[#007aff] bg-[#e5f1ff] cursor-pointer";
+          btn.className = "text-left p-2.5 rounded-lg border-2 border-[#007aff] bg-[#e5f1ff] cursor-pointer";
           if (chk) chk.innerHTML = '<span class="text-[#007aff] font-bold">&#9654;</span>';
         } else if (idx < flowCurrentStepIdx) {
-          btn.className = "flex-1 text-left p-2.5 rounded-lg border border-[#34c759] bg-[#f2fbf5] cursor-pointer";
+          btn.className = "text-left p-2.5 rounded-lg border border-[#34c759] bg-[#f2fbf5] cursor-pointer";
           if (chk) chk.innerHTML = '<span class="text-[#248a3d] font-bold">&#10003;</span>';
         } else {
-          btn.className = "flex-1 text-left p-2.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer";
+          btn.className = "text-left p-2.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer";
           if (chk) chk.textContent = '';
         }
       });
 
-      const fromT = TABLES.find(t => t.id === cur.fromTable) || { id: cur.fromTable, num: '?', label: cur.fromTable, name: cur.fromTable, pk: cur.fromPk, source: cur.fromDb };
-      const hasSubBranches = (cur.branches || []).some(b => b.subBranches && b.subBranches.length > 0);
-
-      // Build Level-1 Branch Cards HTML
-      const branchesHtml = (cur.branches || []).map((b, bIdx) => {
-        const bT = TABLES.find(t => t.id === b.targetId) || { id: b.targetId, num: '?', label: b.targetId, name: b.targetId, source: 'Fonte D1', pk: b.generatedPk };
-        const hasSubs = b.subBranches && b.subBranches.length > 0;
-        return `
-          <div id="treeBranchCard_${bIdx}" onclick="switchTab('pillars'); selectTable('${bT.id}');"
-               class="relative p-3 rounded-lg border border-[#d1d1d6] bg-[#fffaf2] hover:border-[#007aff] transition-all cursor-pointer">
-            <!-- Input Port on Left Edge -->
-            <span id="port_in_b_${bIdx}" class="w-3 h-3 rounded-full bg-[#007aff] border-2 border-white shadow absolute -left-1.5 top-1/2 -translate-y-1/2"></span>
-            ${hasSubs ? `<span id="port_out_b_${bIdx}" class="w-3 h-3 rounded-full bg-[#c96e00] border-2 border-white shadow absolute -right-1.5 top-1/2 -translate-y-1/2"></span>` : ''}
-
-            <div class="flex items-center justify-between gap-1 text-[10px] font-mono">
-              <span class="font-bold text-[#c96e00]">RAMO ${bIdx + 1} · #${bT.num < 10 ? '0' + bT.num : bT.num}</span>
-              <span class="tag-pill ${getSourceBadgeClass(bT.source)}">${escHtml(bT.source)}</span>
-            </div>
-            <div class="text-xs font-semibold text-[#1c1c1e] mt-0.5">${escHtml(stripEmoji(bT.label))}</div>
-            <div class="text-[10.5px] font-mono text-[#636366] break-all">${escHtml(bT.name)}</div>
-
-            <div class="mt-1.5 pt-1.5 border-t border-[#f2e2c4] flex flex-wrap items-center justify-between gap-1 text-[10.5px] font-mono">
-              <span class="text-[#0055b3] bg-[#e5f1ff] px-1.5 py-0.5 rounded border border-[#b3d7ff]">Recebe: ${escHtml(b.passedVar)}</span>
-              <span class="text-[#995200] font-semibold">${escHtml(b.generatedPk)}</span>
-            </div>
-          </div>
-        `;
-      }).join('');
-
-      // Build Level-2 Sub-Branch Cards HTML
-      const subBranchesHtml = [];
-      (cur.branches || []).forEach((b, bIdx) => {
-        (b.subBranches || []).forEach((sb, sIdx) => {
-          const sT = TABLES.find(t => t.id === sb.targetId) || { id: sb.targetId, num: '?', label: sb.targetId, name: sb.targetId, source: 'Fonte A1', pk: sb.generatedPk };
-          subBranchesHtml.push(`
-            <div id="treeSubCard_${bIdx}_${sIdx}" onclick="switchTab('pillars'); selectTable('${sT.id}');"
-                 class="relative p-2.5 rounded-lg border border-[#d1d1d6] bg-[#f8f9fa] hover:border-[#007aff] transition-all cursor-pointer">
-              <!-- Input Port on Left Edge -->
-              <span id="port_in_sub_${bIdx}_${sIdx}" class="w-3 h-3 rounded-full bg-[#c96e00] border-2 border-white shadow absolute -left-1.5 top-1/2 -translate-y-1/2"></span>
-
-              <div class="flex items-center justify-between gap-1 text-[10px] font-mono">
-                <span class="font-bold text-[#248a3d]">SUB-RAMO ${bIdx + 1}.${sIdx + 1} · #${sT.num < 10 ? '0' + sT.num : sT.num}</span>
-                <span class="tag-pill ${getSourceBadgeClass(sT.source)}">${escHtml(sT.source)}</span>
-              </div>
-              <div class="text-xs font-semibold text-[#1c1c1e] mt-0.5">${escHtml(stripEmoji(sT.label))}</div>
-              <div class="text-[10.5px] font-mono text-[#636366] break-all">${escHtml(sT.name)}</div>
-              <div class="mt-1 pt-1 border-t border-[#e5e5ea] flex flex-wrap items-center justify-between gap-1 text-[10px] font-mono">
-                <span class="text-[#995200] bg-[#fff4e5] px-1.5 py-0.5 rounded border border-[#ffd699]">Recebe: ${escHtml(sb.passedVar)}</span>
-                <span class="text-[#248a3d] font-semibold">${escHtml(sb.generatedPk)}</span>
-              </div>
-            </div>
-          `);
-        });
+      const activeNodes = new Set();
+      cur.items.forEach(it => { activeNodes.add(it.e.s); activeNodes.add(it.e.t); });
+      const visitedNodes = new Set();
+      model.ordered.forEach(e => {
+        if (e.chapter !== null && e.chapter < flowCurrentStepIdx) { visitedNodes.add(e.s); visitedNodes.add(e.t); }
+      });
+      model.nodeIds.forEach(id => {
+        const el = document.getElementById('fn_' + id);
+        if (!el) return;
+        el.classList.remove('flow-node-origin', 'flow-node-target', 'flow-node-visited');
+        if (id === cur.root) el.classList.add('flow-node-origin');
+        else if (activeNodes.has(id)) el.classList.add('flow-node-target');
+        else if (visitedNodes.has(id)) el.classList.add('flow-node-visited');
       });
 
-      const screenEl = document.getElementById('flowActiveVideoScreen');
-      if (screenEl) {
-        screenEl.innerHTML = `
-          <!-- Step Title & Step Progress Bar -->
-          <div class="flex flex-wrap items-center justify-between gap-2">
-            <div>
-              <span class="tag-pill tag-teal font-mono">Árvore ${currentStage}.${cur.step} · 1 Raiz &#8594; ${(cur.branches || []).length} Ramos Diretos ${subBranchesHtml.length ? `&#8594; ${subBranchesHtml.length} Sub-Ramos` : ''}</span>
-              <h3 class="text-sm font-semibold text-[#1c1c1e] inline ml-2">${escHtml(cur.title)}</h3>
-            </div>
-            <div class="w-44 h-1.5 bg-[#d1d1d6] rounded-full overflow-hidden">
-              <div id="flowStepProgressFill" class="h-full bg-[#007aff]" style="width: ${flowStepProgress}%"></div>
-            </div>
-          </div>
-
-          <!-- MULTI-BRANCH TREE STAGE CONTAINER WITH SVG CURVED OVERLAY -->
-          <div id="flowTreeStageContainer" class="relative bg-white p-5 rounded-xl border border-[#e5e5ea] overflow-x-auto">
-            <!-- SVG Overlay for Curved Tree Branches & Moving Variable Packets -->
-            <svg id="flowTreeSvgOverlay" class="pointer-events-none absolute inset-0 w-full h-full z-30"></svg>
-
-            <div class="relative z-20 grid grid-cols-1 ${hasSubBranches ? 'lg:grid-cols-12' : 'lg:grid-cols-9'} gap-x-28 gap-y-6 items-center min-w-[980px]">
-              <!-- COLUMN 1: NÍVEL 0 · TABELA RAIZ EMISSORA (3 cols) -->
-              <div class="lg:col-span-3 flex flex-col justify-center">
-                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#007aff] mb-1.5">
-                  Nível 0 · Tabela Raiz Emissora
-                </div>
-                <div id="treeRootCard" onclick="switchTab('pillars'); selectTable('${fromT.id}');"
-                     class="relative p-4 rounded-xl flow-node-origin cursor-pointer">
-                  <!-- Output Port on Right Edge -->
-                  <span id="port_out_root" class="w-3.5 h-3.5 rounded-full bg-[#007aff] border-2 border-white shadow absolute -right-2 top-1/2 -translate-y-1/2"></span>
-
-                  <div class="flex items-center justify-between text-[10.5px] font-mono">
-                    <span class="font-bold text-[#007aff]">RAIZ #${fromT.num < 10 ? '0' + fromT.num : fromT.num}</span>
-                    <span class="tag-pill ${getSourceBadgeClass(fromT.source)}">${escHtml(fromT.source || cur.fromDb)}</span>
-                  </div>
-                  <div class="text-sm font-semibold text-[#1c1c1e] mt-1.5">${escHtml(stripEmoji(fromT.label))}</div>
-                  <div class="text-[11px] font-mono text-[#636366] break-all mt-0.5">${escHtml(fromT.name)}</div>
-
-                  <div class="mt-3 pt-2.5 border-t border-[#b3d7ff] space-y-1">
-                    <span class="text-[10px] font-semibold uppercase tracking-wider text-[#0055b3] block">Variáveis Enviadas para a Árvore:</span>
-                    ${(cur.emittedVars || [cur.fromPk]).map(v => `
-                      <code class="block text-[11px] font-mono font-semibold text-[#007aff] bg-white px-2 py-1 rounded border border-[#b3d7ff] break-all">${escHtml(v)}</code>
-                    `).join('')}
-                  </div>
-                </div>
-              </div>
-
-              <!-- COLUMN 2: NÍVEL 1 · RAMOS DIRETOS DA ÁRVORE (5 cols) -->
-              <div class="${hasSubBranches ? 'lg:col-span-5' : 'lg:col-span-6'} space-y-2.5">
-                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#c96e00] mb-1">
-                  Nível 1 · ${(cur.branches || []).length} Tabelas Alimentadas Diretamente pela Raiz
-                </div>
-                ${branchesHtml}
-              </div>
-
-              <!-- COLUMN 3: NÍVEL 2 · SUB-RAMOS SEGUINTES (4 cols) -->
-              ${hasSubBranches ? `
-                <div class="lg:col-span-4 space-y-2.5">
-                  <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#248a3d] mb-1">
-                    Nível 2 · ${subBranchesHtml.length} Sub-Ramos Alimentados pelo Nível 1
-                  </div>
-                  ${subBranchesHtml.join('')}
-                </div>
-              ` : ''}
-            </div>
-          </div>
-
-          <!-- Synchronized Operational Explanation & Multi-Join SQL/Mongo/XPath Inspector -->
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-3">
-            <div class="lg:col-span-5 bg-white p-3.5 rounded-lg border border-[#e5e5ea] flex flex-col justify-between">
-              <div>
-                <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#007aff] block">Explicação da Ramificação na Realidade</span>
-                <p class="text-xs text-[#1c1c1e] leading-relaxed mt-1.5">${escHtml(cur.reality)}</p>
-              </div>
-              <div class="mt-3 pt-2 border-t border-[#efeff4] text-[11px] text-[#636366]">
-                <strong>Dica:</strong> Clica em qualquer nó da árvore acima para abrir o inspetor lateral com todos os registos dessa tabela.
-              </div>
-            </div>
-            <div class="lg:col-span-7 bg-white p-3.5 rounded-lg border border-[#e5e5ea]">
-              <div class="flex items-center justify-between mb-1.5">
-                <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#636366]">Instrução Multi-Join Executada para esta Árvore (SQL / MongoDB / XPath)</span>
-                <span class="tag-pill tag-stone font-mono">1 Raiz &#8594; Múltiplas Tabelas</span>
-              </div>
-              <pre class="code-surface text-[11px] max-h-36 overflow-auto clean-scroll">${escHtml(cur.queryCode)}</pre>
-            </div>
-          </div>
-        `;
+      const info = document.getElementById('flowChapterInfo');
+      if (info) {
+        info.innerHTML = `
+          <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#007aff] block">O que acontece nesta cadeia</span>
+          <h4 class="text-xs font-semibold text-[#1c1c1e] mt-1">${escHtml(cur.title)}</h4>
+          <p class="text-xs text-[#1c1c1e] leading-relaxed mt-1.5">${escHtml(cur.reality)}</p>
+          ${cur.emitted.length ? `<div class="mt-2 pt-2 border-t border-[#efeff4]"><span class="text-[10px] font-semibold uppercase text-[#636366] block mb-1">Atributos emitidos pela tabela de origem</span>${cur.emitted.map(v => `<code class="inline-block text-[10.5px] font-mono text-[#007aff] bg-[#e5f1ff] px-1.5 py-0.5 rounded border border-[#b3d7ff] mr-1 mb-1">${escHtml(v)}</code>`).join('')}</div>` : ''}`;
       }
+      const q = document.getElementById('flowChapterQuery');
+      if (q) q.textContent = cur.queryCode;
 
-      // Build the 4 Database Swimlanes for this stage
-      const visitedSet = new Set();
-      for (let i = 0; i < flowCurrentStepIdx; i++) {
-        const ps = steps[i];
-        visitedSet.add(ps.fromTable);
-        (ps.branches || []).forEach(b => {
-          visitedSet.add(b.targetId);
-          (b.subBranches || []).forEach(sb => visitedSet.add(sb.targetId));
-        });
-      }
-      const activeBranchSet = new Set();
-      (cur.branches || []).forEach(b => {
-        activeBranchSet.add(b.targetId);
-        (b.subBranches || []).forEach(sb => activeBranchSet.add(sb.targetId));
+      const activeEdges = new Set(cur.items.map(it => it.e));
+      model.ordered.forEach(e => {
+        const row = document.getElementById('fl_row_' + e.n);
+        if (!row) return;
+        let cls = "flex items-start gap-2 px-2 py-1.5 rounded border text-[11px] ";
+        if (activeEdges.has(e)) cls += "border-[#007aff] bg-[#e5f1ff]";
+        else if (e.chapter !== null && e.chapter < flowCurrentStepIdx) cls += "border-[#34c759] bg-[#f2fbf5]";
+        else cls += "border-[#efeff4]";
+        row.className = cls;
       });
+      const firstActive = cur.items[0] && document.getElementById('fl_row_' + cur.items[0].e.n);
+      const listEl = document.getElementById('flowOrderedList');
+      if (firstActive && listEl) listEl.scrollTop = Math.max(0, firstActive.offsetTop - listEl.offsetTop - 4);
 
-      const stageTables = st.tableIds.map(id => TABLES.find(t => t.id === id)).filter(Boolean);
-      const sourcesMeta = [
-        { code: 'Fonte D1', title: '1. Fonte D1 · SQL 3FN (China)', badge: 'tag-navy' },
-        { code: 'Fonte D2', title: '2. Fonte D2 · BaseX XML (China)', badge: 'tag-ochre' },
-        { code: 'Fonte A1', title: '3. Fonte A1 · MongoDB (Portugal)', badge: 'tag-teal' },
-        { code: 'Fonte A2', title: '4. Fonte A2 · PDFs & SQLite (Portugal)', badge: 'tag-plum' }
-      ];
-
-      const swimlanesEl = document.getElementById('flowSwimlanesGrid');
-      if (swimlanesEl) {
-        swimlanesEl.innerHTML = sourcesMeta.map(sm => {
-          const colTables = stageTables.filter(t => t.source === sm.code);
-          const cards = colTables.length === 0
-            ? `<div class="text-[11px] text-[#8e8e93] p-3 text-center bg-[#f2f2f7] rounded-lg border border-[#e5e5ea]">Sem tabelas desta fonte nesta etapa.</div>`
-            : colTables.map(t => {
-                let stateClass = "";
-                let stateBadge = "";
-                if (t.id === cur.fromTable) {
-                  stateClass = "flow-node-origin";
-                  stateBadge = `<span class="tag-pill tag-teal font-mono">RAIZ (NÍVEL 0)</span>`;
-                } else if (activeBranchSet.has(t.id)) {
-                  stateClass = "flow-node-target";
-                  stateBadge = `<span class="tag-pill tag-ochre font-mono">RAMO ATIVO</span>`;
-                } else if (visitedSet.has(t.id)) {
-                  stateClass = "flow-node-visited";
-                  stateBadge = `<span class="text-[10px] font-mono text-[#248a3d] font-semibold">&#10003; Processada</span>`;
-                }
-                return `
-                  <div onclick="switchTab('pillars'); selectTable('${t.id}');" class="entity-card ${stateClass}">
-                    <div class="flex items-center justify-between gap-1">
-                      <span class="text-[11px] font-semibold text-[#007aff] font-mono">#${t.num < 10 ? '0' + t.num : t.num}</span>
-                      ${stateBadge || `<span class="text-[10px] font-mono text-[#8e8e93]">PK: ${escHtml(t.pk.split(' ')[0])}</span>`}
-                    </div>
-                    <div class="text-xs font-semibold text-[#1c1c1e] mt-0.5 truncate">${escHtml(stripEmoji(t.label))}</div>
-                    <div class="text-[10.5px] font-mono text-[#636366] truncate">${escHtml(t.name)}</div>
-                  </div>
-                `;
-              }).join('');
-
-          return `
-            <div class="bg-[#f2f2f7] p-3 rounded-xl border border-[#e5e5ea] space-y-2">
-              <div class="flex items-center justify-between pb-1.5 border-b border-[#d1d1d6]">
-                <span class="text-xs font-semibold text-[#1c1c1e]">${escHtml(sm.title)}</span>
-                <span class="tag-pill ${sm.badge} font-mono">${colTables.length}</span>
-              </div>
-              <div class="space-y-1.5 max-h-80 overflow-y-auto clean-scroll pr-0.5">
-                ${cards}
-              </div>
-            </div>
-          `;
-        }).join('');
-      }
-
-      requestAnimationFrame(() => {
-        buildTreeSvgPaths();
-        updateFlowProgressBarsOnly();
-      });
+      requestAnimationFrame(() => { drawFlowSvg(); updateFlowProgressBarsOnly(); });
     }
 
     window.addEventListener('resize', () => {
-      if (activeTab === 'flow') {
-        buildTreeSvgPaths();
-        updateFlowProgressBarsOnly();
-      }
+      if (activeTab === 'flow') { drawFlowSvg(); updateFlowProgressBarsOnly(); }
     });
 
     // Bilateral Bridges
