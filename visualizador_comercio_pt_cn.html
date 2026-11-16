@@ -579,14 +579,14 @@
     <!-- VIEW 6: FLUXO COMERCIAL (4 ETAPAS DA OPERAÇÃO INTERNACIONAL)       -->
     <!-- ================================================================== -->
     <section id="viewFlow" class="hidden flex-1 p-5 overflow-y-auto clean-scroll">
-      <div class="max-w-[1380px] mx-auto space-y-4">
+      <div class="max-w-[1440px] mx-auto space-y-4">
         <div class="surface-card p-5">
           <div class="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <span class="tag-pill tag-teal font-mono">Simulador Sequencial Interativo · 4 Etapas · 32 Passos de Ligação Real</span>
-              <h2 class="text-base font-semibold text-[#1c1c1e] mt-1">Fluxo Operacional em Vídeo do Comércio Bilateral entre a China e Portugal</h2>
+              <span class="tag-pill tag-teal font-mono">Animação em Árvore Multi-Ramo · 4 Etapas · Propagação Simultânea de Chaves</span>
+              <h2 class="text-base font-semibold text-[#1c1c1e] mt-1">Árvore Animada de Propagação de Variáveis entre as 4 Bases de Dados</h2>
               <p class="text-xs text-[#636366] mt-0.5">
-                Seleciona uma das quatro etapas e clica em <strong>Reproduzir Fluxo</strong> para assistir passo a passo à sequência cronológica real desde a base de dados de origem até às tabelas de destino, incluindo as chaves primárias e estrangeiras transmitidas em cada ligação.
+                Clica em <strong>Reproduzir Árvore</strong> para ver como cada tabela raiz distribui em simultâneo as suas chaves primárias e atributos por múltiplos ramos diretos (Nível 1) e sub-ramos seguintes (Nível 2) através das quatro fontes de dados.
               </p>
             </div>
             <div class="flex items-center gap-2">
@@ -599,7 +599,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-4">
             <button class="step-btn text-left p-3.5 rounded-lg border border-[#007aff] bg-[#e5f1ff] cursor-pointer transition-all" data-step="1" onclick="renderFlowStage('1', true)">
               <div class="flex items-center justify-between">
-                <span class="text-[10.5px] font-semibold text-[#007aff] uppercase">Etapa 1 · 8 Passos</span>
+                <span class="text-[10.5px] font-semibold text-[#007aff] uppercase">Etapa 1 · 5 Árvores</span>
                 <span class="text-[10px] font-mono text-[#636366]">29 entidades</span>
               </div>
               <strong class="text-xs font-semibold text-[#1c1c1e] block mt-0.5">1. Origem, Fabrico e Contratos</strong>
@@ -607,7 +607,7 @@
             </button>
             <button class="step-btn text-left p-3.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer transition-all" data-step="2" onclick="renderFlowStage('2', true)">
               <div class="flex items-center justify-between">
-                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 2 · 8 Passos</span>
+                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 2 · 5 Árvores</span>
                 <span class="text-[10px] font-mono text-[#636366]">31 entidades</span>
               </div>
               <strong class="text-xs font-semibold text-[#1c1c1e] block mt-0.5">2. Trade Finance, GACC e Embarque</strong>
@@ -615,7 +615,7 @@
             </button>
             <button class="step-btn text-left p-3.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer transition-all" data-step="3" onclick="renderFlowStage('3', true)">
               <div class="flex items-center justify-between">
-                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 3 · 8 Passos</span>
+                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 3 · 4 Árvores</span>
                 <span class="text-[10px] font-mono text-[#636366]">31 entidades</span>
               </div>
               <strong class="text-xs font-semibold text-[#1c1c1e] block mt-0.5">3. Fronteira ICS2, JUL e DAU</strong>
@@ -623,7 +623,7 @@
             </button>
             <button class="step-btn text-left p-3.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer transition-all" data-step="4" onclick="renderFlowStage('4', true)">
               <div class="flex items-center justify-between">
-                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 4 · 8 Passos</span>
+                <span class="text-[10.5px] font-semibold text-[#636366] uppercase">Etapa 4 · 4 Árvores</span>
                 <span class="text-[10px] font-mono text-[#636366]">25 entidades</span>
               </div>
               <strong class="text-xs font-semibold text-[#1c1c1e] block mt-0.5">4. Pós-Desembaraço, RMA e IA</strong>
@@ -1404,463 +1404,1102 @@
     }
 
     // =========================================================================
-    // VIDEO-STYLE ANIMATED FLOW SEQUENCES (4 STAGES x 8 CHRONOLOGICAL STEPS)
+    // MULTI-BRANCH TREE VIDEO ANIMATION (4 STAGES · SIMULTANEOUS KEY FAN-OUT)
     // =========================================================================
     const FLOW_SEQUENCES = {
       "1": [
         {
           step: 1,
-          title: "Licenciamento Territorial, Zonas Francas e Registo USCC do Fabricante",
+          title: "Árvore 1.1 · Território e Zonas Francas ramificam para Fabricantes, Minas Tier-2 e NVOCC",
           fromDb: "Fonte D1 · SQL 3FN (China)",
           fromTable: "33_cn_provinces_prefectures_cities",
           fromPk: "admin_division_code_gb = '320400' (Changzhou, Jiangsu)",
-          toDb: "Fonte D1 · SQL 3FN (China)",
-          toTable: "35_cn_enterprises_manufacturers",
-          toFk: "admin_division_code_gb → PK: uscc_code = '91320413MA1M9Y2C4B'",
-          passedKey: "admin_division_code_gb (320400) + zone_id (FTZ-JS-CZ-01) → uscc_code (91320413MA1M9Y2C4B)",
-          relatedTables: ["34_cn_special_economic_ftz_zones", "36_cn_factory_production_facilities", "50_cn_state_industrial_subsidies"],
-          reality: "O fluxo inicia-se na base relacional chinesa (Fonte D1). A divisão administrativa GB/T 2260 e a Zona Franca (FTZ) legitimam o registo do fabricante industrial (CALB / BYD / LONGi) sob a chave soberana USCC de 18 carateres e licenciam as suas instalações fabris.",
-          queryCode: "SELECT e.uscc_code, e.company_name_en, f.facility_id, z.zone_name\nFROM \"33_cn_provinces_prefectures_cities\" p\nJOIN \"35_cn_enterprises_manufacturers\" e ON p.admin_division_code_gb = e.admin_division_code_gb\nJOIN \"34_cn_special_economic_ftz_zones\" z ON z.zone_id = e.zone_id\nJOIN \"36_cn_factory_production_facilities\" f ON f.uscc_code = e.uscc_code;"
+          emittedVars: ["admin_division_code_gb ('320400')", "province_name_en ('Jiangsu')"],
+          branches: [
+            {
+              targetId: "34_cn_special_economic_ftz_zones",
+              passedVar: "admin_division_code_gb → FTZ Territorial",
+              shortVar: "admin_division_code_gb",
+              generatedPk: "PK: zone_id = 'FTZ-JS-CZ-01'",
+              subBranches: [
+                {
+                  targetId: "99_cn_processing_trade_manuals_handbook",
+                  passedVar: "zone_id ('FTZ-JS-CZ-01') → Manual E-Handbook",
+                  shortVar: "zone_id",
+                  generatedPk: "PK: e_manual_handbook_no"
+                }
+              ]
+            },
+            {
+              targetId: "35_cn_enterprises_manufacturers",
+              passedVar: "admin_division_code_gb + zone_id → Registo USCC",
+              shortVar: "admin_division_code_gb + zone_id",
+              generatedPk: "PK: uscc_code = '91320413MA1M9Y2C4B'",
+              subBranches: [
+                {
+                  targetId: "36_cn_factory_production_facilities",
+                  passedVar: "uscc_code → Fábrica Licenciada",
+                  shortVar: "uscc_code",
+                  generatedPk: "PK: facility_id = 'FAC-CALB-JS01'"
+                },
+                {
+                  targetId: "50_cn_state_industrial_subsidies",
+                  passedVar: "uscc_code → recipient_uscc",
+                  shortVar: "recipient_uscc",
+                  generatedPk: "PK: subsidy_grant_id"
+                }
+              ]
+            },
+            {
+              targetId: "91_cn_raw_materials_tier2_suppliers",
+              passedVar: "admin_division_code_gb → Minas Lítio/Grafite",
+              shortVar: "admin_division_code_gb",
+              generatedPk: "PK: supplier_tier2_id = 'T2-GANFENG-LI-01'",
+              subBranches: []
+            },
+            {
+              targetId: "97_cn_freight_forwarders_nvocc_customs_brokers",
+              passedVar: "admin_division_code_gb → Sede Transitário NVOCC",
+              shortVar: "admin_division_code_gb",
+              generatedPk: "PK: broker_forwarder_id",
+              subBranches: []
+            }
+          ],
+          reality: "Na realidade, a tabela territorial de províncias e prefeituras (33_cn) não alimenta apenas uma tabela: distribui em árvore o código GB/T 2260 simultaneamente para as Zonas Francas (34_cn), para os Fabricantes Industriais (35_cn), para os Fornecedores Mineiros Tier-2 (91_cn) e para os Transitários NVOCC (97_cn). Por sua vez, o fabricante (35_cn) propaga o seu USCC para as fábricas (36_cn) e subsídios (50_cn).",
+          queryCode: "SELECT p.admin_division_code_gb, z.zone_id, e.uscc_code, f.facility_id, s.supplier_tier2_id\nFROM \"33_cn_provinces_prefectures_cities\" p\nLEFT JOIN \"34_cn_special_economic_ftz_zones\" z ON z.admin_division_code_gb = p.admin_division_code_gb\nLEFT JOIN \"35_cn_enterprises_manufacturers\" e ON e.admin_division_code_gb = p.admin_division_code_gb\nLEFT JOIN \"36_cn_factory_production_facilities\" f ON f.uscc_code = e.uscc_code\nLEFT JOIN \"91_cn_raw_materials_tier2_suppliers\" s ON s.admin_division_code_gb = p.admin_division_code_gb;"
         },
         {
           step: 2,
-          title: "Classificação Pautal GACC (HS10), Catálogo Industrial em Jin e Certificação CCC",
+          title: "Árvore 1.2 · O Fabricante Chinês (#35 uscc_code) ramifica para Catálogo, Licenças MOFCOM, AEO e Contratos",
           fromDb: "Fonte D1 · SQL 3FN (China)",
-          fromTable: "37_cn_hs_tariff_schedule_gacc",
-          fromPk: "hs_code_10_cn = '8507600090' (Acumuladores de Iões de Lítio)",
-          toDb: "Fonte D1 SQL 3FN & Fonte D2 XML",
-          toTable: "38_cn_products_industrial_catalog",
-          toFk: "hs_code_10_cn + manufacturer_uscc → PK: product_sku_cn = 'SKU-CALB-LFP-314AH'",
-          passedKey: "hs_code_10_cn (8507600090) + uscc_code → product_sku_cn (SKU-CALB-LFP-314AH)",
-          relatedTables: ["39_cn_ccc_compulsory_certifications", "60_cn_b2b_supplier_product_specs_xml"],
-          reality: "A pauta aduaneira chinesa de 10 dígitos (GACC) e o USCC do fabricante alimentam o catálogo de produtos industriais (com massa registada na unidade tradicional Jin), gerando o certificado obrigatório CCC e a ficha de especificações em BaseX XML (@productSkuCn).",
-          queryCode: "SELECT c.product_sku_cn, c.net_weight_jin, t.export_rebate_rate_pct, ccc.ccc_certificate_no\nFROM \"37_cn_hs_tariff_schedule_gacc\" t\nJOIN \"38_cn_products_industrial_catalog\" c ON t.hs_code_10_cn = c.hs_code_10_cn\nJOIN \"39_cn_ccc_compulsory_certifications\" ccc ON c.product_sku_cn = ccc.product_sku_cn;"
+          fromTable: "35_cn_enterprises_manufacturers",
+          fromPk: "uscc_code = '91320413MA1M9Y2C4B' (CALB Group)",
+          emittedVars: ["uscc_code ('91320413MA1M9Y2C4B')", "customs_cr_code_10 ('3204960012')"],
+          branches: [
+            {
+              targetId: "38_cn_products_industrial_catalog",
+              passedVar: "uscc_code → manufacturer_uscc",
+              shortVar: "manufacturer_uscc",
+              generatedPk: "PK: product_sku_cn = 'SKU-CALB-LFP-314AH'",
+              subBranches: [
+                {
+                  targetId: "39_cn_ccc_compulsory_certifications",
+                  passedVar: "product_sku_cn → Certificado CCC",
+                  shortVar: "product_sku_cn",
+                  generatedPk: "PK: ccc_certificate_no"
+                },
+                {
+                  targetId: "60_cn_b2b_supplier_product_specs_xml",
+                  passedVar: "product_sku_cn → @productSkuCn (XML)",
+                  shortVar: "@productSkuCn",
+                  generatedPk: "PK: @productSkuCn (Fonte D2)"
+                }
+              ]
+            },
+            {
+              targetId: "40_cn_mofcom_trade_licenses_quotas",
+              passedVar: "uscc_code → holder_uscc (Quota MOFCOM)",
+              shortVar: "holder_uscc",
+              generatedPk: "PK: license_no_mofcom",
+              subBranches: []
+            },
+            {
+              targetId: "101_cn_export_control_dual_use_mofcom_permits",
+              passedVar: "uscc_code → exporter_uscc (Dupla Utilização)",
+              shortVar: "exporter_uscc",
+              generatedPk: "PK: dual_use_permit_no",
+              subBranches: []
+            },
+            {
+              targetId: "100_cn_gacc_aeo_mutual_recognition_registry",
+              passedVar: "uscc_code → enterprise_uscc (Estatuto AEO)",
+              shortVar: "enterprise_uscc",
+              generatedPk: "PK: aeo_mra_certificate_no",
+              subBranches: [
+                {
+                  targetId: "01_pt_operadores_economicos",
+                  passedVar: "eu_counterpart_eori_mra = eori_code",
+                  shortVar: "eu_counterpart_eori_mra",
+                  generatedPk: "PK: eori_code = 'PT517890123'"
+                }
+              ]
+            },
+            {
+              targetId: "41_cn_b2b_commercial_contracts",
+              passedVar: "uscc_code → chinese_party_uscc",
+              shortVar: "chinese_party_uscc",
+              generatedPk: "PK: contract_no_cn = 'CN-PT-CTR-2026-001'",
+              subBranches: []
+            }
+          ],
+          reality: "A tabela 35_cn_enterprises_manufacturers funciona como um nó central na China: envia a variável uscc_code simultaneamente para 5 tabelas distintas (catálogo industrial 38_cn, quotas MOFCOM 40_cn, licenças dual-use 101_cn, registo AEO 100_cn e contratos B2B 41_cn), que por sua vez propagam product_sku_cn e o acordo AEO para XML e MongoDB.",
+          queryCode: "SELECT e.uscc_code, c.product_sku_cn, ccc.ccc_certificate_no, m.license_no_mofcom, aeo.eu_counterpart_eori_mra, ctr.contract_no_cn\nFROM \"35_cn_enterprises_manufacturers\" e\nLEFT JOIN \"38_cn_products_industrial_catalog\" c ON c.manufacturer_uscc = e.uscc_code\nLEFT JOIN \"39_cn_ccc_compulsory_certifications\" ccc ON ccc.product_sku_cn = c.product_sku_cn\nLEFT JOIN \"40_cn_mofcom_trade_licenses_quotas\" m ON m.holder_uscc = e.uscc_code\nLEFT JOIN \"100_cn_gacc_aeo_mutual_recognition_registry\" aeo ON aeo.enterprise_uscc = e.uscc_code\nLEFT JOIN \"41_cn_b2b_commercial_contracts\" ctr ON ctr.chinese_party_uscc = e.uscc_code;"
         },
         {
           step: 3,
-          title: "Fornecedores Mineiros Tier-2, Estrutura BOM e Genealogia de Lote de Produção",
+          title: "Árvore 1.3 · Pauta GACC (#37 hs_code_10_cn) ramifica para Catálogo, BOM, Genealogia de Lotes e TARIC",
           fromDb: "Fonte D1 · SQL 3FN (China)",
-          fromTable: "91_cn_raw_materials_tier2_suppliers",
-          fromPk: "supplier_tier2_id = 'T2-GANFENG-LI-01' (Lítio e Grafite)",
-          toDb: "Fonte D1 · SQL 3FN (China)",
-          toTable: "92_cn_production_lots_batch_genealogy",
-          toFk: "tier2_supplier_id + product_sku_cn → PK: batch_lot_number = 'LOT-CALB-2026-088'",
-          passedKey: "supplier_tier2_id + product_sku_cn → batch_lot_number (LOT-CALB-2026-088)",
-          relatedTables: ["93_cn_bill_of_materials_bom_structures", "36_cn_factory_production_facilities"],
-          reality: "Os fornecedores Tier-2 de matérias-primas críticas (carbonato de lítio, grafite esférica e polissilício) ligam-se à árvore de engenharia Bill of Materials (BOM) e geram o lote de fabrico rastreável com o identificador do Passaporte Digital de Bateria da UE.",
-          queryCode: "SELECT l.batch_lot_number, l.eu_battery_passport_id, b.bom_component_id, s.mineral_origin_province\nFROM \"91_cn_raw_materials_tier2_suppliers\" s\nJOIN \"93_cn_bill_of_materials_bom_structures\" b ON s.supplier_tier2_id = b.tier2_supplier_id\nJOIN \"92_cn_production_lots_batch_genealogy\" l ON l.product_sku_cn = b.parent_product_sku_cn;"
+          fromTable: "37_cn_hs_tariff_schedule_gacc",
+          fromPk: "hs_code_10_cn = '8507600090' (Raiz HS6: '850760')",
+          emittedVars: ["hs_code_10_cn ('8507600090')", "hs_code_6_wco ('850760')"],
+          branches: [
+            {
+              targetId: "38_cn_products_industrial_catalog",
+              passedVar: "hs_code_10_cn → Classificação do SKU (Jin)",
+              shortVar: "hs_code_10_cn",
+              generatedPk: "PK: product_sku_cn = 'SKU-CALB-LFP-314AH'",
+              subBranches: [
+                {
+                  targetId: "93_cn_bill_of_materials_bom_structures",
+                  passedVar: "product_sku_cn + tier2_supplier_id → Árvore BOM",
+                  shortVar: "parent_product_sku_cn",
+                  generatedPk: "PK: bom_component_id"
+                },
+                {
+                  targetId: "92_cn_production_lots_batch_genealogy",
+                  passedVar: "product_sku_cn + facility_id → Lote & Battery Passport",
+                  shortVar: "product_sku_cn",
+                  generatedPk: "PK: batch_lot_number = 'LOT-CALB-2026-088'"
+                }
+              ]
+            },
+            {
+              targetId: "03_pt_pauta_aduaneira_taric",
+              passedVar: "hs_code_6_wco = SUBSTR(codigo_taric_10,1,6)",
+              shortVar: "hs_code_6_wco ('850760')",
+              generatedPk: "PK: codigo_taric_10 = '8507600090'",
+              subBranches: []
+            },
+            {
+              targetId: "103_cn_customs_tariff_quotas_antidumping_mofcom",
+              passedVar: "hs_code_10_cn → Contingentes & Tarifas",
+              shortVar: "hs_code_10_cn",
+              generatedPk: "PK: measure_record_id",
+              subBranches: []
+            },
+            {
+              targetId: "108_cn_ipr_customs_protection_recordations",
+              passedVar: "hs_code_10_cn → Proteção Patentes GACC",
+              shortVar: "hs_code_10_cn",
+              generatedPk: "PK: ipr_recordation_no",
+              subBranches: []
+            }
+          ],
+          reality: "A tabela pautal 37_cn_hs_tariff_schedule_gacc envia hs_code_10_cn para o catálogo industrial (38_cn), para as quotas tarifárias (103_cn) e registo de propriedade intelectual (108_cn), enquanto a raiz de 6 dígitos (hs_code_6_wco) atravessa para a pauta TARIC em Portugal (03_pt). O catálogo (38_cn) alimenta de seguida a árvore BOM (93_cn) e os lotes de fabrico (92_cn).",
+          queryCode: "SELECT t.hs_code_10_cn, p.product_sku_cn, b.bom_component_id, l.batch_lot_number, l.eu_battery_passport_id\nFROM \"37_cn_hs_tariff_schedule_gacc\" t\nJOIN \"38_cn_products_industrial_catalog\" p ON p.hs_code_10_cn = t.hs_code_10_cn\nLEFT JOIN \"93_cn_bill_of_materials_bom_structures\" b ON b.parent_product_sku_cn = p.product_sku_cn\nLEFT JOIN \"92_cn_production_lots_batch_genealogy\" l ON l.product_sku_cn = p.product_sku_cn;"
         },
         {
           step: 4,
-          title: "Manuais de Aperfeiçoamento Ativo (E-Manual) e Licenças de Exportação MOFCOM",
-          fromDb: "Fonte D1 · SQL 3FN (China)",
-          fromTable: "35_cn_enterprises_manufacturers",
-          fromPk: "uscc_code = '91320413MA1M9Y2C4B'",
-          toDb: "Fonte D1 · SQL 3FN (China)",
-          toTable: "40_cn_mofcom_trade_licenses_quotas",
-          toFk: "holder_uscc / exporter_uscc → PK: license_no_mofcom = 'MOFCOM-EXP-2026-8821'",
-          passedKey: "uscc_code (91320413MA1M9Y2C4B) → license_no_mofcom & dual_use_permit_no",
-          relatedTables: ["99_cn_processing_trade_manuals_handbook", "101_cn_export_control_dual_use_mofcom_permits"],
-          reality: "O fabricante chinês utiliza o seu USCC para registar na GACC o manual eletrónico de Processing Trade (suspensão de direitos sobre insumos importados) e obtém junto do MOFCOM a licença de exportação e controlo de bens de dupla utilização.",
-          queryCode: "SELECT m.license_no_mofcom, d.dual_use_permit_no, h.e_manual_handbook_no\nFROM \"35_cn_enterprises_manufacturers\" e\nJOIN \"40_cn_mofcom_trade_licenses_quotas\" m ON e.uscc_code = m.holder_uscc\nLEFT JOIN \"101_cn_export_control_dual_use_mofcom_permits\" d ON e.uscc_code = d.exporter_uscc\nLEFT JOIN \"99_cn_processing_trade_manuals_handbook\" h ON e.uscc_code = h.processor_uscc;"
+          title: "Árvore 1.4 · O Operador Português (#01 eori_code) ramifica para CIFER, GeoJSON, IDE, PT2030 e Banca",
+          fromDb: "Fonte A1 · MongoDB (Portugal)",
+          fromTable: "01_pt_operadores_economicos",
+          fromPk: "eori_code = 'PT517890123' / 'PT500123456' (nif)",
+          emittedVars: ["eori_code ('PT517890123')", "nif ('517890123')"],
+          branches: [
+            {
+              targetId: "11_pt_exportadores_agroalimentar_registados_gacc",
+              passedVar: "eori_code → eori_produtor_pt (Registo GACC)",
+              shortVar: "eori_produtor_pt",
+              generatedPk: "PK: codigo_cifer_gacc_18digitos",
+              subBranches: [
+                {
+                  targetId: "65_pt_rastreabilidade_origem_agro_florestal",
+                  passedVar: "codigo_cifer_gacc + eori → Polígono GeoJSON",
+                  shortVar: "codigo_cifer_gacc",
+                  generatedPk: "PK: parcela_id (EUDR)"
+                },
+                {
+                  targetId: "66_pt_lotes_producao_engarrafamento_abate",
+                  passedVar: "parcela_id → Lote de Engarrafamento",
+                  shortVar: "parcela_origem_id",
+                  generatedPk: "PK: lote_id = 'LOTE-DOURO-2026-014'"
+                }
+              ]
+            },
+            {
+              targetId: "13_pt_investimento_chines_ide_portugal",
+              passedVar: "nif → empresa_portuguesa_participada_nif",
+              shortVar: "nif_participada",
+              generatedPk: "PK: codigo_projeto_aicep",
+              subBranches: []
+            },
+            {
+              targetId: "14_pt_incentivos_aicep_portugal2030",
+              passedVar: "nif → nif_beneficiario (AICEP PT2030)",
+              shortVar: "nif_beneficiario",
+              generatedPk: "PK: codigo_candidatura_pt2030",
+              subBranches: []
+            },
+            {
+              targetId: "67_pt_creditos_documentarios_garantias_bancarias",
+              passedVar: "eori_code → ordenante_ou_beneficiario_pt_eori",
+              shortVar: "ordenante_pt_eori",
+              generatedPk: "PK: numero_lc_swift_mt700",
+              subBranches: [
+                {
+                  targetId: "68_pt_seguros_credito_exportacao_cosec",
+                  passedVar: "eori_code → segurado_exportador_pt_eori",
+                  shortVar: "segurado_pt_eori",
+                  generatedPk: "PK: apolice_cosec_id"
+                }
+              ]
+            }
+          ],
+          reality: "Do lado português (Fonte A1 MongoDB), a coleção raiz 01_pt_operadores_economicos distribui o EORI e o NIF em simultâneo para o registo agroalimentar CIFER (11_pt), para os projetos de investimento IDE (13_pt), para os incentivos Portugal 2030 (14_pt) e para os créditos documentários bancários (67_pt). O registo CIFER ramifica depois para as propriedades GeoJSON (65_pt) e lotes (66_pt).",
+          queryCode: "db.getCollection('01_pt_operadores_economicos').aggregate([\n  { $lookup: { from: '11_pt_exportadores_agroalimentar_registados_gacc', localField: 'eori_code', foreignField: 'eori_produtor_pt', as: 'cifer' } },\n  { $lookup: { from: '65_pt_rastreabilidade_origem_agro_florestal', localField: 'eori_code', foreignField: 'eori_produtor_pt', as: 'parcelas' } },\n  { $lookup: { from: '67_pt_creditos_documentarios_garantias_bancarias', localField: 'eori_code', foreignField: 'ordenante_ou_beneficiario_pt_eori', as: 'creditos_lc' } }\n]);"
         },
         {
           step: 5,
-          title: "Rastreabilidade Agroflorestal GeoJSON (EUDR), Lotes e Registo Sanitário CIFER",
-          fromDb: "Fonte A1 · MongoDB (Portugal)",
-          fromTable: "01_pt_operadores_economicos",
-          fromPk: "eori_code = 'PT500123456' / 'PT517890123'",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "11_pt_exportadores_agroalimentar_registados_gacc",
-          toFk: "eori_produtor_pt → PK: codigo_cifer_gacc_18digitos = 'CPRT01012105200018'",
-          passedKey: "eori_code → codigo_cifer_gacc_18digitos → parcela_id → lote_id (LOTE-DOURO-2026-014)",
-          relatedTables: ["65_pt_rastreabilidade_origem_agro_florestal", "66_pt_lotes_producao_engarrafamento_abate", "14_pt_incentivos_aicep_portugal2030"],
-          reality: "Em Portugal (Fonte A1 MongoDB), os operadores económicos ligam o seu código EORI/NIF ao registo sanitário CIFER exigido pela alfândega chinesa (Decreto GACC 248), aos polígonos GeoJSON das parcelas agrícolas e aos lotes de engarrafamento de vinho, azeite e cortiça.",
-          queryCode: "db.getCollection('01_pt_operadores_economicos').aggregate([\n  { $lookup: { from: '11_pt_exportadores_agroalimentar_registados_gacc', localField: 'eori_code', foreignField: 'eori_produtor_pt', as: 'cifer' } },\n  { $lookup: { from: '65_pt_rastreabilidade_origem_agro_florestal', localField: 'eori_code', foreignField: 'eori_produtor_pt', as: 'parcelas' } }\n]);"
-        },
-        {
-          step: 6,
-          title: "Reconhecimento Mútuo AEO UE-China e Negócios em Feiras B2B / Plataforma de Macau",
-          fromDb: "Fonte D1 SQL 3FN & Fonte D2 XML",
-          fromTable: "100_cn_gacc_aeo_mutual_recognition_registry",
-          fromPk: "aeo_mra_certificate_no = 'AEO-CN-GACC-2026-019'",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "01_pt_operadores_economicos",
-          toFk: "eu_counterpart_eori_mra = eori_code ('PT517890123')",
-          passedKey: "enterprise_uscc (91320413MA1M9Y2C4B) ↔ eu_counterpart_eori_mra (PT517890123)",
-          relatedTables: ["61_cn_trade_fairs_exhibitions_b2b_xml", "62_cn_macao_lusophone_platform_deals_xml", "13_pt_investimento_chines_ide_portugal", "18_pt_estatisticas_macro_ine_bportugal"],
-          reality: "Estabelece-se a primeira ponte transcontinental entre a China e Portugal: o registo de Reconhecimento Mútuo AEO e os manifestos XML da Canton Fair / CIIE e da Plataforma Lusófona de Macau emparelham o USCC chinês com o EORI português.",
-          queryCode: "SELECT aeo.aeo_mra_certificate_no, aeo.enterprise_uscc, pt.eori_code, pt.designacao_social\nFROM \"100_cn_gacc_aeo_mutual_recognition_registry\" aeo\nJOIN mongo_pt.\"01_pt_operadores_economicos\" pt\n  ON aeo.eu_counterpart_eori_mra = pt.eori_code;"
-        },
-        {
-          step: 7,
-          title: "Celebração do Contrato Comercial B2B Bilateral (Ponte SQL 3FN ↔ MongoDB)",
-          fromDb: "Fonte D1 SQL 3FN & Fonte A1 MongoDB",
-          fromTable: "35_cn_enterprises_manufacturers",
-          fromPk: "uscc_code = '91320413MA1M9Y2C4B' + eori_code = 'PT517890123'",
-          toDb: "Fonte D1 · SQL 3FN (China)",
-          toTable: "41_cn_b2b_commercial_contracts",
-          toFk: "chinese_party_uscc + portuguese_counterparty_eori → PK: contract_no_cn = 'CN-PT-CTR-2026-001'",
-          passedKey: "chinese_party_uscc (91320413MA1M9Y2C4B) + portuguese_counterparty_eori (PT517890123) → contract_no_cn",
-          relatedTables: ["01_pt_operadores_economicos", "102_cn_preferential_certificates_of_origin_ccpit"],
-          reality: "O contrato comercial B2B é gravado na tabela 3FN 41_cn_b2b_commercial_contracts, consolidando a chave primária do fabricante chinês (chinese_party_uscc) e a chave primária do importador português (portuguese_counterparty_eori), fixando Incoterm, moeda e jurisdição.",
-          queryCode: "SELECT c.contract_no_cn, c.incoterm_2020, c.contract_value_usd, e.company_name_en, pt.designacao_social\nFROM \"41_cn_b2b_commercial_contracts\" c\nJOIN \"35_cn_enterprises_manufacturers\" e ON c.chinese_party_uscc = e.uscc_code\nJOIN mongo_pt.\"01_pt_operadores_economicos\" pt ON c.portuguese_counterparty_eori = pt.eori_code;"
-        },
-        {
-          step: 8,
-          title: "Extração de Contratos em Prosa e Protocolos Diplomáticos PDF para SQLite",
-          fromDb: "Fonte D1 SQL & Fonte A1 MongoDB",
+          title: "Árvore 1.5 · Contrato B2B (#41) ramifica para Feiras XML, Plataforma de Macau e Corpus PDF (Fonte A2)",
+          fromDb: "Fonte D1 · SQL 3FN (China)",
           fromTable: "41_cn_b2b_commercial_contracts",
-          fromPk: "contract_no_cn = 'CN-PT-CTR-2026-001' (EORI: PT517890123)",
-          toDb: "Fonte A2 · PDFs & SQLite (Portugal)",
-          toTable: "22_pt_unstruct_contratos_comerciais_bilaterais_prosa",
-          toFk: "importer_eori + exporter_uscc → PK: doc_id = 'DOC-22-CTR-2026'",
-          passedKey: "eori_code (PT517890123) + uscc_code (91320413MA1M9Y2C4B) → doc_id (SQLite Fonte A2)",
-          relatedTables: ["23_pt_unstruct_tratados_memorandos_diplomaticos_mneg"],
-          reality: "Os exemplares em PDF dos contratos bilingues e memorandos bilaterais (Fonte A2 não estruturada) são processados via pdftotext e reconhecimento de entidades, indexando no SQLite as cláusulas penais e associando-as ao EORI e USCC das bases estruturadas.",
-          queryCode: "SELECT u.doc_id, u.importer_eori, u.exporter_uscc, u.compliance_verdict, c.contract_no_cn\nFROM sqlite_a2.\"22_pt_unstruct_contratos_comerciais_bilaterais_prosa\" u\nJOIN \"41_cn_b2b_commercial_contracts\" c\n  ON u.importer_eori = c.portuguese_counterparty_eori AND u.exporter_uscc = c.chinese_party_uscc;"
+          fromPk: "contract_no_cn = 'CN-PT-CTR-2026-001'",
+          emittedVars: ["contract_no_cn", "chinese_party_uscc", "portuguese_counterparty_eori"],
+          branches: [
+            {
+              targetId: "22_pt_unstruct_contratos_comerciais_bilaterais_prosa",
+              passedVar: "portuguese_counterparty_eori + uscc → NER PDF",
+              shortVar: "eori + uscc_code",
+              generatedPk: "PK: doc_id = 'DOC-22-CTR-2026' (SQLite)",
+              subBranches: [
+                {
+                  targetId: "102_cn_preferential_certificates_of_origin_ccpit",
+                  passedVar: "contract_no_cn → Certificado CCPIT",
+                  shortVar: "contract_no_cn",
+                  generatedPk: "PK: co_certificate_no"
+                }
+              ]
+            },
+            {
+              targetId: "61_cn_trade_fairs_exhibitions_b2b_xml",
+              passedVar: "contract_no_cn = Deal/@contractNoGenerated",
+              shortVar: "@contractNoGenerated",
+              generatedPk: "PK: @fairCode (Fonte D2 XML)",
+              subBranches: [
+                {
+                  targetId: "30_pt_unstruct_atas_reunioes_camara_comercio_ccilc",
+                  passedVar: "@contractNoGenerated + eori → Ata CCILC PDF",
+                  shortVar: "contract_no_cn",
+                  generatedPk: "PK: doc_id (SQLite)"
+                }
+              ]
+            },
+            {
+              targetId: "62_cn_macao_lusophone_platform_deals_xml",
+              passedVar: "portuguese_counterparty_eori → @portugueseEnterpriseEori",
+              shortVar: "@portugueseEnterpriseEori",
+              generatedPk: "PK: @operationId (Macau XML)",
+              subBranches: [
+                {
+                  targetId: "29_pt_unstruct_relatorios_mercado_aicep_macau",
+                  passedVar: "@portugueseEnterpriseEori → Relatório AICEP PDF",
+                  shortVar: "eori_code",
+                  generatedPk: "PK: doc_id (SQLite)"
+                }
+              ]
+            },
+            {
+              targetId: "18_pt_estatisticas_macro_ine_bportugal",
+              passedVar: "Fluxo Contratual Bilateral → Balança INE",
+              shortVar: "ano (2026)",
+              generatedPk: "PK: ano (Fonte A1 MongoDB)",
+              subBranches: [
+                {
+                  targetId: "23_pt_unstruct_tratados_memorandos_diplomaticos_mneg",
+                  passedVar: "ano + Protocolos → Memorando MNEG PDF",
+                  shortVar: "ano",
+                  generatedPk: "PK: doc_id (SQLite)"
+                }
+              ]
+            }
+          ],
+          reality: "O contrato comercial B2B (41_cn) liga simultaneamente as quatro bases de dados: envia as chaves das partes para o contrato em prosa extraído de PDF para SQLite (22_pt), liga-se aos negócios fechados nas feiras de Cantão/Xangai em XML (61_cn) e na plataforma de Macau (62_cn), e propaga-se até às atas da CCILC (30_pt), relatórios AICEP (29_pt) e tratados diplomáticos (23_pt).",
+          queryCode: "SELECT c.contract_no_cn, c.portuguese_counterparty_eori, u22.doc_id AS contrato_pdf, u30.doc_id AS ata_ccilc_pdf\nFROM \"41_cn_b2b_commercial_contracts\" c\nJOIN sqlite_a2.\"22_pt_unstruct_contratos_comerciais_bilaterais_prosa\" u22\n  ON u22.importer_eori = c.portuguese_counterparty_eori\nLEFT JOIN sqlite_a2.\"30_pt_unstruct_atas_reunioes_camara_comercio_ccilc\" u30\n  ON u30.importer_eori = c.portuguese_counterparty_eori;"
         }
       ],
       "2": [
         {
           step: 1,
-          title: "Abertura da Carta de Crédito UCP 600 (SWIFT MT700) e Apólices Sinosure / COSEC",
-          fromDb: "Fonte A1 · MongoDB (Portugal)",
-          fromTable: "67_pt_creditos_documentarios_garantias_bancarias",
-          fromPk: "numero_lc_swift_mt700 = 'LC-BCP-BOC-2026-0081'",
-          toDb: "Fonte D1 · SQL 3FN (China)",
-          toTable: "94_cn_letters_of_credit_ucp600_swift",
-          toFk: "lc_number_swift + contract_no_cn = 'CN-PT-CTR-2026-001'",
-          passedKey: "contract_no_cn (CN-PT-CTR-2026-001) + lc_number_mt700 (LC-BCP-BOC-2026-0081)",
-          relatedTables: ["41_cn_b2b_commercial_contracts", "49_cn_cargo_insurance_policies_sinosure", "68_pt_seguros_credito_exportacao_cosec"],
-          reality: "Com o contrato assinado na Etapa 1, o banco do importador em Portugal emite o Crédito Documentário irrevogável SWIFT MT700 no MongoDB (67), que é recebido pelo banco avisador na China na tabela 94_cn_letters_of_credit_ucp600_swift caucionando o embarque.",
-          queryCode: "SELECT lc_cn.lc_number_swift, lc_cn.contract_no_cn, lc_pt.banco_emissor_pt, ins.policy_no_cn\nFROM \"94_cn_letters_of_credit_ucp600_swift\" lc_cn\nJOIN mongo_pt.\"67_pt_creditos_documentarios_garantias_bancarias\" lc_pt\n  ON lc_cn.lc_number_swift = lc_pt.numero_lc_swift_mt700\nLEFT JOIN \"49_cn_cargo_insurance_policies_sinosure\" ins ON ins.contract_no_cn = lc_cn.contract_no_cn;"
-        },
-        {
-          step: 2,
-          title: "Emissão da Fatura Comercial Fapiao Normalizada em 3FN (Cabeçalho e Linhas)",
+          title: "Árvore 2.1 · O Contrato (#41 contract_no_cn) ramifica para Cartas de Crédito L/C, Seguros, Offshore e Fatura",
           fromDb: "Fonte D1 · SQL 3FN (China)",
           fromTable: "41_cn_b2b_commercial_contracts",
           fromPk: "contract_no_cn = 'CN-PT-CTR-2026-001'",
-          toDb: "Fonte D1 · SQL 3FN (China)",
-          toTable: "42_cn_commercial_invoices",
-          toFk: "contract_no_cn → PK: invoice_no = 'INV-CALB-2026-001' → 43_cn_commercial_invoice_lines",
-          passedKey: "contract_no_cn → invoice_no (INV-CALB-2026-001) + product_sku_cn → invoice_line_id",
-          relatedTables: ["43_cn_commercial_invoice_lines", "95_cn_lc_documentary_presentations_discrepancies", "96_cn_hk_macao_offshore_trading_intermediaries"],
-          reality: "O exportador chinês emite a fatura comercial Fapiao. Para respeitar a 3.ª Forma Normal (3FN), os dados gerais ficam em 42_cn_commercial_invoices e cada adição de produto (ligada a 38_cn_products_industrial_catalog por product_sku_cn) fica em 43_cn_commercial_invoice_lines.",
-          queryCode: "SELECT h.invoice_no, h.contract_no_cn, l.invoice_line_id, l.product_sku_cn, l.line_total_usd\nFROM \"42_cn_commercial_invoices\" h\nJOIN \"43_cn_commercial_invoice_lines\" l ON h.invoice_no = l.invoice_no\nWHERE h.contract_no_cn = 'CN-PT-CTR-2026-001';"
+          emittedVars: ["contract_no_cn ('CN-PT-CTR-2026-001')", "incoterm_2020 ('CIF / FOB')"],
+          branches: [
+            {
+              targetId: "94_cn_letters_of_credit_ucp600_swift",
+              passedVar: "contract_no_cn → Abertura L/C SWIFT MT700",
+              shortVar: "contract_no_cn",
+              generatedPk: "PK: lc_number_swift = 'LC-BCP-BOC-2026-0081'",
+              subBranches: [
+                {
+                  targetId: "67_pt_creditos_documentarios_garantias_bancarias",
+                  passedVar: "lc_number_mt700 = numero_lc_swift_mt700",
+                  shortVar: "lc_number_mt700",
+                  generatedPk: "PK: _id (MongoDB Portugal)"
+                },
+                {
+                  targetId: "95_cn_lc_documentary_presentations_discrepancies",
+                  passedVar: "lc_number_mt700 → Exame Documental UCP 600",
+                  shortVar: "lc_number_mt700",
+                  generatedPk: "PK: presentation_id"
+                }
+              ]
+            },
+            {
+              targetId: "49_cn_cargo_insurance_policies_sinosure",
+              passedVar: "contract_no_cn → Apólice Marítima Sinosure",
+              shortVar: "contract_no_cn",
+              generatedPk: "PK: policy_no_cn",
+              subBranches: [
+                {
+                  targetId: "68_pt_seguros_credito_exportacao_cosec",
+                  passedVar: "Cobertura Bilateral de Risco Comercial",
+                  shortVar: "apolice_cosec",
+                  generatedPk: "PK: _id (COSEC Portugal)"
+                }
+              ]
+            },
+            {
+              targetId: "96_cn_hk_macao_offshore_trading_intermediaries",
+              passedVar: "contract_no_cn → Trading Offshore HK/Macau",
+              shortVar: "contract_no_cn",
+              generatedPk: "PK: offshore_trade_id",
+              subBranches: []
+            },
+            {
+              targetId: "42_cn_commercial_invoices",
+              passedVar: "contract_no_cn → Emissão Fatura Fapiao",
+              shortVar: "contract_no_cn",
+              generatedPk: "PK: invoice_no = 'INV-CALB-2026-001'",
+              subBranches: []
+            }
+          ],
+          reality: "No início da Etapa 2, a tabela 41_cn_b2b_commercial_contracts envia a chave contract_no_cn simultaneamente para quatro tabelas financeiras e comerciais: Cartas de Crédito UCP 600 (94_cn), Apólices de Seguro Sinosure (49_cn), Intermediários Offshore em Hong Kong/Macau (96_cn) e Cabeçalho de Faturas Comerciais (42_cn). A Carta de Crédito propaga depois lc_number_mt700 para o banco em Portugal (67_pt) e para a apresentação documental (95_cn).",
+          queryCode: "SELECT c.contract_no_cn, lc.lc_number_swift, p.presentation_id, ins.policy_no_cn, inv.invoice_no\nFROM \"41_cn_b2b_commercial_contracts\" c\nLEFT JOIN \"94_cn_letters_of_credit_ucp600_swift\" lc ON lc.contract_no_cn = c.contract_no_cn\nLEFT JOIN \"95_cn_lc_documentary_presentations_discrepancies\" p ON p.lc_number_mt700 = lc.lc_number_swift\nLEFT JOIN \"49_cn_cargo_insurance_policies_sinosure\" ins ON ins.contract_no_cn = c.contract_no_cn\nLEFT JOIN \"42_cn_commercial_invoices\" inv ON inv.contract_no_cn = c.contract_no_cn;"
         },
         {
-          step: 3,
-          title: "Packing List (Paletes SSCC-18), Fumigação ISPM-15 e Plano de Estiva CLP em XML",
-          fromDb: "Fonte D1 · SQL 3FN (China)",
-          fromTable: "98_cn_packing_lists_pallet_carton_details",
-          fromPk: "packing_list_id (FK: invoice_no + batch_lot_number)",
-          toDb: "Fonte D2 · BaseX XML (China)",
-          toTable: "109_cn_container_stuffing_load_plans_clp_xml",
-          toFk: "sscc18_pallet_code = //Pallet/@sscc18 → @containerIso = 'COSU6882910'",
-          passedKey: "batch_lot_number (LOT-CALB-2026-088) → sscc18_pallet_code → @containerIso (COSU6882910)",
-          relatedTables: ["64_cn_export_packaging_fumigation_certs_xml"],
-          reality: "Transição do motor relacional (Fonte D1) para o motor documental XML (Fonte D2): as paletes seriadas SSCC-18 geradas a partir da fatura e do lote de fabrico são consolidadas no plano de estiva XML do contentor (COSU6882910) com pesagem SOLAS VGM.",
-          queryCode: "for $clp in collection('109_cn_container_stuffing_load_plans_clp_xml')//ContainerLoadPlan\nwhere $clp/@containerIso = 'COSU6882910'\nreturn <Estiva container=\"{$clp/@containerIso}\" vgmKg=\"{$clp/VerifiedGrossMass/@vgmWeightKg}\">{$clp//Pallet/@sscc18}</Estiva>"
-        },
-        {
-          step: 4,
-          title: "Inspeção Sanitária CIQ e Declaração Aduaneira de Exportação GACC (18 Dígitos)",
+          step: 2,
+          title: "Árvore 2.2 · A Fatura Comercial (#42 invoice_no) ramifica para Linhas 3FN, Packing List, GACC e SAFE",
           fromDb: "Fonte D1 · SQL 3FN (China)",
           fromTable: "42_cn_commercial_invoices",
           fromPk: "invoice_no = 'INV-CALB-2026-001'",
-          toDb: "Fonte D1 · SQL 3FN (China)",
-          toTable: "44_cn_customs_export_declarations_gacc",
-          toFk: "invoice_no → PK: gacc_entry_id_18 = '230120260000881920'",
-          passedKey: "invoice_no (INV-CALB-2026-001) → gacc_entry_id_18 (230120260000881920)",
-          relatedTables: ["46_cn_ciq_inspection_quarantine_records"],
-          reality: "Com a fatura e o contentor estivado, o despachante submete a Declaração de Exportação na Janela Única da GACC (44_cn_customs_export_declarations_gacc), que é inspecionada pela CIQ (46_cn_ciq_inspection_quarantine_records) e recebe o identificador de 18 dígitos.",
-          queryCode: "SELECT g.gacc_entry_id_18, g.invoice_no, g.fob_total_usd, ciq.ciq_inspection_id, ciq.inspection_result\nFROM \"44_cn_customs_export_declarations_gacc\" g\nJOIN \"46_cn_ciq_inspection_quarantine_records\" ciq\n  ON g.gacc_entry_id_18 = ciq.gacc_declaration_id_18;"
+          emittedVars: ["invoice_no ('INV-CALB-2026-001')", "total_amount_usd"],
+          branches: [
+            {
+              targetId: "43_cn_commercial_invoice_lines",
+              passedVar: "invoice_no + product_sku_cn → Decomposição 3FN",
+              shortVar: "invoice_no",
+              generatedPk: "PK: invoice_line_id",
+              subBranches: []
+            },
+            {
+              targetId: "98_cn_packing_lists_pallet_carton_details",
+              passedVar: "invoice_no + batch_lot_number → Paletes GS1",
+              shortVar: "invoice_no + batch_lot",
+              generatedPk: "PK: packing_list_id (sscc18_pallet_code)",
+              subBranches: [
+                {
+                  targetId: "109_cn_container_stuffing_load_plans_clp_xml",
+                  passedVar: "sscc18_pallet_code → //Pallet/@sscc18 (XML)",
+                  shortVar: "sscc18_pallet_code",
+                  generatedPk: "PK: @clpDocumentId (@containerIso)"
+                }
+              ]
+            },
+            {
+              targetId: "44_cn_customs_export_declarations_gacc",
+              passedVar: "invoice_no → Declaração Exportação GACC",
+              shortVar: "invoice_no",
+              generatedPk: "PK: gacc_entry_id_18 = '230120260000881920'",
+              subBranches: []
+            },
+            {
+              targetId: "48_cn_fx_settlements_pboc_safe",
+              passedVar: "invoice_no → Liquidação Cambial SAFE",
+              shortVar: "invoice_no",
+              generatedPk: "PK: safe_verification_no (swift_uetr)",
+              subBranches: []
+            }
+          ],
+          reality: "A fatura comercial (42_cn) distribui a sua chave primária invoice_no para quatro destinos ao mesmo tempo: as linhas de fatura normalizadas em 3FN (43_cn), a lista de empacotamento por palete (98_cn), a declaração aduaneira de exportação GACC (44_cn) e o registo cambial na SAFE (48_cn). Da lista de empacotamento (98_cn), o código seriado sscc18_pallet_code passa para o plano de estiva XML (109_cn).",
+          queryCode: "SELECT h.invoice_no, l.invoice_line_id, pk.packing_list_id, pk.sscc18_pallet_code, g.gacc_entry_id_18, fx.safe_verification_no\nFROM \"42_cn_commercial_invoices\" h\nJOIN \"43_cn_commercial_invoice_lines\" l ON l.invoice_no = h.invoice_no\nJOIN \"98_cn_packing_lists_pallet_carton_details\" pk ON pk.invoice_no = h.invoice_no\nJOIN \"44_cn_customs_export_declarations_gacc\" g ON g.invoice_no = h.invoice_no\nJOIN \"48_cn_fx_settlements_pboc_safe\" fx ON fx.invoice_no = h.invoice_no;"
+        },
+        {
+          step: 3,
+          title: "Árvore 2.3 · A Declaração GACC (#44 gacc_entry_id_18) ramifica para CIQ, CCPIT, IVA STA e 3 Modos XML",
+          fromDb: "Fonte D1 · SQL 3FN (China)",
+          fromTable: "44_cn_customs_export_declarations_gacc",
+          fromPk: "gacc_entry_id_18 = '230120260000881920'",
+          emittedVars: ["gacc_entry_id_18 ('230120260000881920')", "bill_of_lading_or_waybill_no"],
+          branches: [
+            {
+              targetId: "46_cn_ciq_inspection_quarantine_records",
+              passedVar: "gacc_entry_id_18 → gacc_declaration_id_18",
+              shortVar: "gacc_declaration_id_18",
+              generatedPk: "PK: ciq_inspection_id",
+              subBranches: []
+            },
+            {
+              targetId: "102_cn_preferential_certificates_of_origin_ccpit",
+              passedVar: "gacc_entry_id_18 → Certificado Origem CCPIT",
+              shortVar: "gacc_entry_id_18",
+              generatedPk: "PK: co_certificate_no",
+              subBranches: []
+            },
+            {
+              targetId: "47_cn_vat_export_tax_rebates_sta",
+              passedVar: "gacc_entry_id_18 → Reembolso 13% IVA STA",
+              shortVar: "gacc_entry_id_18",
+              generatedPk: "PK: rebate_claim_id",
+              subBranches: []
+            },
+            {
+              targetId: "55_cn_master_bills_of_lading_xml",
+              passedVar: "gacc_entry_id_18 → Master B/L Marítimo (XML)",
+              shortVar: "gacc_declaration_id_18",
+              generatedPk: "PK: @blNumber = 'COSU6288991104'",
+              subBranches: []
+            },
+            {
+              targetId: "56_cn_bri_railway_consignments_xml",
+              passedVar: "gacc_entry_id_18 → Comboio Yiwu-Madrid (XML)",
+              shortVar: "@trainBlockCode",
+              generatedPk: "PK: @cimSmgsNoteNo",
+              subBranches: [
+                {
+                  targetId: "57_cn_air_cargo_manifests_xml",
+                  passedVar: "gacc_entry_id_18 → Carga Aérea AWB (XML)",
+                  shortVar: "@masterAwb",
+                  generatedPk: "PK: @masterAwb"
+                }
+              ]
+            }
+          ],
+          reality: "A Declaração de Exportação GACC (44_cn) é a grande árvore aduaneira da China: a sua chave de 18 dígitos (gacc_entry_id_18) alimenta em simultâneo a inspeção sanitária CIQ (46_cn), o certificado de origem CCPIT (102_cn), o pedido de reembolso de IVA na STA (47_cn) e os três manifestos de transporte em BaseX XML: marítimo (55_cn), ferroviário (56_cn) e aéreo (57_cn).",
+          queryCode: "SELECT g.gacc_entry_id_18, ciq.ciq_inspection_id, co.co_certificate_no, r.rebate_claim_id, bl.bl_number\nFROM \"44_cn_customs_export_declarations_gacc\" g\nLEFT JOIN \"46_cn_ciq_inspection_quarantine_records\" ciq ON ciq.gacc_declaration_id_18 = g.gacc_entry_id_18\nLEFT JOIN \"102_cn_preferential_certificates_of_origin_ccpit\" co ON co.gacc_entry_id_18 = g.gacc_entry_id_18\nLEFT JOIN \"47_cn_vat_export_tax_rebates_sta\" r ON r.gacc_entry_id_18 = g.gacc_entry_id_18\nLEFT JOIN xml_d2.\"55_cn_master_bills_of_lading_xml\" bl ON bl.bl_number = g.bill_of_lading_or_waybill_no;"
+        },
+        {
+          step: 4,
+          title: "Árvore 2.4 · Portos Chineses (#53 @unlocode) ramificam para Gate-In TOS, Navios, Transbordo e EU ETS",
+          fromDb: "Fonte D2 · BaseX XML (China)",
+          fromTable: "53_cn_seaports_terminals_xml",
+          fromPk: "@unlocode = 'CNSHA' / 'CNNGB' (@terminalId)",
+          emittedVars: ["@unlocode ('CNSHA')", "@terminalId"],
+          branches: [
+            {
+              targetId: "112_cn_port_terminal_gate_events_tos_xml",
+              passedVar: "@terminalId + @portUnlocode → Gate-In Ótico",
+              shortVar: "@portUnlocode",
+              generatedPk: "PK: @tosEventId",
+              subBranches: []
+            },
+            {
+              targetId: "54_cn_maritime_vessels_voyages_xml",
+              passedVar: "@unlocode → Escala do Navio Porta-Contentores",
+              shortVar: "@unlocode",
+              generatedPk: "PK: @voyageId (@vesselImo = '9839131')",
+              subBranches: [
+                {
+                  targetId: "55_cn_master_bills_of_lading_xml",
+                  passedVar: "@vesselImo ('9839131') → Emissão Master B/L",
+                  shortVar: "@vesselImo",
+                  generatedPk: "PK: @blNumber = 'COSU6288991104'"
+                },
+                {
+                  targetId: "113_cn_maritime_transshipment_hub_events_xml",
+                  passedVar: "@vesselImo → MotherVesselImo (Transbordo)",
+                  shortVar: "MotherVesselImo",
+                  generatedPk: "PK: @transshipmentId"
+                },
+                {
+                  targetId: "71_pt_emissoes_maritimas_eu_ets_mrv",
+                  passedVar: "@vesselImo → imo_navio (Carbono Marítimo UE)",
+                  shortVar: "imo_navio",
+                  generatedPk: "PK: imo_navio = '9839131' (Fonte A1)"
+                }
+              ]
+            }
+          ],
+          reality: "Na base documental BaseX XML (Fonte D2), o porto chinês (53_cn) envia @unlocode e @terminalId para os eventos de pórtico TOS (112_cn) e para a viagem do navio (54_cn). A viagem do navio propaga de seguida o código @vesselImo (9839131) em árvore para o Master B/L (55_cn), para os eventos de transbordo (113_cn) e para o registo europeu de emissões EU ETS em Portugal (71_pt).",
+          queryCode: "for $p in collection('53_cn_seaports_terminals_xml')//Seaport\nlet $v := collection('54_cn_maritime_vessels_voyages_xml')//VesselVoyage[LoadingPort/@unlocode = $p/@unlocode]\nlet $bl := collection('55_cn_master_bills_of_lading_xml')//MasterBillOfLading[@vesselImo = $v/@vesselImo]\nreturn <RotaPortuaria port=\"{$p/@unlocode}\" imo=\"{$v/@vesselImo}\" bl=\"{$bl/@blNumber}\"/>"
         },
         {
           step: 5,
-          title: "Entrada no Terminal Portuário Chinês (TOS Gate-In) e Escala do Navio em XML",
-          fromDb: "Fonte D2 · BaseX XML (China)",
-          fromTable: "53_cn_seaports_terminals_xml",
-          fromPk: "@unlocode = 'CNSHA' / 'CNNGB' (Xangai / Ningbo)",
-          toDb: "Fonte D2 · BaseX XML (China)",
-          toTable: "54_cn_maritime_vessels_voyages_xml",
-          toFk: "@unlocode + @tosEventId → PK: @voyageId = 'VOY-COSCO-2026-W12' (@vesselImo = '9839131')",
-          passedKey: "@unlocode (CNSHA) + @containerIso (COSU6882910) → @vesselImo (9839131)",
-          relatedTables: ["112_cn_port_terminal_gate_events_tos_xml"],
-          reality: "O contentor COSU6882910 passa pelo pórtico ótico do terminal portuário chinês (112_cn_port_terminal_gate_events_tos_xml) e é embarcado na viagem marítima registada em 54_cn_maritime_vessels_voyages_xml com o código mundial IMO do navio.",
-          queryCode: "for $v in collection('54_cn_maritime_vessels_voyages_xml')//VesselVoyage\nlet $tos := collection('112_cn_port_terminal_gate_events_tos_xml')//GateEvent[@vesselImo = $v/@vesselImo]\nreturn <Embarque voyage=\"{$v/@voyageId}\" imo=\"{$v/@vesselImo}\" port=\"{$v/LoadingPort/@unlocode}\"/>"
-        },
-        {
-          step: 6,
-          title: "Emissão do Master Bill of Lading (MBL), House B/L NVOCC e Manifestos Ferroviário/Aéreo",
-          fromDb: "Fonte D1 SQL 3FN & Fonte D2 XML",
-          fromTable: "44_cn_customs_export_declarations_gacc",
-          fromPk: "gacc_entry_id_18 = '230120260000881920' + @vesselImo = '9839131'",
-          toDb: "Fonte D2 · BaseX XML (China)",
-          toTable: "55_cn_master_bills_of_lading_xml",
-          toFk: "gacc_declaration_id_18 + @vesselImo → PK: @blNumber = 'COSU6288991104'",
-          passedKey: "gacc_entry_id_18 + @vesselImo (9839131) → @blNumber (COSU6288991104)",
-          relatedTables: ["97_cn_freight_forwarders_nvocc_customs_brokers", "110_cn_house_bills_of_lading_hbl_consolidation_xml", "56_cn_bri_railway_consignments_xml", "57_cn_air_cargo_manifests_xml"],
-          reality: "O armador emite o conhecimento de embarque marítimo Master B/L em XML (@blNumber = COSU6288991104) e os transitários NVOCC emitem os House B/Ls (ou cartas CIM/SMGS no comboio Yiwu-Madrid e Master AWB na carga aérea), criando a chave de transporte internacional.",
-          queryCode: "SELECT g.gacc_entry_id_18, g.bill_of_lading_or_waybill_no, x.bl_number, x.container_iso\nFROM \"44_cn_customs_export_declarations_gacc\" g\nJOIN xml_d2.\"55_cn_master_bills_of_lading_xml\" x\n  ON g.bill_of_lading_or_waybill_no = x.bl_number;"
-        },
-        {
-          step: 7,
-          title: "Travessia Oceânica, Transbordo em Hub, Telemetria IoT e E-Commerce CBEC",
+          title: "Árvore 2.5 · O Master B/L (#55 @blNumber) ramifica para House B/L, Fumigação, IoT, Sobrestadias e CBEC",
           fromDb: "Fonte D2 · BaseX XML (China)",
           fromTable: "55_cn_master_bills_of_lading_xml",
-          fromPk: "@blNumber = 'COSU6288991104' (@containerIso = 'COSU6882910')",
-          toDb: "Fonte D2 · BaseX XML (China)",
-          toTable: "59_cn_smart_containers_iot_telemetry_xml",
-          toFk: "Container/@isoNumber + @blNumber → PK: @containerIso = 'COSU6882910'",
-          passedKey: "@blNumber (COSU6288991104) + @containerIso (COSU6882910) → Telemetria GPS/Frio IoT",
-          relatedTables: ["113_cn_maritime_transshipment_hub_events_xml", "114_cn_demurrage_detention_container_equipment_xml", "58_cn_cross_border_ecommerce_parcels_xml", "111_cn_cbec_three_stream_matching_9610_1210_xml"],
-          reality: "Durante a navegação entre a China e a Europa, o contentor inteligente transmite séries temporais XML de temperatura, humidade, choque e localização GPS (59_cn_smart_containers_iot_telemetry_xml), registando também eventuais transbordos intermédios.",
-          queryCode: "for $iot in collection('59_cn_smart_containers_iot_telemetry_xml')//SmartContainerTelemetry\nwhere $iot/@containerIso = 'COSU6882910'\nreturn $iot/SensorReadings/Reading"
-        },
-        {
-          step: 8,
-          title: "Reembolso Fiscal de IVA à Exportação (STA) e Registo Cambial SAFE / PBOC",
-          fromDb: "Fonte D1 · SQL 3FN (China)",
-          fromTable: "44_cn_customs_export_declarations_gacc",
-          fromPk: "gacc_entry_id_18 = '230120260000881920' + invoice_no = 'INV-CALB-2026-001'",
-          toDb: "Fonte D1 · SQL 3FN (China)",
-          toTable: "48_cn_fx_settlements_pboc_safe",
-          toFk: "invoice_no → PK: safe_verification_no (swift_uetr_or_cips_id)",
-          passedKey: "gacc_entry_id_18 → rebate_claim_id (STA) & invoice_no → swift_uetr_or_cips_id (SAFE)",
-          relatedTables: ["47_cn_vat_export_tax_rebates_sta"],
-          reality: "Confirmada a saída física da mercadoria do território aduaneiro chinês, a declaração GACC habilita o reembolso de 13% de IVA na Administração Tributária (STA) e prepara o dossiê cambial na SAFE para reconciliação com a transferência SWIFT de Portugal.",
-          queryCode: "SELECT g.gacc_entry_id_18, r.rebate_claim_id, r.rebate_amount_cny, fx.safe_verification_no, fx.swift_uetr_or_cips_id\nFROM \"44_cn_customs_export_declarations_gacc\" g\nJOIN \"47_cn_vat_export_tax_rebates_sta\" r ON g.gacc_entry_id_18 = r.gacc_entry_id_18\nJOIN \"48_cn_fx_settlements_pboc_safe\" fx ON g.invoice_no = fx.invoice_no;"
+          fromPk: "@blNumber = 'COSU6288991104' (Container/@isoNumber = 'COSU6882910')",
+          emittedVars: ["@blNumber ('COSU6288991104')", "Container/@isoNumber ('COSU6882910')"],
+          branches: [
+            {
+              targetId: "110_cn_house_bills_of_lading_hbl_consolidation_xml",
+              passedVar: "@blNumber → @masterBlRef (+ #97 @nvoccCode)",
+              shortVar: "@masterBlRef",
+              generatedPk: "PK: @hblNumber",
+              subBranches: []
+            },
+            {
+              targetId: "64_cn_export_packaging_fumigation_certs_xml",
+              passedVar: "@blNumber + @containerIso → Certificado ISPM-15",
+              shortVar: "@blNumber + @containerIso",
+              generatedPk: "PK: @certificateId",
+              subBranches: []
+            },
+            {
+              targetId: "59_cn_smart_containers_iot_telemetry_xml",
+              passedVar: "Container/@isoNumber + @blNumber → Sensores IoT",
+              shortVar: "@containerIso",
+              generatedPk: "PK: @containerIso = 'COSU6882910'",
+              subBranches: []
+            },
+            {
+              targetId: "114_cn_demurrage_detention_container_equipment_xml",
+              passedVar: "@blNumber + @containerIso → Controlo EIR",
+              shortVar: "@containerIso",
+              generatedPk: "PK: @eirRecordId",
+              subBranches: [
+                {
+                  targetId: "70_pt_sobrestadias_contentores_demurrage_detention",
+                  passedVar: "@containerIso → numero_contentor_iso (Sines)",
+                  shortVar: "numero_contentor_iso",
+                  generatedPk: "PK: _id (Fonte A1 MongoDB)"
+                }
+              ]
+            },
+            {
+              targetId: "58_cn_cross_border_ecommerce_parcels_xml",
+              passedVar: "Remessas Expresso S10 → E-Commerce CBEC",
+              shortVar: "@s10TrackingNo",
+              generatedPk: "PK: Parcel/@s10TrackingNo",
+              subBranches: [
+                {
+                  targetId: "111_cn_cbec_three_stream_matching_9610_1210_xml",
+                  passedVar: "@s10TrackingNo → LogisticsStream/@s10No",
+                  shortVar: "@s10TrackingNo",
+                  generatedPk: "PK: @gaccCbecInventoryNo"
+                }
+              ]
+            }
+          ],
+          reality: "O Master Bill of Lading (55_cn) emite o par (@blNumber, @containerIso) simultaneamente para quatro contentores XML — House B/L consolidado (110_cn), certificado de fumigação de madeiras (64_cn), telemetria IoT de cadeia de frio (59_cn) e registo de equipamento EIR (114_cn) — que por sua vez envia numero_contentor_iso para a coleção de sobrestadias em Portugal (70_pt).",
+          queryCode: "for $mbl in collection('55_cn_master_bills_of_lading_xml')//MasterBillOfLading\nwhere $mbl/@blNumber = 'COSU6288991104'\nlet $iot := collection('59_cn_smart_containers_iot_telemetry_xml')//SmartContainerTelemetry[@blNumber = $mbl/@blNumber]\nlet $hbl := collection('110_cn_house_bills_of_lading_hbl_consolidation_xml')//HouseBillOfLading[@masterBlRef = $mbl/@blNumber]\nreturn <ArvoreBL bl=\"{$mbl/@blNumber}\" container=\"{$iot/@containerIso}\" hblCount=\"{count($hbl)}\"/>"
         }
       ],
       "3": [
         {
           step: 1,
-          title: "Controlo de Segurança Pré-Chegada ICS2 Release 3 (Declaração Sumária ENS)",
+          title: "Árvore 3.1 · Embarque XML (#55 / #109) ramifica na chegada a Portugal para ICS2, ADT e JUL Sines (#05)",
           fromDb: "Fonte D2 · BaseX XML (China)",
-          fromTable: "109_cn_container_stuffing_load_plans_clp_xml",
-          fromPk: "@containerIso = 'COSU6882910' + @blNumber = 'COSU6288991104'",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "72_pt_declaracoes_sumarias_entrada_ics2_ens",
-          toFk: "bl_master_ref + contentor_iso → mrn_ics2_entrada = '26PTICS20009182731'",
-          passedKey: "@blNumber (COSU6288991104) + @containerIso (COSU6882910) → mrn_ics2_entrada",
-          relatedTables: ["55_cn_master_bills_of_lading_xml"],
-          reality: "Antes de o navio entrar nas águas da União Europeia, os dados do plano de estiva XML e do Master B/L chinês atravessam a fronteira tecnológica para o MongoDB em Portugal (72_pt_declaracoes_sumarias_entrada_ics2_ens), gerando o MRN de segurança ICS2.",
-          queryCode: "db.getCollection('72_pt_declaracoes_sumarias_entrada_ics2_ens').find({\n  referencia_bl_master: 'COSU6288991104',\n  contentores_iso: 'COSU6882910'\n});"
+          fromTable: "55_cn_master_bills_of_lading_xml",
+          fromPk: "@blNumber = 'COSU6288991104' (@containerIso = 'COSU6882910')",
+          emittedVars: ["@blNumber ('COSU6288991104')", "@containerIso ('COSU6882910')", "@vesselImo ('9839131')"],
+          branches: [
+            {
+              targetId: "72_pt_declaracoes_sumarias_entrada_ics2_ens",
+              passedVar: "@blNumber + @containerIso → Segurança ICS2 ENS",
+              shortVar: "@blNumber + @containerIso",
+              generatedPk: "PK: mrn_ics2_entrada = '26PTICS20009182731'",
+              subBranches: [
+                {
+                  targetId: "75_pt_deposito_temporario_armazens_adt",
+                  passedVar: "mrn_ics2_entrada → Caução Armazém ADT",
+                  shortVar: "mrn_ics2_entrada",
+                  generatedPk: "PK: _id (Depósito Temporário)"
+                }
+              ]
+            },
+            {
+              targetId: "05_pt_escalas_navios_manifestos_sines",
+              passedVar: "@blNumber → numero_bl_master (+ #02 PTSIN)",
+              shortVar: "numero_bl_master",
+              generatedPk: "PK: numero_escala_jul = 'JUL-PTSIN-2026-0412'",
+              subBranches: [
+                {
+                  targetId: "73_pt_janela_unica_logistica_jul_operacoes",
+                  passedVar: "numero_escala_jul → Despacho Portuário JUL",
+                  shortVar: "numero_escala_jul",
+                  generatedPk: "PK: _id (Operação JUL)"
+                },
+                {
+                  targetId: "02_pt_infraestruturas_portuarias_terminais",
+                  passedVar: "un_locode ('PTSIN') → Terminal XXI Sines",
+                  shortVar: "un_locode ('PTSIN')",
+                  generatedPk: "PK: un_locode = 'PTSIN'"
+                }
+              ]
+            },
+            {
+              targetId: "06_pt_comboios_carga_iberia_europa",
+              passedVar: "@cimSmgsNoteNo → carta_porte_cim_smgs",
+              shortVar: "carta_porte_cim_smgs",
+              generatedPk: "PK: id_comboio_uic",
+              subBranches: []
+            },
+            {
+              targetId: "07_pt_carga_aerea_aeroportos",
+              passedVar: "@masterAwb → awb_number (Lisboa/Porto)",
+              shortVar: "awb_number",
+              generatedPk: "PK: awb_number",
+              subBranches: []
+            }
+          ],
+          reality: "Ao chegar à fronteira portuguesa, os manifestos XML da China ramificam em árvore para o MongoDB (Fonte A1): o Master B/L (55_cn) e o plano de estiva (109_cn) enviam @blNumber e @containerIso em simultâneo para a declaração pré-chegada ICS2 (72_pt) — que alimenta o Armazém de Depósito Temporário (75_pt) — e para a escala no Porto de Sines (05_pt), que aciona a Janela Única Logística (73_pt).",
+          queryCode: "SELECT s.numero_escala_jul, s.numero_bl_master, ics.mrn_ics2_entrada, adt.codigo_armazem_adt, jul.estado_operacao_jul\nFROM mongo_pt.\"05_pt_escalas_navios_manifestos_sines\" s\nJOIN mongo_pt.\"72_pt_declaracoes_sumarias_entrada_ics2_ens\" ics ON ics.referencia_bl_master = s.numero_bl_master\nLEFT JOIN mongo_pt.\"75_pt_deposito_temporario_armazens_adt\" adt ON adt.mrn_ics2_entrada = ics.mrn_ics2_entrada\nLEFT JOIN mongo_pt.\"73_pt_janela_unica_logistica_jul_operacoes\" jul ON jul.numero_escala_jul = s.numero_escala_jul;"
         },
         {
           step: 2,
-          title: "Atracação no Porto de Sines, Manifesto Marítimo e Janela Única Logística (JUL)",
-          fromDb: "Fonte D2 XML & Fonte A1 MongoDB",
-          fromTable: "55_cn_master_bills_of_lading_xml",
-          fromPk: "@blNumber = 'COSU6288991104' + un_locode = 'PTSIN'",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "05_pt_escalas_navios_manifestos_sines",
-          toFk: "referencia_bl_master + porto_escala_unlocode → PK: numero_escala_jul = 'JUL-PTSIN-2026-0412'",
-          passedKey: "@blNumber (COSU6288991104) + imo_navio (9839131) + PTSIN → numero_escala_jul",
-          relatedTables: ["02_pt_infraestruturas_portuarias_terminais", "73_pt_janela_unica_logistica_jul_operacoes", "71_pt_emissoes_maritimas_eu_ets_mrv", "06_pt_comboios_carga_iberia_europa", "07_pt_carga_aerea_aeroportos"],
-          reality: "O navio atraca no Terminal XXI em Sines (PTSIN). A Janela Única Logística (JUL) valida o número IMO do navio, o manifesto de carga B/L e o contentor ISO, registando simultaneamente as emissões carbónicas marítimas EU ETS MRV.",
-          queryCode: "SELECT s.numero_escala_jul, s.imo_navio, s.porto_unlocode, j.estado_operacao_jul, ets.toneladas_co2_ets\nFROM mongo_pt.\"05_pt_escalas_navios_manifestos_sines\" s\nJOIN mongo_pt.\"73_pt_janela_unica_logistica_jul_operacoes\" j ON s.numero_escala_jul = j.numero_escala_jul\nLEFT JOIN mongo_pt.\"71_pt_emissoes_maritimas_eu_ets_mrv\" ets ON s.imo_navio = ets.imo_navio;"
+          title: "Árvore 3.2 · Pauta TARIC (#03) e Operador (#01) ramificam para Anti-Dumping, Contingentes, BTI, Cauções e DAU",
+          fromDb: "Fonte A1 · MongoDB (Portugal)",
+          fromTable: "03_pt_pauta_aduaneira_taric",
+          fromPk: "codigo_taric_10 = '8507600090' (+ #01 eori_code = 'PT517890123')",
+          emittedVars: ["codigo_taric_10 ('8507600090')", "eori_code ('PT517890123')"],
+          branches: [
+            {
+              targetId: "79_pt_medidas_defesa_comercial_antidumping_ue",
+              passedVar: "codigo_taric_10 → Taxa Compensatória UE (C903)",
+              shortVar: "codigo_taric_10",
+              generatedPk: "PK: codigo_taric_10 (C903)",
+              subBranches: [
+                {
+                  targetId: "103_cn_customs_tariff_quotas_antidumping_mofcom",
+                  passedVar: "Simetria Bilateral Tarifária HS10",
+                  shortVar: "hs_code_10_cn",
+                  generatedPk: "PK: measure_record_id (Fonte D1)"
+                }
+              ]
+            },
+            {
+              targetId: "80_pt_contingentes_pautais_suspensoes_autonomas",
+              passedVar: "codigo_taric_10 → Quota Tarifária Erga Omnes",
+              shortVar: "codigo_taric_10",
+              generatedPk: "PK: codigo_taric_10",
+              subBranches: []
+            },
+            {
+              targetId: "82_pt_informacoes_pautais_vinculativas_ipv_bti",
+              passedVar: "eori_code + codigo_taric_10 → Decisão BTI",
+              shortVar: "titular_eori + taric",
+              generatedPk: "PK: numero_decisao_bti",
+              subBranches: [
+                {
+                  targetId: "105_cn_advance_rulings_classification_valuation_gacc",
+                  passedVar: "BTI TARIC 10D ↔ GACC Advance Ruling",
+                  shortVar: "ruling_decision_no",
+                  generatedPk: "PK: ruling_decision_no (Fonte D1)"
+                }
+              ]
+            },
+            {
+              targetId: "81_pt_caucoes_garantias_aduaneiras_at",
+              passedVar: "eori_code → titular_eori (Garantia Global AT)",
+              shortVar: "titular_eori",
+              generatedPk: "PK: grn_garantia_aduaneira",
+              subBranches: [
+                {
+                  targetId: "104_cn_customs_tax_guarantees_consolidated_bonds",
+                  passedVar: "Garantia Aduaneira Consolidada GACC",
+                  shortVar: "guarantee_bond_no",
+                  generatedPk: "PK: guarantee_bond_no (Fonte D1)"
+                }
+              ]
+            },
+            {
+              targetId: "04_pt_declaracoes_aduaneiras_dau",
+              passedVar: "codigo_taric_10 + eori_code + #69 Despachante",
+              shortVar: "codigo_taric_10 + eori",
+              generatedPk: "PK: mrn_codigo = '26PT000395IM008801'",
+              subBranches: [
+                {
+                  targetId: "84_pt_declaracoes_simplificadas_ecommerce_stada_h7",
+                  passedVar: "Via Simplificada STADA-H7 (#16 IOSS)",
+                  shortVar: "declaracao_h7_id",
+                  generatedPk: "PK: _id (STADA-H7)"
+                }
+              ]
+            }
+          ],
+          reality: "Antes de liquidar o DAU, a Pauta TARIC (03_pt) e o Operador (01_pt) abrem em árvore para cinco subsistemas: medidas anti-dumping UE (79_pt), contingentes pautais (80_pt), Informações Pautais Vinculativas BTI (82_pt ↔ 105_cn), Garantias Aduaneiras (81_pt ↔ 104_cn) e, finalmente, a Declaração Aduaneira DAU (04_pt) submetida pelo Despachante Oficial (69_pt).",
+          queryCode: "SELECT t.codigo_taric_10, ad.codigo_adicional_taric, q.numero_ordem_contingente, bti.numero_decisao_bti, dau.mrn_codigo\nFROM mongo_pt.\"03_pt_pauta_aduaneira_taric\" t\nLEFT JOIN mongo_pt.\"79_pt_medidas_defesa_comercial_antidumping_ue\" ad ON ad.codigo_taric_10 = t.codigo_taric_10\nLEFT JOIN mongo_pt.\"80_pt_contingentes_pautais_suspensoes_autonomas\" q ON q.codigo_taric_10 = t.codigo_taric_10\nLEFT JOIN mongo_pt.\"82_pt_informacoes_pautais_vinculativas_ipv_bti\" bti ON bti.codigo_taric_10 = t.codigo_taric_10\nLEFT JOIN mongo_pt.\"04_pt_declaracoes_aduaneiras_dau\" dau ON dau.codigo_taric_10 = t.codigo_taric_10;"
         },
         {
           step: 3,
-          title: "Descarga para Armazém de Depósito Temporário (ADT) e Controlo de Sobrestadias",
-          fromDb: "Fonte A1 · MongoDB (Portugal)",
-          fromTable: "72_pt_declaracoes_sumarias_entrada_ics2_ens",
-          fromPk: "mrn_ics2_entrada = '26PTICS20009182731'",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "75_pt_deposito_temporario_armazens_adt",
-          toFk: "mrn_ics2_entrada + numero_contentor_iso ('COSU6882910')",
-          passedKey: "mrn_ics2_entrada + numero_contentor_iso (COSU6882910) → Registo ADT & Demurrage",
-          relatedTables: ["70_pt_sobrestadias_contentores_demurrage_detention", "114_cn_demurrage_detention_container_equipment_xml"],
-          reality: "Descarregado do navio, o contentor fica caucionado em Armazém de Depósito Temporário (75_pt_deposito_temporario_armazens_adt) ligado ao MRN do ICS2, enquanto o sistema monitoriza os dias livres de Demurrage & Detention (70_pt ↔ 114_cn).",
-          queryCode: "db.getCollection('75_pt_deposito_temporario_armazens_adt').aggregate([\n  { $lookup: { from: '70_pt_sobrestadias_contentores_demurrage_detention', localField: 'numero_contentor_iso', foreignField: 'numero_contentor_iso', as: 'sobrestadia' } }\n]);"
-        },
-        {
-          step: 4,
-          title: "Harmonização Pautal pela Raiz HS6, Contingentes e Taxas Anti-Dumping (C903)",
-          fromDb: "Fonte D1 · SQL 3FN (China)",
-          fromTable: "37_cn_hs_tariff_schedule_gacc",
-          fromPk: "hs_code_10_cn = '8507600090' (Raiz OMA: hs_code_6_wco = '850760')",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "03_pt_pauta_aduaneira_taric",
-          toFk: "SUBSTR(codigo_taric_10,1,6) = '850760' → PK: codigo_taric_10 = '8507600090'",
-          passedKey: "Raiz Canónica HS6 ('850760') → codigo_taric_10 ('8507600090') + Código Adicional C903",
-          relatedTables: ["79_pt_medidas_defesa_comercial_antidumping_ue", "80_pt_contingentes_pautais_suspensoes_autonomas", "82_pt_informacoes_pautais_vinculativas_ipv_bti", "103_cn_customs_tariff_quotas_antidumping_mofcom", "105_cn_advance_rulings_classification_valuation_gacc"],
-          reality: "Para resolver o conflito entre os 10 dígitos GACC da China e os 10 dígitos TARIC da União Europeia, a ponte pautal une as tabelas pela raiz mundial de 6 dígitos (HS6 = 850760) e apura os direitos convencionais, contingentes e taxas anti-dumping UE (79_pt).",
-          queryCode: "SELECT cn.hs_code_10_cn, pt.codigo_taric_10, pt.taxa_direitos_terceiros_pct, ad.taxa_antidumping_pct\nFROM \"37_cn_hs_tariff_schedule_gacc\" cn\nJOIN mongo_pt.\"03_pt_pauta_aduaneira_taric\" pt\n  ON SUBSTR(pt.codigo_taric_10, 1, 6) = cn.hs_code_6_wco\nLEFT JOIN mongo_pt.\"79_pt_medidas_defesa_comercial_antidumping_ue\" ad\n  ON pt.codigo_taric_10 = ad.codigo_taric_10;"
-        },
-        {
-          step: 5,
-          title: "Submissão da Declaração Aduaneira DAU / STADA (Nó Central de Desalfandegamento)",
-          fromDb: "Fontes D1, D2 & A1",
-          fromTable: "01_pt_operadores_economicos",
-          fromPk: "eori_code ('PT517890123') + @blNumber ('COSU6288991104') + codigo_taric_10 ('8507600090')",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "04_pt_declaracoes_aduaneiras_dau",
-          toFk: "PK: mrn_codigo = '26PT000395IM008801' (Valor CIF EUR e Massa em kg = Jin × 0,5)",
-          passedKey: "eori_code + referencia_bl_awb_cmr + codigo_taric_10 → mrn_codigo (26PT000395IM008801)",
-          relatedTables: ["69_pt_transitarios_despachantes_oficiais_cdo", "81_pt_caucoes_garantias_aduaneiras_at", "16_pt_encomendas_ecommerce_consumidores_ioss", "84_pt_declaracoes_simplificadas_ecommerce_stada_h7", "104_cn_customs_tax_guarantees_consolidated_bonds"],
-          reality: "Todas as chaves convergem para a coleção central 04_pt_declaracoes_aduaneiras_dau: o EORI do operador, o B/L vindo do XML chinês, a declaração de exportação GACC (convertendo FOB USD para CIF EUR e Jin para kg) e o código TARIC, gerando o MRN aduaneiro.",
-          queryCode: "SELECT dau.mrn_codigo, dau.eori_importador_exportador, dau.referencia_bl_awb_cmr, gacc.gacc_entry_id_18,\n       (gacc.fob_total_usd + dau.frete_seguro_eur) AS valor_aduaneiro_cif_reconciliado\nFROM mongo_pt.\"04_pt_declaracoes_aduaneiras_dau\" dau\nJOIN \"44_cn_customs_export_declarations_gacc\" gacc\n  ON dau.referencia_bl_awb_cmr = gacc.bill_of_lading_or_waybill_no;"
-        },
-        {
-          step: 6,
-          title: "Controlos Sanitários TRACES-NT (CHED), Impostos EMCS (e-DA) e Importação GACC",
+          title: "Árvore 3.3 · O DAU (#04 mrn_codigo) ramifica para TRACES-NT, EMCS, Trânsito NCTS T1, Entrepostos e e-Fatura",
           fromDb: "Fonte A1 · MongoDB (Portugal)",
           fromTable: "04_pt_declaracoes_aduaneiras_dau",
           fromPk: "mrn_codigo = '26PT000395IM008801'",
-          toDb: "Fonte A1 MongoDB & Fonte D1/D2 China",
-          toTable: "76_pt_controlos_fronteiricos_traces_nt_ched",
-          toFk: "mrn_dau_associado = '26PT000395IM008801' & gacc_import_id_18",
-          passedKey: "mrn_codigo (26PT000395IM008801) → mrn_dau_associado (TRACES-NT CHED & EMCS)",
-          relatedTables: ["77_pt_impostos_especiais_consumo_emcs_iec", "45_cn_customs_import_declarations_gacc", "63_cn_bonded_warehouse_inventories_xml", "107_cn_excise_consumption_tax_sta", "108_cn_ipr_customs_protection_recordations", "116_cn_cold_chain_sanitary_traceability_codes_xml"],
-          reality: "O MRN do DAU aciona a validação sanitária de fronteira no sistema europeu TRACES-NT (documento CHED) e, nas exportações portuguesas de vinho e azeite para a China, cruza o e-DA do sistema EMCS com a Declaração de Importação GACC (45_cn) e o código de frio (116_cn).",
-          queryCode: "SELECT d.mrn_codigo, c.numero_ched_traces, e.codigo_arc_ead, cn_imp.gacc_import_id_18\nFROM mongo_pt.\"04_pt_declaracoes_aduaneiras_dau\" d\nLEFT JOIN mongo_pt.\"76_pt_controlos_fronteiricos_traces_nt_ched\" c ON d.mrn_codigo = c.mrn_dau_associado\nLEFT JOIN mongo_pt.\"77_pt_impostos_especiais_consumo_emcs_iec\" e ON d.mrn_codigo = e.mrn_dau_associado\nLEFT JOIN \"45_cn_customs_import_declarations_gacc\" cn_imp ON d.referencia_bl_awb_cmr = cn_imp.bill_of_lading_no;"
+          emittedVars: ["mrn_codigo ('26PT000395IM008801')", "numero_contentor_iso ('COSU6882910')"],
+          branches: [
+            {
+              targetId: "76_pt_controlos_fronteiricos_traces_nt_ched",
+              passedVar: "mrn_codigo → mrn_dau_associado (CHED)",
+              shortVar: "mrn_dau_associado",
+              generatedPk: "PK: numero_ched_traces",
+              subBranches: []
+            },
+            {
+              targetId: "77_pt_impostos_especiais_consumo_emcs_iec",
+              passedVar: "mrn_codigo → mrn_dau_associado (e-DA Álcool)",
+              shortVar: "mrn_dau_associado",
+              generatedPk: "PK: codigo_arc_ead",
+              subBranches: [
+                {
+                  targetId: "107_cn_excise_consumption_tax_sta",
+                  passedVar: "EMCS e-DA ↔ STA Imposto de Consumo China",
+                  shortVar: "consumption_tax_id",
+                  generatedPk: "PK: consumption_tax_id (Fonte D1)"
+                }
+              ]
+            },
+            {
+              targetId: "74_pt_transito_aduaneiro_ncts_t1_t2",
+              passedVar: "mrn_codigo → mrn_dau_destino_final (T1)",
+              shortVar: "mrn_dau_destino_final",
+              generatedPk: "PK: mrn_transito_ncts",
+              subBranches: []
+            },
+            {
+              targetId: "08_pt_entrepostos_aduaneiros_zonas_francas",
+              passedVar: "mrn_codigo → mrn_entrada (Regime 71)",
+              shortVar: "mrn_entrada",
+              generatedPk: "PK: codigo_entreposto_at",
+              subBranches: []
+            },
+            {
+              targetId: "09_pt_transporte_rodoviario_nacional_efatura",
+              passedVar: "numero_contentor_iso ('COSU6882910') + mrn",
+              shortVar: "numero_contentor_iso",
+              generatedPk: "PK: codigo_at_doc_transporte",
+              subBranches: [
+                {
+                  targetId: "15_pt_distribuicao_retalho_bazar_portugal",
+                  passedVar: "mrn_codigo → mrn_dau (Rede Grossista/Retalho)",
+                  shortVar: "mrn_dau",
+                  generatedPk: "PK: nif_distribuidor"
+                }
+              ]
+            }
+          ],
+          reality: "A coleção 04_pt_declaracoes_aduaneiras_dau é o maior nó em árvore de Portugal: assim que o mrn_codigo (26PT000395IM008801) é emitido, passa em simultâneo essa variável para os controlos sanitários TRACES-NT (76_pt), para os impostos especiais EMCS (77_pt), para o trânsito NCTS T1 (74_pt), para os entrepostos aduaneiros (08_pt) e para o transporte nacional e-Fatura (09_pt), que abastece a distribuição retalhista (15_pt).",
+          queryCode: "db.getCollection('04_pt_declaracoes_aduaneiras_dau').aggregate([\n  { $match: { mrn_codigo: '26PT000395IM008801' } },\n  { $lookup: { from: '76_pt_controlos_fronteiricos_traces_nt_ched', localField: 'mrn_codigo', foreignField: 'mrn_dau_associado', as: 'ched' } },\n  { $lookup: { from: '74_pt_transito_aduaneiro_ncts_t1_t2', localField: 'mrn_codigo', foreignField: 'mrn_dau_destino_final', as: 'ncts' } },\n  { $lookup: { from: '08_pt_entrepostos_aduaneiros_zonas_francas', localField: 'mrn_codigo', foreignField: 'mrn_entrada', as: 'entreposto' } },\n  { $lookup: { from: '09_pt_transporte_rodoviario_nacional_efatura', localField: 'numero_contentor_iso', foreignField: 'numero_contentor_iso', as: 'efatura' } }\n]);"
         },
         {
-          step: 7,
-          title: "Trânsito Aduaneiro NCTS T1, Entrepostos, Transporte Rodoviário e-Fatura e Retalho",
+          step: 4,
+          title: "Árvore 3.4 · O DAU (#04) ramifica para Pagamentos SEPA/SAFE, Carbono CBAM e Importação GACC na China",
           fromDb: "Fonte A1 · MongoDB (Portugal)",
           fromTable: "04_pt_declaracoes_aduaneiras_dau",
-          fromPk: "mrn_codigo = '26PT000395IM008801' (numero_contentor_iso = 'COSU6882910')",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "09_pt_transporte_rodoviario_nacional_efatura",
-          toFk: "mrn_dau + numero_contentor_iso → PK: codigo_at_doc_transporte",
-          passedKey: "mrn_codigo (26PT000395IM008801) + COSU6882910 → NCTS T1 / Entreposto / e-Fatura",
-          relatedTables: ["74_pt_transito_aduaneiro_ncts_t1_t2", "08_pt_entrepostos_aduaneiros_zonas_francas", "15_pt_distribuicao_retalho_bazar_portugal"],
-          reality: "Emitida a autorização de saída pela AT, o MRN do DAU e o código do contentor passam para a guia de trânsito eletrónico NCTS T1 (74_pt), para o entreposto aduaneiro (08_pt) ou diretamente para o documento de transporte rodoviário e-Fatura (09_pt) até à rede grossista/retalhista (15_pt).",
-          queryCode: "db.getCollection('04_pt_declaracoes_aduaneiras_dau').aggregate([\n  { $lookup: { from: '74_pt_transito_aduaneiro_ncts_t1_t2', localField: 'mrn_codigo', foreignField: 'mrn_dau_destino_final', as: 'transito_t1' } },\n  { $lookup: { from: '09_pt_transporte_rodoviario_nacional_efatura', localField: 'numero_contentor_iso', foreignField: 'numero_contentor_iso', as: 'transporte_at' } }\n]);"
-        },
-        {
-          step: 8,
-          title: "Liquidação Bancária SWIFT SEPA ↔ PBOC SAFE e Declaração de Carbono CBAM",
-          fromDb: "Fonte A1 MongoDB & Fonte D1 SQL",
-          fromTable: "04_pt_declaracoes_aduaneiras_dau",
-          fromPk: "mrn_codigo = '26PT000395IM008801' + referencia_fatura_comercial = 'INV-CALB-2026-001'",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "12_pt_pagamentos_internacionais_banca_sepa",
-          toFk: "PK: referencia_swift_uetr = fx.swift_uetr_or_cips_id & cbam_report_id",
-          passedKey: "referencia_swift_uetr (9b1f4c82-...) = swift_uetr_or_cips_id + mrn_codigo → CBAM",
-          relatedTables: ["48_cn_fx_settlements_pboc_safe", "17_pt_declaracoes_cbam_carbono_fronteira", "52_cn_green_manufacturing_esg_audits"],
-          reality: "A fatura comercial desalfandegada no DAU é liquidada por transferência internacional em 12_pt_pagamentos_internacionais_banca_sepa (ligada a 48_cn_fx_settlements_pboc_safe pelo identificador único SWIFT UETR), e o MRN do DAU regista as emissões incorporadas no CBAM (17_pt ↔ 52_cn).",
-          queryCode: "SELECT p.referencia_swift_uetr, p.montante_eur, fx.safe_verification_no, cbam.cbam_report_id, esg.carbon_intensity_tco2_per_ton\nFROM mongo_pt.\"12_pt_pagamentos_internacionais_banca_sepa\" p\nJOIN \"48_cn_fx_settlements_pboc_safe\" fx ON p.referencia_swift_uetr = fx.swift_uetr_or_cips_id\nLEFT JOIN mongo_pt.\"17_pt_declaracoes_cbam_carbono_fronteira\" cbam ON cbam.mrn_dau_associado = p.mrn_dau_associado\nLEFT JOIN \"52_cn_green_manufacturing_esg_audits\" esg ON esg.uscc_code = cbam.instalacao_produtora_china_uscc;"
+          fromPk: "mrn_codigo = '26PT000395IM008801' (referencia_fatura_comercial)",
+          emittedVars: ["mrn_codigo", "referencia_fatura_comercial ('INV-CALB-2026-001')", "referencia_bl_awb_cmr"],
+          branches: [
+            {
+              targetId: "12_pt_pagamentos_internacionais_banca_sepa",
+              passedVar: "referencia_fatura_comercial → Liquidação SWIFT",
+              shortVar: "referencia_fatura",
+              generatedPk: "PK: referencia_swift_uetr",
+              subBranches: [
+                {
+                  targetId: "48_cn_fx_settlements_pboc_safe",
+                  passedVar: "referencia_swift_uetr = swift_uetr_or_cips_id",
+                  shortVar: "swift_uetr_or_cips_id",
+                  generatedPk: "PK: safe_verification_no (Fonte D1)"
+                }
+              ]
+            },
+            {
+              targetId: "17_pt_declaracoes_cbam_carbono_fronteira",
+              passedVar: "mrn_codigo → mrn_dau_associado (CBAM)",
+              shortVar: "mrn_dau_associado",
+              generatedPk: "PK: cbam_report_id",
+              subBranches: [
+                {
+                  targetId: "52_cn_green_manufacturing_esg_audits",
+                  passedVar: "instalacao_produtora_china_uscc = uscc_code",
+                  shortVar: "uscc_code (ESG)",
+                  generatedPk: "PK: audit_record_id (Fonte D1)"
+                }
+              ]
+            },
+            {
+              targetId: "45_cn_customs_import_declarations_gacc",
+              passedVar: "Exportação PT→CN: B/L + CIFER → Importação GACC",
+              shortVar: "portuguese_cifer_reg_no",
+              generatedPk: "PK: gacc_import_id_18 (Fonte D1)",
+              subBranches: [
+                {
+                  targetId: "63_cn_bonded_warehouse_inventories_xml",
+                  passedVar: "gacc_import_id_18 → StoredLot/@lotId (XML)",
+                  shortVar: "gacc_import_id_18",
+                  generatedPk: "PK: @warehouseCodeGacc"
+                },
+                {
+                  targetId: "116_cn_cold_chain_sanitary_traceability_codes_xml",
+                  passedVar: "gacc_import_id_18 + lote_id → Código Frio GACC",
+                  shortVar: "GaccImportId18",
+                  generatedPk: "PK: @traceCodeGacc (Fonte D2)"
+                }
+              ]
+            }
+          ],
+          reality: "Ainda a partir do DAU (04_pt), ramificam três pontes intercontinentais: a fatura comercial aciona o pagamento bancário SEPA (12_pt) que passa o código UETR para a SAFE na China (48_cn); o mrn_codigo aciona a declaração de carbono CBAM (17_pt) ligada à auditoria ESG da fábrica chinesa (52_cn); e nas exportações portuguesas, os dados seguem para a Declaração de Importação GACC (45_cn), entrepostos XML (63_cn) e cadeia de frio (116_cn).",
+          queryCode: "SELECT d.mrn_codigo, p.referencia_swift_uetr, fx.safe_verification_no, cbam.cbam_report_id, esg.audit_record_id\nFROM mongo_pt.\"04_pt_declaracoes_aduaneiras_dau\" d\nLEFT JOIN mongo_pt.\"12_pt_pagamentos_internacionais_banca_sepa\" p ON p.referencia_fatura_comercial = d.referencia_fatura_comercial\nLEFT JOIN \"48_cn_fx_settlements_pboc_safe\" fx ON fx.swift_uetr_or_cips_id = p.referencia_swift_uetr\nLEFT JOIN mongo_pt.\"17_pt_declaracoes_cbam_carbono_fronteira\" cbam ON cbam.mrn_dau_associado = d.mrn_codigo\nLEFT JOIN \"52_cn_green_manufacturing_esg_audits\" esg ON esg.uscc_code = cbam.instalacao_produtora_china_uscc;"
         }
       ],
       "4": [
         {
           step: 1,
-          title: "Conformidade Química REACH / RoHS / SCIP, Passaporte de Bateria e Marcação CE",
-          fromDb: "Fonte D1 SQL 3FN & Fonte A1 MongoDB",
-          fromTable: "92_cn_production_lots_batch_genealogy",
-          fromPk: "eu_battery_passport_id + mrn_codigo = '26PT000395IM008801'",
-          toDb: "Fonte A1 · MongoDB (Portugal)",
-          toTable: "78_pt_conformidade_quimica_ambiental_reach_rohs_scip",
-          toFk: "passaporte_bateria_ue_id + mrn_dau_associado → processo_controlo_id (ASAE)",
-          passedKey: "eu_battery_passport_id + mrn_codigo (26PT000395IM008801) → REACH/SCIP & CE ASAE",
-          relatedTables: ["10_pt_certificacoes_conformidade_ce_asae", "64_cn_export_packaging_fumigation_certs_xml"],
-          reality: "Na fase pós-desembaraço, a ASAE e a APA cruzam o MRN do DAU e o Passaporte Digital de Bateria (gerado na genealogia de lote 92_cn na China) com o registo de substâncias químicas REACH/SCIP (78_pt) e com os ensaios de marcação CE (10_pt).",
-          queryCode: "SELECT l.batch_lot_number, l.eu_battery_passport_id, r.notificacao_scip_echa, ce.processo_controlo_id\nFROM \"92_cn_production_lots_batch_genealogy\" l\nJOIN mongo_pt.\"78_pt_conformidade_quimica_ambiental_reach_rohs_scip\" r\n  ON l.eu_battery_passport_id = r.passaporte_bateria_ue_id\nJOIN mongo_pt.\"10_pt_certificacoes_conformidade_ce_asae\" ce\n  ON r.mrn_dau_associado = ce.mrn_declaracao_dau;"
+          title: "Árvore 4.1 · O DAU (#04 mrn_codigo) ramifica para REACH/SCIP, Marcação CE, Auditoria PCA, RMA e PDFs",
+          fromDb: "Fonte A1 · MongoDB (Portugal)",
+          fromTable: "04_pt_declaracoes_aduaneiras_dau",
+          fromPk: "mrn_codigo = '26PT000395IM008801'",
+          emittedVars: ["mrn_codigo ('26PT000395IM008801')", "codigo_taric_10 ('8507600090')"],
+          branches: [
+            {
+              targetId: "78_pt_conformidade_quimica_ambiental_reach_rohs_scip",
+              passedVar: "mrn_codigo → mrn_dau_associado (+ #92 Battery ID)",
+              shortVar: "mrn_dau_associado",
+              generatedPk: "PK: notificacao_scip_echa",
+              subBranches: [
+                {
+                  targetId: "86_pt_unstruct_fichas_dados_seguranca_msds_quimicos",
+                  passedVar: "mrn_dau_associado → Extração PDF MSDS UN3480",
+                  shortVar: "customs_mrn_dau",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                }
+              ]
+            },
+            {
+              targetId: "10_pt_certificacoes_conformidade_ce_asae",
+              passedVar: "mrn_codigo → mrn_declaracao_dau (Vistoria ASAE)",
+              shortVar: "mrn_declaracao_dau",
+              generatedPk: "PK: processo_controlo_id",
+              subBranches: [
+                {
+                  targetId: "26_pt_unstruct_pareceres_juridicos_tribunal_arbitral",
+                  passedVar: "codigo_taric_10 + mrn → Acórdão CAAD PDF",
+                  shortVar: "codigo_taric_10",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                }
+              ]
+            },
+            {
+              targetId: "83_pt_controlo_pos_desembaraco_auditorias_at",
+              passedVar: "mrn_codigo → declaracoes_dau_auditadas[]",
+              shortVar: "declaracoes_dau_auditadas",
+              generatedPk: "PK: processo_auditoria_at_id",
+              subBranches: [
+                {
+                  targetId: "88_pt_unstruct_oficios_notificacoes_audiencia_previa_at",
+                  passedVar: "mrn_codigo → Ofício Audiência Prévia PDF",
+                  shortVar: "customs_mrn_dau",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                },
+                {
+                  targetId: "106_cn_post_clearance_audits_anti_smuggling_gacc",
+                  passedVar: "exporter_uscc → Auditoria GACC PCA",
+                  shortVar: "audited_enterprise_uscc",
+                  generatedPk: "PK: pca_audit_case_no (Fonte D1)"
+                }
+              ]
+            },
+            {
+              targetId: "85_pt_logistica_inversa_devolucoes_reembolsos_aduaneiros",
+              passedVar: "mrn_codigo → mrn_dau_importacao_original",
+              shortVar: "mrn_dau_original",
+              generatedPk: "PK: processo_reembolso_at_id",
+              subBranches: [
+                {
+                  targetId: "115_cn_reverse_logistics_bonded_returns_xml",
+                  passedVar: "PortugueseDauMrn + #44 OriginalExportGaccId18",
+                  shortVar: "PortugueseDauMrn",
+                  generatedPk: "PK: @returnCaseId (Fonte D2 XML)"
+                }
+              ]
+            },
+            {
+              targetId: "19_pt_unstruct_relatorios_inspecao_asae_dgav",
+              passedVar: "mrn_codigo + container_iso → Auto ASAE PDF",
+              shortVar: "customs_mrn_dau",
+              generatedPk: "PK: doc_id = 'DOC-19-ASAE-2026'",
+              subBranches: [
+                {
+                  targetId: "27_pt_unstruct_faturas_packing_lists_desformatados",
+                  passedVar: "referencia_fatura → Extração ASCII Teletipo PDF",
+                  shortVar: "referencia_fatura",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                }
+              ]
+            }
+          ],
+          reality: "Na Etapa 4 (Pós-Desembaraço), o DAU (04_pt) ramifica simultaneamente para cinco ramos de fiscalização: conformidade química REACH/SCIP (78_pt → ficha MSDS PDF 86_pt), fiscalização técnica CE da ASAE (10_pt → acórdão arbitral CAAD PDF 26_pt), auditoria tributária pós-desembaraço (83_pt → ofício AT PDF 88_pt e auditoria GACC 106_cn), logística inversa RMA (85_pt → retorno XML 115_cn) e relatórios de inspeção ASAE em PDF (19_pt).",
+          queryCode: "SELECT d.mrn_codigo, r.notificacao_scip_echa, u86.doc_id AS msds_pdf, pca.processo_auditoria_at_id, u88.doc_id AS oficio_at_pdf, rma.processo_reembolso_at_id\nFROM mongo_pt.\"04_pt_declaracoes_aduaneiras_dau\" d\nLEFT JOIN mongo_pt.\"78_pt_conformidade_quimica_ambiental_reach_rohs_scip\" r ON r.mrn_dau_associado = d.mrn_codigo\nLEFT JOIN sqlite_a2.\"86_pt_unstruct_fichas_dados_seguranca_msds_quimicos\" u86 ON u86.customs_mrn_dau = d.mrn_codigo\nLEFT JOIN mongo_pt.\"83_pt_controlo_pos_desembaraco_auditorias_at\" pca ON pca.mrn_dau_principal = d.mrn_codigo\nLEFT JOIN sqlite_a2.\"88_pt_unstruct_oficios_notificacoes_audiencia_previa_at\" u88 ON u88.customs_mrn_dau = d.mrn_codigo\nLEFT JOIN mongo_pt.\"85_pt_logistica_inversa_devolucoes_reembolsos_aduaneiros\" rma ON rma.mrn_dau_importacao_original = d.mrn_codigo;"
         },
         {
           step: 2,
-          title: "Extração de Autos de Inspeção ASAE/DGAV, Apreensões AT e Certificados OCR (PDF → SQLite)",
+          title: "Árvore 4.2 · Escala em Sines (#05) e Comboios (#06) ramificam para PDFs de Incidentes, IoT e Apreensões",
           fromDb: "Fonte A1 · MongoDB (Portugal)",
-          fromTable: "04_pt_declaracoes_aduaneiras_dau",
-          fromPk: "mrn_codigo = '26PT000395IM008801' (eori_code = 'PT517890123')",
-          toDb: "Fonte A2 · PDFs & SQLite (Portugal)",
-          toTable: "19_pt_unstruct_relatorios_inspecao_asae_dgav",
-          toFk: "customs_mrn_dau + container_iso → PK: doc_id = 'DOC-19-ASAE-2026'",
-          passedKey: "mrn_codigo (26PT000395IM008801) + COSU6882910 ↔ NER sobre PDFs (Tabelas 19, 20 e 21)",
-          relatedTables: ["20_pt_unstruct_autos_apreensao_contrafacao_at", "21_pt_unstruct_certificados_origem_fitossanitarios_ocr"],
-          reality: "Os relatórios periciais em PDF da ASAE/DGAV (19), autos de apreensão da AT (20) e certificados fitossanitários digitalizados (21) são convertidos pelo motor de extração em tabelas SQLite, ligando-se a 04_pt_declaracoes_aduaneiras_dau através do MRN, EORI e Contentor ISO extraídos do texto.",
-          queryCode: "SELECT d.mrn_codigo, u19.doc_id AS auto_asae, u19.compliance_verdict, u20.doc_id AS auto_at\nFROM mongo_pt.\"04_pt_declaracoes_aduaneiras_dau\" d\nJOIN sqlite_a2.\"19_pt_unstruct_relatorios_inspecao_asae_dgav\" u19\n  ON d.mrn_codigo = u19.customs_mrn_dau\nLEFT JOIN sqlite_a2.\"20_pt_unstruct_autos_apreensao_contrafacao_at\" u20\n  ON d.mrn_codigo = u20.customs_mrn_dau;"
+          fromTable: "05_pt_escalas_navios_manifestos_sines",
+          fromPk: "numero_escala_jul = 'JUL-PTSIN-2026-0412' (imo_navio = '9839131')",
+          emittedVars: ["imo_navio ('9839131')", "numero_contentor_iso ('COSU6882910')", "numero_bl_master"],
+          branches: [
+            {
+              targetId: "24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps",
+              passedVar: "imo_navio + numero_escala_jul → Diário APS PDF",
+              shortVar: "imo_navio + escala_jul",
+              generatedPk: "PK: doc_id (SQLite Fonte A2)",
+              subBranches: []
+            },
+            {
+              targetId: "25_pt_unstruct_logs_telemetria_iot_cadeia_frio",
+              passedVar: "numero_contentor_iso ('COSU6882910') → Log PDF",
+              shortVar: "container_iso",
+              generatedPk: "PK: doc_id (SQLite Fonte A2)",
+              subBranches: [
+                {
+                  targetId: "59_cn_smart_containers_iot_telemetry_xml",
+                  passedVar: "container_iso = @containerIso (Reconciliação XML)",
+                  shortVar: "@containerIso",
+                  generatedPk: "PK: @containerIso (Fonte D2 XML)"
+                }
+              ]
+            },
+            {
+              targetId: "87_pt_unstruct_cartas_protesto_maritimo_sea_protest",
+              passedVar: "imo_navio + numero_bl_master → Sea Protest PDF",
+              shortVar: "imo_navio + bl",
+              generatedPk: "PK: doc_id (SQLite Fonte A2)",
+              subBranches: []
+            },
+            {
+              targetId: "06_pt_comboios_carga_iberia_europa",
+              passedVar: "Corredor Ferroviário Internacional CIM/SMGS",
+              shortVar: "carta_porte_cim_smgs",
+              generatedPk: "PK: id_comboio_uic",
+              subBranches: [
+                {
+                  targetId: "20_pt_unstruct_autos_apreensao_contrafacao_at",
+                  passedVar: "carta_porte_cim_smgs → Auto Apreensão AT PDF",
+                  shortVar: "CIM/SMGS → NER",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                }
+              ]
+            }
+          ],
+          reality: "Os eventos de transporte em Portugal (05_pt e 06_pt) ramificam diretamente para o corpus documental PDF da Fonte A2: a escala marítima em Sines envia imo_navio, numero_escala_jul e numero_contentor_iso para os diários de incidentes da APS (24_pt), para os relatórios PDF de cadeia de frio (25_pt, cruzados com o XML 59_cn) e para as Cartas de Protesto Marítimo (87_pt), enquanto o comboio (06_pt) se liga aos autos de apreensão da AT (20_pt).",
+          queryCode: "SELECT s.numero_escala_jul, s.imo_navio, u24.doc_id AS diario_aps, u25.doc_id AS log_frio, u87.doc_id AS sea_protest\nFROM mongo_pt.\"05_pt_escalas_navios_manifestos_sines\" s\nLEFT JOIN sqlite_a2.\"24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps\" u24 ON u24.container_iso = s.numero_contentor_iso\nLEFT JOIN sqlite_a2.\"25_pt_unstruct_logs_telemetria_iot_cadeia_frio\" u25 ON u25.container_iso = s.numero_contentor_iso\nLEFT JOIN sqlite_a2.\"87_pt_unstruct_cartas_protesto_maritimo_sea_protest\" u87 ON u87.container_iso = s.numero_contentor_iso;"
         },
         {
           step: 3,
-          title: "Reconciliação de Logs IoT de Cadeia de Frio e Diários Marítimos com Cartas de Protesto PDF",
-          fromDb: "Fonte D2 XML & Fonte A1 MongoDB",
-          fromTable: "59_cn_smart_containers_iot_telemetry_xml",
-          fromPk: "@containerIso = 'COSU6882910' + imo_navio = '9839131'",
-          toDb: "Fonte A2 · PDFs & SQLite (Portugal)",
-          toTable: "25_pt_unstruct_logs_telemetria_iot_cadeia_frio",
-          toFk: "container_iso = 'COSU6882910' → PK: doc_id (SQLite Tabelas 24, 25 e 87)",
-          passedKey: "@containerIso (COSU6882910) + imo_navio (9839131) → PDFs de Telemetria e Sea Protest",
-          relatedTables: ["24_pt_unstruct_diarios_bordo_incidentes_maritimos_aps", "87_pt_unstruct_cartas_protesto_maritimo_sea_protest"],
-          reality: "As anomalias térmicas registadas em XML pelo contentor inteligente (59_cn) e os eventos da escala em Sines (05_pt) são cruzados pelo código ISO do contentor com os relatórios PDF de cadeia de frio (25), diários de bordo APS (24) e Cartas de Protesto Marítimo (87).",
-          queryCode: "SELECT x.container_iso, x.max_temp_recorded_c, u25.doc_id AS log_pdf, u87.doc_id AS sea_protest_pdf\nFROM xml_d2.\"59_cn_smart_containers_iot_telemetry_xml\" x\nJOIN sqlite_a2.\"25_pt_unstruct_logs_telemetria_iot_cadeia_frio\" u25\n  ON x.container_iso = u25.container_iso\nLEFT JOIN sqlite_a2.\"87_pt_unstruct_cartas_protesto_maritimo_sea_protest\" u87\n  ON x.container_iso = u87.container_iso;"
+          title: "Árvore 4.3 · Registo CIFER (#11), Banca (#67/#12) e CBAM (#17) ramificam para PDFs de OCR, KYC e ESG",
+          fromDb: "Fonte A1 · MongoDB (Portugal)",
+          fromTable: "11_pt_exportadores_agroalimentar_registados_gacc",
+          fromPk: "codigo_cifer_gacc_18digitos = 'CPRT01012105200018' (+ #67 / #17)",
+          emittedVars: ["codigo_cifer_gacc_18digitos", "referencia_swift_uetr", "mrn_dau_associado"],
+          branches: [
+            {
+              targetId: "21_pt_unstruct_certificados_origem_fitossanitarios_ocr",
+              passedVar: "codigo_cifer_gacc → Certificado Fitossanitário OCR",
+              shortVar: "codigo_cifer_gacc",
+              generatedPk: "PK: doc_id (SQLite Fonte A2)",
+              subBranches: []
+            },
+            {
+              targetId: "89_pt_unstruct_traducoes_rotulagem_mandarim_gacc",
+              passedVar: "codigo_cifer_gacc → Rotulagem Mandarim GB 7718",
+              shortVar: "codigo_cifer_gacc",
+              generatedPk: "PK: doc_id (SQLite Fonte A2)",
+              subBranches: []
+            },
+            {
+              targetId: "67_pt_creditos_documentarios_garantias_bancarias",
+              passedVar: "referencia_swift_uetr → Compliance Bancário",
+              shortVar: "referencia_swift_uetr",
+              generatedPk: "PK: numero_lc_swift_mt700",
+              subBranches: [
+                {
+                  targetId: "90_pt_unstruct_relatorios_due_diligence_sancoes_kyc",
+                  passedVar: "referencia_swift_uetr → Relatório KYC/AML PDF",
+                  shortVar: "referencia_swift_uetr",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                },
+                {
+                  targetId: "28_pt_unstruct_reclamacoes_qualidade_clientes_b2b",
+                  passedVar: "faturas_associadas (#12) → Sinistro/Reclamação PDF",
+                  shortVar: "faturas_associadas",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                }
+              ]
+            },
+            {
+              targetId: "17_pt_declaracoes_cbam_carbono_fronteira",
+              passedVar: "mrn_dau_associado → Pegada de Carbono CBAM",
+              shortVar: "mrn_dau_associado",
+              generatedPk: "PK: cbam_report_id",
+              subBranches: [
+                {
+                  targetId: "32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores",
+                  passedVar: "mrn_dau_associado → Auditoria ESG PDF (#52 CN)",
+                  shortVar: "customs_mrn_dau",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                }
+              ]
+            }
+          ],
+          reality: "As coleções de conformidade agroalimentar, financeira e ambiental ramificam para os respetivos processos PDF estruturados em SQLite: o código CIFER (11_pt) alimenta os certificados fitossanitários OCR (21_pt) e as traduções de rótulos GB 7718 (89_pt); a banca (67_pt e 12_pt) alimenta os relatórios KYC/AML (90_pt) e sinistros (28_pt); e o CBAM (17_pt) liga-se às auditorias ESG de fornecedores em PDF (32_pt).",
+          queryCode: "SELECT c.codigo_cifer_gacc_18digitos, u21.doc_id AS cert_ocr_pdf, u89.doc_id AS rotulo_gb7718_pdf, u90.doc_id AS kyc_pdf, u32.doc_id AS esg_pdf\nFROM mongo_pt.\"11_pt_exportadores_agroalimentar_registados_gacc\" c\nLEFT JOIN sqlite_a2.\"21_pt_unstruct_certificados_origem_fitossanitarios_ocr\" u21 ON u21.importer_eori = c.eori_produtor_pt\nLEFT JOIN sqlite_a2.\"89_pt_unstruct_traducoes_rotulagem_mandarim_gacc\" u89 ON u89.importer_eori = c.eori_produtor_pt\nLEFT JOIN sqlite_a2.\"90_pt_unstruct_relatorios_due_diligence_sancoes_kyc\" u90 ON u90.importer_eori = c.eori_produtor_pt\nLEFT JOIN sqlite_a2.\"32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores\" u32 ON u32.importer_eori = c.eori_produtor_pt;"
         },
         {
           step: 4,
-          title: "Estruturação de Fichas Químicas MSDS, Rotulagem Mandarim GB 7718 e Reclamações B2B",
-          fromDb: "Fonte A1 · MongoDB (Portugal)",
-          fromTable: "78_pt_conformidade_quimica_ambiental_reach_rohs_scip",
-          fromPk: "mrn_dau_associado ('26PT000395IM008801') + codigo_cifer_gacc ('CPRT01012105200018')",
-          toDb: "Fonte A2 · PDFs & SQLite (Portugal)",
-          toTable: "86_pt_unstruct_fichas_dados_seguranca_msds_quimicos",
-          toFk: "customs_mrn_dau + taric_code_10 → PK: doc_id (SQLite Tabelas 27, 28, 86 e 89)",
-          passedKey: "mrn_dau_associado + codigo_cifer_gacc → MSDS (86), Rótulos GB7718 (89) e Sinistros (28)",
-          relatedTables: ["89_pt_unstruct_traducoes_rotulagem_mandarim_gacc", "27_pt_unstruct_faturas_packing_lists_desformatados", "28_pt_unstruct_reclamacoes_qualidade_clientes_b2b"],
-          reality: "O motor documental extrai os números CAS e classes UN3480 das fichas de segurança química MSDS em PDF (86), valida as traduções de rotulagem alimentar GB 7718 (89) para exportadores CIFER e estrutura faturas teletipo desformatadas (27) e participações de sinistro (28).",
-          queryCode: "SELECT r.mrn_dau_associado, msds.doc_id AS msds_doc, msds.taric_code_10, lbl.doc_id AS gb7718_doc\nFROM mongo_pt.\"78_pt_conformidade_quimica_ambiental_reach_rohs_scip\" r\nJOIN sqlite_a2.\"86_pt_unstruct_fichas_dados_seguranca_msds_quimicos\" msds\n  ON r.mrn_dau_associado = msds.customs_mrn_dau\nLEFT JOIN sqlite_a2.\"89_pt_unstruct_traducoes_rotulagem_mandarim_gacc\" lbl\n  ON lbl.importer_eori = r.eori_importador;"
-        },
-        {
-          step: 5,
-          title: "Auditorias ESG de Sustentabilidade e Due Diligence Sancionatória KYC / AML em PDF",
-          fromDb: "Fonte D1 SQL & Fonte A1 MongoDB",
-          fromTable: "17_pt_declaracoes_cbam_carbono_fronteira",
-          fromPk: "mrn_dau_associado ('26PT000395IM008801') + referencia_swift_uetr",
-          toDb: "Fonte A2 · PDFs & SQLite (Portugal)",
-          toTable: "32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores",
-          toFk: "customs_mrn_dau + exporter_uscc → PK: doc_id (SQLite Tabelas 32 e 90)",
-          passedKey: "mrn_dau_associado + exporter_uscc (91320413MA1M9Y2C4B) → Auditoria ESG (32) & KYC (90)",
-          relatedTables: ["52_cn_green_manufacturing_esg_audits", "90_pt_unstruct_relatorios_due_diligence_sancoes_kyc"],
-          reality: "Os relatórios PDF de auditoria ambiental de fornecedores (32_pt) e de compliance bancário KYC/AML (90_pt) são estruturados em SQLite e ligados às declarações CBAM (17_pt), às auditorias verdes da fábrica na China (52_cn) e aos créditos documentários (67_pt).",
-          queryCode: "SELECT cbam.cbam_report_id, esg_cn.audit_record_id, pdf32.doc_id AS pdf_esg, pdf90.doc_id AS pdf_kyc\nFROM mongo_pt.\"17_pt_declaracoes_cbam_carbono_fronteira\" cbam\nJOIN \"52_cn_green_manufacturing_esg_audits\" esg_cn\n  ON cbam.instalacao_produtora_china_uscc = esg_cn.uscc_code\nJOIN sqlite_a2.\"32_pt_unstruct_auditorias_sustentabilidade_esg_fornecedores\" pdf32\n  ON cbam.mrn_dau_associado = pdf32.customs_mrn_dau\nLEFT JOIN sqlite_a2.\"90_pt_unstruct_relatorios_due_diligence_sancoes_kyc\" pdf90\n  ON pdf90.exporter_uscc = esg_cn.uscc_code;"
-        },
-        {
-          step: 6,
-          title: "Auditoria Tributária Pós-Desembaraço (PCA), Notificações AT e Arbitragem CAAD",
-          fromDb: "Fonte A1 MongoDB & Fonte D1 SQL",
-          fromTable: "83_pt_controlo_pos_desembaraco_auditorias_at",
-          fromPk: "declaracoes_dau_auditadas[] = '26PT000395IM008801'",
-          toDb: "Fonte A2 · PDFs & SQLite (Portugal)",
-          toTable: "88_pt_unstruct_oficios_notificacoes_audiencia_previa_at",
-          toFk: "customs_mrn_dau = '26PT000395IM008801' → PK: doc_id (SQLite Tabelas 26 e 88)",
-          passedKey: "mrn_codigo (26PT000395IM008801) + uscc_code → Auditoria PCA (83_pt / 106_cn) & CAAD (26_pt)",
-          relatedTables: ["106_cn_post_clearance_audits_anti_smuggling_gacc", "26_pt_unstruct_pareceres_juridicos_tribunal_arbitral"],
-          reality: "A Inspeção Tributária e Aduaneira em Portugal (83_pt) e o departamento de Post-Clearance Audit da GACC na China (106_cn) reveem o valor aduaneiro e a classificação TARIC dos DAUs, cruzando-os com os ofícios de audiência prévia (88_pt) e decisões arbitrais do CAAD (26_pt).",
-          queryCode: "SELECT pca.processo_auditoria_at_id, gacc_pca.pca_audit_case_no, u88.doc_id AS oficio_at, u26.doc_id AS acordao_caad\nFROM mongo_pt.\"83_pt_controlo_pos_desembaraco_auditorias_at\" pca\nJOIN sqlite_a2.\"88_pt_unstruct_oficios_notificacoes_audiencia_previa_at\" u88\n  ON u88.customs_mrn_dau = pca.mrn_dau_principal\nLEFT JOIN sqlite_a2.\"26_pt_unstruct_pareceres_juridicos_tribunal_arbitral\" u26\n  ON u26.customs_mrn_dau = pca.mrn_dau_principal\nLEFT JOIN \"106_cn_post_clearance_audits_anti_smuggling_gacc\" gacc_pca\n  ON gacc_pca.audited_enterprise_uscc = u88.exporter_uscc;"
-        },
-        {
-          step: 7,
-          title: "Logística Inversa (RMA), Devoluções em Zona Franca e Reembolso de Direitos",
-          fromDb: "Fonte A1 · MongoDB (Portugal)",
-          fromTable: "85_pt_logistica_inversa_devolucoes_reembolsos_aduaneiros",
-          fromPk: "mrn_dau_importacao_original = '26PT000395IM008801'",
-          toDb: "Fonte D2 · BaseX XML (China)",
-          toTable: "115_cn_reverse_logistics_bonded_returns_xml",
-          toFk: "PortugueseDauMrn + OriginalExportGaccId18 → PK: @returnCaseId",
-          passedKey: "mrn_dau_importacao_original (26PT000395IM008801) + gacc_entry_id_18 → @returnCaseId",
-          relatedTables: ["04_pt_declaracoes_aduaneiras_dau", "44_cn_customs_export_declarations_gacc"],
-          reality: "Quando unidades defeituosas retornam à China para reparação ou substituição sob regime de aperfeiçoamento passivo, o processo 85_pt no MongoDB passa o MRN original para o manifesto XML de retorno em zona franca chinesa (115_cn), anulando ou reembolsando os direitos pagos.",
-          queryCode: "SELECT r_pt.processo_reembolso_at_id, r_pt.mrn_dau_importacao_original, r_cn.return_case_id, r_cn.original_export_gacc_id_18\nFROM mongo_pt.\"85_pt_logistica_inversa_devolucoes_reembolsos_aduaneiros\" r_pt\nJOIN xml_d2.\"115_cn_reverse_logistics_bonded_returns_xml\" r_cn\n  ON r_pt.mrn_dau_importacao_original = r_cn.portuguese_dau_mrn;"
-        },
-        {
-          step: 8,
-          title: "Fecho Institucional: Investimento Direto (NDRC / AICEP) e Inteligência Económica PDF",
-          fromDb: "Fonte D1 SQL 3FN & Fonte A1 MongoDB",
+          title: "Árvore 4.4 · Investimento Externo NDRC (#51) ramifica para AICEP (#13), INE (#18) e Corpus PDF Institucional",
+          fromDb: "Fonte D1 · SQL 3FN (China)",
           fromTable: "51_cn_outward_fdi_approvals_ndrc",
-          fromPk: "ndrc_approval_code + codigo_projeto_aicep ('AICEP-IDE-2026-CALB')",
-          toDb: "Fonte A2 · PDFs & SQLite (Portugal)",
-          toTable: "29_pt_unstruct_relatorios_mercado_aicep_macau",
-          toFk: "importer_eori + exporter_uscc → PK: doc_id (SQLite Tabelas 29, 30 e 31)",
-          passedKey: "chinese_investor_uscc (91320413MA1M9Y2C4B) + codigo_projeto_aicep → Relatórios AICEP/CCILC",
-          relatedTables: ["13_pt_investimento_chines_ide_portugal", "18_pt_estatisticas_macro_ine_bportugal", "30_pt_unstruct_atas_reunioes_camara_comercio_ccilc", "31_pt_unstruct_noticias_imprensa_economica_lusochinesa"],
-          reality: "O ciclo completo encerra-se unindo as aprovações chinesas de investimento externo NDRC (51_cn) e os contratos de investimento AICEP em Portugal (13_pt) às séries históricas do INE/Banco de Portugal (18_pt) e aos relatórios de mercado da AICEP Macau (29), atas da CCILC (30) e dossiês de imprensa económica (31).",
-          queryCode: "SELECT ndrc.ndrc_approval_code, ide.codigo_projeto_aicep, ide.montante_investimento_eur, u29.doc_id AS relatorio_aicep, u30.doc_id AS ata_ccilc\nFROM \"51_cn_outward_fdi_approvals_ndrc\" ndrc\nJOIN mongo_pt.\"13_pt_investimento_chines_ide_portugal\" ide\n  ON ndrc.chinese_investor_uscc = ide.investidor_chines_uscc\nLEFT JOIN sqlite_a2.\"29_pt_unstruct_relatorios_mercado_aicep_macau\" u29\n  ON u29.exporter_uscc = ndrc.chinese_investor_uscc\nLEFT JOIN sqlite_a2.\"30_pt_unstruct_atas_reunioes_camara_comercio_ccilc\" u30\n  ON u30.exporter_uscc = ndrc.chinese_investor_uscc;"
+          fromPk: "ndrc_approval_code (chinese_investor_uscc = '91320413MA1M9Y2C4B')",
+          emittedVars: ["chinese_investor_uscc ('91320413MA1M9Y2C4B')", "target_pt_company_nif ('517890123')"],
+          branches: [
+            {
+              targetId: "13_pt_investimento_chines_ide_portugal",
+              passedVar: "chinese_investor_uscc + nif → Projeto IDE AICEP",
+              shortVar: "chinese_investor_uscc",
+              generatedPk: "PK: codigo_projeto_aicep",
+              subBranches: [
+                {
+                  targetId: "31_pt_unstruct_noticias_imprensa_economica_lusochinesa",
+                  passedVar: "codigo_projeto_aicep → Dossiê Imprensa PDF",
+                  shortVar: "codigo_projeto_aicep",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                }
+              ]
+            },
+            {
+              targetId: "18_pt_estatisticas_macro_ine_bportugal",
+              passedVar: "Fluxos IDE e Balança Comercial → Série INE/BP",
+              shortVar: "ano (2026)",
+              generatedPk: "PK: ano (Fonte A1 MongoDB)",
+              subBranches: [
+                {
+                  targetId: "29_pt_unstruct_relatorios_mercado_aicep_macau",
+                  passedVar: "ano + uscc_code → Inteligência AICEP PDF",
+                  shortVar: "ano + uscc_code",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                }
+              ]
+            },
+            {
+              targetId: "01_pt_operadores_economicos",
+              passedVar: "target_pt_company_nif → Participada em Portugal",
+              shortVar: "target_pt_company_nif",
+              generatedPk: "PK: eori_code = 'PT517890123'",
+              subBranches: [
+                {
+                  targetId: "30_pt_unstruct_atas_reunioes_camara_comercio_ccilc",
+                  passedVar: "eori_code + uscc_code → Ata CCILC PDF",
+                  shortVar: "eori_code",
+                  generatedPk: "PK: doc_id (SQLite Fonte A2)"
+                }
+              ]
+            }
+          ],
+          reality: "A aprovação de Investimento Direto Estrangeiro pela NDRC na China (51_cn) fecha o ciclo macroeconómico: envia chinese_investor_uscc e target_pt_company_nif para os projetos IDE da AICEP (13_pt → notícias económicas PDF 31_pt), para as estatísticas macroeconómicas do INE/Banco de Portugal (18_pt → relatórios de mercado AICEP Macau PDF 29_pt) e para os operadores económicos (01_pt → atas da Câmara de Comércio CCILC PDF 30_pt).",
+          queryCode: "SELECT ndrc.ndrc_approval_code, ide.codigo_projeto_aicep, u31.doc_id AS noticia_pdf, u29.doc_id AS relatorio_aicep_pdf, u30.doc_id AS ata_ccilc_pdf\nFROM \"51_cn_outward_fdi_approvals_ndrc\" ndrc\nJOIN mongo_pt.\"13_pt_investimento_chines_ide_portugal\" ide ON ide.investidor_chines_uscc = ndrc.chinese_investor_uscc\nLEFT JOIN sqlite_a2.\"31_pt_unstruct_noticias_imprensa_economica_lusochinesa\" u31 ON u31.exporter_uscc = ndrc.chinese_investor_uscc\nLEFT JOIN sqlite_a2.\"29_pt_unstruct_relatorios_mercado_aicep_macau\" u29 ON u29.exporter_uscc = ndrc.chinese_investor_uscc\nLEFT JOIN sqlite_a2.\"30_pt_unstruct_atas_reunioes_camara_comercio_ccilc\" u30 ON u30.exporter_uscc = ndrc.chinese_investor_uscc;"
         }
       ]
     };
@@ -1872,7 +2511,7 @@
     let flowStepProgress = 0; // 0 to 100
     let flowAnimFrameId = null;
     let flowLastTickTime = 0;
-    const FLOW_BASE_STEP_DURATION_MS = 4800; // 4.8s per step at 1x speed
+    const FLOW_BASE_STEP_DURATION_MS = 5600; // 5.6s per tree step at 1x speed
 
     function stopFlowPlayback() {
       flowIsPlaying = false;
@@ -1888,8 +2527,8 @@
       const statusBadge = document.getElementById('flowLiveStatusBadge');
       if (btn) {
         btn.innerHTML = flowIsPlaying
-          ? '<span>&#10074;&#10074; Pausar Animação</span>'
-          : '<span>&#9654; Reproduzir Fluxo</span>';
+          ? '<span>&#10074;&#10074; Pausar Árvore</span>'
+          : '<span>&#9654; Reproduzir Árvore</span>';
       }
       if (statusBadge) {
         statusBadge.textContent = flowIsPlaying
@@ -1954,7 +2593,7 @@
       if (nextIdx < 0) nextIdx = 0;
       if (nextIdx >= steps.length) nextIdx = steps.length - 1;
       flowCurrentStepIdx = nextIdx;
-      flowStepProgress = 50;
+      flowStepProgress = 52;
       renderFlowStepContent();
     }
 
@@ -1962,7 +2601,7 @@
       const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
       if (idx < 0 || idx >= steps.length) return;
       flowCurrentStepIdx = idx;
-      flowStepProgress = flowIsPlaying ? 0 : 50;
+      flowStepProgress = flowIsPlaying ? 0 : 52;
       flowLastTickTime = performance.now();
       renderFlowStepContent();
     }
@@ -2001,8 +2640,86 @@
       flowAnimFrameId = requestAnimationFrame(tickFlowAnimation);
     }
 
+    // Build exact curved SVG Bézier branches between Root (Col 1) -> Branches (Col 2) -> Sub-Branches (Col 3)
+    function buildTreeSvgPaths() {
+      const container = document.getElementById('flowTreeStageContainer');
+      const svg = document.getElementById('flowTreeSvgOverlay');
+      if (!container || !svg) return;
+
+      const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
+      const cur = steps[flowCurrentStepIdx] || steps[0];
+      const cRect = container.getBoundingClientRect();
+      if (cRect.width === 0 || cRect.height === 0) return;
+
+      svg.setAttribute('viewBox', `0 0 ${cRect.width} ${cRect.height}`);
+      const rootPort = document.getElementById('port_out_root');
+      if (!rootPort) return;
+      const rRect = rootPort.getBoundingClientRect();
+      const rx = rRect.left - cRect.left + (rRect.width / 2);
+      const ry = rRect.top - cRect.top + (rRect.height / 2);
+
+      let svgMarkup = '';
+
+      (cur.branches || []).forEach((b, bIdx) => {
+        const inPort = document.getElementById(`port_in_b_${bIdx}`);
+        if (inPort) {
+          const bRect = inPort.getBoundingClientRect();
+          const bx = bRect.left - cRect.left + (bRect.width / 2);
+          const by = bRect.top - cRect.top + (bRect.height / 2);
+          const cx1 = rx + (bx - rx) * 0.45;
+          const cx2 = rx + (bx - rx) * 0.55;
+          const d = `M ${rx.toFixed(1)},${ry.toFixed(1)} C ${cx1.toFixed(1)},${ry.toFixed(1)} ${cx2.toFixed(1)},${by.toFixed(1)} ${bx.toFixed(1)},${by.toFixed(1)}`;
+          const labelText = (b.shortVar || 'PK → FK').slice(0, 18);
+          const pillW = Math.max(60, labelText.length * 5.6 + 14);
+
+          svgMarkup += `
+            <path d="${d}" fill="none" stroke="#d1d1d6" stroke-width="2.5" />
+            <path id="svgPath_b_${bIdx}" d="${d}" fill="none" stroke="#007aff" stroke-width="2.5" class="flow-animated-line" />
+            <circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="4" fill="#007aff" />
+            <g id="svgPkt_b_${bIdx}" transform="translate(${rx.toFixed(1)}, ${ry.toFixed(1)})">
+              <rect x="${(-pillW / 2).toFixed(1)}" y="-9.5" width="${pillW.toFixed(1)}" height="19" rx="9.5" fill="#007aff" stroke="#ffffff" stroke-width="1.5" />
+              <text x="0" y="3.2" text-anchor="middle" fill="#ffffff" font-size="9" font-family="monospace" font-weight="600">${escHtml(labelText)}</text>
+            </g>
+          `;
+        }
+
+        const outPort = document.getElementById(`port_out_b_${bIdx}`);
+        if (outPort && b.subBranches && b.subBranches.length > 0) {
+          const oRect = outPort.getBoundingClientRect();
+          const ox = oRect.left - cRect.left + (oRect.width / 2);
+          const oy = oRect.top - cRect.top + (oRect.height / 2);
+
+          b.subBranches.forEach((sb, sIdx) => {
+            const subIn = document.getElementById(`port_in_sub_${bIdx}_${sIdx}`);
+            if (!subIn) return;
+            const sRect = subIn.getBoundingClientRect();
+            const sx = sRect.left - cRect.left + (sRect.width / 2);
+            const sy = sRect.top - cRect.top + (sRect.height / 2);
+            const scx1 = ox + (sx - ox) * 0.45;
+            const scx2 = ox + (sx - ox) * 0.55;
+            const sd = `M ${ox.toFixed(1)},${oy.toFixed(1)} C ${scx1.toFixed(1)},${oy.toFixed(1)} ${scx2.toFixed(1)},${sy.toFixed(1)} ${sx.toFixed(1)},${sy.toFixed(1)}`;
+            const sLabel = (sb.shortVar || 'FK → PK').slice(0, 17);
+            const sPillW = Math.max(58, sLabel.length * 5.5 + 14);
+
+            svgMarkup += `
+              <path d="${sd}" fill="none" stroke="#d1d1d6" stroke-width="2.2" />
+              <path id="svgPath_sub_${bIdx}_${sIdx}" d="${sd}" fill="none" stroke="#c96e00" stroke-width="2.2" class="flow-animated-line" />
+              <circle cx="${sx.toFixed(1)}" cy="${sy.toFixed(1)}" r="4" fill="#c96e00" />
+              <g id="svgPkt_sub_${bIdx}_${sIdx}" transform="translate(${ox.toFixed(1)}, ${oy.toFixed(1)})">
+                <rect x="${(-sPillW / 2).toFixed(1)}" y="-9" width="${sPillW.toFixed(1)}" height="18" rx="9" fill="#c96e00" stroke="#ffffff" stroke-width="1.5" />
+                <text x="0" y="3" text-anchor="middle" fill="#ffffff" font-size="8.8" font-family="monospace" font-weight="600">${escHtml(sLabel)}</text>
+              </g>
+            `;
+          });
+        }
+      });
+
+      svg.innerHTML = svgMarkup;
+    }
+
     function updateFlowProgressBarsOnly() {
       const steps = FLOW_SEQUENCES[currentStage] || FLOW_SEQUENCES["1"];
+      const cur = steps[flowCurrentStepIdx] || steps[0];
       const totalPct = ((flowCurrentStepIdx + (flowStepProgress / 100)) / steps.length) * 100;
       const overallFill = document.getElementById('flowVideoScrubberFill');
       if (overallFill) overallFill.style.width = `${Math.min(100, totalPct).toFixed(1)}%`;
@@ -2010,22 +2727,67 @@
       const stepFill = document.getElementById('flowStepProgressFill');
       if (stepFill) stepFill.style.width = `${Math.min(100, flowStepProgress).toFixed(1)}%`;
 
-      const packet = document.getElementById('flowMovingPacket');
-      if (packet) {
-        const travelPct = 4 + (Math.min(100, Math.max(0, flowStepProgress)) * 0.72);
-        packet.style.left = `${travelPct.toFixed(1)}%`;
-      }
+      // When paused at 52%, place both Level-1 and Level-2 pills at 0.50 (center of their corridors)
+      const rawT1 = flowIsPlaying ? Math.min(1, Math.max(0, flowStepProgress / 55)) : 0.50;
+      const rawT2 = flowIsPlaying ? Math.min(1, Math.max(0, (flowStepProgress - 42) / 53)) : 0.50;
+      const t1 = 0.16 + rawT1 * 0.68;
+      const t2 = 0.16 + rawT2 * 0.68;
+
+      (cur.branches || []).forEach((b, bIdx) => {
+        const pathEl = document.getElementById(`svgPath_b_${bIdx}`);
+        const pktEl = document.getElementById(`svgPkt_b_${bIdx}`);
+        if (pathEl && pktEl && typeof pathEl.getTotalLength === 'function') {
+          const len = pathEl.getTotalLength();
+          if (len > 0) {
+            const pt = pathEl.getPointAtLength(t1 * len);
+            pktEl.setAttribute('transform', `translate(${pt.x.toFixed(1)}, ${pt.y.toFixed(1)})`);
+          }
+        }
+
+        const branchCard = document.getElementById(`treeBranchCard_${bIdx}`);
+        if (branchCard) {
+          branchCard.classList.toggle('flow-node-target', flowStepProgress >= 32);
+        }
+
+        (b.subBranches || []).forEach((sb, sIdx) => {
+          const sPathEl = document.getElementById(`svgPath_sub_${bIdx}_${sIdx}`);
+          const sPktEl = document.getElementById(`svgPkt_sub_${bIdx}_${sIdx}`);
+          if (sPathEl && sPktEl && typeof sPathEl.getTotalLength === 'function') {
+            const sLen = sPathEl.getTotalLength();
+            if (sLen > 0) {
+              const sPt = sPathEl.getPointAtLength(t2 * sLen);
+              sPktEl.setAttribute('transform', `translate(${sPt.x.toFixed(1)}, ${sPt.y.toFixed(1)})`);
+              sPktEl.setAttribute('opacity', (!flowIsPlaying || flowStepProgress >= 38) ? '1' : '0.35');
+            }
+          }
+          const subCard = document.getElementById(`treeSubCard_${bIdx}_${sIdx}`);
+          if (subCard) {
+            subCard.classList.toggle('flow-node-visited', !flowIsPlaying || flowStepProgress >= 75);
+          }
+        });
+      });
 
       const phaseBadge = document.getElementById('flowPacketPhaseText');
       if (phaseBadge) {
-        if (flowStepProgress < 28) {
-          phaseBadge.textContent = "1/3 · A extrair Chave Primária (PK) na Base de Dados de Origem...";
-        } else if (flowStepProgress < 72) {
-          phaseBadge.textContent = "2/3 · A transmitir Chave de Ligação para a Tabela de Destino...";
+        if (!flowIsPlaying) {
+          phaseBadge.textContent = `Vista em Árvore Pronta · 1 Raiz → ${(cur.branches || []).length} Ramos Diretos (Clica em Reproduzir Árvore)`;
+        } else if (flowStepProgress < 20) {
+          phaseBadge.textContent = "1/3 · Nó Raiz (Nível 0) a preparar variáveis de saída...";
+        } else if (flowStepProgress < 56) {
+          phaseBadge.textContent = `2/3 · Ramificação simultânea (1 → ${(cur.branches || []).length} tabelas do Nível 1)...`;
         } else {
-          phaseBadge.textContent = "3/3 · A validar Chave Estrangeira (FK) e integridade do registo...";
+          phaseBadge.textContent = "3/3 · Propagação em sub-árvore (Nível 1 → Sub-Ramos Nível 2)...";
         }
       }
+    }
+
+    function getSourceBadgeClass(src) {
+      if (!src) return 'tag-stone';
+      if (src.includes('D1')) return 'tag-navy';
+      if (src.includes('D2')) return 'tag-ochre';
+      if (src.includes('A1')) return 'tag-teal';
+      if (src.includes('A2')) return 'tag-plum';
+      return 'tag-stone';
     }
 
     function renderFlowStage(stageKey, resetPlayer = true) {
@@ -2037,7 +2799,7 @@
         stopFlowPlayback();
         flowFullMovieMode = false;
         flowCurrentStepIdx = 0;
-        flowStepProgress = 50;
+        flowStepProgress = 52;
       }
 
       document.querySelectorAll('.step-btn').forEach(btn => {
@@ -2048,26 +2810,25 @@
       });
 
       const stepIndicatorsHtml = steps.map((s, idx) => `
-        <button id="flowStepBtn_${idx}" onclick="jumpToFlowStep(${idx})" class="flex-1 text-left p-2 rounded-lg border transition-all cursor-pointer">
+        <button id="flowStepBtn_${idx}" onclick="jumpToFlowStep(${idx})" class="flex-1 text-left p-2.5 rounded-lg border transition-all cursor-pointer">
           <div class="flex items-center justify-between text-[10px] font-mono">
-            <span class="font-semibold">PASSO ${s.step}</span>
+            <span class="font-semibold">ÁRVORE ${currentStage}.${s.step} · ${(s.branches || []).length} RAMOS</span>
             <span id="flowStepCheck_${idx}"></span>
           </div>
-          <div class="text-[11px] font-medium text-[#1c1c1e] truncate mt-0.5">${escHtml(s.title)}</div>
+          <div class="text-[11px] font-medium text-[#1c1c1e] truncate mt-0.5">${escHtml(s.title.replace(/^Árvore \d+\.\d+\s*·\s*/, ''))}</div>
         </button>
       `).join('');
 
       document.getElementById('flowStageDetails').innerHTML = `
-        <!-- Video Player Card -->
         <div class="surface-card p-5 space-y-4">
           <!-- Top Player Controls Bar -->
           <div class="flex flex-wrap items-center justify-between gap-3 pb-3.5 border-b border-[#e5e5ea]">
             <div class="flex items-center gap-2">
               <button id="btnFlowPlayPause" onclick="toggleFlowPlayback()" class="btn-primary px-4 py-1.5 text-xs">
-                <span>&#9654; Reproduzir Fluxo</span>
+                <span>&#9654; Reproduzir Árvore</span>
               </button>
-              <button onclick="stepFlowDelta(-1)" class="btn-subtle px-2.5 py-1.5 text-xs" title="Passo Anterior">&#9198; Anterior</button>
-              <button onclick="stepFlowDelta(1)" class="btn-subtle px-2.5 py-1.5 text-xs" title="Passo Seguinte">Seguinte &#9197;</button>
+              <button onclick="stepFlowDelta(-1)" class="btn-subtle px-2.5 py-1.5 text-xs" title="Árvore Anterior">&#9198; Anterior</button>
+              <button onclick="stepFlowDelta(1)" class="btn-subtle px-2.5 py-1.5 text-xs" title="Árvore Seguinte">Seguinte &#9197;</button>
               <button onclick="restartFlowStage()" class="btn-subtle px-2.5 py-1.5 text-xs" title="Reiniciar Etapa">&#8634; Reiniciar</button>
             </div>
 
@@ -2082,33 +2843,33 @@
             </div>
           </div>
 
-          <!-- Video Scrubber & 8 Step Chapters -->
+          <!-- Video Scrubber & Tree Chapters -->
           <div class="space-y-2">
             <div class="flex items-center justify-between text-[11px] font-mono text-[#636366]">
-              <span id="flowHeaderStepCounter">ETAPA ${currentStage} · PASSO 1 DE ${steps.length}</span>
-              <span id="flowPacketPhaseText" class="text-[#007aff] font-medium">Clica em Reproduzir Fluxo para iniciar a sequência animada</span>
+              <span id="flowHeaderStepCounter">ETAPA ${currentStage} · ÁRVORE 1 DE ${steps.length}</span>
+              <span id="flowPacketPhaseText" class="text-[#007aff] font-medium">Clica em Reproduzir Árvore para animar a propagação simultânea de variáveis</span>
             </div>
             <div class="w-full h-2 bg-[#e5e5ea] rounded-full overflow-hidden">
-              <div id="flowVideoScrubberFill" class="h-full bg-[#007aff] transition-all duration-75" style="width: 12.5%"></div>
+              <div id="flowVideoScrubberFill" class="h-full bg-[#007aff] transition-all duration-75" style="width: 20%"></div>
             </div>
-            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-1.5 pt-1">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${steps.length} gap-2 pt-1">
               ${stepIndicatorsHtml}
             </div>
           </div>
 
-          <!-- Active Step Video Stage Canvas (Origin -> Animated Key Conduit -> Target) -->
+          <!-- Active Multi-Branch Tree Video Canvas -->
           <div id="flowActiveVideoScreen" class="bg-[#f2f2f7] rounded-xl p-4 border border-[#d1d1d6] space-y-4"></div>
 
           <!-- 4 Database Swimlanes for the Current Stage -->
           <div class="pt-2">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2.5">
               <div>
-                <h4 class="text-xs font-semibold text-[#1c1c1e] uppercase tracking-wider">Mapa em Tempo Real das 4 Bases de Dados nesta Etapa (${escHtml(st.badge)})</h4>
-                <p class="text-[11px] text-[#636366]">Durante a reprodução, a tabela de origem pulsa a azul, a tabela de destino pulsa a laranja e as tabelas já processadas ficam assinaladas a verde.</p>
+                <h4 class="text-xs font-semibold text-[#1c1c1e] uppercase tracking-wider">Estado Acumulado das 4 Bases de Dados nesta Etapa (${escHtml(st.badge)})</h4>
+                <p class="text-[11px] text-[#636366]">Mostra simultaneamente a Tabela Raiz (azul), todos os Ramos Diretos Nível 1 e Sub-Ramos Nível 2 (laranja) e as tabelas já percorridas nas árvores anteriores (verde).</p>
               </div>
               <div class="flex items-center gap-3 text-[11px] font-medium">
-                <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#007aff] inline-block"></span> Origem (Envia PK)</span>
-                <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#c96e00] inline-block"></span> Destino (Recebe FK)</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#007aff] inline-block"></span> Raiz Emissora (Nível 0)</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#c96e00] inline-block"></span> Ramos e Sub-Ramos Ativos (Níveis 1 e 2)</span>
                 <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#34c759] inline-block"></span> Já Ligado na Etapa</span>
               </div>
             </div>
@@ -2127,32 +2888,79 @@
 
       const counterEl = document.getElementById('flowHeaderStepCounter');
       if (counterEl) {
-        counterEl.textContent = `ETAPA ${currentStage} · PASSO ${cur.step} DE ${steps.length} · ${cur.title.toUpperCase()}`;
+        counterEl.textContent = `ETAPA ${currentStage} · ${cur.title.toUpperCase()}`;
       }
 
-      // Update 8 step chapter buttons
       steps.forEach((s, idx) => {
         const btn = document.getElementById(`flowStepBtn_${idx}`);
         const chk = document.getElementById(`flowStepCheck_${idx}`);
         if (!btn) return;
         if (idx === flowCurrentStepIdx) {
-          btn.className = "flex-1 text-left p-2 rounded-lg border-2 border-[#007aff] bg-[#e5f1ff] cursor-pointer";
+          btn.className = "flex-1 text-left p-2.5 rounded-lg border-2 border-[#007aff] bg-[#e5f1ff] cursor-pointer";
           if (chk) chk.innerHTML = '<span class="text-[#007aff] font-bold">&#9654;</span>';
         } else if (idx < flowCurrentStepIdx) {
-          btn.className = "flex-1 text-left p-2 rounded-lg border border-[#34c759] bg-[#f2fbf5] cursor-pointer";
+          btn.className = "flex-1 text-left p-2.5 rounded-lg border border-[#34c759] bg-[#f2fbf5] cursor-pointer";
           if (chk) chk.innerHTML = '<span class="text-[#248a3d] font-bold">&#10003;</span>';
         } else {
-          btn.className = "flex-1 text-left p-2 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer";
+          btn.className = "flex-1 text-left p-2.5 rounded-lg border border-[#e5e5ea] bg-white hover:bg-[#f2f2f7] cursor-pointer";
           if (chk) chk.textContent = '';
         }
       });
 
-      const fromT = TABLES.find(t => t.id === cur.fromTable) || { id: cur.fromTable, num: '?', label: cur.fromTable, name: cur.fromTable, pk: cur.fromPk, source: cur.fromDb, country: '' };
-      const toT = TABLES.find(t => t.id === cur.toTable) || { id: cur.toTable, num: '?', label: cur.toTable, name: cur.toTable, pk: cur.toFk, source: cur.toDb, country: '' };
-      const relatedList = (cur.relatedTables || []).map(rid => TABLES.find(t => t.id === rid)).filter(Boolean);
+      const fromT = TABLES.find(t => t.id === cur.fromTable) || { id: cur.fromTable, num: '?', label: cur.fromTable, name: cur.fromTable, pk: cur.fromPk, source: cur.fromDb };
+      const hasSubBranches = (cur.branches || []).some(b => b.subBranches && b.subBranches.length > 0);
 
-      const fromRec = ((PORTAL_BUNDLE?.table_records?.[fromT.id]) || [fromT.sample || {}])[0] || {};
-      const toRec = ((PORTAL_BUNDLE?.table_records?.[toT.id]) || [toT.sample || {}])[0] || {};
+      // Build Level-1 Branch Cards HTML
+      const branchesHtml = (cur.branches || []).map((b, bIdx) => {
+        const bT = TABLES.find(t => t.id === b.targetId) || { id: b.targetId, num: '?', label: b.targetId, name: b.targetId, source: 'Fonte D1', pk: b.generatedPk };
+        const hasSubs = b.subBranches && b.subBranches.length > 0;
+        return `
+          <div id="treeBranchCard_${bIdx}" onclick="switchTab('pillars'); selectTable('${bT.id}');"
+               class="relative p-3 rounded-lg border border-[#d1d1d6] bg-[#fffaf2] hover:border-[#007aff] transition-all cursor-pointer">
+            <!-- Input Port on Left Edge -->
+            <span id="port_in_b_${bIdx}" class="w-3 h-3 rounded-full bg-[#007aff] border-2 border-white shadow absolute -left-1.5 top-1/2 -translate-y-1/2"></span>
+            ${hasSubs ? `<span id="port_out_b_${bIdx}" class="w-3 h-3 rounded-full bg-[#c96e00] border-2 border-white shadow absolute -right-1.5 top-1/2 -translate-y-1/2"></span>` : ''}
+
+            <div class="flex items-center justify-between gap-1 text-[10px] font-mono">
+              <span class="font-bold text-[#c96e00]">RAMO ${bIdx + 1} · #${bT.num < 10 ? '0' + bT.num : bT.num}</span>
+              <span class="tag-pill ${getSourceBadgeClass(bT.source)}">${escHtml(bT.source)}</span>
+            </div>
+            <div class="text-xs font-semibold text-[#1c1c1e] mt-0.5">${escHtml(stripEmoji(bT.label))}</div>
+            <div class="text-[10.5px] font-mono text-[#636366] break-all">${escHtml(bT.name)}</div>
+
+            <div class="mt-1.5 pt-1.5 border-t border-[#f2e2c4] flex flex-wrap items-center justify-between gap-1 text-[10.5px] font-mono">
+              <span class="text-[#0055b3] bg-[#e5f1ff] px-1.5 py-0.5 rounded border border-[#b3d7ff]">Recebe: ${escHtml(b.passedVar)}</span>
+              <span class="text-[#995200] font-semibold">${escHtml(b.generatedPk)}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // Build Level-2 Sub-Branch Cards HTML
+      const subBranchesHtml = [];
+      (cur.branches || []).forEach((b, bIdx) => {
+        (b.subBranches || []).forEach((sb, sIdx) => {
+          const sT = TABLES.find(t => t.id === sb.targetId) || { id: sb.targetId, num: '?', label: sb.targetId, name: sb.targetId, source: 'Fonte A1', pk: sb.generatedPk };
+          subBranchesHtml.push(`
+            <div id="treeSubCard_${bIdx}_${sIdx}" onclick="switchTab('pillars'); selectTable('${sT.id}');"
+                 class="relative p-2.5 rounded-lg border border-[#d1d1d6] bg-[#f8f9fa] hover:border-[#007aff] transition-all cursor-pointer">
+              <!-- Input Port on Left Edge -->
+              <span id="port_in_sub_${bIdx}_${sIdx}" class="w-3 h-3 rounded-full bg-[#c96e00] border-2 border-white shadow absolute -left-1.5 top-1/2 -translate-y-1/2"></span>
+
+              <div class="flex items-center justify-between gap-1 text-[10px] font-mono">
+                <span class="font-bold text-[#248a3d]">SUB-RAMO ${bIdx + 1}.${sIdx + 1} · #${sT.num < 10 ? '0' + sT.num : sT.num}</span>
+                <span class="tag-pill ${getSourceBadgeClass(sT.source)}">${escHtml(sT.source)}</span>
+              </div>
+              <div class="text-xs font-semibold text-[#1c1c1e] mt-0.5">${escHtml(stripEmoji(sT.label))}</div>
+              <div class="text-[10.5px] font-mono text-[#636366] break-all">${escHtml(sT.name)}</div>
+              <div class="mt-1 pt-1 border-t border-[#e5e5ea] flex flex-wrap items-center justify-between gap-1 text-[10px] font-mono">
+                <span class="text-[#995200] bg-[#fff4e5] px-1.5 py-0.5 rounded border border-[#ffd699]">Recebe: ${escHtml(sb.passedVar)}</span>
+                <span class="text-[#248a3d] font-semibold">${escHtml(sb.generatedPk)}</span>
+              </div>
+            </div>
+          `);
+        });
+      });
 
       const screenEl = document.getElementById('flowActiveVideoScreen');
       if (screenEl) {
@@ -2160,104 +2968,83 @@
           <!-- Step Title & Step Progress Bar -->
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div>
-              <span class="tag-pill tag-teal font-mono">Passo ${cur.step} de ${steps.length}</span>
+              <span class="tag-pill tag-teal font-mono">Árvore ${currentStage}.${cur.step} · 1 Raiz &#8594; ${(cur.branches || []).length} Ramos Diretos ${subBranchesHtml.length ? `&#8594; ${subBranchesHtml.length} Sub-Ramos` : ''}</span>
               <h3 class="text-sm font-semibold text-[#1c1c1e] inline ml-2">${escHtml(cur.title)}</h3>
             </div>
-            <div class="w-40 h-1.5 bg-[#d1d1d6] rounded-full overflow-hidden">
+            <div class="w-44 h-1.5 bg-[#d1d1d6] rounded-full overflow-hidden">
               <div id="flowStepProgressFill" class="h-full bg-[#007aff]" style="width: ${flowStepProgress}%"></div>
             </div>
           </div>
 
-          <!-- Animated Visual Conduit: Origin Table -> Travelling Key Packet -> Target Table -->
-          <div class="grid grid-cols-1 lg:grid-cols-11 gap-3 items-center bg-white p-4 rounded-xl border border-[#e5e5ea]">
-            <!-- Origin Node (3 cols) -->
-            <div onclick="switchTab('pillars'); selectTable('${fromT.id}');" class="lg:col-span-3 p-3.5 rounded-lg flow-node-origin cursor-pointer">
-              <div class="flex items-center justify-between text-[10.5px] font-mono">
-                <span class="font-bold text-[#007aff] uppercase">1. Base de Dados de Origem</span>
-                <span class="tag-pill tag-navy">${escHtml(cur.fromDb)}</span>
-              </div>
-              <div class="text-xs font-semibold text-[#1c1c1e] mt-1.5">
-                <span class="font-mono text-[#007aff]">#${fromT.num < 10 ? '0' + fromT.num : fromT.num}</span> · ${escHtml(stripEmoji(fromT.label))}
-              </div>
-              <div class="text-[11px] font-mono text-[#636366] break-all mt-0.5">${escHtml(fromT.name)}</div>
-              <div class="mt-2 pt-2 border-t border-[#cce4ff] text-[11px] font-mono text-[#0055b3]">
-                <strong>Chave Emitida (PK):</strong><br/>${escHtml(cur.fromPk)}
-              </div>
-            </div>
+          <!-- MULTI-BRANCH TREE STAGE CONTAINER WITH SVG CURVED OVERLAY -->
+          <div id="flowTreeStageContainer" class="relative bg-white p-5 rounded-xl border border-[#e5e5ea] overflow-x-auto">
+            <!-- SVG Overlay for Curved Tree Branches & Moving Variable Packets -->
+            <svg id="flowTreeSvgOverlay" class="pointer-events-none absolute inset-0 w-full h-full z-30"></svg>
 
-            <!-- Animated Connection Track (5 cols) -->
-            <div class="lg:col-span-5 flex flex-col justify-center px-2 py-3 relative">
-              <div class="text-center mb-2">
-                <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#636366] block">Chave Transmitida na Ligação</span>
-                <code class="text-[11.5px] font-mono font-semibold text-[#007aff] bg-[#e5f1ff] px-2.5 py-1 rounded border border-[#b3d7ff] inline-block mt-1 break-all">
-                  ${escHtml(cur.passedKey)}
-                </code>
-              </div>
+            <div class="relative z-20 grid grid-cols-1 ${hasSubBranches ? 'lg:grid-cols-12' : 'lg:grid-cols-9'} gap-x-28 gap-y-6 items-center min-w-[980px]">
+              <!-- COLUMN 1: NÍVEL 0 · TABELA RAIZ EMISSORA (3 cols) -->
+              <div class="lg:col-span-3 flex flex-col justify-center">
+                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#007aff] mb-1.5">
+                  Nível 0 · Tabela Raiz Emissora
+                </div>
+                <div id="treeRootCard" onclick="switchTab('pillars'); selectTable('${fromT.id}');"
+                     class="relative p-4 rounded-xl flow-node-origin cursor-pointer">
+                  <!-- Output Port on Right Edge -->
+                  <span id="port_out_root" class="w-3.5 h-3.5 rounded-full bg-[#007aff] border-2 border-white shadow absolute -right-2 top-1/2 -translate-y-1/2"></span>
 
-              <!-- SVG Animated Line + Gliding Packet -->
-              <div class="relative h-11 flex items-center">
-                <svg class="w-full h-6" viewBox="0 0 400 24" preserveAspectRatio="none">
-                  <line x1="8" y1="12" x2="386" y2="12" stroke="#d1d1d6" stroke-width="3" />
-                  <line x1="8" y1="12" x2="386" y2="12" stroke="#007aff" stroke-width="3" class="flow-animated-line" />
-                  <polygon points="384,6 398,12 384,18" fill="#c96e00" />
-                </svg>
-                <div id="flowMovingPacket" class="absolute top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-full bg-[#007aff] text-white font-mono text-[10.5px] font-semibold shadow-md whitespace-nowrap transition-all duration-75" style="left: 35%;">
-                  PK &#8594; FK
+                  <div class="flex items-center justify-between text-[10.5px] font-mono">
+                    <span class="font-bold text-[#007aff]">RAIZ #${fromT.num < 10 ? '0' + fromT.num : fromT.num}</span>
+                    <span class="tag-pill ${getSourceBadgeClass(fromT.source)}">${escHtml(fromT.source || cur.fromDb)}</span>
+                  </div>
+                  <div class="text-sm font-semibold text-[#1c1c1e] mt-1.5">${escHtml(stripEmoji(fromT.label))}</div>
+                  <div class="text-[11px] font-mono text-[#636366] break-all mt-0.5">${escHtml(fromT.name)}</div>
+
+                  <div class="mt-3 pt-2.5 border-t border-[#b3d7ff] space-y-1">
+                    <span class="text-[10px] font-semibold uppercase tracking-wider text-[#0055b3] block">Variáveis Enviadas para a Árvore:</span>
+                    ${(cur.emittedVars || [cur.fromPk]).map(v => `
+                      <code class="block text-[11px] font-mono font-semibold text-[#007aff] bg-white px-2 py-1 rounded border border-[#b3d7ff] break-all">${escHtml(v)}</code>
+                    `).join('')}
+                  </div>
                 </div>
               </div>
 
-              ${relatedList.length > 0 ? `
-                <div class="mt-2 text-center">
-                  <span class="text-[10px] text-[#636366] uppercase font-semibold mr-1">Tabelas Co-Ativadas neste Passo:</span>
-                  ${relatedList.map(rt => `
-                    <button onclick="switchTab('pillars'); selectTable('${rt.id}');" class="inline-block text-[10.5px] font-mono bg-[#f2f2f7] hover:bg-[#e5e5ea] text-[#1c1c1e] px-2 py-0.5 rounded border border-[#d1d1d6] m-0.5 cursor-pointer">
-                      #${rt.num < 10 ? '0' + rt.num : rt.num} ${escHtml(rt.name.slice(0, 26))}
-                    </button>
-                  `).join('')}
+              <!-- COLUMN 2: NÍVEL 1 · RAMOS DIRETOS DA ÁRVORE (5 cols) -->
+              <div class="${hasSubBranches ? 'lg:col-span-5' : 'lg:col-span-6'} space-y-2.5">
+                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#c96e00] mb-1">
+                  Nível 1 · ${(cur.branches || []).length} Tabelas Alimentadas Diretamente pela Raiz
+                </div>
+                ${branchesHtml}
+              </div>
+
+              <!-- COLUMN 3: NÍVEL 2 · SUB-RAMOS SEGUINTES (4 cols) -->
+              ${hasSubBranches ? `
+                <div class="lg:col-span-4 space-y-2.5">
+                  <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#248a3d] mb-1">
+                    Nível 2 · ${subBranchesHtml.length} Sub-Ramos Alimentados pelo Nível 1
+                  </div>
+                  ${subBranchesHtml.join('')}
                 </div>
               ` : ''}
             </div>
-
-            <!-- Target Node (3 cols) -->
-            <div onclick="switchTab('pillars'); selectTable('${toT.id}');" class="lg:col-span-3 p-3.5 rounded-lg flow-node-target cursor-pointer">
-              <div class="flex items-center justify-between text-[10.5px] font-mono">
-                <span class="font-bold text-[#c96e00] uppercase">2. Tabela de Destino</span>
-                <span class="tag-pill tag-ochre">${escHtml(cur.toDb)}</span>
-              </div>
-              <div class="text-xs font-semibold text-[#1c1c1e] mt-1.5">
-                <span class="font-mono text-[#c96e00]">#${toT.num < 10 ? '0' + toT.num : toT.num}</span> · ${escHtml(stripEmoji(toT.label))}
-              </div>
-              <div class="text-[11px] font-mono text-[#636366] break-all mt-0.5">${escHtml(toT.name)}</div>
-              <div class="mt-2 pt-2 border-t border-[#ffe0b2] text-[11px] font-mono text-[#995200]">
-                <strong>Chave Recebida (FK → PK):</strong><br/>${escHtml(cur.toFk)}
-              </div>
-            </div>
           </div>
 
-          <!-- Synchronized Operational Explanation & Live SQL/Mongo/XPath Inspector -->
+          <!-- Synchronized Operational Explanation & Multi-Join SQL/Mongo/XPath Inspector -->
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-3">
             <div class="lg:col-span-5 bg-white p-3.5 rounded-lg border border-[#e5e5ea] flex flex-col justify-between">
               <div>
-                <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#007aff] block">O que acontece na realidade neste passo</span>
+                <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#007aff] block">Explicação da Ramificação na Realidade</span>
                 <p class="text-xs text-[#1c1c1e] leading-relaxed mt-1.5">${escHtml(cur.reality)}</p>
               </div>
-              <div class="mt-3 pt-2.5 border-t border-[#efeff4] grid grid-cols-2 gap-2 text-[11px]">
-                <div>
-                  <span class="text-[#8e8e93] block text-[10px] uppercase font-semibold">Amostra na Origem (#${fromT.num})</span>
-                  <code class="font-mono text-[#1c1c1e] text-[10.5px] break-all">${escHtml(JSON.stringify(fromRec).slice(0, 95))}...</code>
-                </div>
-                <div>
-                  <span class="text-[#8e8e93] block text-[10px] uppercase font-semibold">Amostra no Destino (#${toT.num})</span>
-                  <code class="font-mono text-[#1c1c1e] text-[10.5px] break-all">${escHtml(JSON.stringify(toRec).slice(0, 95))}...</code>
-                </div>
+              <div class="mt-3 pt-2 border-t border-[#efeff4] text-[11px] text-[#636366]">
+                <strong>Dica:</strong> Clica em qualquer nó da árvore acima para abrir o inspetor lateral com todos os registos dessa tabela.
               </div>
             </div>
             <div class="lg:col-span-7 bg-white p-3.5 rounded-lg border border-[#e5e5ea]">
               <div class="flex items-center justify-between mb-1.5">
-                <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#636366]">Instrução Técnica de Ligação Executada (SQL / MongoDB / XPath)</span>
-                <span class="tag-pill tag-stone font-mono">Join em Tempo Real</span>
+                <span class="text-[10.5px] font-semibold uppercase tracking-wider text-[#636366]">Instrução Multi-Join Executada para esta Árvore (SQL / MongoDB / XPath)</span>
+                <span class="tag-pill tag-stone font-mono">1 Raiz &#8594; Múltiplas Tabelas</span>
               </div>
-              <pre class="code-surface text-[11px] max-h-32 overflow-auto clean-scroll">${escHtml(cur.queryCode)}</pre>
+              <pre class="code-surface text-[11px] max-h-36 overflow-auto clean-scroll">${escHtml(cur.queryCode)}</pre>
             </div>
           </div>
         `;
@@ -2268,10 +3055,16 @@
       for (let i = 0; i < flowCurrentStepIdx; i++) {
         const ps = steps[i];
         visitedSet.add(ps.fromTable);
-        visitedSet.add(ps.toTable);
-        (ps.relatedTables || []).forEach(r => visitedSet.add(r));
+        (ps.branches || []).forEach(b => {
+          visitedSet.add(b.targetId);
+          (b.subBranches || []).forEach(sb => visitedSet.add(sb.targetId));
+        });
       }
-      const activeRelatedSet = new Set(cur.relatedTables || []);
+      const activeBranchSet = new Set();
+      (cur.branches || []).forEach(b => {
+        activeBranchSet.add(b.targetId);
+        (b.subBranches || []).forEach(sb => activeBranchSet.add(sb.targetId));
+      });
 
       const stageTables = st.tableIds.map(id => TABLES.find(t => t.id === id)).filter(Boolean);
       const sourcesMeta = [
@@ -2292,13 +3085,10 @@
                 let stateBadge = "";
                 if (t.id === cur.fromTable) {
                   stateClass = "flow-node-origin";
-                  stateBadge = `<span class="tag-pill tag-teal font-mono">ORIGEM (PK)</span>`;
-                } else if (t.id === cur.toTable) {
+                  stateBadge = `<span class="tag-pill tag-teal font-mono">RAIZ (NÍVEL 0)</span>`;
+                } else if (activeBranchSet.has(t.id)) {
                   stateClass = "flow-node-target";
-                  stateBadge = `<span class="tag-pill tag-ochre font-mono">DESTINO (FK)</span>`;
-                } else if (activeRelatedSet.has(t.id)) {
-                  stateClass = "flow-node-target";
-                  stateBadge = `<span class="tag-pill tag-ochre font-mono">CO-ATIVADA</span>`;
+                  stateBadge = `<span class="tag-pill tag-ochre font-mono">RAMO ATIVO</span>`;
                 } else if (visitedSet.has(t.id)) {
                   stateClass = "flow-node-visited";
                   stateBadge = `<span class="text-[10px] font-mono text-[#248a3d] font-semibold">&#10003; Processada</span>`;
@@ -2329,8 +3119,18 @@
         }).join('');
       }
 
-      updateFlowProgressBarsOnly();
+      requestAnimationFrame(() => {
+        buildTreeSvgPaths();
+        updateFlowProgressBarsOnly();
+      });
     }
+
+    window.addEventListener('resize', () => {
+      if (activeTab === 'flow') {
+        buildTreeSvgPaths();
+        updateFlowProgressBarsOnly();
+      }
+    });
 
     // Bilateral Bridges
     function renderBilateralBridges() {
